@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Ledger — Archive</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:     #141210;
+    --bg2:    #1c1916;
+    --bg3:    #242018;
+    --rule:   #3a342c;
+    --cream:  #e8dfc8;
+    --muted:  #9a9080;
+    --accent: #c8481a;
+    --gold:   #c9a227;
+    --gold2:  #e6c060;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--cream);
+    font-family: 'Source Sans 3', sans-serif;
+    min-height: 100vh;
+  }
+
+  /* NAV */
+  .top-nav {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--rule);
+    padding: 8px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 12px;
+  }
+  .top-nav a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-size: 11px;
+  }
+  .top-nav a:hover { color: var(--gold2); }
+
+  /* MASTHEAD */
+  .masthead {
+    text-align: center;
+    padding: 32px 20px 20px;
+    border-bottom: 3px double var(--gold);
+  }
+  .masthead-logo {
+    font-family: 'Playfair Display', serif;
+    font-weight: 900;
+    font-size: clamp(32px, 7vw, 56px);
+    letter-spacing: 0.04em;
+    color: var(--cream);
+  }
+  .masthead-logo span { color: var(--gold); }
+  .masthead-sub {
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+
+  /* CONTAINER */
+  .container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+  }
+
+  .year-label {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--gold);
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .month-block { margin-bottom: 28px; }
+
+  .month-label {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+
+  .edition-list { list-style: none; }
+
+  .edition-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 14px;
+    background: var(--bg2);
+    border: 1px solid var(--rule);
+    border-radius: 3px;
+    margin-bottom: 6px;
+    transition: border-color 0.15s;
+  }
+  .edition-item:hover { border-color: var(--gold); }
+
+  .edition-date {
+    font-family: 'Playfair Display', serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--cream);
+  }
+  .edition-dow {
+    font-size: 11px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    margin-top: 1px;
+  }
+  .edition-link {
+    text-decoration: none;
+    color: var(--gold);
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: 1px solid var(--gold);
+    padding: 4px 10px;
+    border-radius: 2px;
+    transition: background 0.15s;
+  }
+  .edition-link:hover {
+    background: var(--gold);
+    color: var(--bg);
+  }
+
+  .latest-badge {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    font-size: 9px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 2px 6px;
+    border-radius: 2px;
+    margin-left: 8px;
+    vertical-align: middle;
+  }
+
+  footer {
+    text-align: center;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    border-top: 1px solid var(--rule);
+    padding: 16px 20px;
+  }
+</style>
+</head>
+<body>
+
+<div class="top-nav">
+  <span style="color:var(--muted);font-size:11px;letter-spacing:0.08em;">THE DAILY LEDGER</span>
+  <a href="index.html">← Today's Edition</a>
+</div>
+
+<div class="masthead">
+  <div class="masthead-logo">The Daily <span>Ledger</span></div>
+  <div class="masthead-sub">Complete Archive — Every Edition</div>
+</div>
+
+<div class="container">
+
+  <div class="year-label">2026</div>
+
+  <div class="month-block">
+    <div class="month-label">May 2026</div>
+    <ul class="edition-list">
+
+      <li class="edition-item">
+        <div>
+          <div class="edition-date">May 27, 2026 <span class="latest-badge">Latest</span></div>
+          <div class="edition-dow">Wednesday</div>
+        </div>
+        <a href="2026-05-27.html" class="edition-link">Read →</a>
+      </li>
+
+      <!-- NEW EDITIONS GET ADDED ABOVE THIS LINE -->
+
+    </ul>
+  </div>
+
+</div>
+
+<footer>
+  The Daily Ledger &nbsp;·&nbsp; Chicago, Illinois &nbsp;·&nbsp; Every edition preserved
+</footer>
+
+</body>
+</html>
