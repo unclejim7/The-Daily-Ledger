@@ -4,802 +4,774 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Daily Ledger — May 28, 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg:        #141210;
-    --bg2:       #1c1917;
-    --bg3:       #242220;
-    --cream:     #e8dfc8;
-    --cream2:    #c9bfa8;
-    --muted:     #7a7060;
-    --accent:    #c8481a;
-    --gold:      #c9a227;
-    --rule:      #2e2b28;
-    --rule2:     #3a3733;
-    --ticker-bg: #1a1815;
+    --bg:       #141210;
+    --bg2:      #1c1916;
+    --bg3:      #231f1c;
+    --text:     #e8dfc8;
+    --muted:    #9e9080;
+    --rule:     #2e2822;
+    --accent:   #c8481a;
+    --gold:     #c9a227;
+    --goldlt:   #e0ba45;
+    --ink:      #f0e8d0;
   }
+
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  html { scroll-behavior: smooth; }
+
   body {
     background: var(--bg);
-    color: var(--cream);
-    font-family: 'Libre Baskerville', serif;
+    color: var(--text);
+    font-family: 'Libre Baskerville', Georgia, serif;
     font-size: 15px;
     line-height: 1.65;
     -webkit-font-smoothing: antialiased;
   }
-  a { color: var(--gold); text-decoration: none; }
-  a:hover { text-decoration: underline; }
 
-  /* ── EDITION NAV ── */
+  a { color: var(--gold); text-decoration: none; }
+  a:hover { color: var(--goldlt); text-decoration: underline; }
+
+  /* ── Edition Nav ─────────────────────────────── */
   .edition-nav {
     background: var(--bg2);
     border-bottom: 1px solid var(--rule);
+    padding: 9px 20px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 8px 20px;
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: .1em;
+    font-size: 11.5px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    gap: 12px;
+    flex-wrap: wrap;
+    gap: 6px;
   }
   .edition-nav a { color: var(--gold); }
   .edition-nav .nav-center { color: var(--muted); }
-  .edition-nav .nav-disabled { color: var(--rule2); pointer-events: none; }
+  .edition-nav .nav-disabled { color: var(--rule); pointer-events: none; cursor: default; }
 
-  /* ── TICKER ── */
+  /* ── Scrolling Ticker ────────────────────────── */
   .ticker-wrap {
     background: var(--accent);
     overflow: hidden;
-    height: 30px;
-    display: flex;
-    align-items: center;
+    white-space: nowrap;
+    padding: 5px 0;
   }
   .ticker-label {
-    background: #8c2e0c;
-    color: #fff;
+    display: inline-block;
+    background: var(--gold);
+    color: #141210;
     font-family: 'Source Sans 3', sans-serif;
     font-size: 10px;
     font-weight: 700;
-    letter-spacing: .14em;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
-    padding: 0 14px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-    white-space: nowrap;
-    flex-shrink: 0;
-    z-index: 1;
+    padding: 2px 12px;
+    margin-right: 16px;
   }
-  .ticker-scroll { overflow: hidden; flex: 1; }
   .ticker-inner {
-    display: flex;
-    white-space: nowrap;
-    animation: ticker 38s linear infinite;
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: .04em;
-    color: #fff;
+    display: inline-block;
+    animation: ticker 55s linear infinite;
   }
-  .ticker-inner span { padding: 0 28px; }
-  .ticker-inner .sep { color: rgba(255,255,255,.4); }
-  @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  .ticker-inner span {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 11.5px;
+    font-weight: 600;
+    color: #fff;
+    margin: 0 28px;
+    letter-spacing: 0.03em;
+  }
+  .ticker-inner span b { color: var(--gold); margin-left: 6px; }
+  @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-  /* ── MASTHEAD ── */
+  /* ── Masthead ─────────────────────────────────── */
   .masthead {
     text-align: center;
-    padding: 30px 20px 16px;
-    border-bottom: 3px double var(--rule2);
-    background: linear-gradient(180deg, #18150f 0%, var(--bg) 100%);
+    padding: 32px 20px 20px;
+    border-bottom: 3px double var(--rule);
+    position: relative;
   }
   .masthead-eyebrow {
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 9.5px;
-    letter-spacing: .22em;
+    font-size: 10px;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--muted);
-    margin-bottom: 10px;
+    margin-bottom: 8px;
   }
   .masthead-title {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(38px, 9vw, 82px);
+    font-size: clamp(48px, 10vw, 88px);
     font-weight: 900;
-    line-height: 1;
-    color: var(--cream);
-    letter-spacing: -.01em;
+    line-height: 0.92;
+    color: var(--ink);
+    letter-spacing: -0.02em;
   }
-  .masthead-title em { color: var(--gold); font-style: italic; }
-  .masthead-rule {
-    height: 1px;
-    background: linear-gradient(90deg, transparent, var(--gold), transparent);
-    margin: 12px auto;
-    max-width: 520px;
+  .masthead-title span { color: var(--accent); }
+  .masthead-subtitle {
+    font-family: 'Libre Baskerville', serif;
+    font-style: italic;
+    font-size: 13.5px;
+    color: var(--muted);
+    margin-top: 10px;
+    letter-spacing: 0.04em;
   }
   .masthead-meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--rule);
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 10.5px;
-    letter-spacing: .14em;
+    font-size: 11px;
+    letter-spacing: 0.07em;
     text-transform: uppercase;
     color: var(--muted);
-    display: flex;
-    justify-content: center;
-    gap: 24px;
     flex-wrap: wrap;
+    gap: 6px;
   }
-  .masthead-meta .dot { color: var(--rule2); }
-
-  /* ── LAYOUT ── */
-  .container { max-width: 960px; margin: 0 auto; padding: 0 16px; }
-  .section-rule {
-    border: none;
-    border-top: 1px solid var(--rule);
-    margin: 0;
+  .masthead-meta .edition-badge {
+    background: var(--accent);
+    color: #fff;
+    padding: 2px 10px;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    border-radius: 1px;
   }
 
-  /* ── SECTION HEADERS ── */
+  /* ── Container ────────────────────────────────── */
+  .container {
+    max-width: 820px;
+    margin: 0 auto;
+    padding: 0 18px 60px;
+  }
+
+  /* ── Section Header ───────────────────────────── */
   .section-head {
     display: flex;
     align-items: center;
     gap: 14px;
-    padding: 22px 0 14px;
+    margin: 32px 0 16px;
   }
-  .section-head-label {
+  .section-head h2 {
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 10px;
+    font-size: 10.5px;
     font-weight: 700;
-    letter-spacing: .2em;
+    letter-spacing: 0.22em;
     text-transform: uppercase;
     color: var(--accent);
     white-space: nowrap;
   }
-  .section-head-line { flex: 1; height: 1px; background: var(--rule); }
-
-  /* ── STORY GRID ── */
-  .story-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1px;
+  .section-rule {
+    flex: 1;
+    height: 1px;
     background: var(--rule);
-    border: 1px solid var(--rule);
-    margin-bottom: 0;
-  }
-  .story-grid.two-col { grid-template-columns: 1fr 1fr; }
-  .story-grid.three-col { grid-template-columns: 1fr 1fr 1fr; }
-  @media (max-width: 640px) {
-    .story-grid.two-col, .story-grid.three-col { grid-template-columns: 1fr; }
   }
 
-  .story-card {
-    background: var(--bg);
-    padding: 18px 16px;
+  /* ── Story Cards ──────────────────────────────── */
+  .card {
+    background: var(--bg2);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    padding: 18px 20px;
+    margin-bottom: 14px;
+    border-radius: 2px;
   }
-  .story-card.lead { padding: 22px 20px; }
-  .story-label {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 9.5px;
-    font-weight: 700;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 7px;
-  }
-  .story-label.gold { color: var(--gold); }
-  .story-hed {
+  .card.gold-border { border-left-color: var(--gold); }
+  .card h3 {
     font-family: 'Playfair Display', serif;
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.22;
-    color: var(--cream);
+    line-height: 1.3;
+    color: var(--ink);
     margin-bottom: 8px;
   }
-  .story-card.lead .story-hed { font-size: 24px; }
-  .story-dek {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 13.5px;
-    font-weight: 300;
-    color: var(--cream2);
-    line-height: 1.55;
-  }
-  .story-byline {
+  .card .kicker {
     font-family: 'Source Sans 3', sans-serif;
     font-size: 10px;
-    font-weight: 600;
-    letter-spacing: .1em;
+    font-weight: 700;
+    letter-spacing: 0.18em;
     text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 5px;
+  }
+  .card .kicker.gold { color: var(--gold); }
+  .card p {
+    font-size: 14px;
+    line-height: 1.68;
+    color: var(--text);
+  }
+  .card .byline {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10.5px;
     color: var(--muted);
     margin-top: 10px;
-    padding-top: 10px;
-    border-top: 1px solid var(--rule);
+    letter-spacing: 0.05em;
   }
 
-  /* ── PULL QUOTE ── */
-  .pull-quote {
-    border-left: 3px solid var(--gold);
-    margin: 18px 0;
-    padding: 12px 16px;
+  /* ── Lead Story ───────────────────────────────── */
+  .lead-story {
     background: var(--bg2);
+    border: 1px solid var(--rule);
+    border-top: 4px solid var(--accent);
+    padding: 24px 22px;
+    margin-bottom: 14px;
+    border-radius: 2px;
+  }
+  .lead-story .kicker {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 8px;
+  }
+  .lead-story h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(22px, 5vw, 30px);
+    font-weight: 700;
+    line-height: 1.22;
+    color: var(--ink);
+    margin-bottom: 12px;
+  }
+  .lead-story p {
+    font-size: 14.5px;
+    line-height: 1.72;
+    color: var(--text);
+  }
+
+  /* ── Pull Quote ───────────────────────────────── */
+  .pull-quote {
+    border-left: 4px solid var(--gold);
+    background: var(--bg3);
+    padding: 16px 20px;
+    margin: 20px 0;
   }
   .pull-quote p {
     font-family: 'Playfair Display', serif;
-    font-size: 16px;
     font-style: italic;
-    color: var(--gold);
-    line-height: 1.45;
+    font-size: 17px;
+    line-height: 1.5;
+    color: var(--ink);
   }
   .pull-quote cite {
     display: block;
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 10px;
-    letter-spacing: .1em;
+    font-size: 10.5px;
+    letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: var(--muted);
-    margin-top: 6px;
+    color: var(--gold);
+    margin-top: 8px;
     font-style: normal;
   }
 
-  /* ── MARKETS TABLE ── */
-  .market-table { width: 100%; border-collapse: collapse; margin-top: 4px; }
-  .market-table th {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    color: var(--muted);
-    border-bottom: 1px solid var(--rule);
-    padding: 6px 8px;
-    text-align: left;
-  }
-  .market-table td {
+  /* ── Markets Table ────────────────────────────── */
+  .markets-table {
+    width: 100%;
+    border-collapse: collapse;
     font-family: 'Source Sans 3', sans-serif;
     font-size: 13px;
-    padding: 7px 8px;
+    margin-bottom: 14px;
+  }
+  .markets-table thead tr {
     border-bottom: 1px solid var(--rule);
-    color: var(--cream);
   }
-  .market-table tr:last-child td { border-bottom: none; }
-  .up { color: #6dbf8a; }
-  .down { color: #e06060; }
-  .market-table td:last-child { text-align: right; font-weight: 600; }
-
-  /* ── WEATHER BANNER ── */
-  .weather-banner {
-    background: var(--bg2);
-    border: 1px solid var(--rule);
-    padding: 16px 18px;
-    margin-bottom: 0;
-  }
-  .weather-grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: 8px;
-  }
-  @media (max-width: 540px) { .weather-grid { grid-template-columns: repeat(3, 1fr); } }
-  .weather-day {
-    text-align: center;
-    padding: 10px 4px;
-    border: 1px solid var(--rule);
-    background: var(--bg);
-  }
-  .weather-day-name {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 9.5px;
-    font-weight: 700;
-    letter-spacing: .12em;
+  .markets-table th {
+    padding: 8px 10px;
+    text-align: left;
+    font-size: 10px;
+    letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--muted);
-    margin-bottom: 6px;
+    font-weight: 600;
   }
-  .weather-icon { font-size: 22px; margin-bottom: 4px; }
-  .weather-hi { font-family: 'Playfair Display', serif; font-size: 17px; color: var(--cream); font-weight: 700; }
-  .weather-lo { font-family: 'Source Sans 3', sans-serif; font-size: 11px; color: var(--muted); }
-  .weather-desc {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 10px;
-    color: var(--cream2);
-    margin-top: 3px;
-  }
-
-  /* ── SPORTS ITEMS ── */
-  .sports-item {
-    background: var(--bg);
-    padding: 14px 16px;
+  .markets-table td {
+    padding: 9px 10px;
     border-bottom: 1px solid var(--rule);
+    color: var(--text);
   }
-  .sports-item:last-child { border-bottom: none; }
-  .sports-team {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 9.5px;
-    font-weight: 700;
-    letter-spacing: .16em;
-    text-transform: uppercase;
-    color: var(--accent);
+  .markets-table tr:last-child td { border-bottom: none; }
+  .markets-table .up { color: #6dbf6d; }
+  .markets-table .down { color: #e05f5f; }
+  .markets-table .name { font-weight: 600; color: var(--ink); }
+
+  /* ── Weather Banner ───────────────────────────── */
+  .weather-banner {
+    background: linear-gradient(135deg, #1c2530 0%, #172018 100%);
+    border: 1px solid #2a3540;
+    border-top: 3px solid var(--gold);
+    padding: 20px 22px;
+    margin-bottom: 14px;
+    border-radius: 2px;
+  }
+  .weather-banner .weather-row {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .weather-temp {
+    font-family: 'Playfair Display', serif;
+    font-size: 48px;
+    font-weight: 900;
+    color: var(--gold);
+    line-height: 1;
+  }
+  .weather-details {
+    flex: 1;
+  }
+  .weather-details .weather-desc {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: var(--ink);
     margin-bottom: 4px;
   }
-  .sports-hed {
-    font-family: 'Playfair Display', serif;
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--cream);
-    line-height: 1.25;
-    margin-bottom: 5px;
-  }
-  .sports-body {
+  .weather-details .weather-sub {
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 13px;
-    color: var(--cream2);
-    line-height: 1.5;
+    font-size: 12px;
+    color: var(--muted);
+    letter-spacing: 0.05em;
   }
-  .score-badge {
-    display: inline-block;
-    background: var(--bg3);
-    border: 1px solid var(--rule2);
+  .weather-forecast {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid #2a3540;
+  }
+  .forecast-day {
+    text-align: center;
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 11px;
-    font-weight: 700;
-    padding: 2px 8px;
-    margin-left: 6px;
-    color: var(--gold);
-    vertical-align: middle;
-    letter-spacing: .04em;
   }
+  .forecast-day .day-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--muted);
+    margin-bottom: 4px;
+  }
+  .forecast-day .day-hi { font-size: 16px; color: var(--gold); font-weight: 700; }
+  .forecast-day .day-lo { font-size: 12px; color: var(--muted); }
+  .forecast-day .day-icon { font-size: 20px; margin: 4px 0; }
 
-  /* ── HEALTH ITEMS ── */
-  .health-grid {
+  /* ── Sports Items ─────────────────────────────── */
+  .sports-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 1px;
-    background: var(--rule);
-    border: 1px solid var(--rule);
+    gap: 12px;
+    margin-bottom: 14px;
   }
-  @media (max-width: 540px) { .health-grid { grid-template-columns: 1fr; } }
-  .health-card {
-    background: var(--bg);
-    padding: 16px;
-  }
-  .health-tag {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 9px;
-    font-weight: 700;
-    letter-spacing: .18em;
-    text-transform: uppercase;
-    color: #6dbf8a;
-    margin-bottom: 6px;
-  }
-  .health-hed {
-    font-family: 'Playfair Display', serif;
-    font-size: 15px;
-    font-weight: 700;
-    color: var(--cream);
-    line-height: 1.25;
-    margin-bottom: 6px;
-  }
-  .health-body {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 12.5px;
-    color: var(--cream2);
-    line-height: 1.5;
-  }
-
-  /* ── EDITOR'S DISPATCH ── */
-  .dispatch {
+  @media (max-width: 600px) { .sports-grid { grid-template-columns: 1fr; } }
+  .sport-card {
     background: var(--bg2);
-    border-top: 2px solid var(--gold);
-    padding: 20px;
-    margin-top: 0;
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--accent);
+    padding: 14px 16px;
+    border-radius: 2px;
   }
-  .dispatch-head {
+  .sport-card.gold-top { border-top-color: var(--gold); }
+  .sport-card .team-label {
     font-family: 'Source Sans 3', sans-serif;
     font-size: 9.5px;
     font-weight: 700;
-    letter-spacing: .2em;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 5px;
+  }
+  .sport-card .score-line {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--ink);
+    line-height: 1.2;
+  }
+  .sport-card .score-line .win { color: var(--gold); }
+  .sport-card .sport-note {
+    font-size: 12.5px;
+    color: var(--text);
+    margin-top: 6px;
+    line-height: 1.5;
+  }
+
+  /* ── Health Items ─────────────────────────────── */
+  .health-item {
+    display: flex;
+    gap: 14px;
+    background: var(--bg2);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--gold);
+    padding: 14px 16px;
+    margin-bottom: 12px;
+    border-radius: 2px;
+  }
+  .health-icon {
+    font-size: 28px;
+    flex-shrink: 0;
+    line-height: 1;
+    margin-top: 2px;
+  }
+  .health-content h4 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    color: var(--ink);
+    margin-bottom: 5px;
+  }
+  .health-content p {
+    font-size: 13.5px;
+    color: var(--text);
+    line-height: 1.6;
+  }
+
+  /* ── Editor's Dispatch ────────────────────────── */
+  .dispatch {
+    background: var(--bg3);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--gold);
+    padding: 22px 22px;
+    margin-top: 32px;
+    margin-bottom: 14px;
+    border-radius: 2px;
+  }
+  .dispatch .dispatch-head {
+    font-family: 'Source Sans 3', sans-serif;
+    font-size: 10px;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
     color: var(--gold);
     margin-bottom: 10px;
   }
-  .dispatch-body {
-    font-family: 'Playfair Display', serif;
+  .dispatch p {
+    font-family: 'Libre Baskerville', serif;
     font-size: 14px;
-    font-style: italic;
-    color: var(--cream2);
-    line-height: 1.65;
+    line-height: 1.78;
+    color: var(--text);
   }
-  .dispatch-sig {
-    font-family: 'Source Sans 3', sans-serif;
-    font-size: 10px;
-    letter-spacing: .1em;
-    text-transform: uppercase;
-    color: var(--muted);
-    margin-top: 10px;
+  .dispatch .sig {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--gold);
+    margin-top: 14px;
   }
 
-  /* ── FOOTER ── */
+  /* ── Footer ───────────────────────────────────── */
   footer {
     text-align: center;
-    padding: 22px 20px 30px;
+    padding: 24px 20px 32px;
     border-top: 1px solid var(--rule);
     font-family: 'Source Sans 3', sans-serif;
-    font-size: 10.5px;
-    letter-spacing: .08em;
+    font-size: 11px;
+    letter-spacing: 0.07em;
+    text-transform: uppercase;
     color: var(--muted);
-    margin-top: 0;
   }
-  footer a { color: var(--rule2); }
-
-  /* ── SPACING ── */
-  .section-block { padding-bottom: 4px; }
 </style>
 </head>
 <body>
 
-<!-- EDITION NAV -->
+<!-- Edition Nav Bar -->
 <nav class="edition-nav">
-  <a href="2026-05-28.html">← May 28</a>
+  <a href="2026-05-27.html">← May 27</a>
   <span class="nav-center">📁 <a href="archive.html">Archive</a></span>
   <span class="nav-disabled">May 29 →</span>
 </nav>
 
-<!-- TICKER -->
+<!-- Ticker -->
 <div class="ticker-wrap">
-  <div class="ticker-label">Live</div>
-  <div class="ticker-scroll">
-    <div class="ticker-inner">
-      <span>S&P 500 <strong>+0.59%</strong></span><span class="sep">·</span>
-      <span>Nasdaq <strong>+0.82%</strong></span><span class="sep">·</span>
-      <span>Dow <strong>+0.12%</strong></span><span class="sep">·</span>
-      <span>Fed Funds Rate <strong>3.50–3.75%</strong></span><span class="sep">·</span>
-      <span>30-Yr Mortgage <strong>6.51%</strong></span><span class="sep">·</span>
-      <span>10-Yr Treasury yield climbing</span><span class="sep">·</span>
-      <span>US-Iran 60-day ceasefire MOU awaiting Trump approval</span><span class="sep">·</span>
-      <span>Cubs END 10-game skid — WIN 10-4 vs. Pittsburgh</span><span class="sep">·</span>
-      <span>White Sox ROUT Twins 15-2 — Murakami HR No. 20</span><span class="sep">·</span>
-      <span>Blackhawks hold 4th overall pick in 2026 NHL Draft</span><span class="sep">·</span>
-      <span>Bulls seeking new head coach — interviews underway</span><span class="sep">·</span>
-      <span>Chicago Today: H 65° / L 53° — Partly cloudy</span><span class="sep">·</span>
-      <!-- duplicate for seamless loop -->
-      <span>S&P 500 <strong>+0.59%</strong></span><span class="sep">·</span>
-      <span>Nasdaq <strong>+0.82%</strong></span><span class="sep">·</span>
-      <span>Dow <strong>+0.12%</strong></span><span class="sep">·</span>
-      <span>Fed Funds Rate <strong>3.50–3.75%</strong></span><span class="sep">·</span>
-      <span>30-Yr Mortgage <strong>6.51%</strong></span><span class="sep">·</span>
-      <span>10-Yr Treasury yield climbing</span><span class="sep">·</span>
-      <span>US-Iran 60-day ceasefire MOU awaiting Trump approval</span><span class="sep">·</span>
-      <span>Cubs END 10-game skid — WIN 10-4 vs. Pittsburgh</span><span class="sep">·</span>
-      <span>White Sox ROUT Twins 15-2 — Murakami HR No. 20</span><span class="sep">·</span>
-      <span>Blackhawks hold 4th overall pick in 2026 NHL Draft</span><span class="sep">·</span>
-      <span>Bulls seeking new head coach — interviews underway</span><span class="sep">·</span>
-      <span>Chicago Today: H 65° / L 53° — Partly cloudy</span><span class="sep">·</span>
-    </div>
+  <span class="ticker-label">Markets</span>
+  <div class="ticker-inner">
+    <span>S&amp;P 500 <b>▲ +0.59%</b></span>
+    <span>Nasdaq <b>▲ +0.82%</b></span>
+    <span>Russell 2000 <b>▲ +0.70%</b></span>
+    <span>Brent Crude <b>~$94/bbl</b></span>
+    <span>30-yr Mortgage <b>6.47%</b></span>
+    <span>PCE Inflation Apr <b>3.8% YoY</b></span>
+    <span>Cubs <b>W 10–4 PIT</b></span>
+    <span>White Sox <b>W 15–2 MIN</b></span>
+    <span>Chicago Hi/Lo <b>65° / 53°</b></span>
+    <span>US–Iran Truce Draft <b>Awaiting Trump</b></span>
+    <span>S&amp;P 500 <b>▲ +0.59%</b></span>
+    <span>Nasdaq <b>▲ +0.82%</b></span>
+    <span>Russell 2000 <b>▲ +0.70%</b></span>
+    <span>Brent Crude <b>~$94/bbl</b></span>
+    <span>30-yr Mortgage <b>6.47%</b></span>
+    <span>PCE Inflation Apr <b>3.8% YoY</b></span>
+    <span>Cubs <b>W 10–4 PIT</b></span>
+    <span>White Sox <b>W 15–2 MIN</b></span>
+    <span>Chicago Hi/Lo <b>65° / 53°</b></span>
+    <span>US–Iran Truce Draft <b>Awaiting Trump</b></span>
   </div>
 </div>
 
-<!-- MASTHEAD -->
+<!-- Masthead -->
 <header class="masthead">
-  <div class="masthead-eyebrow">Est. May 2026 &nbsp;·&nbsp; Chicago, Illinois &nbsp;·&nbsp; Every edition preserved</div>
-  <div class="masthead-title">The Daily <em>Ledger</em></div>
-  <div class="masthead-rule"></div>
+  <div class="masthead-eyebrow">Your Chicago Daily Briefing</div>
+  <div class="masthead-title">The Daily <span>Ledger</span></div>
+  <div class="masthead-subtitle">Markets · Macro · Law · Real Estate · Chicago Sports · Health &amp; Life</div>
   <div class="masthead-meta">
     <span>Thursday, May 28, 2026</span>
-    <span class="dot">·</span>
-    <span>Vol. I, No. 2</span>
-    <span class="dot">·</span>
-    <span>Balancing the Books on Everything That Matters</span>
+    <span class="edition-badge">Vol. I · No. 2</span>
+    <span>Chicago, Illinois</span>
   </div>
 </header>
 
 <div class="container">
 
-  <!-- ══════════════════════════════════ -->
-  <!--  LEAD: TOP STORIES                -->
-  <!-- ══════════════════════════════════ -->
-  <div class="section-head">
-    <span class="section-head-label">Today's Front Page</span>
-    <span class="section-head-line"></span>
-  </div>
+  <!-- ── WEATHER ────────────────────────────── -->
+  <div class="section-head"><h2>☁ Chicagoland Weather</h2><div class="section-rule"></div></div>
 
-  <div class="story-grid two-col section-block">
-    <div class="story-card lead">
-      <div class="story-label">World Affairs · Breaking</div>
-      <div class="story-hed">U.S. &amp; Iran Reach 60-Day Truce Extension — Trump Has Not Yet Signed Off</div>
-      <div class="story-dek">American and Iranian negotiators have agreed on a memorandum of understanding to extend the fragile ceasefire for 60 days and launch formal negotiations on Tehran's nuclear program, according to Axios and Bloomberg, citing officials on both sides. But President Trump has not yet given his approval — and the two countries exchanged fire in the Strait of Hormuz even as the deal was being finalized on Thursday. The MOU would be the most significant diplomatic movement since the war began on February 28. Key sticking points remain: the fate of Iran's enriched uranium stockpile, the reopening of the Strait of Hormuz, and billions in frozen Iranian assets. Iranian state TV claims the draft calls for U.S. military withdrawal; Washington calls that a fabrication. Trump said Wednesday he is "not satisfied" with terms and is "not in a rush."</div>
-      <div class="pull-quote">
-        <p>"This is an agreement to get everybody to the table. We will work out the details in the negotiations."</p>
-        <cite>— U.S. Official, via Axios, May 28, 2026</cite>
-      </div>
-      <div class="story-byline">Staff Report — World Desk</div>
-    </div>
-    <div class="story-card lead">
-      <div class="story-label">Markets · Record Territory</div>
-      <div class="story-hed">Stocks Push to Fresh Records — Tech Leads, Iran Ceasefire Talk Boosts Risk Appetite</div>
-      <div class="story-dek">Major U.S. equity benchmarks climbed to new intraday records Thursday morning, driven by tech momentum and renewed optimism over the Iran ceasefire MOU. The Nasdaq gained 0.82% and the S&P 500 was up 0.59%, both at session highs past midday. The Dow added a modest 0.12% after Tuesday's record close of 50,644. The ceasefire extension reports sparked a brief risk-on surge before skepticism set in over whether Trump would sign. Bank of America strategists warned this week that the relentless rally may be running out of room, and that investors should begin preparing for a possible summer pullback. Still, Micron extended its historic 19% Tuesday surge with another 3.5% gain Thursday, while Nvidia dipped 1% and Qualcomm fell 6% as the AI chip trade faced some rotation. Meta and Amazon rebounded from early losses and closed sharply higher Wednesday.</div>
-      <div class="story-byline">Staff Report — Markets Desk</div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════ -->
-  <!--  MARKETS                          -->
-  <!-- ══════════════════════════════════ -->
-  <hr class="section-rule">
-  <div class="section-head">
-    <span class="section-head-label">Markets &amp; Finance</span>
-    <span class="section-head-line"></span>
-  </div>
-
-  <div class="story-grid two-col section-block">
-    <div class="story-card">
-      <div class="story-label gold">Closing Levels — Wednesday, May 27</div>
-      <table class="market-table">
-        <thead>
-          <tr><th>Index</th><th>Close</th><th>Chg</th></tr>
-        </thead>
-        <tbody>
-          <tr><td>Dow Jones</td><td>50,644.28</td><td class="up">+0.36% ↑</td></tr>
-          <tr><td>S&amp;P 500</td><td>7,520.36</td><td class="up">+0.02% ↑</td></tr>
-          <tr><td>Nasdaq</td><td>26,674.73</td><td class="up">+0.07% ↑</td></tr>
-          <tr><td>Russell 2000</td><td>—</td><td class="up">Active ↑</td></tr>
-          <tr><td>10-Yr Treasury</td><td>~4.5%</td><td class="down">Elevated ↑</td></tr>
-          <tr><td>30-Yr Mortgage</td><td>6.51%</td><td class="down">+15bp wk/wk</td></tr>
-          <tr><td>Fed Funds Rate</td><td>3.50–3.75%</td><td class="muted">Unchanged</td></tr>
-        </tbody>
-      </table>
-    </div>
-    <div class="story-card">
-      <div class="story-label">Stock Spotlight</div>
-      <div class="story-hed">Micron Tops $1 Trillion — UBS Sees 100%+ More Upside</div>
-      <div class="story-dek">Micron Technology's staggering 19% surge Tuesday — the day it crossed a $1 trillion market cap following an aggressive UBS upgrade — continues to reverberate through the semiconductor space. UBS cites long-term AI chip agreements as the core driver. Other AI names including AMD and Qualcomm rode the wave up Tuesday before trimming gains Thursday. Snowflake also popped 25% after announcing Amazon Web Services will pay $6 billion to use Amazon's new Graviton AI chips. Salesforce, meanwhile, sold off after its own after-hours report.</div>
-      <div class="story-byline">Markets Desk</div>
-    </div>
-  </div>
-
-  <div class="story-grid section-block">
-    <div class="story-card">
-      <div class="story-label">BofA Warning</div>
-      <div class="story-hed">Bank of America Flags "Summer Pullback" Risk as Rally Shows Fatigue</div>
-      <div class="story-dek">U.S. stocks may be running out of room after a relentless post-Iran-war rally, according to Bank of America strategists who issued a note this week urging clients to start preparing for a seasonal retreat. The bank delayed its Fed rate-cut forecast all the way to July–September 2027, citing persistent inflation kept elevated by high energy prices from the ongoing conflict. BofA notes that energy prices — a direct byproduct of the Strait of Hormuz closure — have been the primary inflation driver keeping the Fed on hold at its current 3.50–3.75% target range. The Fed's April 29 meeting produced an unusually divided 8-4 vote to hold rates, the closest split since 1992, with dissents ranging from hawks who opposed any easing bias to a dove who wanted to cut immediately.</div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════ -->
-  <!--  MACRO / FED                      -->
-  <!-- ══════════════════════════════════ -->
-  <hr class="section-rule">
-  <div class="section-head">
-    <span class="section-head-label">Macroeconomics &amp; The Fed</span>
-    <span class="section-head-line"></span>
-  </div>
-
-  <div class="story-grid two-col section-block">
-    <div class="story-card">
-      <div class="story-label">Federal Reserve</div>
-      <div class="story-hed">Fed Holds at 3.50–3.75% — Inflation "Elevated in Part Due to Global Energy Prices"</div>
-      <div class="story-dek">The Federal Open Market Committee voted 8-4 on April 29 to maintain the federal funds rate at 3½–3¾ percent, its most contentious meeting since 1992. The official statement noted that inflation "is elevated, in part reflecting the recent increase in global energy prices" from the Middle East conflict. The committee acknowledged "a high level of uncertainty" from the Iran war. With Jerome Powell's term having expired in May, focus is now shifting to who leads the Fed next — and whether a new chair might push toward rate cuts in the 3.00–3.25% range, which iShares and others project as the eventual landing zone. BofA now doesn't see any cuts until mid-2027.</div>
-    </div>
-    <div class="story-card">
-      <div class="story-label">Housing &amp; Rates</div>
-      <div class="story-hed">Mortgage Rates Hit 6.51% — Freddie Mac Reports 15bp Weekly Jump</div>
-      <div class="story-dek">The 30-year fixed mortgage rate jumped to 6.51% as of May 21 per Freddie Mac, up 15 basis points in a week, as persistent inflation and rising Treasury yields apply upward pressure. The S&amp;P Cotality Case-Shiller index released May 26 showed national home prices grew just 0.7% over the past year. Bankrate reports the median existing home sold in April at $417,700, with a standard monthly payment eating about 24% of the typical family's income based on HUD's $106,800 median family income. Half of the nation's 50 largest metro areas saw price declines over the past year, per Zillow. Fannie Mae's May forecast pegs the 30-year rate at 6.3% for the rest of Q2, with a slow glide toward 6.1% by year-end — though that forecast was set before the latest mortgage-rate jump.</div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════ -->
-  <!--  TAX & ACCOUNTING                 -->
-  <!-- ══════════════════════════════════ -->
-  <hr class="section-rule">
-  <div class="section-head">
-    <span class="section-head-label">Tax &amp; Accounting</span>
-    <span class="section-head-line"></span>
-  </div>
-
-  <div class="story-grid two-col section-block">
-    <div class="story-card">
-      <div class="story-label">IRS / Planning</div>
-      <div class="story-hed">Higher Energy Prices Create Complex Tax Scenarios for Mid-Year Filers</div>
-      <div class="story-dek">With CPI running at approximately 3.8% — driven heavily by energy costs from the Strait of Hormuz closure — tax planners are revisiting estimated quarterly payment schedules for clients with variable income. The Fed's decision to hold rates has kept borrowing costs elevated, which affects deductibility calculations for businesses carrying floating-rate debt. CFOs and controllers should note that the April 29 FOMC statement's explicit reference to "global energy prices" as an inflation driver makes it increasingly likely that any near-term rate relief will be limited — keeping pressure on interest expense line items. For individuals, inflation at current levels may push more taxpayers into higher brackets ahead of any TCJA-related adjustments expected later in the year.</div>
-    </div>
-    <div class="story-card">
-      <div class="story-label">Real Estate Tax</div>
-      <div class="story-hed">Case-Shiller Flat at +0.7% YOY — What It Means for 1031 Exchanges and Property Tax Assessments</div>
-      <div class="story-dek">National home price appreciation of just 0.7% year-over-year — as reported by Case-Shiller on May 26 — has meaningful implications for real estate investors. For those holding properties in markets that saw price declines (roughly half of the top 50 metros per Zillow), there may be grounds to appeal property tax assessments if assessors haven't adjusted for the cooling. On the 1031 exchange front, the flat to negative price environment in many markets is giving investors more time to identify replacement properties without pressure from bidding wars, though rising mortgage rates compress cap rates and complicate deal math for leveraged buyers.</div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════ -->
-  <!--  REAL ESTATE                      -->
-  <!-- ══════════════════════════════════ -->
-  <hr class="section-rule">
-  <div class="section-head">
-    <span class="section-head-label">Real Estate</span>
-    <span class="section-head-line"></span>
-  </div>
-
-  <div class="story-grid section-block">
-    <div class="story-card">
-      <div class="story-label">Market Conditions</div>
-      <div class="story-hed">The "Lock-In Effect" Loosens — But Affordability Remains the Decade's Defining Challenge</div>
-      <div class="story-dek">With mortgage rates at 6.51% and home prices up a bare 0.7% nationally, the housing market is entering a new phase: inventory is slowly returning as sellers who locked in 3% rates gradually accept that rates aren't coming back to those levels. The median monthly principal and interest payment of $2,125 — based on a 6.56% rate and the $417,700 national median price with 20% down — still represents about 24% of a typical family's gross monthly income, just inside the traditional 25–28% affordability threshold. Forecasters broadly expect the 30-year rate to stay in the 6.0–6.4% range through the end of 2026, with a slow descent toward 5.5–5.7% by 2030 only if inflation normalizes. For buyers in Chicago, the market remains more affordable than coastal metros, making this an unusual window as national price pressure eases.</div>
-      <div class="story-byline">Real Estate Desk</div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════ -->
-  <!--  CURRENT EVENTS                   -->
-  <!-- ══════════════════════════════════ -->
-  <hr class="section-rule">
-  <div class="section-head">
-    <span class="section-head-label">Current Events</span>
-    <span class="section-head-line"></span>
-  </div>
-
-  <div class="story-grid three-col section-block">
-    <div class="story-card">
-      <div class="story-label">Iran War · Status</div>
-      <div class="story-hed">Skirmishes in the Strait Even as MOU Nears</div>
-      <div class="story-dek">The U.S. attacked Iranian drones and a launch site around the Strait of Hormuz on Thursday hours before news of the ceasefire MOU broke — underscoring how fragile the peace is. The proposed 60-day accord would restart formal nuclear negotiations and potentially reopen the Strait, which has been closed since Iran began counter-strikes in March following the February 28 attack. Iran insists any nuclear talks begin only after an MOU ending the war is signed. Washington says Iran gave verbal commitments on nuclear concessions "in the room" — but won't confirm until formal talks begin.</div>
-    </div>
-    <div class="story-card">
-      <div class="story-label">U.S. Politics</div>
-      <div class="story-hed">Federal Reserve Chair Vacancy: Who Leads the Fed Next?</div>
-      <div class="story-dek">Jerome Powell's term as Fed chair expired in May 2026, creating a leadership vacuum at one of the most consequential institutions in global finance. iShares and other analysts expect a new chair to push rates toward the 3.00–3.25% range over time, but timing depends heavily on whether inflation — currently running around 3.8% — begins to ease as Iran-related energy pressures potentially subside. The April 29 FOMC vote's unusual divisiveness (four dissents) reflects just how uncertain the policy path remains until new leadership is installed.</div>
-    </div>
-    <div class="story-card">
-      <div class="story-label">Global Economy</div>
-      <div class="story-hed">Energy Crisis "Worst in Decades" — Gulf States Press for Resolution</div>
-      <div class="story-dek">Gulf states have called the Iran-driven energy shock "the worst global energy crisis in decades." Pakistan and Qatar are actively mediating talks, with envoys in constant contact with U.S. special envoy Steve Witkoff. Trump's reported weekend social media post that a deal to reopen the Strait is "largely negotiated" and will be announced "shortly" raised brief market hopes, though subsequent ceasefire violations have tempered expectations. Analysts note that even a partial reopening of the Strait could meaningfully reduce oil prices and ease inflationary pressure globally.</div>
-    </div>
-  </div>
-
-  <!-- ══════════════════════════════════ -->
-  <!--  CHICAGO WEATHER                  -->
-  <!-- ══════════════════════════════════ -->
-  <hr class="section-rule">
-  <div class="section-head">
-    <span class="section-head-label">Chicagoland Weather</span>
-    <span class="section-head-line"></span>
-  </div>
-
-  <div class="weather-banner section-block">
-    <div style="font-family:'Source Sans 3',sans-serif;font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-bottom:12px;">NWS Chicago · 7-Day Outlook</div>
-    <div class="weather-grid">
-      <div class="weather-day">
-        <div class="weather-day-name">Today — Thu</div>
-        <div class="weather-icon">⛅</div>
-        <div class="weather-hi">65°</div>
-        <div class="weather-lo">Lo 53°</div>
-        <div class="weather-desc">Partly Cloudy</div>
-      </div>
-      <div class="weather-day">
-        <div class="weather-day-name">Friday</div>
-        <div class="weather-icon">🌤</div>
-        <div class="weather-hi">74°</div>
-        <div class="weather-lo">Lo 58°</div>
-        <div class="weather-desc">Mostly Sunny</div>
-      </div>
-      <div class="weather-day">
-        <div class="weather-day-name">Saturday</div>
-        <div class="weather-icon">🌥</div>
-        <div class="weather-hi">68°</div>
-        <div class="weather-lo">Lo 55°</div>
-        <div class="weather-desc">Partly Cloudy</div>
-      </div>
-      <div class="weather-day">
-        <div class="weather-day-name">Sunday</div>
-        <div class="weather-icon">🌤</div>
-        <div class="weather-hi">69°</div>
-        <div class="weather-lo">Lo 56°</div>
-        <div class="weather-desc">Partly Sunny</div>
-      </div>
-      <div class="weather-day">
-        <div class="weather-day-name">Monday</div>
-        <div class="weather-icon">🌤</div>
-        <div class="weather-hi">69°</div>
-        <div class="weather-lo">Lo 54°</div>
-        <div class="weather-desc">Partly Sunny</div>
+  <div class="weather-banner">
+    <div class="weather-row">
+      <div class="weather-temp">65°</div>
+      <div class="weather-details">
+        <div class="weather-desc">Partly Cloudy — Mild Thursday</div>
+        <div class="weather-sub">High 65° · Low 53° · Humidity ~73% · Chicago, IL — NWS Chicago, updated 4:51 AM CDT</div>
       </div>
     </div>
-    <div style="margin-top:12px;font-family:'Source Sans 3',sans-serif;font-size:11.5px;color:var(--cream2);">A mild late-May pattern settles over Chicagoland with no significant rain threats through the long weekend. Temperatures stay in the comfortable 65–74°F range through Sunday. Source: NWS Chicago / Fox 32 Chicago.</div>
-  </div>
-
-  <!-- ══════════════════════════════════ -->
-  <!--  CHICAGO SPORTS                   -->
-  <!-- ══════════════════════════════════ -->
-  <hr class="section-rule">
-  <div class="section-head">
-    <span class="section-head-label">Chicago Sports</span>
-    <span class="section-head-line"></span>
-  </div>
-
-  <div class="story-grid section-block" style="border:1px solid var(--rule);">
-
-    <div class="sports-item">
-      <div class="sports-team">⚾ Chicago Cubs — NL Central</div>
-      <div class="sports-hed">The Nightmare Ends: Cubs Rout Pirates 10-4, Snap 10-Game Losing Streak <span class="score-badge">W 10–4</span></div>
-      <div class="sports-body">A 2-14 free-fall that had Craig Counsell and president Jed Hoyer issuing reassuring press-conference platitudes in Pittsburgh came to a thunderous close Wednesday night. The Cubs piled up 14 hits, drew 7 walks, and sent 23 baserunners to the plate in the 10-4 thrashing of the Pirates, posting a team batting line of .341/.460/.561 for the night. The Cubs stand at 30-26, third in the NL Central. Facing Paul Skenes in the series finale on Thursday, the bats will need to stay awake. Game time: 6:40 PM CT, PNC Park. Skenes vs. TBD for Chicago.</div>
-    </div>
-
-    <div class="sports-item">
-      <div class="sports-team">⚾ Chicago White Sox — AL Central</div>
-      <div class="sports-hed">Murakami Hits HR No. 20 as Sox Blast Twins 15-2; Sandlin Retires 18 Straight in Debut <span class="score-badge">W 15–2</span></div>
-      <div class="sports-body">Chase Meidroth's first career grand slam and David Sandlin's electric major league debut — 18 consecutive outs after a leadoff homer — highlighted a statement 15-2 drubbing of Minnesota on Wednesday night. Munetaka Murakami went 2-for-4 with his AL-leading 20th home run. Per ESPN, those 20 homers through 55 career games place him second in MLB history at that point, trailing only Cody Bellinger's 22 (Dodgers, 2017). Sam Antonacci had 3 hits and 3 RBI; Randal Grichuk drove in 2. The Sox (series at 2-1 vs. Twins) host the rubber match Thursday: Taj Bradley (5-1, 2.77 ERA) vs. Erick Fedde (0-5, 5.47 ERA). First pitch 6:10 PM CT, Rate Field. A tough pitching matchup for the South Siders.</div>
-    </div>
-
-    <div class="sports-item">
-      <div class="sports-team">🏒 Chicago Blackhawks — NHL Off-Season</div>
-      <div class="sports-hed">Blackhawks Hold 4th Overall Pick — Mock Drafts Debate McKenna vs. Stenberg</div>
-      <div class="sports-body">With the 2026 NHL Draft approaching, the Blackhawks sit at the 4th overall spot after the Toronto Maple Leafs won the lottery for the coveted No. 1 pick (projected: Gavin McKenna). Six NHL scouts and executives surveyed by Corey Pronman of The Athletic see the Blackhawks selecting Swedish forward Ivar Stenberg at No. 4. However, a separate Athletic mock draft has Chicago going off the board — and the team itself views the pick as a potential franchise-changer. The Hawks also face a quiet June 1 deadline on whether to re-enter certain drafted players or let their rights lapse as UFAs. Connor Bedard continues to be the cornerstone of the rebuild.</div>
-    </div>
-
-    <div class="sports-item">
-      <div class="sports-team">🏀 Chicago Bulls — NBA Off-Season</div>
-      <div class="sports-hed">Bulls Cast Wide Net in Head Coach Search — Wes Unseld Jr. and Chris Quinn Among Candidates</div>
-      <div class="sports-body">Under new EVP of basketball operations Bryson Graham, the Chicago Bulls are conducting an expansive search for a head coach to succeed Hall of Famer Billy Donovan. Michael Scotto of HoopsHype reports that Erik Spoelstra's long-time Miami Heat associate head coach Chris Quinn has an interview scheduled with Graham. Additionally, former Washington Wizards head coach Wes Unseld Jr. — Donovan's top assistant — is also slated to interview for the position. The Bulls appear to be prioritizing candidates with ties to high-level NBA systems.</div>
-    </div>
-
-    <div class="sports-item">
-      <div class="sports-team">🐻 Chicago Bears — NFL Off-Season</div>
-      <div class="sports-hed">Bears Stadium Saga Drags On — Arlington Heights vs. Indiana Site the Final Two Options</div>
-      <div class="sports-body">The Chicago Bears stadium situation has narrowed to two sites: suburban Arlington Heights and an Indiana location near Hammond. Despite last-ditch appeals from Chicago Mayor Brandon Johnson to keep the team in the city, sources indicate the Bears' Stadium Committee has acknowledged the Illinois legislature is not moving expeditiously and another committee meeting is expected within two weeks. Meanwhile, the team is integrating 2026 NFL Draft picks including Day 2 receiver Zavion Thomas (LSU) and linebacker Keyshaun Elliott (Arizona State). Caleb Williams is also building chemistry with teammates ahead of training camp.</div>
-    </div>
-
-  </div>
-
-  <!-- ══════════════════════════════════ -->
-  <!--  HEALTH & WELLNESS                -->
-  <!-- ══════════════════════════════════ -->
-  <hr class="section-rule">
-  <div class="section-head">
-    <span class="section-head-label">Health &amp; Wellness</span>
-    <span class="section-head-line"></span>
-  </div>
-
-  <div class="health-grid section-block">
-    <div class="health-card">
-      <div class="health-tag">Neuroscience</div>
-      <div class="health-hed">USC Researchers Identify New Drug Candidates That May Reduce Alzheimer's Brain Inflammation</div>
-      <div class="health-body">Scientists at USC have identified potential new drug compounds that could reduce the brain inflammation associated with Alzheimer's disease, particularly in people carrying the high-risk APOE4 gene. The research focuses on a previously underappreciated inflammatory pathway, and the May 26 findings add to a growing body of evidence that neuroinflammation — not just amyloid plaques — is a central driver of cognitive decline.</div>
-    </div>
-    <div class="health-card">
-      <div class="health-tag">Nutrition Science</div>
-      <div class="health-hed">Beans and Legumes May Slash High Blood Pressure Risk by Nearly 30%</div>
-      <div class="health-body">A major global analysis of studies published this week found that people who regularly consume beans, lentils, chickpeas, tofu, and soy foods had nearly 30% lower risk of high blood pressure. The findings align with longstanding cardiovascular guidance but provide some of the strongest population-level evidence to date for plant-based legume intake as a blood pressure intervention — particularly relevant given that hypertension affects roughly 1 in 2 American adults.</div>
-    </div>
-    <div class="health-card">
-      <div class="health-tag">Vitamins &amp; Supplements</div>
-      <div class="health-hed">Scientists Raise New Cautions About Vitamin B12 and Cancer — "More Isn't Always Better"</div>
-      <div class="health-body">Researchers publishing May 27 in ScienceDaily are complicating the long-held view of Vitamin B12 as unconditionally beneficial. While B12 is essential for red blood cell production, DNA repair, and nerve function, scientists are finding that in high supplemental doses, the "more is better" assumption may not hold — with some studies suggesting possible links to certain cancer risks at supra-physiologic levels. The guidance: dietary B12 from food sources remains unambiguously healthy; mega-dose supplementation warrants scrutiny.</div>
-    </div>
-    <div class="health-card">
-      <div class="health-tag">Weight Loss Science</div>
-      <div class="health-hed">NIH Discovers Why Ozempic and Wegovy Weight Loss Eventually Plateaus</div>
-      <div class="health-body">New research from the National Institutes of Health reveals that semaglutide (Ozempic/Wegovy) sparks different responses inside appetite-controlling brain cells over time, helping explain why the dramatic initial weight loss from GLP-1 agonists tends to plateau. The findings open new avenues for combination therapies or dosing strategies that might sustain weight loss beyond the current plateau window — a finding of major commercial interest as the GLP-1 drug category continues to dominate pharmaceutical revenue globally.</div>
+    <div class="weather-forecast">
+      <div class="forecast-day">
+        <div class="day-label">Today</div>
+        <div class="day-icon">⛅</div>
+        <div class="day-hi">65°</div>
+        <div class="day-lo">53°</div>
+      </div>
+      <div class="forecast-day">
+        <div class="day-label">Fri</div>
+        <div class="day-icon">🌤</div>
+        <div class="day-hi">74°</div>
+        <div class="day-lo">58°</div>
+      </div>
+      <div class="forecast-day">
+        <div class="day-label">Sat</div>
+        <div class="day-icon">🌦</div>
+        <div class="day-hi">68°</div>
+        <div class="day-lo">55°</div>
+      </div>
+      <div class="forecast-day">
+        <div class="day-label">Sun</div>
+        <div class="day-icon">⛅</div>
+        <div class="day-hi">69°</div>
+        <div class="day-lo">56°</div>
+      </div>
     </div>
   </div>
 
-  <!-- ══════════════════════════════════ -->
-  <!--  EDITOR'S DISPATCH                -->
-  <!-- ══════════════════════════════════ -->
-  <hr class="section-rule">
+  <!-- ── LEAD STORY: IRAN PEACE DEAL ───────── -->
+  <div class="section-head"><h2>⚔ Current Events</h2><div class="section-rule"></div></div>
+
+  <div class="lead-story">
+    <div class="kicker">Breaking — US–Iran War</div>
+    <h2>Negotiators Believe They Have a Deal — Now It's Trump's Call</h2>
+    <p>American and Iranian negotiators have arrived at what they believe is a draft memorandum of understanding for a 60-day ceasefire extension, but the agreement still requires President Trump's sign-off before it becomes official. According to reporting from Axios confirmed by Al Jazeera and ABC News, the framework would reopen the Strait of Hormuz over a 60-day period — with Iran loosening its grip on the waterway and the U.S. pulling back its naval blockade in synchronized steps, returning the strait to its pre-war status quo. Iran would also pledge not to build a nuclear weapon, while the U.S. would discuss sanctions relief and the unfreezing of Iranian assets.</p>
+    <p style="margin-top:10px">The draft deal follows months of conflict that began on February 28 when joint U.S.–Israeli strikes launched Operation Epic Fury. Earlier this Thursday, Iran's IRGC claimed an attack on a U.S. air base in retaliation for American strikes near Bandar Abbas Airport. Markets have been moving on every Iran headline all week — with both oil prices and equities gyrating on successive war and peace reports.</p>
+  </div>
+
+  <div class="pull-quote">
+    <p>"The Strait of Hormuz will fully reopen over the course of 60 days — Iran loosening its grip, the U.S. pulling back its naval blockade in synchronized steps."</p>
+    <cite>— Draft MoU framework, as reported by Axios &amp; confirmed by U.S. officials</cite>
+  </div>
+
+  <div class="card">
+    <div class="kicker">Background</div>
+    <h3>How We Got Here: 90 Days of US–Iran Conflict</h3>
+    <p>Operation Epic Fury launched Feb. 28, 2026, with coordinated U.S.–Israeli airstrikes targeting Iranian nuclear facilities, military leadership (including the assassination of Supreme Leader Ali Khamenei), and infrastructure. Iran retaliated with missile and drone strikes on U.S. bases and allies. A two-week ceasefire was announced, but initial talks in Pakistan in April failed to yield a peace deal. Trump then extended the ceasefire open-endedly while maintaining a U.S. naval blockade. The conflict has driven Brent crude above $90, pushed PCE inflation to a three-year high of 3.8%, and roiled global markets across the spring.</p>
+  </div>
+
+  <!-- ── MARKETS ─────────────────────────────── -->
+  <div class="section-head"><h2>📈 Markets &amp; Finance</h2><div class="section-rule"></div></div>
+
+  <table class="markets-table">
+    <thead>
+      <tr>
+        <th>Index / Asset</th>
+        <th>Change</th>
+        <th>Context</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="name">S&amp;P 500</td>
+        <td class="up">▲ +0.59%</td>
+        <td>Near 6th straight gain; approaching all-time high</td>
+      </tr>
+      <tr>
+        <td class="name">Nasdaq</td>
+        <td class="up">▲ +0.82%</td>
+        <td>Tech-led; SNOW +25% on Amazon AWS deal</td>
+      </tr>
+      <tr>
+        <td class="name">Russell 2000</td>
+        <td class="up">▲ +0.70%</td>
+        <td>Small-caps outperforming on peace-deal optimism</td>
+      </tr>
+      <tr>
+        <td class="name">Dow Jones</td>
+        <td class="up">▲ ~flat</td>
+        <td>Dow barely budged; set new record May 27</td>
+      </tr>
+      <tr>
+        <td class="name">Brent Crude</td>
+        <td class="down">▼ pared gains</td>
+        <td>~$94/bbl; rally fading on Iran peace speculation</td>
+      </tr>
+      <tr>
+        <td class="name">30-Yr Treasury</td>
+        <td class="down">▼ yields dropped</td>
+        <td>Yield fell across curve; dollar softer vs. peers</td>
+      </tr>
+      <tr>
+        <td class="name">Snowflake (SNOW)</td>
+        <td class="up">▲ +25%</td>
+        <td>$6B Amazon AWS pact + earnings beat</td>
+      </tr>
+      <tr>
+        <td class="name">Shiller CAPE Ratio</td>
+        <td>⚠ Above 40</td>
+        <td>Only 2nd time in 100 years; '99 dot-com peak was the first</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="card gold-border">
+    <div class="kicker gold">Market Watch</div>
+    <h3>CAPE Above 40: Bull Market in "High-Risk" Territory</h3>
+    <p>The S&amp;P 500 is up 18.5% year-to-date and the Nasdaq has surged 28%, fueled by AI optimism. But the Shiller CAPE ratio has now exceeded 40 — only the second occurrence in 100 years, the first being the 1999 dot-com bubble peak. Strategist Bob Doll has called this a "high-risk bull market." Historically, a CAPE above 30 forecasts lower average annual returns over the following decade, and above 40 the data is limited — but it counsels caution. Markets appear to be pricing in near-perfection, even as inflation surges and the Fed holds rates steady.</p>
+  </div>
+
+  <!-- ── MACROECONOMICS / FED ───────────────── -->
+  <div class="section-head"><h2>🏛 Macro &amp; Federal Reserve</h2><div class="section-rule"></div></div>
+
+  <div class="card">
+    <div class="kicker">Inflation Alert</div>
+    <h3>PCE Hits 3.8% — Highest Since May 2023</h3>
+    <p>The Bureau of Economic Analysis reported Thursday that the headline PCE price index rose 0.4% in April month-over-month and accelerated to 3.8% year-over-year — matching expectations and the highest reading since May 2023. The Hormuz energy shock continued to reverberate through the consumer basket. Core PCE (ex food &amp; energy) edged up to 3.3% annually, also a multi-year high. In a separate release, Q1 GDP was revised down to 1.6% annualized growth from the initial 2.0% estimate — slowing growth alongside accelerating inflation is a stagflationary combination the new Fed leadership will have to navigate carefully.</p>
+  </div>
+
+  <div class="card gold-border">
+    <div class="kicker gold">Fed Transition</div>
+    <h3>Powell Out. Kevin Warsh In. And the Clock Is Already Ticking.</h3>
+    <p>Jerome Powell's two-term tenure as Federal Reserve chairman has ended. At his final press conference, he left Wall Street with a pointed summary of the challenge ahead: "The economic outlook remains highly uncertain, and the conflict in the Middle East has added to this uncertainty." He ruled out rate cuts for the foreseeable future, noting that tariffs and elevated energy prices could produce persistent inflation. Trump has nominated Kevin Warsh to replace him — a former Fed governor known for advocating for "central bank reform." Q1 GDP revised down to 1.6%, PCE at 3.8%, the 30-year Treasury yield near 5.18%: Warsh inherits a stagflationary tightrope.</p>
+  </div>
+
+  <div class="pull-quote">
+    <p>"The economic outlook remains highly uncertain, and the conflict in the Middle East has added to this uncertainty."</p>
+    <cite>— Jerome Powell, final press conference as Fed Chairman</cite>
+  </div>
+
+  <!-- ── REAL ESTATE ─────────────────────────── -->
+  <div class="section-head"><h2>🏠 Real Estate</h2><div class="section-rule"></div></div>
+
+  <div class="card">
+    <div class="kicker">Chicagoland Market</div>
+    <h3>Supply-Constrained But Strategically Navigable</h3>
+    <p>Chicago's housing market in 2026 remains defined by limited inventory and resilient buyer demand — but the extreme competition of 2021–23 has eased. Chicagoland had roughly 4,996 active listings in late April, historically constrained but improving. The median home price in Chicago proper has risen to around $409,200 — up 7.7% year-over-year — driven by a 28.8% inventory decline. For buyers, this is no longer a panic market, but it is not a buyer's market either. Neighborhood performance varies sharply: North Side lakefront communities command premiums and steady appreciation; South and West Side neighborhoods remain more volatile. Suburban Evanston and Oak Park continue to attract families priced out of the city.</p>
+  </div>
+
+  <div class="card gold-border">
+    <div class="kicker gold">Mortgage Rates</div>
+    <h3>30-Year Fixed: ~6.47–6.60% — War-Linked Pressure Persists</h3>
+    <p>The 30-year fixed mortgage rate sits at approximately 6.47–6.60% today, according to Fortune, U.S. News, and Bankrate — little changed from the prior day but elevated compared to February's ~6.0% level. The Iran war's upward pressure on oil prices has directly fed into inflation expectations, which drives mortgage rates higher. The Freddie Mac weekly average stands at 6.53%. The 15-year fixed is around 5.73–5.85%. Zillow has trimmed its 2026 home-sales growth forecast to 1.2% (from 4%) citing higher energy costs. For buyers: locking now vs. waiting for a rate drop requires weighing geopolitical resolution risk — a signed Iran deal could quickly bring rates lower.</p>
+  </div>
+
+  <!-- ── TAX & ACCOUNTING ────────────────────── -->
+  <div class="section-head"><h2>📋 Tax &amp; Accounting</h2><div class="section-rule"></div></div>
+
+  <div class="card">
+    <div class="kicker">Planning Note</div>
+    <h3>Stagflationary Environment Demands Fresh Tax Strategy Review</h3>
+    <p>With PCE at 3.8% and GDP growth slowing to 1.6%, the macro backdrop is shifting in ways that have real tax implications. Rising energy costs are flowing through to transportation and manufacturing, affecting business deductions and cost-basis calculations across supply chains. The personal savings rate has fallen to 2.6% of disposable income — near historical lows — signaling consumer financial stress that may affect estimated tax payment planning. With the Fed funds rate at 3.50%–3.75% and no rate cuts in sight, the after-tax yield on short-duration fixed income and money market funds remains meaningful. If an Iran peace deal materializes, watch for a rapid shift in energy-sector asset valuations. Conservative scenario planning for both outcomes is prudent.</p>
+  </div>
+
+  <!-- ── CHICAGO SPORTS ──────────────────────── -->
+  <div class="section-head"><h2>⚾ Chicago Sports</h2><div class="section-rule"></div></div>
+
+  <div class="sports-grid">
+    <div class="sport-card gold-top">
+      <div class="team-label">Chicago Cubs · MLB · Wed. May 27</div>
+      <div class="score-line">Cubs <span class="win">10</span> · Pirates 4</div>
+      <p class="sport-note">The 10-game losing streak is OVER. Ian Happ — Pittsburgh native — broke a 4-4 tie with a tiebreaking three-run homer in the 7th, then added a two-run single earlier. Drove in 5 total. Pinch-hitter Michael Conforto added a two-run shot to cap a 6-run inning. REC: 27–29. Thursday: Colin Rea vs. Paul Skenes in the series finale.</p>
+    </div>
+    <div class="sport-card">
+      <div class="team-label">Chicago White Sox · MLB · Wed. May 27</div>
+      <div class="score-line">Sox <span class="win">15</span> · Twins 2</div>
+      <p class="sport-note">Chase Meidroth hit his first career grand slam. Rookie David Sandlin struck out 4 in 6 innings in his MLB debut — retiring 18 consecutive batters at one point. Munetaka Murakami went 2-for-4 with a HR; his 20 homers tie for 2nd in MLB history through 55 career games. REC: 28–27. Thursday: Fedde vs. Bradley.</p>
+    </div>
+    <div class="sport-card">
+      <div class="team-label">Chicago Bulls · NBA · Draft Season</div>
+      <div class="score-line" style="font-size:16px;">Draft Capital Loading</div>
+      <p class="sport-note">The Bulls hold picks Nos. 4, 15, 38, and 56 in the upcoming 2026 NBA Draft. Head coach search ongoing after Billy Donovan's departure — Miami Heat associate head coach Chris Quinn is scheduled to interview with new EVP Bryson Graham. Wes Unseld Jr. also in the mix.</p>
+    </div>
+    <div class="sport-card">
+      <div class="team-label">Chicago Blackhawks · NHL · Draft Prep</div>
+      <div class="score-line" style="font-size:16px;">No. 4 Pick &amp; Prospect Intel</div>
+      <p class="sport-note">Hawks hold the No. 4 pick. NHL mock drafts have Chicago selecting Swedish forward Ivar Stenberg — though some scouts prefer him over projected #1 overall Gavin McKenna. Jack Pridham faces a June 1 college commitment deadline that will determine his draft status. Vegas swept Presidents Trophy winner Colorado 4-0.</p>
+    </div>
+    <div class="sport-card">
+      <div class="team-label">Chicago Bears · NFL · OTAs</div>
+      <div class="score-line" style="font-size:16px;">OTA Round 2 Begins</div>
+      <p class="sport-note">Day 128 of the Bears offseason. A new round of OTAs starts today through Friday. The Bears are in a race to get the PILOT/Megaprojects bill passed in Springfield for the proposed lakefront stadium. Only one Sunday Night Football game on the schedule so far this season — flex scheduling may change that.</p>
+    </div>
+  </div>
+
+  <!-- ── HEALTH & WELLNESS ───────────────────── -->
+  <div class="section-head"><h2>💊 Health &amp; Wellness</h2><div class="section-rule"></div></div>
+
+  <div class="health-item">
+    <div class="health-icon">🫘</div>
+    <div class="health-content">
+      <h4>Beans &amp; Soy: A 30% Cut in High Blood Pressure Risk</h4>
+      <p>A major new analysis published this week finds that eating more beans, lentils, chickpeas, tofu, and other soy foods could reduce the risk of high blood pressure by nearly 30%. Researchers point to legumes' combination of magnesium, potassium, fiber, and plant protein as the likely mechanism. For Chicagoans managing diet amid a stressful economic environment, the finding is straightforward and actionable: add more legumes to your weekly rotation.</p>
+    </div>
+  </div>
+
+  <div class="health-item">
+    <div class="health-icon">🧠</div>
+    <div class="health-content">
+      <h4>USC Scientists Identify Hidden Alzheimer's Trigger — And a Potential Shutoff</h4>
+      <p>USC researchers announced this week they have identified new drug compounds that may reduce the brain inflammation associated with Alzheimer's disease — particularly in women, who are disproportionately affected. The compounds target a newly identified inflammatory pathway distinct from amyloid plaques, potentially opening a complementary treatment front. The work is in early-stage development but represents one of the more promising mechanistic findings in recent memory.</p>
+    </div>
+  </div>
+
+  <div class="health-item">
+    <div class="health-icon">🧬</div>
+    <div class="health-content">
+      <h4>Ozempic / Wegovy: Why the Weight Loss Eventually Plateaus</h4>
+      <p>Scientists have now identified why semaglutide (Ozempic, Wegovy) causes weight loss to slow and eventually stall after an initial dramatic drop. The body's metabolic adaptation — reduced resting energy expenditure — appears to counteract the drug's appetite-suppression effects at higher weight-loss levels. A separate analysis confirmed semaglutide works remarkably well in adults over 65, improving heart and metabolic health alongside weight reduction. The plateau research may inform next-generation dosing protocols.</p>
+    </div>
+  </div>
+
+  <div class="health-item">
+    <div class="health-icon">⚡</div>
+    <div class="health-content">
+      <h4>Neurowellness: 2026's Top Wellness Trend Is Nervous System Optimization</h4>
+      <p>The Global Wellness Summit named "precision nervous system optimization" the top wellness trend of 2026 — the ability to objectively measure and retrain stress and resilience patterns in real time. Wearables that track heart rate variability, breath-pattern biofeedback, and nervous-system-calibrating apps are central to the movement. The shift reflects a broader cultural turn away from quick fixes toward sustainable, science-based approaches to mental-physical integration — particularly relevant given elevated economic and geopolitical stress levels.</p>
+    </div>
+  </div>
+
+  <!-- ── EDITOR'S DISPATCH ───────────────────── -->
   <div class="dispatch">
-    <div class="dispatch-head">Editor's Dispatch</div>
-    <div class="dispatch-body">
-      Thursday feels like a hinge day. The Cubs snapped their miserable 10-game skid last night with the kind of offensive outburst that makes you wonder where it was hiding for two weeks — 23 baserunners, .341 as a team, the whole ugly losing streak gone in one evening. The White Sox, meanwhile, are quietly constructing one of the better stories in the American League: Murakami's 20 homers through 55 career games is the stuff of trivia books, and a kid making his debut retired 18 straight. These are good days on the diamond, even if the broader world remains unsettled. The Iran ceasefire MOU is either the beginning of the end of a three-month energy crisis or another in a long series of false dawns — we won't know until Trump signs or doesn't. Markets are betting on resolution; Bank of America is not so sure. Stay balanced, as always. The Ledger will be here in the morning.
-    </div>
-    <div class="dispatch-sig">— The Editor, Chicago · Thursday, May 28, 2026</div>
+    <div class="dispatch-head">Editor's Dispatch — May 28, 2026</div>
+    <p>Today's edition arrives on a day that history may remember as a hinge point. Somewhere in a negotiating room, a draft memorandum of understanding sits unsigned — a document that could reopen one of the world's most critical shipping lanes, bring oil prices down, loosen inflation's grip, and potentially end a conflict that has rattled every market and household budget since late February. Whether Trump signs off or the talks collapse, the waiting itself is the story today.</p>
+    <p style="margin-top:12px">On the Chicago front: the Cubs ended their 10-game losing streak last night with Ian Happ coming through in his hometown Pittsburgh. Cubs fans needed that. The Sox, meanwhile, demolished the Twins 15-2 with a gem from a debutant pitcher. Two Chicago baseball teams, two wins on the same night. Take it.</p>
+    <p style="margin-top:12px">Watch the Iran headline. Watch the bond market. And watch your 30-year mortgage rate — if a deal materializes, it could move fast in your favor.</p>
+    <div class="sig">— The Daily Ledger, Chicago</div>
   </div>
 
 </div><!-- /container -->
 
 <footer>
-  The Daily Ledger &nbsp;·&nbsp; Chicago, Illinois &nbsp;·&nbsp; Thursday, May 28, 2026 &nbsp;·&nbsp; Vol. I, No. 2
+  The Daily Ledger &nbsp;·&nbsp; Chicago, Illinois &nbsp;·&nbsp; Vol. I, No. 2 &nbsp;·&nbsp; Thursday, May 28, 2026
   <br><br>
-  <a href="https://unclejim7.github.io/The-Daily-Ledger">unclejim7.github.io/The-Daily-Ledger</a>
+  <a href="https://unclejim7.github.io/The-Daily-Ledger" style="color:var(--gold)">unclejim7.github.io/The-Daily-Ledger</a>
   &nbsp;·&nbsp;
-  <a href="archive.html">Archive</a>
+  <a href="archive.html" style="color:var(--muted)">Archive</a>
 </footer>
 
 </body>
