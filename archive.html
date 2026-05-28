@@ -4,202 +4,181 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Daily Ledger — Archive</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg:     #141210;
-    --bg2:    #1c1916;
-    --bg3:    #242018;
-    --rule:   #3a342c;
-    --cream:  #e8dfc8;
-    --muted:  #9a9080;
+    --bg: #141210;
+    --bg2: #1c1916;
+    --bg3: #231f1b;
+    --bg4: #2a2520;
+    --text: #e8dfc8;
+    --text-muted: #a89880;
     --accent: #c8481a;
-    --gold:   #c9a227;
-    --gold2:  #e6c060;
+    --gold: #c9a227;
+    --gold-dim: #8a6e1a;
+    --rule: #3a3028;
+    --rule-bright: #5a4838;
   }
-  * { box-sizing: border-box; margin: 0; padding: 0; }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     background: var(--bg);
-    color: var(--cream);
+    color: var(--text);
     font-family: 'Source Sans 3', sans-serif;
     min-height: 100vh;
   }
-
-  /* NAV */
   .top-nav {
-    background: var(--bg2);
-    border-bottom: 1px solid var(--rule);
-    padding: 8px 20px;
+    background: var(--bg3);
+    border-bottom: 1px solid var(--rule-bright);
+    padding: 10px 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     font-size: 12px;
-  }
-  .top-nav a {
-    color: var(--gold);
-    text-decoration: none;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
-    font-size: 11px;
   }
-  .top-nav a:hover { color: var(--gold2); }
-
-  /* MASTHEAD */
+  .top-nav a { color: var(--gold); text-decoration: none; }
+  .top-nav a:hover { color: var(--accent); }
   .masthead {
+    background: var(--bg);
+    border-bottom: 3px double var(--rule-bright);
+    padding: 30px 24px 20px;
     text-align: center;
-    padding: 32px 20px 20px;
-    border-bottom: 3px double var(--gold);
   }
-  .masthead-logo {
+  .masthead h1 {
     font-family: 'Playfair Display', serif;
+    font-size: clamp(32px, 6vw, 60px);
     font-weight: 900;
-    font-size: clamp(32px, 7vw, 56px);
-    letter-spacing: 0.04em;
-    color: var(--cream);
+    color: var(--text);
   }
-  .masthead-logo span { color: var(--gold); }
+  .masthead h1 span { color: var(--gold); }
   .masthead-sub {
-    font-size: 12px;
-    color: var(--muted);
-    letter-spacing: 0.14em;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    margin-top: 6px;
+    color: var(--text-muted);
+    margin-top: 8px;
   }
-
-  /* CONTAINER */
-  .container {
-    max-width: 720px;
-    margin: 0 auto;
-    padding: 30px 20px 60px;
-  }
-
-  .year-label {
+  .container { max-width: 720px; margin: 0 auto; padding: 32px 20px 60px; }
+  .month-group { margin-bottom: 36px; }
+  .month-label {
     font-family: 'Playfair Display', serif;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 700;
     color: var(--gold);
     margin-bottom: 12px;
-    padding-bottom: 6px;
-    border-bottom: 1px solid var(--rule);
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule-bright);
   }
-
-  .month-block { margin-bottom: 28px; }
-
-  .month-label {
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.16em;
-    text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 8px;
-  }
-
-  .edition-list { list-style: none; }
-
-  .edition-item {
+  .edition-entry {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 10px 14px;
+    padding: 14px 16px;
     background: var(--bg2);
     border: 1px solid var(--rule);
-    border-radius: 3px;
-    margin-bottom: 6px;
-    transition: border-color 0.15s;
+    margin-bottom: 8px;
+    gap: 12px;
+    flex-wrap: wrap;
   }
-  .edition-item:hover { border-color: var(--gold); }
-
   .edition-date {
-    font-family: 'Playfair Display', serif;
     font-size: 15px;
-    font-weight: 700;
-    color: var(--cream);
+    font-weight: 600;
+    color: var(--text);
   }
   .edition-dow {
-    font-size: 11px;
-    color: var(--muted);
-    letter-spacing: 0.08em;
-    margin-top: 1px;
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 2px;
   }
-  .edition-link {
-    text-decoration: none;
-    color: var(--gold);
-    font-size: 11px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    border: 1px solid var(--gold);
-    padding: 4px 10px;
-    border-radius: 2px;
-    transition: background 0.15s;
-  }
-  .edition-link:hover {
-    background: var(--gold);
-    color: var(--bg);
-  }
-
-  .latest-badge {
-    display: inline-block;
+  .badge-latest {
     background: var(--accent);
     color: #fff;
     font-size: 9px;
     font-weight: 700;
     letter-spacing: 0.12em;
     text-transform: uppercase;
-    padding: 2px 6px;
+    padding: 3px 8px;
     border-radius: 2px;
-    margin-left: 8px;
-    vertical-align: middle;
   }
-
-  footer {
-    text-align: center;
-    font-size: 10px;
-    color: var(--muted);
+  .read-btn {
+    display: inline-block;
+    background: var(--bg4);
+    border: 1px solid var(--rule-bright);
+    color: var(--gold);
+    font-size: 12px;
+    font-weight: 700;
     letter-spacing: 0.08em;
-    border-top: 1px solid var(--rule);
-    padding: 16px 20px;
+    text-transform: uppercase;
+    padding: 7px 18px;
+    text-decoration: none;
+    transition: background 0.15s, border-color 0.15s;
   }
+  .read-btn:hover {
+    background: var(--accent);
+    border-color: var(--accent);
+    color: #fff;
+  }
+  .footer {
+    text-align: center;
+    font-size: 11px;
+    color: var(--text-muted);
+    padding: 20px;
+    border-top: 1px solid var(--rule);
+  }
+  .footer a { color: var(--gold); text-decoration: none; }
 </style>
 </head>
 <body>
 
-<div class="top-nav">
-  <span style="color:var(--muted);font-size:11px;letter-spacing:0.08em;">THE DAILY LEDGER</span>
+<nav class="top-nav">
   <a href="index.html">← Today's Edition</a>
-</div>
+  <span>The Daily Ledger · Archive</span>
+  <span style="color:var(--text-muted);">All Editions</span>
+</nav>
 
-<div class="masthead">
-  <div class="masthead-logo">The Daily <span>Ledger</span></div>
-  <div class="masthead-sub">Complete Archive — Every Edition</div>
-</div>
+<header class="masthead">
+  <h1>The Daily <span>Ledger</span></h1>
+  <div class="masthead-sub">Complete Edition Archive · Chicago, Illinois</div>
+</header>
 
 <div class="container">
 
-  <div class="year-label">2026</div>
-
-  <div class="month-block">
+  <div class="month-group">
     <div class="month-label">May 2026</div>
-    <ul class="edition-list">
 
-      <li class="edition-item">
-        <div>
-          <div class="edition-date">May 27, 2026 <span class="latest-badge">Latest</span></div>
-          <div class="edition-dow">Wednesday</div>
-        </div>
-        <a href="2026-05-27.html" class="edition-link">Read →</a>
-      </li>
+    <div class="edition-entry">
+      <div>
+        <div class="edition-date">May 28, 2026 <span class="badge-latest">Latest</span></div>
+        <div class="edition-dow">Thursday — Vol. I, No. 2</div>
+      </div>
+      <a class="read-btn" href="2026-05-28.html">Read →</a>
+    </div>
 
-      <!-- NEW EDITIONS GET ADDED ABOVE THIS LINE -->
+    <div class="edition-entry">
+      <div>
+        <div class="edition-date">May 27, 2026</div>
+        <div class="edition-dow">Wednesday — Vol. I, No. 1</div>
+      </div>
+      <a class="read-btn" href="2026-05-27.html">Read →</a>
+    </div>
 
-    </ul>
   </div>
+
+  <p style="color:var(--text-muted);font-size:13px;text-align:center;margin-top:20px;">
+    New editions appear here each morning. Upload the dated HTML file to the GitHub repo to preserve each issue permanently.
+  </p>
 
 </div>
 
-<footer>
-  The Daily Ledger &nbsp;·&nbsp; Chicago, Illinois &nbsp;·&nbsp; Every edition preserved
+<footer class="footer">
+  <strong>The Daily Ledger</strong> ·
+  <a href="index.html">Today's Edition</a> ·
+  <a href="https://unclejim7.github.io/The-Daily-Ledger" target="_blank">Live Site</a>
 </footer>
 
 </body>
