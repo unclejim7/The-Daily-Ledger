@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Ledger — Wednesday, May 27, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Source+Serif+4:ital,opsz,wght@0,8..60,300;0,8..60,400;0,8..60,600;1,8..60,300;1,8..60,400&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:       #141210;
+    --bg2:      #1c1917;
+    --bg3:      #242220;
+    --border:   #2e2b27;
+    --text:     #e8e0d4;
+    --muted:    #8a8070;
+    --accent:   #c94f28;
+    --gold:     #c9972a;
+    --gold2:    #f0c55a;
+    --cream:    #ede5d6;
+    --rule:     #3a3530;
+  }
+
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Source Serif 4', Georgia, serif;
+    font-size: 15px;
+    line-height: 1.65;
+    min-height: 100vh;
+  }
+
+  /* ── MASTHEAD ── */
+  .masthead {
+    background: var(--bg);
+    border-bottom: 3px double var(--gold);
+    padding: 28px 20px 18px;
+    text-align: center;
+    position: relative;
+  }
+  .masthead-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: .06em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+    flex-wrap: wrap;
+    gap: 6px;
+  }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(36px, 8vw, 82px);
+    font-weight: 900;
+    letter-spacing: -.01em;
+    color: var(--cream);
+    line-height: 1;
+    margin-bottom: 6px;
+  }
+  .masthead-rule {
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+    margin: 10px auto;
+    max-width: 600px;
+  }
+  .masthead-sub {
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 13px;
+    color: var(--gold);
+    letter-spacing: .12em;
+  }
+
+  /* ── NAV RIBBON ── */
+  .nav-ribbon {
+    background: var(--accent);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0;
+    overflow: hidden;
+  }
+  .nav-ribbon a {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    font-weight: 500;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+    padding: 7px 16px;
+    border-right: 1px solid rgba(255,255,255,.2);
+    transition: background .2s;
+  }
+  .nav-ribbon a:hover { background: rgba(0,0,0,.2); }
+
+  /* ── MAIN GRID ── */
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 24px 16px 60px;
+  }
+
+  /* ── SECTION HEADER ── */
+  .section-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin: 32px 0 16px;
+  }
+  .section-header .tag {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    background: var(--accent);
+    color: #fff;
+    padding: 3px 10px;
+    flex-shrink: 0;
+  }
+  .section-header .line {
+    flex: 1;
+    height: 1px;
+    background: var(--rule);
+  }
+  .section-header .line.gold { background: var(--gold); opacity: .4; }
+
+  /* ── WEATHER BANNER ── */
+  .weather-banner {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-top: 3px solid var(--gold);
+    border-radius: 2px;
+    padding: 18px 20px;
+    margin-bottom: 24px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 20px;
+    align-items: center;
+  }
+  .weather-main {
+    text-align: center;
+  }
+  .weather-main .temp {
+    font-family: 'Playfair Display', serif;
+    font-size: 64px;
+    font-weight: 700;
+    color: var(--gold2);
+    line-height: 1;
+  }
+  .weather-main .condition {
+    font-family: 'DM Mono', monospace;
+    font-size: 11px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 4px;
+  }
+  .weather-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+    gap: 10px;
+  }
+  .weather-item label {
+    display: block;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: .14em;
+    text-transform: uppercase;
+    color: var(--muted);
+    margin-bottom: 2px;
+  }
+  .weather-item span {
+    font-size: 14px;
+    color: var(--cream);
+    font-weight: 600;
+  }
+  .weather-forecast {
+    margin-top: 16px;
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .fc-day {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 8px 12px;
+    text-align: center;
+    flex: 1;
+    min-width: 80px;
+  }
+  .fc-day .day-name {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .fc-day .hi { color: var(--gold2); font-weight: 700; font-size: 15px; }
+  .fc-day .lo { color: var(--muted); font-size: 12px; }
+  .fc-day .desc { font-size: 11px; color: var(--text); margin-top: 2px; }
+
+  /* ── MARKETS BAR ── */
+  .markets-bar {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--gold);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+    margin-bottom: 24px;
+    border-radius: 2px;
+    overflow: hidden;
+  }
+  .mkt-item {
+    padding: 12px 20px;
+    border-right: 1px solid var(--border);
+    min-width: 110px;
+  }
+  .mkt-item .sym {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .1em;
+    color: var(--muted);
+    text-transform: uppercase;
+  }
+  .mkt-item .val {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--cream);
+  }
+  .mkt-item .chg.up   { color: #6ec97e; font-size: 12px; font-family: 'DM Mono', monospace; }
+  .mkt-item .chg.down { color: #e05555; font-size: 12px; font-family: 'DM Mono', monospace; }
+  .mkt-item .chg.flat { color: var(--muted); font-size: 12px; font-family: 'DM Mono', monospace; }
+
+  /* ── ARTICLE GRID ── */
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  .grid-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  .grid-wide {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  .grid-wide-left {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    margin-bottom: 24px;
+  }
+  @media (max-width: 700px) {
+    .grid-3, .grid-2, .grid-wide, .grid-wide-left { grid-template-columns: 1fr; }
+  }
+
+  /* ── ARTICLE CARD ── */
+  .card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  .card.accent-top { border-top: 3px solid var(--accent); }
+  .card.gold-top   { border-top: 3px solid var(--gold); }
+  .card-kicker {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: .16em;
+    text-transform: uppercase;
+    color: var(--accent);
+  }
+  .card-kicker.gold { color: var(--gold); }
+  .card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 1.25;
+    color: var(--cream);
+  }
+  .card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--cream);
+  }
+  .card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .card .byline {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: .1em;
+    color: var(--muted);
+    margin-top: auto;
+    padding-top: 8px;
+    border-top: 1px solid var(--rule);
+    text-transform: uppercase;
+  }
+
+  /* ── LEAD STORY ── */
+  .lead-card {
+    background: var(--bg2);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--accent);
+    border-radius: 2px;
+    padding: 28px;
+    margin-bottom: 24px;
+  }
+  .lead-card .kicker {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 10px;
+  }
+  .lead-card h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(24px, 4vw, 36px);
+    font-weight: 900;
+    line-height: 1.15;
+    color: var(--cream);
+    margin-bottom: 10px;
+  }
+  .lead-card .deck {
+    font-size: 16px;
+    font-style: italic;
+    color: var(--gold);
+    margin-bottom: 14px;
+    line-height: 1.5;
+  }
+  .lead-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  /* ── SPORTS SCORES ── */
+  .scores-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 20px;
+  }
+  .score-chip {
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    border-radius: 2px;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-width: 180px;
+  }
+  .score-chip .teams { flex: 1; }
+  .score-chip .team-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+    padding: 1px 0;
+  }
+  .score-chip .team-row .name { font-weight: 600; color: var(--cream); }
+  .score-chip .team-row .pts { font-family: 'DM Mono', monospace; font-weight: 500; color: var(--gold2); }
+  .score-chip .status {
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: .1em;
+    color: var(--muted);
+    text-transform: uppercase;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    align-self: center;
+  }
+
+  /* ── STAT ITEMS ── */
+  .stat-list { list-style: none; }
+  .stat-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+    border-bottom: 1px solid var(--rule);
+    font-size: 13px;
+    gap: 8px;
+  }
+  .stat-list li .label { color: var(--text); flex: 1; }
+  .stat-list li .value {
+    font-family: 'DM Mono', monospace;
+    font-weight: 500;
+    color: var(--gold2);
+    white-space: nowrap;
+  }
+  .stat-list li .note {
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+  }
+
+  /* ── PULL QUOTE ── */
+  .pull-quote {
+    background: var(--bg3);
+    border-left: 4px solid var(--gold);
+    padding: 16px 20px;
+    margin: 12px 0;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    font-size: 16px;
+    color: var(--gold);
+    line-height: 1.5;
+  }
+
+  /* ── DIVIDER ── */
+  .divider {
+    height: 1px;
+    background: var(--rule);
+    margin: 32px 0;
+  }
+  .divider.gold { background: linear-gradient(to right, transparent, var(--gold) 40%, transparent); opacity: .5; }
+
+  /* ── TAG BADGE ── */
+  .tag-badge {
+    display: inline-block;
+    font-family: 'DM Mono', monospace;
+    font-size: 9px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    background: var(--bg3);
+    border: 1px solid var(--border);
+    color: var(--muted);
+    padding: 2px 8px;
+    border-radius: 2px;
+  }
+
+  /* ── FOOTER ── */
+  .footer {
+    background: var(--bg2);
+    border-top: 3px double var(--gold);
+    padding: 24px 20px;
+    text-align: center;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    color: var(--muted);
+    letter-spacing: .1em;
+    text-transform: uppercase;
+  }
+  .footer strong { color: var(--gold); }
+
+  /* ── ALERT BANNER ── */
+  .alert-bar {
+    background: linear-gradient(135deg, #6b1a0d, #9e2b12);
+    border-bottom: 2px solid var(--accent);
+    padding: 8px 20px;
+    font-family: 'DM Mono', monospace;
+    font-size: 10px;
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    color: #ffd4c8;
+    text-align: center;
+  }
+  .alert-bar span { color: #fff; font-weight: 500; }
+</style>
+</head>
+<body>
+
+<!-- ALERT -->
+<div class="alert-bar">
+  ⚠ <span>Breaking:</span> U.S. launches fresh strikes on Iran — Brent crude near $99/bbl — markets volatile at open
+</div>
+
+<!-- MASTHEAD -->
+<header class="masthead">
+  <div class="masthead-top">
+    <span>Est. 2026 &bull; Chicago, Illinois</span>
+    <span>Wednesday, May 27, 2026</span>
+    <span>Vol. I &bull; No. 1</span>
+  </div>
+  <h1>The Daily Ledger</h1>
+  <div class="masthead-rule"></div>
+  <div class="masthead-sub">Your curated briefing on markets, money, tax, real estate, sports &amp; Chicago life</div>
+</header>
+
+<!-- NAV -->
+<nav class="nav-ribbon">
+  <a href="#markets">Markets</a>
+  <a href="#macro">Economy</a>
+  <a href="#geopolitics">Geopolitics</a>
+  <a href="#realestate">Real Estate</a>
+  <a href="#tax">Tax &amp; Accounting</a>
+  <a href="#sports">Chicago Sports</a>
+  <a href="#health">Health</a>
+  <a href="#weather">Weather</a>
+</nav>
+
+<main class="container">
+
+  <!-- ══════════ WEATHER ══════════ -->
+  <div class="section-header" id="weather">
+    <div class="tag">☁ Chicagoland Weather</div>
+    <div class="line gold"></div>
+  </div>
+
+  <div class="weather-banner">
+    <div class="weather-main">
+      <div class="temp">58°</div>
+      <div class="condition">☀ Sunny</div>
+    </div>
+    <div>
+      <div class="weather-details">
+        <div class="weather-item"><label>Condition</label><span>Sunny, clearing</span></div>
+        <div class="weather-item"><label>High / Low</label><span>58° / 50°F</span></div>
+        <div class="weather-item"><label>Wind</label><span>WNW 5–10 mph</span></div>
+        <div class="weather-item"><label>Humidity</label><span>66%</span></div>
+        <div class="weather-item"><label>Visibility</label><span>10 mi</span></div>
+        <div class="weather-item"><label>Overnight</label><span>20% chance showers after 3am</span></div>
+      </div>
+      <div class="weather-forecast">
+        <div class="fc-day"><div class="day-name">Wed</div><div class="hi">58°</div><div class="lo">50°</div><div class="desc">Sunny</div></div>
+        <div class="fc-day"><div class="day-name">Thu</div><div class="hi">73°</div><div class="lo">58°</div><div class="desc">Mostly Sunny</div></div>
+        <div class="fc-day"><div class="day-name">Fri Night</div><div class="hi">—</div><div class="lo">58°</div><div class="desc">T-Storm Chance</div></div>
+        <div class="fc-day"><div class="day-name">Sat</div><div class="hi">79°</div><div class="lo">57°</div><div class="desc">Showers Likely</div></div>
+        <div class="fc-day"><div class="day-name">Sun</div><div class="hi">72°</div><div class="lo">61°</div><div class="desc">Chance T-Storms</div></div>
+        <div class="fc-day"><div class="day-name">Mon</div><div class="hi">86°</div><div class="lo">65°</div><div class="desc">Breezy, Warm</div></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ MARKETS ══════════ -->
+  <div class="section-header" id="markets">
+    <div class="tag">📈 Markets</div>
+    <div class="line"></div>
+  </div>
+
+  <div class="markets-bar">
+    <div class="mkt-item">
+      <div class="sym">S&amp;P 500</div>
+      <div class="val">↑ 0.61%</div>
+      <div class="chg up">▲ Prior Session</div>
+    </div>
+    <div class="mkt-item">
+      <div class="sym">Nasdaq</div>
+      <div class="val">↑ 1.17%</div>
+      <div class="chg up">▲ Tech Led</div>
+    </div>
+    <div class="mkt-item">
+      <div class="sym">Russell 2k</div>
+      <div class="val">↑ 1.77%</div>
+      <div class="chg up">▲ Strongest</div>
+    </div>
+    <div class="mkt-item">
+      <div class="sym">Brent Crude</div>
+      <div class="val">$98.16</div>
+      <div class="chg down">▼ –1.43% Wed</div>
+    </div>
+    <div class="mkt-item">
+      <div class="sym">WTI Crude</div>
+      <div class="val">$92.23</div>
+      <div class="chg down">▼ –1.77% Wed</div>
+    </div>
+    <div class="mkt-item">
+      <div class="sym">10-Yr Yield</div>
+      <div class="val">4.49%</div>
+      <div class="chg flat">▼ from 4.558%</div>
+    </div>
+    <div class="mkt-item">
+      <div class="sym">30-Yr Mortgage</div>
+      <div class="val">6.34%</div>
+      <div class="chg flat">– Freddie: 6.51%</div>
+    </div>
+  </div>
+
+  <!-- LEAD MARKET STORY -->
+  <div class="lead-card" id="geopolitics">
+    <div class="kicker">⚔ Geopolitics &bull; Top Story</div>
+    <h2>U.S. Strikes Iran Again, Rattling a Peace Deal That Seemed Within Reach</h2>
+    <div class="deck">Fresh American military strikes Monday jolted oil markets back above $99 a barrel, just days after diplomatic signals had pushed crude below $96 and sparked hope the three-month war might soon end.</div>
+    <p>The U.S.-Iran conflict, which began with joint U.S.-Israeli strikes on February 28, has been among the most disruptive geopolitical episodes for global energy in decades. Brent crude surged more than 55% from around $72/bbl at the outset to a peak near $120, though prices have since eased back as both sides floated diplomatic language.</p>
+    <p>On Monday, the White House confirmed new strikes. Brent touched $100 before pulling back to around $99. By Wednesday morning, crude had retreated further — Brent to $98.16 and WTI to $92.23 — as traders awaited clarity on talks. Secretary of State Marco Rubio said "good signs" of a deal exist, but warned any agreement would be "unfeasible" if Iran pursues permanent control of Strait of Hormuz shipping lanes.</p>
+    <div class="pull-quote">"Energy executives warned that full normalization of Middle East oil supply may not occur until 2027 due to the scale of disruptions caused by the conflict." — MUFG</div>
+    <p>For American consumers, the war has pushed gas prices up roughly 28% year-over-year and contributed to April's inflation reading of 3.8% — the highest in three years. Mortgage rates climbed in tandem, as bond markets repriced risk. Five Fed speeches are scheduled this week, and Tuesday's Consumer Confidence report will be watched closely for the domestic fallout.</p>
+  </div>
+
+  <!-- MARKETS DETAIL GRID -->
+  <div class="grid-3">
+    <div class="card accent-top">
+      <div class="card-kicker">Equities</div>
+      <h3>Wall Street Posts Record Opens Post-Holiday</h3>
+      <p>Tuesday's session — the first after Memorial Day weekend — saw both the Nasdaq and S&amp;P 500 open at record levels. Tech stocks led the advance, with AI-related equities driving outperformance despite the volatile geopolitical backdrop. The Russell 2000's 1.77% gain was the day's standout, signaling broader risk appetite beyond megacap names.</p>
+      <div class="byline">Markets Desk &bull; May 27, 2026</div>
+    </div>
+    <div class="card gold-top">
+      <div class="card-kicker gold">Fixed Income</div>
+      <h3>10-Year Yield Dips; Bond Market Watches Iran Talks</h3>
+      <p>The 10-year Treasury yield slipped to 4.485% from 4.558%, offering modest relief to rate-sensitive assets. Freddie Mac's latest weekly average for the 30-year mortgage landed at 6.51% — up 15 bps from the prior week. Five Fed speakers are scheduled this week, and the Consumer Confidence index prints Tuesday at 10am ET. No rate moves are expected; the current Fed funds target sits at 3.50–3.75%.</p>
+      <div class="byline">Bond Desk &bull; May 27, 2026</div>
+    </div>
+    <div class="card accent-top">
+      <div class="card-kicker">Commodities &amp; Crypto</div>
+      <h3>Oil Pulls Back; Bitcoin Retreated Near $77k</h3>
+      <p>Crude oil gave back some of Tuesday's 4% surge on Wednesday as traders sought progress on U.S.-Iran negotiations. Brent fell roughly 1.4% to $98.16. Iran's Strait of Hormuz disruptions have kept roughly 8 million barrels per day offline, and analysts at MUFG warn full normalization may not arrive until 2027. Bitcoin retreated to near $77,000 after a brief pop above that level last session, while gold and silver also eased.</p>
+      <div class="byline">Commodities Desk &bull; May 27, 2026</div>
+    </div>
+  </div>
+
+  <!-- ══════════ MACRO / ECONOMY ══════════ -->
+  <div class="section-header" id="macro">
+    <div class="tag">🏛 Economy &amp; The Fed</div>
+    <div class="line"></div>
+  </div>
+
+  <div class="grid-wide">
+    <div class="card gold-top">
+      <div class="card-kicker gold">Macroeconomics</div>
+      <h2>Inflation Hits 3-Year High at 3.8%; Fed Holds at 3.50–3.75%</h2>
+      <p>April's consumer price index came in at 3.8% year-over-year — the highest reading in three years — driven largely by a 28% surge in gas prices tied to the Iran conflict. The reading complicates the Federal Reserve's path, as the new Fed Chair (Powell's term expired May 15) navigates twin pressures of persistent inflation and slowing job growth.</p>
+      <p>Private payroll growth has essentially stalled. Fed Chair Powell noted in March that "effectively, there's zero net job creation in the private sector" on a net-revised basis over six months. The median FOMC dot now projects one additional quarter-point cut in 2026, potentially bringing the funds rate toward 3.25%. The market's next catalyst: Consumer Confidence at 10am ET today, followed by five scheduled Fed speeches through the week.</p>
+      <ul class="stat-list" style="margin-top:12px;">
+        <li><span class="label">Fed Funds Rate (target)</span><span class="value">3.50–3.75%</span></li>
+        <li><span class="label">April CPI (YoY)</span><span class="value">3.8%</span></li>
+        <li><span class="label">Unemployment Rate</span><span class="value">4.3%</span></li>
+        <li><span class="label">GDP Forecast 2026</span><span class="value">+2.4%</span></li>
+        <li><span class="label">Avg Monthly Jobs (3-mo)</span><span class="value">~48,000</span></li>
+        <li><span class="label">IOER / IOBR</span><span class="value">3.65%</span></li>
+      </ul>
+      <div class="byline">Economics Desk &bull; May 27, 2026</div>
+    </div>
+    <div style="display:flex;flex-direction:column;gap:20px;">
+      <div class="card accent-top">
+        <div class="card-kicker">Fed Watch</div>
+        <h3>New Fed Chair Era Begins Amid Uncertainty</h3>
+        <p>Jerome Powell's term expired May 15. The new chair is expected to signal readiness for 1–2 cuts to bring overnight rates toward the 3%–3.25% range — contingent on inflation cooperating. Markets will be reading tea leaves from this week's Fed speeches carefully.</p>
+        <div class="byline">Policy Desk</div>
+      </div>
+      <div class="card gold-top">
+        <div class="card-kicker gold">Data Watch Today</div>
+        <h3>Consumer Confidence Prints at 10am ET</h3>
+        <p>The Conference Board's Consumer Confidence index releases today and is expected to show continued softness, reflecting higher gas prices and geopolitical anxiety. The index has been under pressure since the Iran conflict began in late February. A weak print could revive rate-cut speculation and support Treasuries.</p>
+        <div class="byline">Data Desk</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════ REAL ESTATE ══════════ -->
+  <div class="section-header" id="realestate">
+    <div class="tag">🏠 Real Estate</div>
+    <div class="line"></div>
+  </div>
+
+  <div class="grid-3">
+    <div class="card gold-top">
+      <div class="card-kicker gold">Housing Market</div>
+      <h3>Spring Market Enters Summer With Mixed Signals</h3>
+      <p>The 2026 housing market heads into summer with inventory up 4.2% year-over-year — a total of 1.23 million active listings nationally. Existing home sales rose a slim 0.2% in April, while the median sale price hit a record $417,700. Affordability improved for the eighth straight month even as rates remain elevated. Most economists characterize 2026 as a "rebalancing year, not a crash cycle."</p>
+      <div class="byline">Real Estate Desk &bull; May 27, 2026</div>
+    </div>
+    <div class="card accent-top">
+      <div class="card-kicker">Mortgage Rates</div>
+      <h3>30-Year Fixed at 6.34%; Refi Rate at 6.83%</h3>
+      <p>The 30-year fixed purchase rate stands at approximately 6.34% per Zillow, while the refinance equivalent holds at 6.83%. Freddie Mac's weekly average came in at 6.51% — up 15 bps. The Iran-driven oil shock and resulting inflation spike pushed rates sharply higher in recent weeks; loanDepot's chief economist cited "oil-driven inflation concerns and pressure in global bond markets" as key drivers.</p>
+      <div class="byline">Mortgage Desk &bull; May 27, 2026</div>
+    </div>
+    <div class="card gold-top">
+      <div class="card-kicker gold">Outlook</div>
+      <h3>Rates Forecast to Stay in Low-to-Mid 6% Range Through July</h3>
+      <p>Fannie Mae's March forecast called for the 30-year rate to drop below 6% by year-end, reaching 5.7%. But the Iran conflict has complicated that path. Most experts now see rates in the low-to-mid 6% range through summer, with gradual easing possible in Q4 if the Fed cuts and the Iran situation stabilizes. Buyers with rates above 7.5% from 2023–2024 may still find refinancing advantageous.</p>
+      <div class="byline">Real Estate Desk</div>
+    </div>
+  </div>
+
+  <!-- ══════════ TAX & ACCOUNTING ══════════ -->
+  <div class="section-header" id="tax">
+    <div class="tag">📋 Tax &amp; Accounting</div>
+    <div class="line"></div>
+  </div>
+
+  <div class="grid-wide-left">
+    <div style="display:flex;flex-direction:column;gap:20px;">
+      <div class="card accent-top">
+        <div class="card-kicker">IRS Filing Season</div>
+        <h3>2026 Filing Season: IRS Claims Success</h3>
+        <p>Of 134 million individual returns filed, 98% were submitted electronically. Fully 80% received refunds, with an average refund of $3,400 — up 11% from 2025. The IRS credits the jump largely to new tip income, overtime, and car loan interest deductions under the One Big Beautiful Bill Act (OBBBA). Paper filers, however, faced significantly longer processing delays as the IRS accelerates its check-free transition.</p>
+        <div class="byline">Tax Desk &bull; May 27, 2026</div>
+      </div>
+      <div class="card gold-top">
+        <div class="card-kicker gold">Legislation Alert</div>
+        <h3>House Passes Taxpayer Due Process Enhancement Act</h3>
+        <p>On May 19, the House passed H.R. 6506, the Taxpayer Due Process Enhancement Act — a congressional override of the Supreme Court's controversial June 2025 ruling in <em>Commissioner v. Hallmark</em> regarding Collection Due Process proceedings. Tax practitioners representing clients in CDP matters should review immediately, as the bill materially strengthens taxpayer rights in IRS collection actions.</p>
+        <div class="byline">Legislative Desk &bull; May 27, 2026</div>
+      </div>
+    </div>
+    <div class="card gold-top">
+      <div class="card-kicker gold">OBBBA Guidance</div>
+      <h2>IRS Issues Final Tip Deduction Regs; Overtime &amp; Car Loan Rules Create Return Problems</h2>
+      <p>Final regulations on the tip income deduction were issued April 10, effective June 12, 2026. The IRS continued rolling out OBBBA guidance throughout the filing season, but the late timing created friction. Practitioners are flagging significant reconciliation problems with tip, overtime, and car loan interest deductions — primarily because the amounts claimed by taxpayers cannot be reconciled with employer-reported information or lender-issued 1099s.</p>
+      <p>In calculating the overtime deduction specifically, some taxpayers appear to have mischaracterized regular hours as overtime, triggering downstream issues. Expect IRS correspondence and potential audit activity in the back half of 2026 on these deductions.</p>
+      <div class="pull-quote" style="font-size:14px;">"Timing and advisor coordination can matter as much as the tax changes themselves." — First Citizens Wealth</div>
+      <ul class="stat-list" style="margin-top:8px;">
+        <li><span class="label">Avg 2026 Refund</span><span class="value">$3,400</span><span class="note">↑ 11%</span></li>
+        <li><span class="label">E-file Rate</span><span class="value">98%</span></li>
+        <li><span class="label">Returns Filed</span><span class="value">134M</span></li>
+        <li><span class="label">Tip Reg Effective Date</span><span class="value">Jun 12, 2026</span></li>
+        <li><span class="label">Court Alert</span><span class="value">Dillon Trust (Fed. Cir.)</span><span class="note">Transferee liability</span></li>
+      </ul>
+      <div class="byline">Tax &amp; Accounting Desk &bull; May 27, 2026</div>
+    </div>
+  </div>
+
+  <!-- TRUST CO WARNING -->
+  <div class="card" style="border-left:4px solid var(--accent); margin-bottom: 24px;">
+    <div class="card-kicker">⚠ Court Alert — Closely Held C Corps</div>
+    <h3><em>Dillon Trust Co. v. United States</em> — A Cautionary Tale for Stock Sale Transactions</h3>
+    <p>The Federal Circuit's May 14 decision in <em>Dillon Trust Co. LLC v. United States</em> serves as a stark warning for tax practitioners handling the sale of closely held C corporations with highly appreciated assets. The court held that sellers cannot turn a blind eye to economically irrational bids without risking massive transferee liability, penalties, and interest — particularly when the buyer is an intermediary exploiting an abusive tax shelter structure. Willful blindness is no defense. Review all pending stock sale transactions for red flags.</p>
+    <div class="byline">Tax Litigation Desk &bull; May 27, 2026</div>
+  </div>
+
+  <!-- ══════════ CHICAGO SPORTS ══════════ -->
+  <div class="section-header" id="sports">
+    <div class="tag">🏙 Chicago Sports</div>
+    <div class="line"></div>
+  </div>
+
+  <div class="grid-2">
+    <!-- CUBS -->
+    <div class="card accent-top">
+      <div class="card-kicker">⚾ Chicago Cubs</div>
+      <h2>Eight-Game Losing Streak Has Wrigley Holding Its Breath</h2>
+      <p>The Cubs (29-24) enter Wednesday on an 8-game losing streak that has erased the goodwill of their strong home record (18-11 at Wrigley). The latest defeat was an 8-5 loss to the Astros on Sunday — Houston's pitcher dominated as the Cubs couldn't scratch out timely hits. Manager Craig Counsell's message to the press? "It's only May."</p>
+      <p>The Cubs head to Pittsburgh for today's 12:35 CT tilt vs. the Pirates. Prospect Ramírez (No. 2 in the system) was recently recalled after Ryan Shaw (back tightness) hit the IL. Ben Brown struck out 7 in Sunday's start. The offense badly needs a reset — the lineup is being shuffled to spark production.</p>
+      <div class="scores-row">
+        <div class="score-chip">
+          <div class="teams">
+            <div class="team-row"><span class="name">Cubs</span><span class="pts">29-24</span></div>
+            <div class="team-row"><span class="name">Streak</span><span class="pts" style="color:#e05555;">L8</span></div>
+          </div>
+          <div class="status">NL Central</div>
+        </div>
+      </div>
+      <div class="byline">Baseball Desk &bull; May 27, 2026</div>
+    </div>
+    <!-- BULLS -->
+    <div class="card gold-top">
+      <div class="card-kicker gold">🏀 Chicago Bulls</div>
+      <h2>Bulls Coach Search Heats Up: Five Confirmed Candidates as Draft Looms</h2>
+      <p>With the 2026 NBA Draft approximately one month away and the Bulls holding the No. 4 overall pick, new EVP of Basketball Operations Bryson Graham is accelerating the head coaching search. Five candidates are confirmed: Chris Quinn (Miami Heat), Micah Nori (Minnesota Timberwolves), Sean Sweeney (San Antonio Spurs), Dave Bliss (Oklahoma City Thunder), and Tiago Splitter (Portland Trail Blazers).</p>
+      <p>Billy Donovan stepped away at the end of a 31-51 season — the Bulls' worst in years. Also added to the building recently: Stephen Mervis (senior VP, basketball ops) and Acie Law IV. A hire is expected soon, ahead of the Draft Combine.</p>
+      <div class="byline">Basketball Desk &bull; May 27, 2026</div>
+    </div>
+  </div>
+
+  <div class="grid-3">
+    <!-- WHITE SOX -->
+    <div class="card accent-top">
+      <div class="card-kicker">⚾ White Sox</div>
+      <h3>Sox Snap Twins, 3-1 on Memorial Day</h3>
+      <p>The White Sox picked up a solid 3-1 victory over Minnesota on Memorial Day — a small bright spot in what has been a rebuilding season. Their farm system minor league squad, the Kannapolis Cannon Ballers, also recorded a 7-0 shutout of the Cubs' Myrtle Beach affiliate. The Sox continue their long rebuild, watching how the trade market develops as summer approaches.</p>
+      <div class="byline">Baseball Desk &bull; May 27, 2026</div>
+    </div>
+    <!-- BEARS -->
+    <div class="card gold-top">
+      <div class="card-kicker gold">🏈 Chicago Bears</div>
+      <h3>Offseason Progresses; Gordon Nursing Soft-Tissue Injury</h3>
+      <p>Nickel cornerback Kyler Gordon is dealing with a soft-tissue injury that has kept him off the field during the voluntary offseason program — an ominous echo of his 2025 season, which saw him miss 14 regular-season games. New safety Coby Bryant — the premier free agent addition this offseason — has been turning heads with his film breakdown of the Seahawks' Super Bowl blitz vs. Drake Maye. The 2026 Bears have just one Sunday Night Football appearance scheduled, a surprising omission given the franchise's improved trajectory.</p>
+      <div class="byline">Football Desk &bull; May 27, 2026</div>
+    </div>
+    <!-- BLACKHAWKS -->
+    <div class="card accent-top">
+      <div class="card-kicker">🏒 Blackhawks</div>
+      <h3>Draft Buzz: Hawks Projected to Select Ivar Stenberg at No. 4</h3>
+      <p>According to a survey of six NHL scouts and executives published by The Athletic's Corey Pronman, the Chicago Blackhawks are expected to select Swedish forward Ivar Stenberg with the fourth overall pick in the 2026 NHL Draft. The rebuild continues under GM Kyle Davidson, and the front office is closely monitoring how the draft board falls. Vegas is currently in the playoffs, creating draft buzz throughout the hockey world.</p>
+      <div class="byline">Hockey Desk &bull; May 27, 2026</div>
+    </div>
+  </div>
+
+  <!-- ══════════ HEALTH & WELLNESS ══════════ -->
+  <div class="section-header" id="health">
+    <div class="tag">💊 Health &amp; Wellness</div>
+    <div class="line gold"></div>
+  </div>
+
+  <div class="grid-3">
+    <div class="card gold-top">
+      <div class="card-kicker gold">Longevity Science</div>
+      <h3>Ozempic Works Remarkably Well in Adults 65+, New Study Finds</h3>
+      <p>A major analysis published in May found that semaglutide (Ozempic/Wegovy) performs particularly well in adults over 65, with many experiencing substantial weight loss alongside improvements in cardiovascular and metabolic health markers. The findings are expected to broaden prescribing guidelines for older populations who were previously underrepresented in clinical trials.</p>
+      <div class="byline">Health Desk &bull; May 27, 2026</div>
+    </div>
+    <div class="card accent-top">
+      <div class="card-kicker">Brain Health</div>
+      <h3>B12 "Normal" Levels May Not Protect the Aging Brain, UCSF Finds</h3>
+      <p>Researchers at UCSF have found that older adults with vitamin B12 levels classified as "normal" by current guidelines may still be at risk for cognitive decline. The study suggests that guidelines set decades ago may be too conservative for brain protection. Practitioners and patients over 60 should consider discussing optimal B12 supplementation with their physicians — not just adequacy.</p>
+      <div class="byline">Health Desk &bull; May 22, 2026</div>
+    </div>
+    <div class="card gold-top">
+      <div class="card-kicker gold">Wellness Trends</div>
+      <h3>"Neurowellness" Tops 2026 Global Wellness Summit Trends</h3>
+      <p>The top 2026 wellness trend per the Global Wellness Summit is precision nervous system optimization — using technology to objectively measure and retrain stress and resilience patterns in real time. Run clubs, low-alcohol socializing, and longevity-focused routines round out the broader shift away from quick-fix diet culture and toward sustainable, science-based health. New research also shows that high-fat, high-sugar diets early in life may rewire brain appetite-control regions in ways that persist into adulthood.</p>
+      <div class="byline">Wellness Desk &bull; May 27, 2026</div>
+    </div>
+  </div>
+
+  <div class="divider gold"></div>
+
+  <!-- EDITORS NOTE -->
+  <div style="text-align:center; padding: 20px 0;">
+    <div style="font-family:'Playfair Display',serif; font-style:italic; font-size:13px; color:var(--muted); letter-spacing:.06em;">
+      "Compound interest is the eighth wonder of the world. He who understands it, earns it; he who doesn't, pays it." — Attr. Albert Einstein
+    </div>
+  </div>
+
+</main>
+
+<footer class="footer">
+  <strong>The Daily Ledger</strong> &bull; Wednesday, May 27, 2026 &bull; Vol. I, No. 1<br>
+  <span style="display:block;margin-top:6px;">Curated for Chicago &bull; Markets, Money, Tax, Real Estate, Sports &amp; Life &bull; All figures reflect most recent data available at time of publication &bull; Not financial or legal advice</span>
+</footer>
+
+</body>
+</html>
