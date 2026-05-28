@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Ledger — Wednesday, May 27, 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg:        #141210;
+    --bg2:       #1c1916;
+    --bg3:       #242018;
+    --rule:      #3a342c;
+    --cream:     #e8dfc8;
+    --muted:     #9a9080;
+    --accent:    #c8481a;
+    --gold:      #c9a227;
+    --gold2:     #e6c060;
+    --sky:       #4a8fb5;
+    --green:     #3a8c5c;
+    --red:       #b03030;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--cream); font-family: 'Libre Baskerville', Georgia, serif; font-size: 14px; line-height: 1.65; }
+  .masthead { background: var(--bg); border-bottom: 3px double var(--gold); padding: 18px 24px 10px; text-align: center; }
+  .masthead-top { display: flex; justify-content: space-between; align-items: flex-end; font-family: 'Source Sans 3', sans-serif; font-size: 11px; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; margin-bottom: 4px; }
+  .masthead-logo { font-family: 'Playfair Display', serif; font-weight: 900; font-size: clamp(36px, 7vw, 64px); letter-spacing: 0.04em; line-height: 1; color: var(--cream); text-shadow: 0 0 40px rgba(201,162,39,0.15); }
+  .masthead-logo span { color: var(--gold); }
+  .masthead-tagline { font-family: 'Playfair Display', serif; font-style: italic; font-size: 13px; color: var(--muted); letter-spacing: 0.12em; margin-top: 4px; }
+  .masthead-rule { height: 1px; background: var(--gold); margin: 10px 0 6px; opacity: 0.5; }
+  .masthead-date-bar { font-family: 'Source Sans 3', sans-serif; font-size: 11px; color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase; }
+  .ticker-wrap { background: var(--accent); overflow: hidden; white-space: nowrap; padding: 5px 0; }
+  .ticker { display: inline-block; animation: ticker 40s linear infinite; font-family: 'Source Sans 3', sans-serif; font-size: 11px; font-weight: 600; letter-spacing: 0.08em; color: #fff; }
+  .ticker span { margin: 0 32px; opacity: 0.7; }
+  .ticker .up { color: #7fffb0; }
+  .ticker .dn { color: #ffb3a0; }
+  @keyframes ticker { from { transform: translateX(100vw); } to { transform: translateX(-100%); } }
+  .container { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin: 20px 0 10px; }
+  .section-label { font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); white-space: nowrap; }
+  .section-rule { flex: 1; height: 1px; background: var(--rule); }
+  .weather-banner { background: var(--bg2); border: 1px solid var(--rule); border-radius: 4px; padding: 14px 20px; display: flex; flex-wrap: wrap; gap: 14px; align-items: center; margin-bottom: 4px; }
+  .weather-city { font-family: 'Playfair Display', serif; font-size: 18px; font-weight: 700; color: var(--gold); }
+  .weather-temp { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 900; line-height: 1; }
+  .weather-desc { font-family: 'Source Sans 3', sans-serif; font-size: 12px; color: var(--muted); letter-spacing: 0.06em; text-transform: uppercase; }
+  .weather-days { display: flex; gap: 10px; flex-wrap: wrap; margin-left: auto; }
+  .wday { background: var(--bg3); border: 1px solid var(--rule); border-radius: 3px; padding: 6px 10px; text-align: center; min-width: 58px; }
+  .wday-name { font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.1em; color: var(--muted); }
+  .wday-hi { font-size: 15px; font-weight: 700; color: var(--cream); }
+  .wday-lo { font-size: 11px; color: var(--muted); }
+  .wday-icon { font-size: 14px; }
+  .grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+  .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .grid-2-1 { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; }
+  @media (max-width: 720px) { .grid-3, .grid-2, .grid-2-1 { grid-template-columns: 1fr; } .weather-days { margin-left: 0; } }
+  .card { background: var(--bg2); border: 1px solid var(--rule); border-radius: 4px; padding: 14px 16px; }
+  .card-title { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; line-height: 1.3; margin-bottom: 6px; color: var(--cream); }
+  .card-title.lg { font-size: 20px; }
+  .card-byline { font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 600; color: var(--accent); letter-spacing: 0.12em; text-transform: uppercase; margin-bottom: 6px; }
+  .card-body { font-size: 13px; line-height: 1.65; color: #c8bfaa; }
+  .card-body p + p { margin-top: 8px; }
+  .market-table { width: 100%; border-collapse: collapse; font-family: 'Source Sans 3', sans-serif; font-size: 12px; }
+  .market-table th { text-align: left; font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--rule); padding: 4px 6px; }
+  .market-table td { padding: 6px 6px; border-bottom: 1px solid rgba(58,52,44,0.5); color: var(--cream); }
+  .market-table tr:last-child td { border-bottom: none; }
+  .up { color: #5eba82; }
+  .dn { color: #e06060; }
+  .index-name { font-weight: 600; }
+  .index-val { font-weight: 700; font-variant-numeric: tabular-nums; }
+  .sport-item { padding: 8px 0; border-bottom: 1px solid var(--rule); }
+  .sport-item:last-child { border-bottom: none; }
+  .sport-team { font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold); margin-bottom: 2px; }
+  .sport-headline { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; line-height: 1.3; color: var(--cream); margin-bottom: 3px; }
+  .sport-body { font-size: 12px; color: #a89f8c; line-height: 1.5; }
+  hr.double { border: none; border-top: 3px double var(--rule); margin: 20px 0; }
+  .tag { display: inline-block; background: var(--bg3); border: 1px solid var(--rule); border-radius: 2px; font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); padding: 2px 7px; margin-right: 4px; }
+  blockquote.pull { border-left: 3px solid var(--gold); margin: 10px 0; padding: 6px 14px; font-family: 'Playfair Display', serif; font-style: italic; font-size: 15px; color: var(--gold2); line-height: 1.5; }
+  .health-item { display: flex; gap: 12px; padding: 8px 0; border-bottom: 1px solid var(--rule); align-items: flex-start; }
+  .health-item:last-child { border-bottom: none; }
+  .health-icon { font-size: 20px; flex-shrink: 0; margin-top: 2px; }
+  .health-title { font-family: 'Playfair Display', serif; font-size: 14px; font-weight: 700; line-height: 1.3; margin-bottom: 2px; }
+  .health-body { font-size: 12px; color: #a89f8c; line-height: 1.5; }
+  footer { margin-top: 30px; border-top: 3px double var(--rule); padding: 14px 24px; text-align: center; font-family: 'Source Sans 3', sans-serif; font-size: 10px; color: var(--muted); letter-spacing: 0.08em; }
+  .flash { display: inline-block; background: var(--accent); color: #fff; font-family: 'Source Sans 3', sans-serif; font-size: 9px; font-weight: 700; letter-spacing: 0.14em; text-transform: uppercase; padding: 2px 6px; border-radius: 2px; margin-right: 6px; vertical-align: middle; }
+  .spacer { height: 8px; }
+</style>
+</head>
+<body>
+
+<!-- EDITION NAV — FIXED: First edition, no back arrow; May 28 forward link now live -->
+<div style="background:#1c1916;border-bottom:1px solid #3a342c;padding:8px 20px;display:flex;align-items:center;justify-content:space-between;font-family:'Source Sans 3',sans-serif;font-size:12px;">
+  <span style="color:#3a342c;letter-spacing:0.06em;">First Edition</span>
+  <a href="archive.html" style="color:#c9a227;text-decoration:none;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;font-size:11px;">📁 Archive</a>
+  <a href="2026-05-28.html" style="color:#c9a227;text-decoration:none;letter-spacing:0.06em;">May 28 →</a>
+</div>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="masthead-top">
+    <span>Vol. I &nbsp;·&nbsp; No. 1</span>
+    <span>Wednesday, May 27, 2026</span>
+    <span>Chicago, Illinois</span>
+  </div>
+  <div class="masthead-logo">The Daily <span>Ledger</span></div>
+  <div class="masthead-tagline">Curated daily intelligence for the discerning Chicagoan</div>
+  <div class="masthead-rule"></div>
+  <div class="masthead-date-bar">Markets &nbsp;·&nbsp; Tax &amp; Accounting &nbsp;·&nbsp; Real Estate &nbsp;·&nbsp; Economics &nbsp;·&nbsp; Current Events &nbsp;·&nbsp; Chicago Sports &nbsp;·&nbsp; Weather &nbsp;·&nbsp; Health</div>
+</div>
+
+<!-- TICKER -->
+<div class="ticker-wrap">
+  <div class="ticker">
+    <strong>DJIA</strong> 42,847 <span class="up">▲ +183 (+0.36%)</span>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <strong>S&amp;P 500</strong> 5,918 <span class="up">▲ +1.2 (+0.02%)</span>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <strong>NASDAQ</strong> 19,204 <span class="up">▲ +15 (+0.08%)</span>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <strong>NVDA</strong> <span class="dn">▼ -2.63%</span>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <strong>MU (Micron)</strong> <span class="up">▲ +AI Rally</span>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <strong>SNOW</strong> <span class="up">▲ +25%</span> after AWS deal
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <strong>QCOM</strong> <span class="dn">▼ -9.69%</span>
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <strong>Fed Funds Rate</strong> 3.50–3.75%
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <strong>10-YR</strong> ~4.45%
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <strong>WTI Crude</strong> ~$94/bbl
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <strong>Bitcoin</strong> ~$75k
+    &nbsp;&nbsp;|&nbsp;&nbsp;
+    <strong>Gold</strong> <span class="dn">▼ Pulling Back</span>
+    <span>|||</span>
+  </div>
+</div>
+
+<div class="container">
+
+  <!-- WEATHER -->
+  <div class="section-header">
+    <span class="section-label">☁ Chicagoland Weather</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="weather-banner">
+    <div>
+      <div class="weather-city">Chicago, IL</div>
+      <div class="weather-temp">84°F</div>
+      <div class="weather-desc">☀ Warm &amp; Sunny · PM Lake Breeze · Low: 56°</div>
+    </div>
+    <div class="weather-days">
+      <div class="wday"><div class="wday-name">Today</div><div class="wday-icon">☀</div><div class="wday-hi">84°</div><div class="wday-lo">56°</div></div>
+      <div class="wday"><div class="wday-name">Thu</div><div class="wday-icon">🌤</div><div class="wday-hi">72°</div><div class="wday-lo">54°</div></div>
+      <div class="wday"><div class="wday-name">Fri</div><div class="wday-icon">⛅</div><div class="wday-hi">77°</div><div class="wday-lo">59°</div></div>
+      <div class="wday"><div class="wday-name">Sat</div><div class="wday-icon">☀</div><div class="wday-hi">78°</div><div class="wday-lo">55°</div></div>
+      <div class="wday"><div class="wday-name">Sun</div><div class="wday-icon">☀</div><div class="wday-hi">74°</div><div class="wday-lo">55°</div></div>
+      <div class="wday"><div class="wday-name">Mon</div><div class="wday-icon">☀</div><div class="wday-hi">80°</div><div class="wday-lo">57°</div></div>
+      <div class="wday"><div class="wday-name">Tue</div><div class="wday-icon">☀</div><div class="wday-hi">84°</div><div class="wday-lo">59°</div></div>
+    </div>
+  </div>
+
+  <hr class="double">
+
+  <!-- MARKETS -->
+  <div class="section-header">
+    <span class="section-label">📈 Markets &amp; Finance</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="grid-2-1">
+    <div class="card">
+      <div class="card-byline">Lead Story · Equities</div>
+      <div class="card-title lg">Dow Sets Fresh Record as Chips Stumble, Consumer Stalwarts Rally</div>
+      <div class="card-body">
+        <p><span class="flash">Closing Bell</span>Wednesday's session delivered one of the year's more schizophrenic performances: the Dow Jones Industrials surged nearly 183 points to a new all-time high, even as semiconductor heavyweights dragged the Nasdaq and S&P 500 nearly flat.</p>
+        <p>The divergence was stark. Qualcomm plunged nearly 9.7%, Nvidia shed 2.6%, and AMD fell 2.8% — all weighed by a midday geopolitical reality check from the White House, which poured cold water on morning headlines about an imminent Iran peace deal. Oil had spiked to $94/barrel on ceasefire optimism before clawing back.</p>
+        <p>On the Dow's winning side: Procter &amp; Gamble (+3.4%), Nike (+2.9%), Home Depot (+2.5%), and Coca-Cola (+2.4%) — a classic defensive rotation. Consumer discretionary and staples led all S&amp;P sectors, rising over 1%.</p>
+        <blockquote class="pull">"The first big test for the Warsh Fed is watching markets navigate geopolitical fog without a Powell steadying hand."</blockquote>
+        <p>Kevin Warsh was officially sworn in as Federal Reserve Chair, replacing Jerome Powell whose term expired May 15. His swearing-in statement — described as an 11-word market warning — has Wall Street on edge about the new regime's posture on rates.</p>
+        <p>After the bell, <strong>Snowflake (SNOW)</strong> rocketed 25% on a blockbuster announcement: Amazon Web Services committed $6 billion to use Amazon's new Graviton AI chips — one of the largest AI infrastructure deals ever. <strong>Salesforce (CRM)</strong> slid ~2.8% on light guidance.</p>
+      </div>
+    </div>
+    <div>
+      <div class="card" style="margin-bottom:16px;">
+        <div class="card-byline">Index Snapshot</div>
+        <table class="market-table">
+          <thead><tr><th>Index</th><th>Close</th><th>Chg</th></tr></thead>
+          <tbody>
+            <tr><td class="index-name">DJIA</td><td class="index-val">42,847</td><td class="up">▲ +0.36%</td></tr>
+            <tr><td class="index-name">S&amp;P 500</td><td class="index-val">5,918</td><td class="up">▲ +0.02%</td></tr>
+            <tr><td class="index-name">Nasdaq</td><td class="index-val">19,204</td><td class="up">▲ +0.08%</td></tr>
+            <tr><td class="index-name">Russell 2k</td><td class="index-val">2,113</td><td class="dn">▼ -0.02%</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card" style="margin-bottom:16px;">
+        <div class="card-byline">Commodities &amp; Crypto</div>
+        <table class="market-table">
+          <tbody>
+            <tr><td class="index-name">WTI Crude</td><td class="index-val">$94.10</td><td class="up">▲ Iran Risk</td></tr>
+            <tr><td class="index-name">Gold</td><td>—</td><td class="dn">▼ Retreating</td></tr>
+            <tr><td class="index-name">Silver</td><td>—</td><td class="dn">▼ Pulling Back</td></tr>
+            <tr><td class="index-name">Bitcoin</td><td class="index-val">~$75,000</td><td class="dn">▼ Off Highs</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="card">
+        <div class="card-byline">Movers</div>
+        <table class="market-table">
+          <tbody>
+            <tr><td>SNOW</td><td class="up">▲ +25%</td><td style="color:#a89f8c;font-size:11px">AWS $6B deal</td></tr>
+            <tr><td>PG</td><td class="up">▲ +3.4%</td><td style="color:#a89f8c;font-size:11px">Defensive bid</td></tr>
+            <tr><td>NKE</td><td class="up">▲ +2.9%</td><td style="color:#a89f8c;font-size:11px">Consumer rally</td></tr>
+            <tr><td>QCOM</td><td class="dn">▼ -9.7%</td><td style="color:#a89f8c;font-size:11px">Chips selloff</td></tr>
+            <tr><td>NVDA</td><td class="dn">▼ -2.6%</td><td style="color:#a89f8c;font-size:11px">Chips selloff</td></tr>
+            <tr><td>AMD</td><td class="dn">▼ -2.8%</td><td style="color:#a89f8c;font-size:11px">Chips selloff</td></tr>
+            <tr><td>CRM</td><td class="dn">▼ -2.8%</td><td style="color:#a89f8c;font-size:11px">Light guidance</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <hr class="double">
+
+  <!-- MACRO & FED -->
+  <div class="section-header">
+    <span class="section-label">🏛 Macroeconomics &amp; The Fed</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-byline">Federal Reserve</div>
+      <div class="card-title">New Fed Chair Warsh Sworn In — Markets Brace for Policy Shift</div>
+      <div class="card-body">
+        <p>Kevin Warsh officially took the helm of the Federal Reserve following Jerome Powell's May 15 term expiry. His first public statement — cryptically described as just 11 words — has sparked speculation about a more hawkish tilt. Wall Street, analysts warn, may not be ready for it.</p>
+        <p>The FOMC has held the federal funds rate steady at <strong>3.50%–3.75%</strong> for two consecutive meetings. Policymakers still project one rate cut this year and another in 2027, though timing is murky. The Iran conflict's economic fallout remains a wildcard.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-byline">Economic Outlook</div>
+      <div class="card-title">GDP Forecast Upgraded; Inflation Sticky Above Target</div>
+      <div class="card-body">
+        <p>The Fed's March projections revised 2026 GDP growth upward to <strong>2.4%</strong>. The economy is expanding at a solid pace, and job gains remain resilient.</p>
+        <p>The bad news: both PCE and Core PCE inflation are now projected at <strong>2.7%</strong> for 2026 — above the December estimate and well above the 2% target. Unemployment is forecast at 4.4% this year.</p>
+        <p>The Iran war's impact on energy and supply chains adds significant uncertainty to an otherwise positive macro backdrop.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-byline">Geopolitics &amp; Markets</div>
+      <div class="card-title">Iran Ceasefire Frays — Oil Surges, Then Retreats</div>
+      <div class="card-body">
+        <p>The fragile April ceasefire between the U.S. and Iran is under stress. CENTCOM confirmed new strikes on southern Iran — targeting missile sites and speedboats allegedly placing naval mines — calling the action "self-defense." Tehran called it "bad faith."</p>
+        <p>Iran's Supreme Leader hinted at resuming strikes on U.S. military installations. WTI crude briefly surged to $94/bbl before retracing on White House signals about ongoing Doha negotiations.</p>
+        <p>Trump stated Iran is "negotiating on fumes" and that November midterms won't rush him into a deal.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="double">
+
+  <!-- REAL ESTATE -->
+  <div class="section-header">
+    <span class="section-label">🏠 Real Estate</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-byline">Housing Market</div>
+      <div class="card-title">Spring Market Cooling: Rates Elevated, Inventory Rising, Prices Plateauing</div>
+      <div class="card-body">
+        <p>The 2026 spring housing season is playing out as a "rebalancing year." Mortgage rates surged to their highest level since July earlier this month, dampening the historically hottest buying period.</p>
+        <p>April home-buying activity came in below seasonal norms. Inventory is up <strong>4.2% year-over-year</strong> to 1.23 million active listings nationwide. Annual home values have declined in nearly half of major U.S. metros. The national median existing home price hit a record <strong>$417,700</strong> in April.</p>
+        <p>Fannie Mae forecasts the 30-year fixed mortgage rate will drop below 6% by year-end, reaching <strong>5.7%</strong> — contingent on inflation cooling and geopolitical stability.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-byline">Real Estate Brief</div>
+      <div class="card-title">Apartment Giants Merge; Buyers Weigh Real Estate vs. Small Business</div>
+      <div class="card-body">
+        <p><span class="flash">Deal</span><strong>Equity Apartments and AvalonBay Communities</strong> have announced a merger that would create a residential real estate giant — one of the largest combinations in the apartment REIT space in years.</p>
+        <p style="margin-top:10px;">With appreciation slowing, a growing cohort of real estate investors is asking whether a dollar is better deployed in property or small business. Analysts note real estate no longer "leans on appreciation to do the heavy lifting."</p>
+        <p style="margin-top:10px;">About <strong>40% of buyers and sellers</strong> surveyed express concern about a potential housing market crash this year — but economists broadly describe current conditions as structural rebalancing, not collapse.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="double">
+
+  <!-- TAX & ACCOUNTING -->
+  <div class="section-header">
+    <span class="section-label">📋 Tax &amp; Accounting</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-byline">Filing Season Wrap</div>
+      <div class="card-title">IRS Declares 2026 Tax Season a Success — With Caveats</div>
+      <div class="card-body">
+        <p>The IRS characterizes the 2026 filing season as a success, with <strong>134 million individual returns</strong> filed — 98% electronically. Of those, 80% received a refund. The average refund was <strong>$3,400</strong>, up 11% from 2025.</p>
+        <p>The caveat: paper return filers faced significant delays. Final regulations on the tip income deduction weren't issued until April 10. The IRS is flagging widespread errors on returns claiming the new deductions.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-byline">Legislation</div>
+      <div class="card-title">Taxpayer Due Process Enhancement Act Passes House</div>
+      <div class="card-body">
+        <p>On May 19, 2026, the House passed <strong>H.R. 6506</strong>, the Taxpayer Due Process Enhancement Act — a direct congressional override of the Supreme Court's controversial June 2025 ruling. The bill strengthens taxpayer rights in Collection Due Process (CDP) proceedings.</p>
+        <p>For practitioners: this is significant relief for clients in IRS collection actions. The legislation now heads to the Senate.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-byline">OBBBA Impact</div>
+      <div class="card-title">2026 Tax Brackets Adjusted; SALT, OBBBA Changes in Effect</div>
+      <div class="card-body">
+        <p>Key new deductions effective this tax year: <strong>tip income</strong>, <strong>overtime pay</strong>, and <strong>car loan interest</strong>. SALT deduction modifications also apply. Final regulations for several OBBBA provisions are still being issued.</p>
+        <p>The IRS enhanced its Tax Withholding Estimator to reflect OBBBA changes. Recommend clients review withholding before Q3.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="double">
+
+  <!-- CURRENT EVENTS -->
+  <div class="section-header">
+    <span class="section-label">🌍 Current Events</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-byline">U.S. Politics</div>
+      <div class="card-title">Trump Tightens Primary Grip; Paxton Defeats Cornyn in Texas</div>
+      <div class="card-body">
+        <p>President Trump continues to flex his influence over Republican primaries. Texas Attorney General <strong>Ken Paxton</strong> defeated four-term incumbent Sen. John Cornyn in a stunning primary result. Trump had backed Paxton.</p>
+        <p>The White House is separately pushing a government-wide <strong>nondisclosure agreement</strong> covering all federal workers. Federal employee unions are expected to challenge it.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-byline">Iran &amp; Middle East</div>
+      <div class="card-title">U.S.-Iran Ceasefire Trembles; Midterm Politics Cloud Deal Timeline</div>
+      <div class="card-body">
+        <p>The April ceasefire between the United States and Iran is under significant strain, with both sides trading strikes this week despite the truce. The U.S. conducted strikes on southern Iran; Tehran downed a U.S. drone and fired at a fighter jet.</p>
+        <p>Mediation talks continue in Doha, but Iran's Supreme Leader hinted at resuming strikes on U.S. military bases. Markets remain nervous: oil's intraday swing from $90 to $94/bbl illustrates the direct economic stakes.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-byline">Technology &amp; Law</div>
+      <div class="card-title">Biden Sues DOJ Over Interview Audio; Prediction Market Insider Charges Filed</div>
+      <div class="card-body">
+        <p>Former President <strong>Joe Biden</strong> filed suit against the Justice Department to block release of audio recordings from his special counsel interview.</p>
+        <p>The Justice Department filed <strong>criminal insider-trading charges</strong> on a prediction market platform — only the second known case of federal charges in this space.</p>
+        <p><span class="flash">Space</span>NASA outlined Phase 1 of its lunar base program, awarding hundreds of millions in contracts to four U.S. companies for moon surface infrastructure.</p>
+      </div>
+    </div>
+  </div>
+
+  <hr class="double">
+
+  <!-- CHICAGO SPORTS -->
+  <div class="section-header">
+    <span class="section-label">⚾🏒 Chicago Sports</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-byline">On The Field</div>
+      <div class="sport-item">
+        <div class="sport-team">⚾ Chicago Cubs</div>
+        <div class="sport-headline">10-Game Skid Sends Playoff Odds Tumbling — But Sun-Times Says: Relax</div>
+        <div class="sport-body">The Cubs have lost ten straight after a scorching start that included two separate 10-game winning streaks. The latest defeat came 2-1 to the Pirates at PNC Park. Playoff odds have fallen hard. The first-place Brewers loom large in the NL Central.</div>
+      </div>
+      <div class="sport-item">
+        <div class="sport-team">⚾ Chicago White Sox</div>
+        <div class="sport-headline">Sox One of Baseball's Biggest Surprises in 2026</div>
+        <div class="sport-body">In a stunning reversal from recent rebuild-era doldrums, the White Sox have been one of the early season's most positive stories. Munetaka Murakami has been a force, and Antony Kay is emerging as a reliable starter. The mood on the South Side is surprisingly optimistic.</div>
+      </div>
+      <div class="sport-item">
+        <div class="sport-team">🏒 Chicago Blackhawks</div>
+        <div class="sport-headline">Hawks Hold 4th Pick in NHL Draft; Mock Boards Go Off-Book</div>
+        <div class="sport-body">The Blackhawks enter the draft with the 4th overall pick. A notable Athletic mock draft had Chicago selecting defenseman Alberts Smits — a surprising off-board selection generating buzz. Vegas Golden Knights swept the Presidents' Trophy-winning Colorado Avalanche.</div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-byline">Off The Field</div>
+      <div class="sport-item">
+        <div class="sport-team">🏈 Chicago Bears</div>
+        <div class="sport-headline">Pass Rush Is Priority; Megaproject Stadium Bill Race Heats Up</div>
+        <div class="sport-body">The Bears' pass rush ranked 31st in the NFL last season. New coaching leadership is determined to address the deficit. Simultaneously, the Bears are racing to get a PILOT (Megaprojects) bill passed in the Illinois state legislature for their proposed lakefront stadium.</div>
+      </div>
+      <div class="sport-item">
+        <div class="sport-team">🏀 Chicago Bulls</div>
+        <div class="sport-headline">Bulls Cast Wide Net in Head Coach Search After Donovan Departs</div>
+        <div class="sport-body">Billy Donovan's departure has triggered a full coaching search. New EVP of basketball operations Bryson Graham is circling multiple candidates as the franchise prepares a potential overhaul.</div>
+      </div>
+      <div class="sport-item">
+        <div class="sport-team">⚾ Cubs Farm Report</div>
+        <div class="sport-headline">Mason McGwire Emerging as Prospect to Watch; Tarik Skubal Rumors Swirl</div>
+        <div class="sport-body">RHP prospect Mason McGwire is drawing attention in the Cubs system. Speculation connecting Chicago to Tigers ace Tarik Skubal — described as the best pitcher on the planet — remains loose but has fans buzzing.</div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="double">
+
+  <!-- HEALTH & WELLNESS -->
+  <div class="section-header">
+    <span class="section-label">💊 Health &amp; Wellness</span>
+    <div class="section-rule"></div>
+  </div>
+  <div class="grid-2">
+    <div class="card">
+      <div class="card-byline">Science &amp; Research</div>
+      <div class="card-title">Brain Regeneration, B12 Complexity, and an Alzheimer's Trigger</div>
+      <div class="card-body">
+        <div class="health-item">
+          <div class="health-icon">🧬</div>
+          <div>
+            <div class="health-title">Supercharged Vitamin K May Help the Brain Regenerate Neurons</div>
+            <div class="health-body">Japanese scientists have synthesized powerful new vitamin K-based compounds that may stimulate the brain to regenerate lost neurons — a potential breakthrough for Alzheimer's and Parkinson's treatment.</div>
+          </div>
+        </div>
+        <div class="health-item">
+          <div class="health-icon">🧠</div>
+          <div>
+            <div class="health-title">USC Identifies Hidden Alzheimer's Trigger — And a Potential Shutoff</div>
+            <div class="health-body">USC researchers discovered new drug compounds that may reduce brain inflammation linked to Alzheimer's disease, pointing to a previously uncharacterized inflammatory pathway as a key driver of cognitive decline.</div>
+          </div>
+        </div>
+        <div class="health-item">
+          <div class="health-icon">💊</div>
+          <div>
+            <div class="health-title">B12: More Is Not Always Better, UCSF Researchers Warn</div>
+            <div class="health-body">New research from UC San Francisco challenges conventional wisdom that higher B12 levels are always protective for the aging brain. Researchers urge nuance over aggressive supplementation.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-byline">Wellness &amp; Lifestyle</div>
+      <div class="card-title">Beans, Nasal Sprays, and the Cholesterol Switch</div>
+      <div class="card-body">
+        <div class="health-item">
+          <div class="health-icon">🫘</div>
+          <div>
+            <div class="health-title">Eating More Beans &amp; Soy Could Cut Hypertension Risk by ~30%</div>
+            <div class="health-body">A major analysis found that regular consumption of beans, lentils, chickpeas, tofu, and soy foods could reduce high blood pressure risk by nearly 30%.</div>
+          </div>
+        </div>
+        <div class="health-item">
+          <div class="health-icon">🧪</div>
+          <div>
+            <div class="health-title">Nasal Spray Appears to Reverse Brain Aging in Mice — Texas A&amp;M</div>
+            <div class="health-body">Texas A&amp;M researchers developed a nasal spray that reversed markers of brain aging in animal models by calming neuroinflammation and restoring energy metabolism.</div>
+          </div>
+        </div>
+        <div class="health-item">
+          <div class="health-icon">❤️</div>
+          <div>
+            <div class="health-title">UT Southwestern Finds "Master Switch" Controlling LDL Cholesterol</div>
+            <div class="health-body">Scientists identified a protein called HELZ2 that functions as a previously unknown regulator of how much LDL the liver releases into the bloodstream — opening a new drug target beyond statins.</div>
+          </div>
+        </div>
+        <div class="health-item">
+          <div class="health-icon">⚖️</div>
+          <div>
+            <div class="health-title">Ozempic Weight Loss Plateau Mystery Solved</div>
+            <div class="health-body">New research explains why semaglutide eventually stops driving weight loss — adaptive metabolic responses partially offset the drug's appetite-suppression effects over time.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <hr class="double">
+
+  <!-- EDITOR'S NOTE -->
+  <div class="card" style="background: var(--bg3); border-color: var(--gold); margin-bottom: 16px;">
+    <div class="card-byline" style="color: var(--gold);">Editor's Dispatch</div>
+    <div class="card-title" style="font-style:italic;">A Market at a Crossroads</div>
+    <div class="card-body">
+      <p>Today's session crystallized a tension that will define the coming months: America's economy is genuinely strong — but the fat-tail risks are multiplying. A new Fed Chair untested by real crisis. An oil shock simmering in the Gulf. A housing market caught between structural undersupply and rate-induced paralysis. And a chip sector that has been the market's engine suddenly stalling.</p>
+      <p>For Chicago readers, the personal finance calculus remains: rates are high enough to reward savers and punish variable-rate borrowers. Tax planning around OBBBA deductions — tips, overtime, car interest — deserves attention before year-end. And on the North Side, take a breath. The Cubs will be fine.</p>
+    </div>
+  </div>
+
+</div><!-- /container -->
+
+<footer>
+  The Daily Ledger &nbsp;·&nbsp; Wednesday, May 27, 2026 &nbsp;·&nbsp; Chicago, Illinois
+  &nbsp;·&nbsp; Curated intelligence for finance, markets, tax, real estate, sports &amp; health
+  &nbsp;·&nbsp; Market data approximate at time of publication. Not investment advice.
+</footer>
+
+</body>
+</html>
