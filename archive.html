@@ -4,18 +4,31 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Daily Ledger — Archive</title>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #141210; --bg2: #1c1916; --bg3: #231f1c;
-    --text: #e8dfc8; --muted: #9e9080; --rule: #2e2822;
-    --accent: #c8481a; --gold: #c9a227; --goldlt: #e0ba45;
-    --ink: #f0e8d0;
+    --bg: #141210;
+    --bg2: #1c1917;
+    --bg3: #232018;
+    --cream: #e8dfc8;
+    --cream2: #c9bfa8;
+    --muted: #857d6d;
+    --accent: #c8481a;
+    --gold: #c9a227;
+    --rule: #2e2b25;
+    --rule2: #3d3930;
   }
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-  body { background: var(--bg); color: var(--text); font-family: 'Source Sans 3', sans-serif; -webkit-font-smoothing: antialiased; }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--cream);
+    font-family: 'Source Sans 3', sans-serif;
+    min-height: 100vh;
+  }
   a { color: var(--gold); text-decoration: none; }
-  a:hover { color: var(--goldlt); }
+  a:hover { color: var(--accent); }
 
   .archive-topnav {
     background: var(--bg2);
@@ -24,55 +37,60 @@
     display: flex;
     align-items: center;
     gap: 16px;
-    font-size: 11.5px;
+    font-size: 11px;
     letter-spacing: 0.08em;
     text-transform: uppercase;
-    color: var(--muted);
   }
+  .archive-topnav a { color: var(--gold); font-weight: 600; }
 
   .archive-head {
     text-align: center;
-    padding: 40px 20px 28px;
-    border-bottom: 3px double var(--rule);
+    padding: 32px 20px 24px;
+    border-bottom: 2px double var(--rule2);
   }
   .archive-head h1 {
     font-family: 'Playfair Display', serif;
-    font-size: clamp(38px, 9vw, 68px);
+    font-size: clamp(36px, 8vw, 62px);
     font-weight: 900;
-    color: var(--ink);
-    letter-spacing: -0.02em;
-    line-height: 0.95;
+    color: var(--cream);
+    line-height: 1;
   }
-  .archive-head h1 em { color: var(--accent); font-style: normal; }
+  .archive-head h1 em { color: var(--accent); font-style: italic; }
   .archive-head p {
-    margin-top: 10px;
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: 0.14em;
     text-transform: uppercase;
     color: var(--muted);
+    margin-top: 10px;
   }
-  .archive-head-rule { width: 60px; height: 2px; background: var(--gold); margin: 16px auto 0; }
+  .archive-head-rule {
+    width: 50px;
+    height: 1px;
+    background: var(--gold);
+    margin: 14px auto 0;
+    opacity: 0.4;
+  }
 
-  .container { max-width: 680px; margin: 0 auto; padding: 0 18px 60px; }
+  .container { max-width: 680px; margin: 0 auto; padding: 0 16px; }
 
   .year-label {
     font-size: 11px;
     font-weight: 700;
     letter-spacing: 0.2em;
     text-transform: uppercase;
-    color: var(--muted);
-    padding: 28px 0 12px;
-    border-bottom: 1px solid var(--rule);
+    color: var(--accent);
+    padding: 24px 0 8px;
+    border-bottom: 1px solid var(--rule2);
+    margin-bottom: 0;
   }
 
-  .month-group { margin: 24px 0; }
+  .month-group { margin-bottom: 8px; }
   .month-label {
     font-size: 10px;
-    font-weight: 700;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
-    color: var(--accent);
-    margin-bottom: 14px;
+    color: var(--muted);
+    padding: 16px 0 10px;
   }
 
   .edition-entry {
@@ -81,30 +99,28 @@
     justify-content: space-between;
     padding: 14px 16px;
     background: var(--bg2);
-    border: 1px solid var(--rule);
-    border-left: 3px solid var(--rule);
-    margin-bottom: 10px;
-    border-radius: 2px;
+    border: 1px solid var(--rule2);
+    margin-bottom: 6px;
     gap: 12px;
   }
-  .edition-entry.latest { border-left-color: var(--gold); }
-
-  .entry-info {}
+  .edition-entry.latest {
+    border-left: 3px solid var(--gold);
+  }
+  .entry-info { flex: 1; }
   .entry-date {
     font-family: 'Playfair Display', serif;
     font-size: 17px;
-    color: var(--ink);
     font-weight: 700;
+    color: var(--cream);
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 8px;
     flex-wrap: wrap;
   }
   .latest-badge {
-    font-family: 'Source Sans 3', sans-serif;
     font-size: 9px;
     font-weight: 700;
-    letter-spacing: 0.14em;
+    letter-spacing: 0.12em;
     text-transform: uppercase;
     background: var(--gold);
     color: #141210;
@@ -113,13 +129,14 @@
   }
   .entry-dow {
     font-size: 11px;
-    letter-spacing: 0.07em;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
     color: var(--muted);
     margin-top: 3px;
   }
   .read-btn {
     display: inline-block;
-    padding: 7px 16px;
+    padding: 7px 18px;
     background: transparent;
     border: 1px solid var(--accent);
     color: var(--accent);
@@ -129,28 +146,29 @@
     text-transform: uppercase;
     border-radius: 2px;
     white-space: nowrap;
-    transition: background .15s, color .15s;
-    flex-shrink: 0;
+    transition: background 0.15s, color 0.15s;
   }
-  .read-btn:hover { background: var(--accent); color: #fff; text-decoration: none; }
+  .read-btn:hover { background: var(--accent); color: #fff; }
 
   footer {
     text-align: center;
-    padding: 24px 20px 32px;
+    padding: 28px 20px 40px;
     border-top: 1px solid var(--rule);
-    font-size: 11px;
-    letter-spacing: 0.06em;
-    color: var(--muted);
+    font-size: 10px;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
+    color: var(--muted);
+    margin-top: 32px;
   }
+  footer a { color: var(--gold); }
 </style>
 </head>
 <body>
 
 <nav class="archive-topnav">
   <a href="index.html">← Today's Edition</a>
-  <span style="color:var(--rule)">|</span>
-  <span>The Daily Ledger Archive</span>
+  <span style="color:var(--rule2)">|</span>
+  <span style="color:var(--muted)">The Daily Ledger Archive</span>
 </nav>
 
 <div class="archive-head">
@@ -166,36 +184,35 @@
   <div class="month-group">
     <div class="month-label">May 2026</div>
 
-    <!-- Newest first with Latest badge -->
+    <!-- Newest first, Latest badge -->
     <div class="edition-entry latest">
       <div class="entry-info">
         <div class="entry-date">
-          May 28, 2026
+          May 29, 2026
           <span class="latest-badge">Latest</span>
         </div>
-        <div class="entry-dow">Thursday &nbsp;·&nbsp; Vol. I, No. 2 &nbsp;·&nbsp; Iran Truce Draft · Cubs/Sox Win · PCE 3.8%</div>
+        <div class="entry-dow">Friday &nbsp;·&nbsp; Vol. I, No. 2</div>
       </div>
-      <a class="read-btn" href="2026-05-28.html">Read →</a>
+      <a class="read-btn" href="2026-05-29.html">Read →</a>
     </div>
 
     <div class="edition-entry">
       <div class="entry-info">
-        <div class="entry-date">May 27, 2026</div>
-        <div class="entry-dow">Wednesday &nbsp;·&nbsp; Vol. I, No. 1 &nbsp;·&nbsp; First Edition</div>
+        <div class="entry-date">May 28, 2026</div>
+        <div class="entry-dow">Thursday &nbsp;·&nbsp; Vol. I, No. 1 &nbsp;·&nbsp; First Edition</div>
       </div>
-      <a class="read-btn" href="2026-05-27.html">Read →</a>
+      <a class="read-btn" href="2026-05-28.html">Read →</a>
     </div>
 
     <!-- NEW EDITIONS ADDED ABOVE THIS LINE -->
 
   </div>
 
-</div>
+</div><!-- /container -->
 
 <footer>
-  The Daily Ledger &nbsp;·&nbsp; Chicago, Illinois &nbsp;·&nbsp; Archive updated with each new edition
-  <br><br>
-  <a href="https://unclejim7.github.io/The-Daily-Ledger" style="color:var(--gold)">unclejim7.github.io/The-Daily-Ledger</a>
+  The Daily Ledger &nbsp;·&nbsp; Chicago, Illinois &nbsp;·&nbsp; Archive updated with each new edition<br><br>
+  <a href="https://unclejim7.github.io/The-Daily-Ledger">unclejim7.github.io/The-Daily-Ledger</a>
 </footer>
 
 </body>
