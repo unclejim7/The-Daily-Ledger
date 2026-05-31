@@ -5,617 +5,312 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Daily Ledger — Saturday, May 30, 2026</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg: #141210;
-  --bg2: #1c1a17;
-  --bg3: #242018;
-  --text: #e8dfc8;
-  --text-muted: #a89880;
-  --accent: #c8481a;
-  --gold: #c9a227;
-  --rule: #3a3228;
-  --card-bg: #1e1b17;
-  --ticker-bg: #c8481a;
-}
-
-* { margin: 0; padding: 0; box-sizing: border-box; }
-
-body {
-  background: var(--bg);
-  color: var(--text);
-  font-family: 'Libre Baskerville', serif;
-  font-size: 15px;
-  line-height: 1.65;
-}
-
-/* ── NAV BAR ── */
-.edition-nav {
-  background: var(--bg3);
-  border-bottom: 1px solid var(--rule);
-  padding: 8px 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 13px;
-  flex-wrap: wrap;
-  gap: 6px;
-}
-.edition-nav a { color: var(--gold); text-decoration: none; }
-.edition-nav a:hover { text-decoration: underline; }
-.nav-disabled { color: #555; cursor: default; }
-
-/* ── TICKER ── */
-.ticker-wrap {
-  background: var(--ticker-bg);
-  overflow: hidden;
-  white-space: nowrap;
-  padding: 6px 0;
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 12.5px;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-}
-.ticker-track {
-  display: inline-block;
-  animation: ticker 55s linear infinite;
-}
-.ticker-track span { margin: 0 32px; }
-@keyframes ticker { from { transform: translateX(100vw); } to { transform: translateX(-100%); } }
-
-/* ── MASTHEAD ── */
-.masthead {
-  text-align: center;
-  padding: 28px 20px 16px;
-  border-bottom: 3px double var(--gold);
-  position: relative;
-}
-.masthead-eyebrow {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 11px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 6px;
-}
-.masthead-title {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(36px, 7vw, 68px);
-  font-weight: 900;
-  letter-spacing: -0.01em;
-  line-height: 1;
-  color: var(--text);
-}
-.masthead-rule {
-  border: none;
-  border-top: 1px solid var(--gold);
-  margin: 10px auto;
-  width: 60%;
-  opacity: 0.5;
-}
-.masthead-meta {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 12px;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
-}
-.masthead-meta strong { color: var(--gold); }
-
-/* ── WEATHER BANNER ── */
-.weather-banner {
-  background: linear-gradient(135deg, #1a2535 0%, #16201a 100%);
-  border-bottom: 2px solid var(--rule);
-  padding: 14px 24px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-.weather-icon { font-size: 32px; }
-.weather-main { flex: 1; min-width: 180px; }
-.weather-temp {
-  font-family: 'Playfair Display', serif;
-  font-size: 32px;
-  font-weight: 700;
-  color: var(--gold);
-  line-height: 1;
-}
-.weather-desc {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 13px;
-  color: var(--text-muted);
-}
-.weather-extended {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 12px;
-  color: var(--text-muted);
-  flex: 2;
-  min-width: 200px;
-}
-.weather-extended strong { color: var(--text); }
-
-/* ── LAYOUT ── */
-.wrapper { max-width: 960px; margin: 0 auto; padding: 0 16px; }
-
-.section-header {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 10.5px;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 700;
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 6px;
-  margin: 28px 0 14px;
-}
-
-.grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-.grid-3 { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 14px; }
-@media (max-width: 640px) {
-  .grid-2 { grid-template-columns: 1fr; }
-  .grid-3 { grid-template-columns: 1fr; }
-}
-
-/* ── CARDS ── */
-.card {
-  background: var(--card-bg);
-  border: 1px solid var(--rule);
-  border-radius: 4px;
-  padding: 16px;
-}
-.card-label {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.18em;
-  color: var(--accent);
-  font-weight: 700;
-  margin-bottom: 6px;
-}
-.card h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 17px;
-  font-weight: 700;
-  color: var(--text);
-  line-height: 1.3;
-  margin-bottom: 8px;
-}
-.card p {
-  font-size: 13.5px;
-  color: var(--text-muted);
-  line-height: 1.6;
-}
-.card p strong { color: var(--text); }
-
-/* ── LEAD STORY ── */
-.lead-story {
-  background: var(--card-bg);
-  border: 1px solid var(--gold);
-  border-radius: 4px;
-  padding: 20px 22px;
-  margin-bottom: 16px;
-}
-.lead-story .card-label { color: var(--gold); }
-.lead-story h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(22px, 4vw, 30px);
-  font-weight: 900;
-  color: var(--text);
-  line-height: 1.2;
-  margin-bottom: 10px;
-}
-.lead-story p {
-  font-size: 14.5px;
-  line-height: 1.7;
-  color: var(--text-muted);
-}
-.lead-story p strong { color: var(--text); }
-
-/* ── PULL QUOTE ── */
-.pull-quote {
-  border-left: 3px solid var(--gold);
-  padding: 10px 16px;
-  margin: 14px 0;
-  background: rgba(201,162,39,0.06);
-}
-.pull-quote p {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 15.5px;
-  color: var(--gold);
-  line-height: 1.5;
-}
-.pull-quote cite {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 11px;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
-  display: block;
-  margin-top: 4px;
-}
-
-/* ── MARKET TABLE ── */
-.market-table { width: 100%; border-collapse: collapse; font-family: 'Source Sans 3', sans-serif; }
-.market-table th {
-  font-size: 10px;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  text-align: left;
-  padding: 6px 8px;
-  border-bottom: 1px solid var(--rule);
-}
-.market-table td { padding: 7px 8px; font-size: 13px; border-bottom: 1px solid rgba(58,50,40,0.5); }
-.market-table tr:last-child td { border-bottom: none; }
-.up { color: #5cb85c; }
-.down { color: var(--accent); }
-
-/* ── SPORT ITEM ── */
-.sport-item {
-  display: flex;
-  gap: 12px;
-  padding: 12px 0;
-  border-bottom: 1px solid var(--rule);
-}
-.sport-item:last-child { border-bottom: none; }
-.sport-badge {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--bg);
-  background: var(--accent);
-  padding: 2px 7px;
-  border-radius: 2px;
-  white-space: nowrap;
-  align-self: flex-start;
-  margin-top: 2px;
-}
-.sport-body h4 {
-  font-family: 'Playfair Display', serif;
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 3px;
-}
-.sport-body p { font-size: 13px; color: var(--text-muted); line-height: 1.5; }
-.sport-body p strong { color: var(--text); }
-
-/* ── HEALTH ITEM ── */
-.health-item { padding: 12px 0; border-bottom: 1px solid var(--rule); }
-.health-item:last-child { border-bottom: none; }
-.health-item h4 {
-  font-family: 'Playfair Display', serif;
-  font-size: 15px;
-  font-weight: 700;
-  color: var(--text);
-  margin-bottom: 4px;
-}
-.health-item p { font-size: 13px; color: var(--text-muted); line-height: 1.55; }
-
-/* ── EDITOR'S DISPATCH ── */
-.dispatch {
-  background: linear-gradient(135deg, #1e1a14 0%, #221d16 100%);
-  border: 1px solid var(--gold);
-  border-radius: 4px;
-  padding: 20px 22px;
-  margin: 24px 0;
-}
-.dispatch-head {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-  color: var(--gold);
-  font-weight: 700;
-  margin-bottom: 8px;
-}
-.dispatch p {
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 15px;
-  line-height: 1.7;
-  color: var(--text-muted);
-}
-.dispatch p strong { color: var(--text); }
-.dispatch-sig {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 12px;
-  color: var(--text-muted);
-  margin-top: 10px;
-  text-align: right;
-}
-
-/* ── FOOTER ── */
-footer {
-  background: var(--bg3);
-  border-top: 2px solid var(--rule);
-  text-align: center;
-  padding: 22px 16px;
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 12px;
-  color: var(--text-muted);
-  margin-top: 32px;
-}
-.footer-title {
-  font-family: 'Playfair Display', serif;
-  font-size: 20px;
-  font-weight: 900;
-  color: var(--text);
-  margin-bottom: 4px;
-}
-
-.spacer { height: 8px; }
+  :root {
+    --bg: #141210;
+    --bg2: #1c1917;
+    --bg3: #242220;
+    --text: #e8dfc8;
+    --text-muted: #9e9480;
+    --accent: #c8481a;
+    --gold: #c9a227;
+    --gold-dim: #8a6e1a;
+    --rule: #3a3530;
+    --card-bg: #1e1c19;
+    --card-border: #2e2b26;
+    --green: #5a9e6f;
+    --red: #c8481a;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Libre Baskerville', Georgia, serif; font-size: 15px; line-height: 1.65; min-height: 100vh; }
+  .edition-nav { background: var(--bg2); border-bottom: 1px solid var(--rule); padding: 8px 20px; display: flex; align-items: center; justify-content: space-between; gap: 12px; font-family: 'Source Sans 3', sans-serif; font-size: 13px; flex-wrap: wrap; }
+  .edition-nav a { color: var(--gold); text-decoration: none; font-weight: 600; letter-spacing: 0.02em; }
+  .edition-nav a:hover { color: var(--accent); }
+  .nav-disabled { color: var(--text-muted); cursor: default; font-weight: 600; letter-spacing: 0.02em; }
+  .nav-archive { color: var(--text-muted); font-weight: 600; letter-spacing: 0.02em; }
+  .nav-archive a { color: var(--text-muted); }
+  .nav-archive a:hover { color: var(--gold); }
+  .ticker-wrap { background: var(--accent); overflow: hidden; height: 32px; display: flex; align-items: center; }
+  .ticker-label { background: #8a2d0e; color: #fff; font-family: 'Source Sans 3', sans-serif; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; padding: 0 14px; height: 100%; display: flex; align-items: center; white-space: nowrap; flex-shrink: 0; }
+  .ticker-track { display: flex; animation: ticker 50s linear infinite; white-space: nowrap; }
+  .ticker-track span { font-family: 'Source Sans 3', sans-serif; font-size: 12px; font-weight: 600; color: #fff; padding: 0 32px; letter-spacing: 0.03em; }
+  .ticker-track span::after { content: '◆'; margin-left: 32px; opacity: 0.6; }
+  @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
+  .masthead { text-align: center; padding: 28px 20px 18px; border-bottom: 3px double var(--rule); }
+  .masthead-eyebrow { font-family: 'Source Sans 3', sans-serif; font-size: 10px; letter-spacing: 0.25em; text-transform: uppercase; color: var(--text-muted); margin-bottom: 6px; }
+  .masthead-title { font-family: 'Playfair Display', serif; font-size: clamp(36px, 8vw, 72px); font-weight: 900; color: var(--text); line-height: 1; margin-bottom: 8px; }
+  .masthead-title span { color: var(--gold); }
+  .masthead-rule { height: 1px; background: linear-gradient(to right, transparent, var(--gold), transparent); margin: 10px auto; max-width: 600px; }
+  .masthead-meta { display: flex; justify-content: center; gap: 24px; flex-wrap: wrap; font-family: 'Source Sans 3', sans-serif; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-top: 8px; }
+  .masthead-meta strong { color: var(--gold); }
+  .weather-banner { background: linear-gradient(135deg, #1a1e2a 0%, #1c1917 100%); border-bottom: 1px solid var(--rule); padding: 14px 20px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+  .weather-main { display: flex; align-items: center; gap: 16px; }
+  .weather-icon { font-size: 36px; line-height: 1; }
+  .weather-temp { font-family: 'Playfair Display', serif; font-size: 32px; font-weight: 700; color: var(--text); line-height: 1; }
+  .weather-desc { font-family: 'Source Sans 3', sans-serif; font-size: 13px; color: var(--text-muted); }
+  .weather-location { font-family: 'Source Sans 3', sans-serif; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+  .weather-days { display: flex; gap: 16px; flex-wrap: wrap; }
+  .weather-day { background: rgba(255,255,255,0.04); border: 1px solid var(--rule); border-radius: 4px; padding: 8px 14px; text-align: center; min-width: 70px; }
+  .weather-day-name { font-family: 'Source Sans 3', sans-serif; font-size: 10px; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 3px; }
+  .weather-day-emoji { font-size: 18px; line-height: 1.3; }
+  .weather-day-temps { font-family: 'Source Sans 3', sans-serif; font-size: 12px; color: var(--text); margin-top: 2px; }
+  .weather-day-temps .lo { color: var(--text-muted); }
+  .container { max-width: 1100px; margin: 0 auto; padding: 0 16px; }
+  .section-header { display: flex; align-items: center; gap: 12px; margin: 28px 0 14px; padding-bottom: 8px; border-bottom: 2px solid var(--rule); }
+  .section-header .label { font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--accent); background: rgba(200,72,26,0.12); border: 1px solid rgba(200,72,26,0.3); padding: 3px 10px; border-radius: 2px; white-space: nowrap; }
+  .section-header .rule { flex: 1; height: 1px; background: var(--rule); }
+  .card-grid { display: grid; gap: 14px; }
+  .card-grid-2 { grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); }
+  .card { background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 4px; padding: 18px 20px; }
+  .card.accent-left { border-left: 3px solid var(--accent); }
+  .card.gold-left { border-left: 3px solid var(--gold); }
+  .card-tag { font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold); margin-bottom: 8px; }
+  .card h2 { font-family: 'Playfair Display', serif; font-size: 19px; font-weight: 700; line-height: 1.25; color: var(--text); margin-bottom: 10px; }
+  .card h3 { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 600; line-height: 1.3; color: var(--text); margin-bottom: 8px; }
+  .card p { font-size: 14px; color: #c8bfa8; line-height: 1.65; }
+  .card p + p { margin-top: 8px; }
+  .headline-card { background: var(--card-bg); border: 1px solid var(--card-border); border-top: 3px solid var(--accent); border-radius: 4px; padding: 22px 24px; margin-bottom: 14px; }
+  .headline-card .kicker { font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.18em; text-transform: uppercase; color: var(--accent); margin-bottom: 8px; }
+  .headline-card h1 { font-family: 'Playfair Display', serif; font-size: clamp(22px, 4vw, 32px); font-weight: 900; line-height: 1.15; color: var(--text); margin-bottom: 12px; }
+  .headline-card .dek { font-size: 15px; color: #c0b89e; line-height: 1.65; font-style: italic; }
+  .pull-quote { border-left: 4px solid var(--gold); padding: 12px 18px; margin: 16px 0; background: rgba(201,162,39,0.06); }
+  .pull-quote p { font-family: 'Playfair Display', serif; font-size: 17px; font-style: italic; color: var(--gold); line-height: 1.5; }
+  .pull-quote cite { display: block; font-family: 'Source Sans 3', sans-serif; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); margin-top: 6px; }
+  .market-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+  .market-table th { font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: var(--text-muted); text-align: left; padding: 6px 10px; border-bottom: 1px solid var(--rule); }
+  .market-table td { font-family: 'Source Sans 3', sans-serif; font-size: 13px; padding: 9px 10px; border-bottom: 1px solid rgba(255,255,255,0.04); color: var(--text); }
+  .market-table tr:last-child td { border-bottom: none; }
+  .market-table .name { font-weight: 600; }
+  .market-table .up { color: var(--green); font-weight: 600; }
+  .market-table .down { color: var(--red); font-weight: 600; }
+  .sport-item { display: flex; align-items: flex-start; gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--rule); }
+  .sport-item:last-child { border-bottom: none; }
+  .sport-emoji { font-size: 22px; flex-shrink: 0; margin-top: 2px; }
+  .sport-body h4 { font-family: 'Playfair Display', serif; font-size: 15px; font-weight: 700; color: var(--text); margin-bottom: 4px; }
+  .sport-body p { font-size: 13px; color: #b8b09a; line-height: 1.55; }
+  .score-badge { background: var(--bg3); border: 1px solid var(--rule); border-radius: 3px; font-family: 'Source Sans 3', sans-serif; font-size: 12px; font-weight: 700; padding: 2px 8px; color: var(--gold); margin-left: 8px; white-space: nowrap; }
+  .dispatch { background: linear-gradient(135deg, #1e1a14 0%, #211d17 100%); border: 1px solid var(--gold-dim); border-radius: 4px; padding: 24px 26px; margin: 28px 0; }
+  .dispatch-label { font-family: 'Source Sans 3', sans-serif; font-size: 10px; font-weight: 700; letter-spacing: 0.2em; text-transform: uppercase; color: var(--gold); margin-bottom: 10px; }
+  .dispatch h2 { font-family: 'Playfair Display', serif; font-size: 20px; font-weight: 700; color: var(--text); margin-bottom: 12px; font-style: italic; }
+  .dispatch p { font-size: 14px; color: #c0b89e; line-height: 1.7; }
+  .dispatch p + p { margin-top: 10px; }
+  footer { background: var(--bg2); border-top: 2px solid var(--rule); text-align: center; padding: 24px 20px; margin-top: 40px; }
+  .footer-title { font-family: 'Playfair Display', serif; font-size: 22px; font-weight: 900; color: var(--gold); margin-bottom: 6px; }
+  footer p { font-family: 'Source Sans 3', sans-serif; font-size: 12px; color: var(--text-muted); letter-spacing: 0.05em; }
+  @media (max-width: 600px) { .card-grid-2 { grid-template-columns: 1fr; } .weather-days { gap: 8px; } }
 </style>
 </head>
 <body>
 
-<!-- EDITION NAV -->
+<!-- EDITION NAV — forward arrow now LIVE -->
 <nav class="edition-nav">
   <a href="2026-05-29.html">← May 29</a>
-  <a href="archive.html">📁 Archive</a>
-  <span class="nav-disabled">May 30 →</span>
+  <span class="nav-archive"><a href="archive.html">📁 Archive</a></span>
+  <a href="2026-05-31.html">May 31 →</a>
 </nav>
 
 <!-- TICKER -->
 <div class="ticker-wrap">
+  <div class="ticker-label">Markets</div>
   <div class="ticker-track">
-    <span>DOW 51,032 ▲ +363 (+0.72%)</span>
-    <span>S&amp;P 500 7,580 ▲ +0.22%</span>
-    <span>NASDAQ 26,973 ▲ +0.20%</span>
-    <span>10-YR TREAS 4.44%</span>
-    <span>30-YR TREAS 4.98%</span>
-    <span>CRUDE OIL $87.93</span>
-    <span>GOLD $4,578</span>
-    <span>30-YR MORTGAGE 6.56% (Bankrate)</span>
-    <span>FED FUNDS RATE 3.50–3.75%</span>
-    <span>CUBS 31-26 · 2nd NL Central</span>
-    <span>WHITE SOX beat DET 4-3 Friday</span>
-    <span>CHICAGOLAND · SAT HIGH 67°F</span>
+    <span>S&amp;P 500 7,580 ▲ Record High</span>
+    <span>Nasdaq 26,972 ▲ +8% for May</span>
+    <span>Dow Jones 51,032 ▲ Record High</span>
+    <span>Dell Technologies +33% best day ever</span>
+    <span>30-Yr Mortgage 6.53% (Freddie Mac)</span>
+    <span>10-Yr Treasury 4.44%</span>
+    <span>Fed Funds 3.50–3.75%</span>
+    <span>Warsh sworn in as Fed Chair May 22</span>
+    <span>PCE Inflation 3.8% YOY</span>
+    <span>S&amp;P 500 7,580 ▲ Record High</span>
+    <span>Nasdaq 26,972 ▲ +8% for May</span>
+    <span>Dow Jones 51,032 ▲ Record High</span>
+    <span>Dell Technologies +33% best day ever</span>
+    <span>30-Yr Mortgage 6.53% (Freddie Mac)</span>
+    <span>10-Yr Treasury 4.44%</span>
+    <span>Fed Funds 3.50–3.75%</span>
+    <span>Warsh sworn in as Fed Chair May 22</span>
+    <span>PCE Inflation 3.8% YOY</span>
   </div>
 </div>
 
 <!-- MASTHEAD -->
 <header class="masthead">
-  <div class="masthead-eyebrow">Est. May 2026 &nbsp;·&nbsp; Curated for Riverwoods, IL</div>
-  <div class="masthead-title">The Daily Ledger</div>
-  <hr class="masthead-rule">
+  <div class="masthead-eyebrow">Riverwoods, Illinois · Est. May 2026</div>
+  <div class="masthead-title">The Daily <span>Ledger</span></div>
+  <div class="masthead-rule"></div>
   <div class="masthead-meta">
-    <strong>Vol. I, No. 4</strong> &nbsp;·&nbsp; Saturday, May 30, 2026 &nbsp;·&nbsp; Riverwoods, Illinois
+    <span><strong>Vol. I, No. 4</strong></span>
+    <span>Saturday, May 30, 2026</span>
+    <span>Chicagoland Edition</span>
+    <span>All the news that's fit to know</span>
   </div>
 </header>
 
 <!-- WEATHER BANNER -->
 <div class="weather-banner">
-  <div class="weather-icon">⛅</div>
   <div class="weather-main">
-    <div class="weather-temp">67°F</div>
-    <div class="weather-desc">Mostly cloudy → partly clearing afternoon · Low 55°F</div>
-  </div>
-  <div class="weather-extended">
-    <strong>Weekend Outlook · Riverwoods, IL</strong><br>
-    <strong>Sat May 30:</strong> H 67° / L 55° — NE winds 10-20 mph, mostly cloudy clearing by afternoon<br>
-    <strong>Sun May 31:</strong> H 50° / L 36° — Considerable cloudiness, chance of rain showers<br>
-    <strong>Mon Jun 1:</strong> H 56° / L 36° — Cloudy with rain developing<br>
-    <em>Heads up: Sunday cooling drop of 17° — keep the jacket handy.</em>
-  </div>
-</div>
-
-<div class="wrapper">
-
-<!-- ── FRONT PAGE ── -->
-<div class="section-header">Front Page</div>
-
-<div class="lead-story">
-  <div class="card-label">⚔️ Iran — Top Story</div>
-  <h2>Negotiators Strike a 60-Day Deal — Now It's Trump's Call</h2>
-  <p>
-    U.S. and Iranian negotiators have agreed on a 60-day memorandum of understanding to extend the ceasefire and launch nuclear talks — but the deal remains in limbo pending <strong>President Trump's final approval</strong>. The president met with advisers in the White House Situation Room on Friday and posted his red lines on Truth Social: Iran must "never have a Nuclear Weapon or Bomb" and the Strait of Hormuz must be "immediately open, no tolls, for unrestricted shipping traffic." He called the moment his opportunity to make a "final determination."
-  </p>
-  <div class="pull-quote"><p>"No money will be exchanged, until further notice. Other items, of far less importance, have been agreed to."</p><cite>— President Trump, via Truth Social, May 29</cite></div>
-  <p>
-    <strong>What the deal would entail:</strong> Shipping through the Strait of Hormuz would be unrestricted; Iran would remove mines within 30 days; the U.S. naval blockade would lift proportionally as commercial shipping resumes. <strong>Key sticking points remain</strong> — Iran insists on its right to domestic uranium enrichment, while Trump demands the entire nuclear program be dismantled. Markets finished the week at all-time highs in part on ceasefire optimism, with oil prices falling and tech stocks surging. The resolution of this conflict — or its failure — will set the tone for global markets through the summer.
-  </p>
-</div>
-
-<div class="grid-2">
-  <div class="card">
-    <div class="card-label">🌍 World</div>
-    <h3>Lebanon: Renewed Israeli Strikes on Beirut</h3>
-    <p>Israel bombed Beirut on Thursday for the first time in three weeks — the second strike on the Lebanese capital since a fragile "ceasefire" was reached in April. Iran-allied Hezbollah has intensified drone attacks on invading Israeli forces in southern Lebanon. The renewed Lebanon front complicates any broader regional settlement, as the U.S.-Iran MOU framework does not directly address the Lebanon situation. Analysts warn that progress on one front can unravel quickly on the other.</p>
-  </div>
-  <div class="card">
-    <div class="card-label">🤖 Technology</div>
-    <h3>Robinhood Unveils AI Agents That Trade for You</h3>
-    <p>Robinhood debuted <strong>Agentic Trading</strong> and an <strong>Agentic Credit Card</strong> this week, allowing customers to connect third-party AI assistants to execute investing strategies and spending instructions with minimal human involvement. Mizuho raised its price target on Robinhood to $115 (from $110), projecting 36% upside, citing enthusiasm for the new tools. The move represents the boldest mainstream deployment of autonomous AI agents in consumer finance to date.</p>
-  </div>
-</div>
-
-<!-- ── MARKETS ── -->
-<div class="section-header">Markets &amp; Finance</div>
-
-<div class="lead-story">
-  <div class="card-label">📈 May Monthly Wrap</div>
-  <h2>S&P 500 Posts Ninth Straight Weekly Win — May Closes With a Bang</h2>
-  <p>
-    Friday's session capped a remarkable month. <strong>The Dow closed at 51,032</strong> (+0.72%), the <strong>S&amp;P 500 at 7,580</strong> (+0.22%), and the <strong>Nasdaq at 26,973</strong> (+0.20%) — all at all-time highs. It was the S&amp;P's ninth consecutive weekly advance, its longest winning streak since 2023. For the month, the <strong>Nasdaq surged more than 8%</strong>, the S&amp;P gained 5%, and the Dow added nearly 3%.
-  </p>
-  <p>The month's biggest winner: <strong>Dell Technologies</strong>, which surged nearly 33% on Friday alone after a blowout Q1 earnings report — its best single day on record — capping a staggering month. Semiconductor stocks led the broader rally: <strong>Micron</strong> up 80%+ in May, <strong>AMD</strong> up 40%+, <strong>SanDisk</strong> up nearly 50%.</p>
-</div>
-
-<div class="card">
-  <table class="market-table">
-    <thead>
-      <tr><th>Index / Asset</th><th>Last</th><th>Change (Day)</th><th>May MTD</th></tr>
-    </thead>
-    <tbody>
-      <tr><td>Dow Jones</td><td>51,032</td><td class="up">▲ +363 (+0.72%)</td><td class="up">+3.0%</td></tr>
-      <tr><td>S&amp;P 500</td><td>7,580</td><td class="up">▲ +0.22%</td><td class="up">+5.0%</td></tr>
-      <tr><td>Nasdaq</td><td>26,973</td><td class="up">▲ +0.20%</td><td class="up">+8.0%</td></tr>
-      <tr><td>10-Yr Treasury</td><td>4.44%</td><td class="down">▼ −1.2 bps</td><td>—</td></tr>
-      <tr><td>30-Yr Treasury</td><td>4.98%</td><td class="up">▲ +0.7 bps</td><td>—</td></tr>
-      <tr><td>Crude Oil (Front Mo.)</td><td>$87.93</td><td class="down">▼ −1.0%</td><td>—</td></tr>
-      <tr><td>Gold (Continuous)</td><td>$4,578</td><td class="up">▲ +1.0%</td><td>—</td></tr>
-      <tr><td>Dell (DELL)</td><td>—</td><td class="up">▲ +33% (Friday)</td><td>—</td></tr>
-      <tr><td>Micron (MU)</td><td>—</td><td class="up">▲ +5% (Friday)</td><td class="up">+80%+ May</td></tr>
-    </tbody>
-  </table>
-</div>
-
-<div class="spacer"></div>
-
-<div class="grid-2">
-  <div class="card">
-    <div class="card-label">📊 Sector Watch</div>
-    <h3>Technology Dominates Since Market Lows</h3>
-    <p>Technology has been the best-performing sector since the March 30 market lows. The broader rally has been fueled by blowout earnings from AI-adjacent hardware companies and optimism around a U.S.-Iran ceasefire, which has eased oil prices and lifted global risk sentiment. Bank of America had warned of a "summer pullback" — so far, that call has not materialized.</p>
-  </div>
-  <div class="card">
-    <div class="card-label">🏦 Bond Market</div>
-    <h3>Yields Tick Lower Heading Into Weekend</h3>
-    <p>The 10-year Treasury yield pulled back to <strong>4.44%</strong> on Friday, down slightly. The 30-year remains near <strong>4.98%</strong>. Treasury yields have been a headwind for the housing market and a key variable for Fed policy deliberations under new Chair Kevin Warsh. Fed governors Schmid and Bowman were speaking Friday, with markets watching for any inflation commentary.</p>
-  </div>
-</div>
-
-<!-- ── MACROECONOMICS ── -->
-<div class="section-header">Macroeconomics</div>
-
-<div class="grid-2">
-  <div class="card">
-    <div class="card-label">📉 Consumer Economy</div>
-    <h3>PCE Running Hot at 3.8% — Savings Rate Near 2022 Lows</h3>
-    <p>April PCE came in at <strong>3.8% year-over-year</strong>, a three-year high. Core PCE at 3.3%. Real consumer spending rose only 0.1% while real disposable income fell 1.4% year-over-year. The personal saving rate has dropped to near its lowest level since 2022 — consumers are spending, but they're dipping into savings to do it. Cocoa prices, meanwhile, are down more than 50% on the year, a bright spot for some discretionary categories even as overall inflation remains elevated.</p>
-  </div>
-  <div class="card">
-    <div class="card-label">⚖️ Macro Risk</div>
-    <h3>Dimon Warns of Coming "Credit Recession"</h3>
-    <p>JPMorgan CEO Jamie Dimon offered a cautious message this week, warning vaguely that credit recessions "when we have one" can be severe and are often underestimated. While he pointed to no specific current signal, the comment came as high-yield spreads and private credit conditions are receiving increased scrutiny. The War in Iran and elevated oil prices have complicated economic modeling for the remainder of 2026.</p>
-  </div>
-</div>
-
-<!-- ── FEDERAL RESERVE ── -->
-<div class="section-header">Federal Reserve</div>
-
-<div class="card">
-  <div class="card-label">🏛️ Chair Warsh — New Era Begins</div>
-  <h3>Markets Pricing In Minimal Cuts; Warsh Faces an Inflation Bind</h3>
-  <p>
-    Kevin Warsh was confirmed by the Senate 54–45 on May 13 — the most divisive Fed confirmation in history — and officially took the helm on May 15. The new chair was originally seen as potentially dovish (some analysts projected 100 bps in cuts by October), but with PCE running at 3.8% and the Iran conflict keeping oil elevated, <strong>rate cuts in 2026 look increasingly unlikely</strong>. Markets are currently pricing in only about 40 basis points in cuts for the rest of the year, versus earlier hopes for 100 bps.
-  </p>
-  <p style="margin-top:8px;">
-    Warsh has made no promises on rate cuts despite being picked by a president who wants lower rates. The Fed held at <strong>3.50–3.75%</strong> at the April 29 meeting in an unusual 8-4 vote. The June FOMC meeting will be Warsh's first major test. His priorities — tighter inflation discipline, streamlined communication, and active balance sheet reduction — represent a meaningful shift from the Powell era.
-  </p>
-</div>
-
-<!-- ── TAX & ACCOUNTING ── -->
-<div class="section-header">Tax &amp; Accounting</div>
-
-<div class="grid-2">
-  <div class="card">
-    <div class="card-label">📋 Portfolio Strategy</div>
-    <h3>Inflation Above 3.5%? Time to Revisit Your 60/40</h3>
-    <p>With prices across the U.S. up more than 25% since 2020 and broad bond holdings returning only about 6% in that span, Chase strategists and others are warning that the classic 60/40 stock-bond portfolio may not absorb risk the way it once did. When inflation stays volatile, stocks and bonds can fall simultaneously. The recommendation: consider real assets — commodities, infrastructure, natural resource equities, and global real estate — that have historically shown a positive correlation to inflation.</p>
-  </div>
-  <div class="card">
-    <div class="card-label">🏢 Corporate</div>
-    <h3>Exxon Mobil Votes to Move Incorporation to Texas</h3>
-    <p>Exxon Mobil shareholders voted approximately 71% in favor of moving the company's state of incorporation from New Jersey to Texas. The move is largely symbolic for day-to-day operations but reflects a broader trend of major energy corporations aligning their legal home with business-friendly Texas regulations. The vote was confirmed at this week's annual meeting. Exxon's stock has been under pressure this month as oil prices retreated on ceasefire optimism.</p>
-  </div>
-</div>
-
-<!-- ── REAL ESTATE ── -->
-<div class="section-header">Real Estate</div>
-
-<div class="lead-story">
-  <div class="card-label">🏠 Housing Market</div>
-  <h2>Rates Inch Lower, But the Spring Season Remains "Weird"</h2>
-  <p>
-    The 30-year fixed mortgage rate sits at <strong>6.56% today</strong> (Bankrate), down slightly from last week's 6.59% (Zillow/US News). Freddie Mac's Thursday weekly survey put the benchmark at <strong>6.53%</strong>, up from 6.51% the prior week. <strong>Fannie Mae projects rates will stay near 6.3% through 2026</strong>, while NAHB is more optimistic, projecting a drop below 6% by year-end — though that outlook was made before Iran-driven inflation pressures returned.
-  </p>
-  <p style="margin-top:8px;">
-    <strong>The housing market picture:</strong> National home prices are up only 0.7% year-over-year (Case-Shiller), sluggish by historical standards. Pending home sales have increased three consecutive months, suggesting latent demand. Texas and Florida have shifted to buyer's markets, while parts of the Midwest and Northeast — including the Chicago area — remain seller's markets. The spring buying season is described as "weird" — listings outpaced sales in April for the first time this cycle, but buyers haven't fully materialized to take advantage.
-  </p>
-</div>
-
-<!-- ── CHICAGO SPORTS ── -->
-<div class="section-header">Chicago Sports</div>
-
-<div class="card">
-  <div class="sport-item">
-    <div class="sport-badge">⚾ CUBS</div>
-    <div class="sport-body">
-      <h4>Cubs at Cardinals — Friday Night, Imanaga Tries to Break Skid</h4>
-      <p>The Cubs (31-26, 2nd in NL Central) opened a three-game series at St. Louis on Friday night, sending LHP <strong>Shota Imanaga (4-5, 4.04 ERA)</strong> to the mound against RHP Andre Pallante (5-4, 3.76). Imanaga enters trying to snap a three-game losing streak. Chicago is riding momentum from back-to-back wins over Pittsburgh to close out that series, including Thursday's 7-2 victory behind <strong>Ian Happ's 3-for-4, 2-run homer night</strong> (his 12th of the season, 5-for-11 over his last two games with 7 RBI). Pallante is 0-4 with a 4.40 ERA in 12 career appearances against Chicago — a favorable matchup on paper. <strong>Today (Sat May 30):</strong> Series Game 2 at Busch Stadium.</p>
+    <div class="weather-icon">⛅</div>
+    <div>
+      <div class="weather-location">Riverwoods, IL</div>
+      <div class="weather-temp">67°F</div>
+      <div class="weather-desc">Partly Cloudy · H 67° / L 55°</div>
     </div>
   </div>
-  <div class="sport-item">
-    <div class="sport-badge">⚾ SOX</div>
-    <div class="sport-body">
-      <h4>White Sox Beat Detroit 4-3 Friday, Continue Hot Stretch</h4>
-      <p>The White Sox edged the Detroit Tigers <strong>4-3</strong> on Friday evening at Guaranteed Rate Field to open their three-game home series. The win follows the team's dominant sweep of Minnesota, including a stunning <strong>15-2 blowout Wednesday</strong> and a <strong>6-2 win Thursday</strong>. <strong>Yoshida Murakami</strong> continues to be the story: his 20th home run came in the Minnesota series, putting him at <strong>20 HR, 40+ RBI</strong> through 55 games. Today: Game 2 vs. Detroit at 1:10 PM CDT.</p>
+  <div class="weather-days">
+    <div class="weather-day">
+      <div class="weather-day-name">Today</div>
+      <div class="weather-day-emoji">⛅</div>
+      <div class="weather-day-temps">H 67° <span class="lo">L 55°</span></div>
     </div>
-  </div>
-  <div class="sport-item">
-    <div class="sport-badge">🏒 HAWKS</div>
-    <div class="sport-body">
-      <h4>Blackhawks Hold 4th Pick — Chase Reid or a Surprise?</h4>
-      <p>The Blackhawks fell to the <strong>4th overall pick</strong> in the 2026 NHL Draft Lottery after the Toronto Maple Leafs and San Jose Sharks jumped ahead. This almost certainly means <strong>Gavin McKenna</strong> (the consensus No. 1 pick, who grew up idolizing Patrick Kane) and <strong>Ivar Stenberg</strong> will be off the board. Current mock drafts have Chicago pivoting to defenseman <strong>Chase Reid</strong> of Sault Ste. Marie. The NHL Draft is June 26. GM Kyle Davidson is in his third straight year navigating the draft lottery with the league's worst record.</p>
+    <div class="weather-day">
+      <div class="weather-day-name">Sun</div>
+      <div class="weather-day-emoji">🌤️</div>
+      <div class="weather-day-temps">H 74° <span class="lo">L 56°</span></div>
     </div>
-  </div>
-  <div class="sport-item">
-    <div class="sport-badge">🏀 BULLS</div>
-    <div class="sport-body">
-      <h4>Bulls Coaching Search: 11 Names, Two Frontrunners</h4>
-      <p>The Bulls' coaching search under new EVP <strong>Bryson Graham</strong> has expanded to more than 11 reported candidates — and interviews are ongoing. The two frontrunners: <strong>Sean Sweeney</strong> (Spurs associate HC, praised for elite defensive work with Wembanyama, WCF pedigree) and <strong>Chris Quinn</strong> (Miami Heat associate HC, 12-year Spoelstra lieutenant, "Heat Culture" architect). Both are first-time head coaching candidates. The Bulls also need to make two first-round picks at the June 23 NBA Draft — the new coach will be on the clock for that too. Note: The Orlando Magic reportedly have an agreement to hire Sweeney, which could take him off the Bulls' board.</p>
+    <div class="weather-day">
+      <div class="weather-day-name">Mon</div>
+      <div class="weather-day-emoji">⛅</div>
+      <div class="weather-day-temps">H 70° <span class="lo">L 57°</span></div>
     </div>
-  </div>
-  <div class="sport-item">
-    <div class="sport-badge">🐻 BEARS</div>
-    <div class="sport-body">
-      <h4>Bears in Offseason Mode</h4>
-      <p>The Bears are in the quiet stretch of the offseason between OTAs and training camp. No major news this week from Halas Hall. Chicago enters 2026 with significant expectations after years of rebuilding — the roster and coaching staff will be the focus of coverage as training camp approaches in late July.</p>
+    <div class="weather-day">
+      <div class="weather-day-name">Tue</div>
+      <div class="weather-day-emoji">🌧️</div>
+      <div class="weather-day-temps">H 63° <span class="lo">L 52°</span></div>
     </div>
   </div>
 </div>
 
-<!-- ── HEALTH & WELLNESS ── -->
-<div class="section-header">Health &amp; Wellness</div>
+<div class="container">
 
-<div class="card">
-  <div class="health-item">
-    <h4>Stanford: Why the Aging Brain Slows Down — The Protein Jam Theory</h4>
-    <p>Scientists at Stanford, studying the ultra-short-lived turquoise killifish, may have uncovered a hidden reason human brains decline with age: the cellular machinery responsible for <strong>building proteins begins to jam</strong>. The disruption in protein synthesis — not just neuron loss — could be a primary driver of cognitive decline. Researchers hope the finding opens new therapeutic targets for age-related neurodegeneration.</p>
+  <div class="section-header"><span class="label">Front Page</span><span class="rule"></span></div>
+
+  <div class="headline-card">
+    <div class="kicker">Breaking — U.S.–Iran War</div>
+    <h1>Trump Sets Red Lines for Iran Deal — Situation Room Session Ends Without Decision</h1>
+    <p class="dek">A two-hour Situation Room meeting Friday produced no signed agreement. Trump demands Hormuz open, nukes surrendered, and no frozen asset relief. Tehran's reaction has been cool. Defense Secretary Hegseth warns the U.S. military is ready to resume combat.</p>
   </div>
-  <div class="health-item">
-    <h4>Silent Crisis: Kidney Disease Now Affects 800 Million Worldwide</h4>
-    <p>A sweeping global study published this week found that <strong>chronic kidney disease now affects nearly 800 million people</strong> and has become one of the world's leading causes of death. The condition is often silent in its early stages, making it a major undetected contributor to cardiovascular disease. Researchers are calling for expanded routine screening, particularly for people with diabetes and hypertension — the primary risk factors.</p>
+
+  <div class="card-grid card-grid-2">
+    <div class="card accent-left">
+      <div class="card-tag">Geopolitics</div>
+      <h3>Deal or No Deal: The Iran Standoff Continues</h3>
+      <p>Negotiators reached a tentative memorandum of understanding on Thursday, but Trump posted his red lines from the Situation Room on Friday: no nuclear program, Strait of Hormuz fully open, frozen assets off the table. Iran fired warning shots near Hormuz, and VP Vance called the flare-ups "a little messy but normal." Markets priced in a deal — oil slid — but the window remains open for a breakdown that could reverse those gains sharply.</p>
+    </div>
+    <div class="card accent-left">
+      <div class="card-tag">Trade</div>
+      <h3>Costco Pledges to Pass Tariff Refunds to Members</h3>
+      <p>Costco CEO Roland Vachris told shareholders Thursday that the company will return the value of tariff refunds it receives to its members — though he didn't specify how much. The SCOTUS February ruling that struck down IEEPA tariffs set off a chain of refund claims from importers; Costco's pledge is one of the first major retailer commitments to pass those savings downstream to consumers rather than keeping them as margin improvement.</p>
+    </div>
   </div>
-  <div class="health-item">
-    <h4>Edibles + Alcohol = Worse Than Either Alone Behind the Wheel</h4>
-    <p>Johns Hopkins researchers found that combining cannabis edibles and alcohol creates <strong>significantly greater driving impairment</strong> than either substance used alone — and critically, standard field sobriety tests frequently failed to detect the cannabis component. The findings have implications for roadside enforcement and public safety messaging, particularly as recreational cannabis remains widely available.</p>
+
+  <div class="section-header"><span class="label">Markets &amp; Finance</span><span class="rule"></span></div>
+
+  <div class="card-grid card-grid-2">
+    <div class="card">
+      <div class="card-tag">May Month-End Close</div>
+      <table class="market-table">
+        <thead><tr><th>Index</th><th>Friday Close</th><th>May MTD</th></tr></thead>
+        <tbody>
+          <tr><td class="name">Dow Jones</td><td>51,032</td><td class="up">+2.9%</td></tr>
+          <tr><td class="name">S&amp;P 500</td><td>7,580</td><td class="up">+5.0%</td></tr>
+          <tr><td class="name">Nasdaq</td><td>26,972</td><td class="up">+8.1%</td></tr>
+        </tbody>
+      </table>
+      <p style="margin-top:12px;font-size:13px;color:var(--text-muted)">All three indexes at all-time closing highs. S&amp;P posted its 9th straight weekly gain. Dell surged 33% on AI server strength.</p>
+    </div>
+    <div class="card">
+      <div class="card-tag">Fixed Income</div>
+      <table class="market-table">
+        <thead><tr><th>Instrument</th><th>Rate</th></tr></thead>
+        <tbody>
+          <tr><td class="name">Fed Funds</td><td>3.50–3.75%</td></tr>
+          <tr><td class="name">10-Yr Treasury</td><td>4.44%</td></tr>
+          <tr><td class="name">30-Yr Fixed Mortgage</td><td>6.53% (Freddie)</td></tr>
+          <tr><td class="name">30-Yr Fixed Mortgage</td><td>6.56% (Bankrate)</td></tr>
+        </tbody>
+      </table>
+    </div>
   </div>
-  <div class="health-item">
-    <h4>B12 &amp; Folate Deficiencies Linked to Chronic Fatigue — Even in Otherwise Healthy Adults</h4>
-    <p>Japanese researchers found that <strong>low levels of vitamin B12 and folate</strong> may quietly contribute to persistent fatigue and low motivation, even in people who appear otherwise healthy and are getting adequate sleep. The study suggests these deficiencies are underdiagnosed and that supplementation — or simply improving diet with leafy greens, legumes, and fortified foods — could offer meaningful energy benefits without pharmaceutical intervention.</p>
+
+  <div class="section-header"><span class="label">Federal Reserve &amp; Macro</span><span class="rule"></span></div>
+
+  <div class="card-grid card-grid-2">
+    <div class="card gold-left">
+      <div class="card-tag">Warsh Era</div>
+      <h3>New Fed Chair's First Week</h3>
+      <p>Kevin Warsh was sworn in May 22. His first FOMC meeting is June 16–17. Markets give 97% odds to no rate move, but all eyes are on his language, dot-plot revisions, and whether committee dissents narrow or widen. PCE at 3.8% and a savings rate at its lowest since 2022 make rate cuts politically and economically difficult to justify.</p>
+    </div>
+    <div class="card gold-left">
+      <div class="card-tag">Rate Outlook</div>
+      <h3>Hike Odds Climbing to 70% by December</h3>
+      <p>CME FedWatch data shows nearly 70% probability of a rate <em>hike</em> by December 2026 — a stunning reversal from the cut expectations that prevailed entering the year. Warsh has explicitly refused to commit to rate cuts, and Jamie Dimon warned this week of a potential "credit recession" if long rates stay elevated.</p>
+    </div>
   </div>
+
+  <div class="section-header"><span class="label">Real Estate</span><span class="rule"></span></div>
+
+  <div class="card accent-left">
+    <div class="card-tag">Housing Market</div>
+    <h3>Spring Season "Weird" — Listings Outpacing Buyers for First Time This Year</h3>
+    <p>Freddie Mac's weekly rate average: 6.53%. Bankrate daily: 6.56%. Fannie Mae projects the 30-year staying near 6.3% through Q2 and easing to 6.1% by year-end. The big story: April 2026 was the first month this year that home listings outpaced sales — a meaningful shift from the supply-starved market of recent years. Forecasters describe it as a tentative buyer's market emerging in parts of Texas and Florida, while the Chicago suburbs remain competitive.</p>
+  </div>
+
+  <div class="section-header"><span class="label">Chicago Sports</span><span class="rule"></span></div>
+
+  <div class="card">
+    <div class="sport-item">
+      <div class="sport-emoji">⚾</div>
+      <div class="sport-body">
+        <h4>Cubs Drop Opener at St. Louis <span class="score-badge">CHC 5 · STL 6</span></h4>
+        <p>The Cubs fell 5–6 in Friday night's series opener at Busch Stadium. They bounce back Saturday night (tonight) and close out the series Sunday before returning to Wrigley to host Oakland starting Tuesday.</p>
+      </div>
+    </div>
+    <div class="sport-item">
+      <div class="sport-emoji">⚾</div>
+      <div class="sport-body">
+        <h4>White Sox Beat Detroit 4–3 <span class="score-badge">CWS 4 · DET 3</span></h4>
+        <p>The Sox won the series opener over Detroit on Friday night. Murakami hit his 20th homer in the sweep of Minnesota last week — one of the more remarkable early-season power displays in franchise history. Game 2 is today at 1:10 PM CDT.</p>
+      </div>
+    </div>
+    <div class="sport-item">
+      <div class="sport-emoji">🏒</div>
+      <div class="sport-body">
+        <h4>Blackhawks Hold 4th Overall Pick — Chase Reid Trending in Mocks</h4>
+        <p>Toronto and San Jose jumped the Hawks in the lottery. With McKenna going to the Leafs and Stenberg likely to San Jose, Chicago is now widely projected to select defenseman Chase Reid of the Sault Ste. Marie Greyhounds — regarded as one of the best blueliners in the class.</p>
+      </div>
+    </div>
+    <div class="sport-item" style="border-bottom:none;">
+      <div class="sport-emoji">🏀</div>
+      <div class="sport-body">
+        <h4>Bulls: Sweeney to Orlando, Search Continues</h4>
+        <p>Top candidate Sean Sweeney officially signed with the Orlando Magic on Friday. New EVP Bryson Graham now pivots. Confirmed candidates as of Saturday: Nori, Bliss, Quinn, Borrego, Unseld Jr., Stackhouse, Bryant, and Skeeter. The NBA Draft on June 23–24 is adding urgency to the hire.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-header"><span class="label">Health &amp; Wellness</span><span class="rule"></span></div>
+
+  <div class="card gold-left">
+    <div class="card-tag">Research</div>
+    <h3>Microplastics in the Brain — The Science So Far</h3>
+    <p>A Nature Health study published in April found micro- and nanoplastics in virtually every human brain sample analyzed, including healthy tissue. Concentrations were higher in tumor-affected tissue. A separate Nature Medicine paper found even greater accumulation in dementia patients. Experts caution that human health consequences remain unclear — but practical steps include avoiding plastic utensils with hot food, switching to glass or steel water bottles, and choosing wooden cutting boards over plastic.</p>
+  </div>
+
+  <div class="dispatch">
+    <div class="dispatch-label">Editor's Dispatch</div>
+    <h2>May Ends Stronger Than Anyone Expected</h2>
+    <p>Against a backdrop of war, inflation, and political turbulence, May 2026 delivered one of the best months for American equities in years. The Nasdaq +8%. The S&amp;P at record highs. The Dow above 51,000. Dell up 33% in a single day. None of it was supposed to happen amid 3.8% PCE and a hawkish new Fed chair.</p>
+    <p>And yet here we are. Tomorrow brings the Cubs-Cardinals rubber match, the White Sox try to complete a series win over Detroit, and the Blackhawks prep for their June 26 draft day. Summer is effectively here in Chicagoland — 67° and partly cloudy today, warming to the mid-70s Sunday. Enjoy the weekend.</p>
+    <p>— The Daily Ledger Editorial Desk</p>
+  </div>
+
 </div>
-
-<!-- ── EDITOR'S DISPATCH ── -->
-<div class="dispatch">
-  <div class="dispatch-head">✍️ Editor's Dispatch</div>
-  <p>
-    May closes with a paradox: <strong>the best month for stocks in years, and the worst time to be certain about anything.</strong> The Nasdaq's 8% surge, the S&amp;P's ninth straight winning week, Dow 51,000 — on paper, it looks like blue skies. But underneath: PCE at a three-year high, a new Fed chair who can't yet cut without credibility, a war ceasefire that still needs one signature, and treasury yields hovering just under 5% on the long end. <br><br>
-    The market has decided to believe the deal gets done, the missiles stop flying, the oil comes back online, and Warsh threads the needle. That's a lot of faith to price in on a Friday afternoon. This weekend, the question hanging over every trading desk isn't what happened in May — it's whether June can sustain the story. <strong>Trump's "final determination" on Iran may come as early as this weekend.</strong> Read this edition, then check the wire.
-  </p>
-  <div class="dispatch-sig">— The Editor · Saturday, May 30, 2026</div>
-</div>
-
-</div><!-- end .wrapper -->
 
 <footer>
   <div class="footer-title">The Daily Ledger</div>
-  <p>Curated daily for Riverwoods, Illinois · Est. May 2026</p>
+  <p>Curated daily for Riverwoods, Illinois · Vol. I, No. 4 · Saturday, May 30, 2026</p>
   <p>Published at <a href="https://unclejim7.github.io/The-Daily-Ledger" style="color:var(--text-muted)">unclejim7.github.io/The-Daily-Ledger</a></p>
 </footer>
 

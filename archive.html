@@ -5,169 +5,185 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Daily Ledger — Archive</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
 <style>
-:root {
-  --bg: #141210;
-  --bg2: #1c1a17;
-  --bg3: #242018;
-  --text: #e8dfc8;
-  --text-muted: #a89880;
-  --accent: #c8481a;
-  --gold: #c9a227;
-  --rule: #3a3228;
-  --card-bg: #1e1b17;
-}
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { background: var(--bg); color: var(--text); font-family: 'Source Sans 3', sans-serif; }
-
-.top-nav {
-  background: var(--bg3);
-  border-bottom: 1px solid var(--rule);
-  padding: 10px 20px;
-  display: flex;
-  align-items: center;
-  gap: 20px;
-}
-.top-nav a { color: var(--gold); text-decoration: none; font-size: 13px; }
-.top-nav a:hover { text-decoration: underline; }
-
-.archive-header {
-  text-align: center;
-  padding: 32px 20px 20px;
-  border-bottom: 3px double var(--gold);
-}
-.archive-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(28px, 6vw, 52px);
-  font-weight: 900;
-  color: var(--text);
-}
-.archive-header p {
-  font-size: 13px;
-  color: var(--text-muted);
-  letter-spacing: 0.08em;
-  margin-top: 6px;
-}
-
-.wrapper { max-width: 700px; margin: 0 auto; padding: 24px 16px 40px; }
-
-.month-group { margin-bottom: 32px; }
-.month-label {
-  font-size: 10.5px;
-  letter-spacing: 0.2em;
-  text-transform: uppercase;
-  color: var(--accent);
-  font-weight: 700;
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 6px;
-  margin-bottom: 12px;
-}
-
-.edition-row {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 10px 14px;
-  background: var(--card-bg);
-  border: 1px solid var(--rule);
-  border-radius: 4px;
-  margin-bottom: 8px;
-  flex-wrap: wrap;
-}
-.edition-date {
-  flex: 1;
-  min-width: 160px;
-}
-.edition-date strong {
-  display: block;
-  font-size: 15px;
-  color: var(--text);
-  font-family: 'Playfair Display', serif;
-}
-.edition-date span {
-  font-size: 12px;
-  color: var(--text-muted);
-}
-.badge-latest {
-  background: var(--accent);
-  color: #fff;
-  font-size: 10px;
-  font-weight: 700;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  padding: 2px 8px;
-  border-radius: 2px;
-}
-.read-btn {
-  background: var(--bg3);
-  color: var(--gold);
-  border: 1px solid var(--gold);
-  padding: 5px 14px;
-  font-size: 12px;
-  font-weight: 600;
-  border-radius: 3px;
-  text-decoration: none;
-  letter-spacing: 0.05em;
-  transition: background 0.15s;
-}
-.read-btn:hover { background: var(--gold); color: var(--bg); }
-
-footer {
-  text-align: center;
-  padding: 20px;
-  font-size: 12px;
-  color: var(--text-muted);
-  border-top: 1px solid var(--rule);
-}
+  :root {
+    --bg: #141210;
+    --bg2: #1c1917;
+    --text: #e8dfc8;
+    --text-muted: #9e9480;
+    --accent: #c8481a;
+    --gold: #c9a227;
+    --rule: #3a3530;
+    --card-bg: #1e1c19;
+    --card-border: #2e2b26;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Source Sans 3', sans-serif;
+    min-height: 100vh;
+  }
+  .top-nav {
+    background: var(--bg2);
+    border-bottom: 1px solid var(--rule);
+    padding: 12px 20px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .top-nav a {
+    color: var(--gold);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+  }
+  .top-nav a:hover { color: var(--accent); }
+  .masthead {
+    text-align: center;
+    padding: 32px 20px 20px;
+    border-bottom: 2px solid var(--rule);
+  }
+  .masthead h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(28px, 6vw, 52px);
+    font-weight: 900;
+    color: var(--text);
+    margin-bottom: 6px;
+  }
+  .masthead h1 span { color: var(--gold); }
+  .masthead p {
+    font-size: 13px;
+    color: var(--text-muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .container { max-width: 760px; margin: 0 auto; padding: 32px 16px 60px; }
+  .month-group { margin-bottom: 40px; }
+  .month-label {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-bottom: 14px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--rule);
+  }
+  .edition-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    padding: 14px 18px;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 4px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+  }
+  .edition-row:first-of-type .badge {
+    background: var(--accent);
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 2px;
+    margin-left: 10px;
+  }
+  .edition-info {}
+  .edition-date {
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--text);
+  }
+  .edition-dow {
+    font-size: 12px;
+    color: var(--text-muted);
+    margin-top: 2px;
+    letter-spacing: 0.03em;
+  }
+  .read-btn {
+    display: inline-block;
+    background: rgba(201,162,39,0.12);
+    border: 1px solid var(--gold);
+    color: var(--gold);
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    padding: 6px 18px;
+    border-radius: 3px;
+    white-space: nowrap;
+    transition: background 0.15s;
+  }
+  .read-btn:hover { background: rgba(201,162,39,0.22); }
+  footer {
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid var(--rule);
+    color: var(--text-muted);
+    font-size: 12px;
+  }
 </style>
 </head>
 <body>
 
 <nav class="top-nav">
   <a href="index.html">← Today's Edition</a>
-  <span style="color:var(--text-muted)">The Daily Ledger — Archive</span>
 </nav>
 
-<div class="archive-header">
-  <h1>The Daily Ledger</h1>
-  <p>Complete Archive · Est. May 2026 · Riverwoods, IL</p>
-</div>
+<header class="masthead">
+  <h1>The Daily <span>Ledger</span></h1>
+  <p>Edition Archive · Riverwoods, Illinois · Est. May 2026</p>
+</header>
 
-<div class="wrapper">
+<div class="container">
 
   <div class="month-group">
     <div class="month-label">May 2026</div>
 
     <div class="edition-row">
-      <div class="edition-date">
-        <strong>Saturday, May 30, 2026</strong>
-        <span>Vol. I, No. 4</span>
+      <div class="edition-info">
+        <div class="edition-date">May 31, 2026 <span class="badge">Latest</span></div>
+        <div class="edition-dow">Sunday · Vol. I, No. 5</div>
       </div>
-      <span class="badge-latest">Latest</span>
+      <a class="read-btn" href="2026-05-31.html">Read →</a>
+    </div>
+
+    <div class="edition-row">
+      <div class="edition-info">
+        <div class="edition-date">May 30, 2026</div>
+        <div class="edition-dow">Saturday · Vol. I, No. 4</div>
+      </div>
       <a class="read-btn" href="2026-05-30.html">Read →</a>
     </div>
 
     <div class="edition-row">
-      <div class="edition-date">
-        <strong>Friday, May 29, 2026</strong>
-        <span>Vol. I, No. 3</span>
+      <div class="edition-info">
+        <div class="edition-date">May 29, 2026</div>
+        <div class="edition-dow">Friday · Vol. I, No. 3</div>
       </div>
       <a class="read-btn" href="2026-05-29.html">Read →</a>
     </div>
 
     <div class="edition-row">
-      <div class="edition-date">
-        <strong>Wednesday, May 28, 2026</strong>
-        <span>Vol. I, No. 2</span>
+      <div class="edition-info">
+        <div class="edition-date">May 28, 2026</div>
+        <div class="edition-dow">Thursday · Vol. I, No. 2</div>
       </div>
       <a class="read-btn" href="2026-05-28.html">Read →</a>
     </div>
 
     <div class="edition-row">
-      <div class="edition-date">
-        <strong>Tuesday, May 27, 2026</strong>
-        <span>Vol. I, No. 1 — Inaugural Edition</span>
+      <div class="edition-info">
+        <div class="edition-date">May 27, 2026</div>
+        <div class="edition-dow">Wednesday · Vol. I, No. 1</div>
       </div>
       <a class="read-btn" href="2026-05-27.html">Read →</a>
     </div>
@@ -176,7 +192,9 @@ footer {
 
 </div>
 
-<footer>The Daily Ledger &nbsp;·&nbsp; <a href="https://unclejim7.github.io/The-Daily-Ledger" style="color:var(--text-muted)">unclejim7.github.io/The-Daily-Ledger</a></footer>
+<footer>
+  The Daily Ledger · Riverwoods, IL · <a href="https://unclejim7.github.io/The-Daily-Ledger" style="color:var(--text-muted)">unclejim7.github.io/The-Daily-Ledger</a>
+</footer>
 
 </body>
 </html>
