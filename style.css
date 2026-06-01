@@ -57,6 +57,9 @@ a:hover { color: var(--accent-bright); }
   font-family: 'Source Sans 3', sans-serif;
   font-size: 0.78rem;
   letter-spacing: .05em;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 .edition-nav a { color: var(--text-muted); }
 .edition-nav a:hover { color: var(--gold); }
@@ -78,7 +81,9 @@ a:hover { color: var(--accent-bright); }
   border-bottom: 1px solid var(--rule-strong);
   overflow: hidden;
   padding: 6px 0;
-  position: relative;
+  position: sticky;
+  top: 38px;
+  z-index: 99;
 }
 .ticker-wrap::before,
 .ticker-wrap::after {
