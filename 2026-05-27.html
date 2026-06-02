@@ -1,199 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Daily Ledger — Wednesday, May 27, 2026</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Daily Ledger — Wednesday, May 27, 2026</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- EDITION NAV — inaugural, no back arrow -->
 <nav class="edition-nav">
-  <a href="archive.html" class="nav-archive">📁 Archive</a>
+  <span class="nav-disabled">← First Edition</span>
+  <span class="nav-sep"></span>
+  <a href="archive.html">📁 Archive</a>
+  <span class="nav-sep"></span>
   <a href="2026-05-28.html">May 28 →</a>
 </nav>
 
+<!-- TICKER -->
 <div class="ticker-wrap">
-  <div class="ticker-inner">
-    <span class="tick"><span class="sym">DOW</span> <span class="up">▲ Record High +282 pts</span></span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">NASDAQ</span> <span class="dn">▼ Chip Selloff</span></span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">QUALCOMM</span> <span class="dn">▼ −9.7%</span></span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">NVIDIA</span> <span class="dn">▼ −2.6%</span></span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">FED FUNDS</span> 3.50–3.75%</span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">OBBBA SALT CAP</span> ~$40,000 for 2026</span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">CUBS</span> <span class="dn">▼ 10-Game Losing Streak Snapped</span></span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">WHITE SOX</span> <span class="up">▲ Murakami Rolling</span></span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">WEATHER</span> ☀️ 72°F Riverwoods</span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">DOW</span> <span class="up">▲ Record High +282 pts</span></span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">NASDAQ</span> <span class="dn">▼ Chip Selloff</span></span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">QUALCOMM</span> <span class="dn">▼ −9.7%</span></span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">NVIDIA</span> <span class="dn">▼ −2.6%</span></span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">FED FUNDS</span> 3.50–3.75%</span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">OBBBA SALT CAP</span> ~$40,000 for 2026</span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">CUBS</span> <span class="dn">▼ 10-Game Losing Streak Snapped</span></span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">WHITE SOX</span> <span class="up">▲ Murakami Rolling</span></span><span class="tick-sep">|</span>
-    <span class="tick"><span class="sym">WEATHER</span> ☀️ 72°F Riverwoods</span>
+  <span class="ticker-label">Markets</span>
+  <div class="ticker-track">
+    <span class="ticker-item"><span class="t-name">DOW</span> 50,644 <span class="t-up">▲ Record +282 pts</span></span>
+    <span class="ticker-item"><span class="t-name">NASDAQ</span> <span class="t-dn">▼ Chip Selloff</span></span>
+    <span class="ticker-item"><span class="t-name">QUALCOMM</span> <span class="t-dn">▼ −9.7%</span></span>
+    <span class="ticker-item"><span class="t-name">S&amp;P 500</span> 7,520 <span class="t-up">▲ +0.4%</span></span>
+    <span class="ticker-item"><span class="t-name">OIL (Brent)</span> $90+ <span class="t-dn">▼ War Premium</span></span>
+    <span class="ticker-item"><span class="t-name">30-YR MTGE</span> 6.34% <span class="t-dn">▲ Rising</span></span>
+    <span class="ticker-item"><span class="t-name">SNOWFLAKE</span> <span class="t-up">▲ +25% AWS Deal</span></span>
+    <span class="ticker-item"><span class="t-name">DOW</span> 50,644 <span class="t-up">▲ Record +282 pts</span></span>
+    <span class="ticker-item"><span class="t-name">NASDAQ</span> <span class="t-dn">▼ Chip Selloff</span></span>
+    <span class="ticker-item"><span class="t-name">QUALCOMM</span> <span class="t-dn">▼ −9.7%</span></span>
+    <span class="ticker-item"><span class="t-name">S&amp;P 500</span> 7,520 <span class="t-up">▲ +0.4%</span></span>
+    <span class="ticker-item"><span class="t-name">OIL (Brent)</span> $90+ <span class="t-dn">▼ War Premium</span></span>
+    <span class="ticker-item"><span class="t-name">30-YR MTGE</span> 6.34% <span class="t-dn">▲ Rising</span></span>
+    <span class="ticker-item"><span class="t-name">SNOWFLAKE</span> <span class="t-up">▲ +25% AWS Deal</span></span>
   </div>
 </div>
 
+<!-- MASTHEAD -->
 <header class="masthead">
-  <div class="masthead-eyeline">
-    <div class="masthead-flag">Vol. I &nbsp;·&nbsp; No. 1 &nbsp;·&nbsp; Inaugural Edition &nbsp;·&nbsp; Chicagoland</div>
-  </div>
-  <div class="masthead-title">The Daily Ledger</div>
-  <div class="masthead-rule-deco"><span class="masthead-ornament">✦</span></div>
-  <div class="masthead-subtitle">Truth, Clearly Delivered</div>
+  <div class="masthead-eyebrow">Vol. I · No. 1 · Inaugural Edition</div>
+  <h1 class="masthead-title">The Daily Ledger</h1>
+  <div class="masthead-rule"></div>
   <div class="masthead-meta">
     <span>Wednesday, May 27, 2026</span>
+    <span class="m-sep">·</span>
     <span>Chicago, Illinois</span>
+    <span class="m-sep">·</span>
     <span>Est. May 2026</span>
-    <span>unclejim7.github.io/The-Daily-Ledger</span>
+    <span class="m-sep">·</span>
+    <span>Curated Daily for Nunya Biz</span>
   </div>
-  <div class="masthead-bottom-rule"></div>
 </header>
 
 <div class="container">
 
-  <div class="section-header"><h2>☀️ Chicagoland Weather</h2></div>
+  <!-- WEATHER -->
+  <div class="section-head"><h2>☀ Chicagoland Weather</h2></div>
   <div class="weather-banner">
-    <div class="weather-icon-big">☀️</div>
+    <div class="weather-icon">☀️</div>
     <div class="weather-main">
-      <h3>Perfect Late-May Wednesday — Storms Arrive by the Weekend</h3>
-      <p>Riverwoods is enjoying a rare perfect late-May day. Sunny skies, 72°F, light southwest breeze. Savor it — warm front brings upper 60s Friday before Saturday afternoon storms. Sunday clears; Monday approaches 86°F.</p>
-      <div class="weather-temps">
-        <span>📅 <strong>Today</strong> H 72° / L 54° — Sunny</span>
-        <span>🌤️ <strong>Thu</strong> H 68° — Partly cloudy</span>
-        <span>⛈️ <strong>Sat</strong> H 79° — PM storms</span>
-        <span>🌡️ <strong>Mon</strong> H 86°</span>
-      </div>
+      <div class="weather-temp">72° F</div>
+      <div class="weather-desc">Sunny — Chicago, IL</div>
+    </div>
+    <div class="weather-details">
+      <span>🌡 High 72° / Low 54°</span>
+      <span>💨 SW breeze, gusts to 25 mph</span>
+      <span>⚠️ Air Quality Alert · Dangerous Lake Michigan conditions tonight</span>
+      <span>📅 Thu: 68° partly cloudy · Sat: Storms arrive</span>
     </div>
   </div>
 
-  <div class="section-header"><h2>🗞 Front Page</h2></div>
+  <!-- FRONT PAGE -->
+  <div class="section-head"><h2>📰 Front Page</h2></div>
+
   <div class="lead-story">
-    <div class="card-label">Markets / Geopolitics</div>
-    <h2>Dow Hits Record as Iran Peace Hopes Spark Rotation — Chip Stocks Crater</h2>
-    <div class="deck">The Dow Jones Industrial Average surged nearly 300 points to a fresh all-time record Wednesday as optimism about a U.S.-Iran ceasefire deal boosted industrials and energy. The Nasdaq slipped sharply as investors rotated out of semiconductors — Qualcomm dropped 9.7% after Nvidia announced a competing PC chip, dragging Nvidia down 2.6% and AMD 2.8%. The divergence shows how fragile AI-driven enthusiasm is when competitive dynamics shift. Oil fell on the peace hopes, providing mild inflation relief.</div>
-    <div class="byline">Front Page Desk &nbsp;·&nbsp; May 27, 2026 &nbsp;·&nbsp; Inaugural Edition</div>
+    <div class="lead-kicker">Breaking · Iran War</div>
+    <h1>US–Iran Strikes Continue — Peace Talks Stall as Oil Tops $90</h1>
+    <p>The United States and Iran exchanged fresh strikes overnight, with the IRGC targeting a US air base in the region. Peace negotiations remain stalled over Iran's nuclear enrichment program. Oil broke above $90/bbl on the war premium, adding fuel to already elevated inflation expectations. Premarket futures were down on the Iran news as traders weighed geopolitical risk against strong corporate earnings momentum.</p>
   </div>
 
-  <div class="card-grid-2">
+  <div class="card-grid">
     <div class="card">
-      <div class="card-label">Tax &amp; Accounting</div>
-      <h3>OBBBA: SALT Cap Rises to ~$40,000 for 2026</h3>
-      <p>The One Big Beautiful Budget Act expanded the SALT deduction cap to approximately $40,000 — indexed for inflation — up from the $10,000 TCJA limit. Significant for Illinois filers. Also restored: PMI deductibility. IRS Tax Tip 2026-42 urges homeowners to review new housing deduction eligibility now.</p>
+      <div class="card-kicker">Markets</div>
+      <h3>Dow Sets Record Despite Chip Selloff</h3>
+      <p>The Dow Jones Industrial Average closed at a record 50,644 — up 282 points — even as chip stocks sold off sharply. Qualcomm fell 9.7% on earnings. Snowflake surged 25% on a $6 billion AWS partnership deal. The divergence between blue-chip strength and semiconductor weakness reflects sector rotation away from AI-momentum names toward value.</p>
     </div>
     <div class="card">
-      <div class="card-label">Quick Hits</div>
-      <h3>Trump Savings Accounts Launch July 5</h3>
-      <p>Children born 2025–2028 receive a $1,000 government seed deposit in new index-fund accounts, withdrawable at age 18. Any American under 18 can open one starting July 5. Boston Scientific fell on weak guidance. Vegas swept Colorado in the NHL Playoffs.</p>
+      <div class="card-kicker">Tax &amp; Policy</div>
+      <h3>OBBBA: SALT Cap Rising to ~$40K, PMI Deductibility Restored</h3>
+      <p>The One Big Beautiful Bill Act includes a SALT deduction expansion — the cap is indexed to approximately $40,000 for 2026, a significant increase for Illinois homeowners. Private mortgage insurance (PMI) deductibility is also being restored. Both provisions are a meaningful tax tailwind for Chicagoland homeowners if the bill passes as written.</p>
+    </div>
+    <div class="card">
+      <div class="card-kicker">Federal Reserve</div>
+      <h3>Warsh Era Begins — Rates Held, Cuts Off the Table</h3>
+      <p>Kevin Warsh was confirmed as the 17th Fed Chair, inheriting a benchmark rate of 3.50%–3.75% and a PCE running above target. Core PCE at 3.0%+. The market is pricing virtually no cuts in 2026. Former Chair Powell said he'd keep a low profile on the board until the administration's investigation into him concludes.</p>
     </div>
   </div>
 
-  <div class="section-header"><h2>📈 Markets &amp; Finance</h2></div>
+  <!-- MARKETS -->
+  <div class="section-head"><h2>📈 Markets &amp; Finance</h2></div>
   <table class="market-table">
-    <thead><tr><th>Instrument</th><th>Movement</th><th>Change</th><th>Note</th></tr></thead>
+    <thead>
+      <tr><th>Index / Asset</th><th>Level</th><th>Change</th><th>Note</th></tr>
+    </thead>
     <tbody>
-      <tr><td class="sym">Dow Jones</td><td class="price">Record High</td><td><span class="pill pill-up">+282 pts</span></td><td class="text-muted">Iran optimism</td></tr>
-      <tr><td class="sym">Nasdaq</td><td class="price">Lower</td><td><span class="pill pill-down">Chip selloff</span></td><td class="text-muted">QCOM −9.7%</td></tr>
-      <tr><td class="sym">S&amp;P 500</td><td class="price">Mixed</td><td><span class="pill pill-flat">Near flat</span></td><td class="text-muted">Sector rotation</td></tr>
-      <tr><td class="sym">WTI Crude</td><td class="price">Lower</td><td><span class="pill pill-down">Deal hopes</span></td><td class="text-muted">Inflation relief</td></tr>
-      <tr><td class="sym">Fed Funds</td><td class="price">3.50–3.75%</td><td><span class="pill pill-flat">On hold</span></td><td class="text-muted">Warsh era begins</td></tr>
+      <tr><td class="t-name">Dow Jones</td><td>50,644</td><td><span class="pill-up">+0.56%</span></td><td>Record close</td></tr>
+      <tr><td class="t-name">S&amp;P 500</td><td>7,520</td><td><span class="pill-up">+0.40%</span></td><td>Near record</td></tr>
+      <tr><td class="t-name">Nasdaq Composite</td><td>—</td><td><span class="pill-dn">▼ Mixed</span></td><td>Chip drag</td></tr>
+      <tr><td class="t-name">Qualcomm</td><td>—</td><td><span class="pill-dn">−9.7%</span></td><td>Earnings miss</td></tr>
+      <tr><td class="t-name">Snowflake</td><td>—</td><td><span class="pill-up">+25%</span></td><td>$6B AWS deal</td></tr>
+      <tr><td class="t-name">Brent Crude</td><td>$90+</td><td><span class="pill-dn">▲ War prem.</span></td><td>Iran conflict</td></tr>
+      <tr><td class="t-name">30-Yr Mortgage</td><td>6.34%</td><td><span class="pill-dn">▲ Rising</span></td><td>Zillow avg.</td></tr>
     </tbody>
   </table>
 
-  <div class="section-header"><h2>🏦 Macro &amp; Federal Reserve</h2></div>
-  <div class="card-grid-2">
+  <!-- REAL ESTATE -->
+  <div class="section-head"><h2>🏠 Real Estate</h2></div>
+  <div class="card-grid">
     <div class="card">
-      <div class="card-label">Federal Reserve</div>
-      <h3>Warsh Era Begins — Cuts Pushed to 2027</h3>
-      <p>Kevin Warsh confirmed as new Fed Chair; first FOMC meeting June 16–17. PCE inflation running hot on Iran-war oil shock. Wall Street has pushed cut forecasts into 2027. Q1 2026 GDP revised down. Classic stagflationary bind: slowing growth, elevated prices.</p>
+      <div class="card-kicker">Chicago Housing</div>
+      <h3>Listings Finally Outpacing Sales — First Time in 2026</h3>
+      <p>Chicago-area real estate saw a notable shift: for the first time in 2026, new listings are outpacing closed sales week over week. Mortgage rates at 6.34% (Zillow) and 6.51% (Freddie Mac) are keeping buyers cautious, while sellers who need to move are starting to test the market. Median home prices remain elevated but appreciation is flattening.</p>
     </div>
     <div class="card">
-      <div class="card-label">Consumer Strain</div>
-      <h3>Energy Shock Squeezes Real Income</h3>
-      <p>Iran-war oil prices are pressuring real disposable income. Savings rates declining as consumers draw down buffers. Markets shrugging — powered by AI earnings optimism and assumption the conflict resolves. Risk: ceasefire collapse tests complacency hard.</p>
+      <div class="card-kicker">Macro View</div>
+      <h3>Oil at $90+ Keeps Rate Relief Elusive</h3>
+      <p>Every dollar oil stays above $85 adds to inflation expectations, keeping the 10-year Treasury yield — and mortgage rates — elevated. NAHB's baseline scenario has rates falling toward 6% by Q4 2026, contingent on an Iran resolution. Until then, buyers are advised to run the math at current rates rather than waiting for relief that may not arrive on schedule.</p>
     </div>
   </div>
 
-  <div class="section-header"><h2>🏠 Real Estate</h2></div>
-  <div class="card-grid-2">
-    <div class="card">
-      <div class="card-label">Chicago Market</div>
-      <h3>Inventory Up 4.2% YOY; Prices Still Rising</h3>
-      <p>Chicago-area median prices continue rising at a moderate pace. Inventory +4.2% YOY gives buyers slightly more choice. Pending sales +1.4%. But 30-year rates near 6.5% keep many buyers sidelined waiting for relief that hasn't arrived.</p>
-    </div>
-    <div class="card">
-      <div class="card-label">Mortgage Rates</div>
-      <h3>30-Year Near 6.5% — Relief Still Elusive</h3>
-      <p>Warsh's hawkish posture and Iran-war inflation premium make meaningful rate declines unlikely before late 2026. The "buy the house, date the rate" playbook remains the dominant agent advice. Refinance opportunity later — if rates cooperate.</p>
-    </div>
-  </div>
-
-  <div class="section-header"><h2>⚾ Chicago Sports</h2></div>
-  <div class="card-grid-3">
-    <div class="card">
-      <div class="card-label">⚾ Chicago Cubs</div>
-      <h3>10-Game Losing Streak Finally Snapped</h3>
-      <p>The Cubs ended a brutal 10-game skid with a convincing win Wednesday. The streak had cost them ground in the NL Central. Rotation questions linger. Road trip to St. Louis is next — a tough test.</p>
-    </div>
-    <div class="card">
-      <div class="card-label">⚾ Chicago White Sox</div>
-      <h3>Murakami Carrying the South Side</h3>
-      <p>The Sox are outperforming expectations behind Yoshida Murakami — HRs, RBIs, .900+ OPS making him one of the AL's best stories. Playing meaningful baseball. Series against Detroit coming up.</p>
-    </div>
-    <div class="card">
-      <div class="card-label">🏀 Bulls / 🏒 Hawks / 🐻 Bears</div>
-      <h3>Offseason Activity</h3>
-      <p>Bulls coaching search underway under new VP Bryson Graham. Blackhawks await draft lottery with top-5 pick odds. Bears stadium legislation moving through Springfield.</p>
-    </div>
-  </div>
-
-  <div class="section-header"><h2>💊 Health &amp; Wellness</h2></div>
-  <div class="card-grid-2">
-    <div class="card">
-      <div class="card-label">Longevity</div>
-      <h3>Healthspan, Not Just Lifespan — The 2026 Shift</h3>
-      <p>Preventive medicine's dominant conversation: living better longer, not just longer. Key pillars: consistent sleep (6.4–7.8 hrs), strength training, metabolic monitoring (CGM, expanded panels), and social connection — now a recognized mortality risk factor comparable to smoking. GLP-1 medications expanding beyond weight loss.</p>
-    </div>
-    <div class="card">
-      <div class="card-label">Research Watch</div>
-      <h3>Microplastics, Gut-Brain Circuits &amp; Brain Scans</h3>
-      <p>Three threads: (1) Microplastics increasingly detected in human tissue — public health moving from awareness to action. (2) New gut-brain protein circuit may explain mood disorder links. (3) Preventive brain imaging gaining ground in concierge medicine as early Alzheimer's markers become more detectable.</p>
-    </div>
-  </div>
-
-  <div class="section-header"><h2>✨ Extras</h2></div>
-  <div class="extras-grid">
-    <div class="extra-card">
-      <div class="extra-label">📅 Word of the Day</div>
-      <div class="extra-main">Hawkish</div>
-      <div class="extra-sub"><em>(adj.)</em> In monetary policy: favoring higher interest rates to combat inflation even at the cost of slower growth. Describes incoming Fed Chair Kevin Warsh precisely.</div>
-    </div>
-    <div class="extra-card">
-      <div class="extra-label">💡 Random Fact</div>
-      <div class="extra-main">Chicago Has More Movable Bridges Than Any City on Earth</div>
-      <div class="extra-sub">Over 40 movable bridges — mostly bascule (drawbridge) type — along the Chicago River. The world record, right downtown.</div>
-    </div>
-    <div class="extra-card">
-      <div class="extra-label">💬 Quote of the Day</div>
-      <div class="extra-main">"The four most dangerous words in investing are: this time it's different."</div>
-      <div class="extra-sub">— Sir John Templeton. Records being set while a war smolders in the Gulf.</div>
-    </div>
-  </div>
-
+  <!-- ARMSTRONG -->
+  <div class="section-head"><h2>🔭 Armstrong Economics</h2></div>
   <div class="dispatch">
-    <div class="dispatch-head">Editor's Dispatch — May 27, 2026 · Inaugural Edition</div>
-    <p>Welcome to The Daily Ledger. This is edition one of what we intend to be a daily habit — a sharp, honest morning briefing built for one reader in Riverwoods, Illinois. No filler. No clickbait. Just the markets, the news, the weather, the Cubs, and the stuff that matters.</p>
-    <p>The Dow is at a record high. The Cubs just snapped a 10-game losing streak. And it's 72°F outside. Not a bad day to start a newspaper. Be strategic. — <em>The Editor</em></p>
+    <div class="dispatch-label">Martin Armstrong · Economic Confidence Model</div>
+    <h3>2025 Was a Major Turning Point — Volatility Rising Into 2027</h3>
+    <p>Armstrong's ECM identified 2025 as a major cyclical target for a turning point, with the next significant marker in 2027. His computer model shows rising volatility from 2027 into 2032 — consistent with geopolitical fragmentation, rising sovereign debt stress, and the ongoing shift of capital flows away from Western government bonds. The Iran war premium on oil and gold is, in Armstrong's framework, early evidence of capital seeking tangible assets over paper claims. The inauguration of this edition coincides almost exactly with what Armstrong has called the transition from the institutional confidence peak of 2023–2024 into the more turbulent mid-decade period.</p>
+  </div>
+
+  <!-- BITCOIN -->
+  <div class="section-head"><h2>₿ Bitcoin &amp; Crypto</h2></div>
+  <div class="crypto-panel">
+    <div class="crypto-card">
+      <div class="crypto-name">Bitcoin (BTC)</div>
+      <div class="crypto-price">~$105K</div>
+      <div class="crypto-change text-muted">Early 2026 levels</div>
+    </div>
+    <div class="crypto-card">
+      <div class="crypto-name">Regulatory Climate</div>
+      <div class="crypto-price">Improving</div>
+      <div class="crypto-change text-up">SEC clarity advancing</div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-kicker">Crypto Policy</div>
+    <h3>SEC Chair Atkins Pursuing Coherent Crypto Framework</h3>
+    <p>SEC Chair Paul Atkins has signaled a shift toward statutory oversight of digital assets, moving away from the enforcement-first approach of prior years. The GENIUS Act and related legislative initiatives are advancing in Congress. A stable regulatory framework is broadly seen as a precondition for institutional Bitcoin adoption to continue. Prediction markets put the probability of BTC reaching $150K by June 30 at under 1%.</p>
+  </div>
+
+  <!-- SPORTS -->
+  <div class="section-head"><h2>⚾ Chicago Sports</h2></div>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-kicker">Chicago Cubs · Record: 29–26</div>
+      <h3>Cubs Slide to 5th in NL Central</h3>
+      <p>The Cubs sit at 29–26, slipping to fifth place in the NL Central. The rotation has been inconsistent and the offense has gone cold at the wrong time. The schedule toughens with road series ahead. Management remains committed to the current core but front-office patience has a limit heading into the summer trade window.</p>
+    </div>
+    <div class="card">
+      <div class="card-kicker">Chicago White Sox</div>
+      <h3>Murakami Powering the South Siders</h3>
+      <p>Yoshinobu Murakami has been the story of the Sox's surprisingly competitive start. His power numbers are outpacing projections and he's generating legitimate All-Star conversation. The Sox are outperforming preseason expectations — a welcome change after the franchise's recent rebuilding struggles.</p>
+    </div>
+    <div class="card">
+      <div class="card-kicker">Chicago Bulls</div>
+      <h3>Head Coach Search Underway</h3>
+      <p>The Bulls are conducting a broad coaching search following another futile season. The front office has identified several candidates from around the league. The hire will set the tone for how the organization deploys its incoming draft assets — the Bulls hold multiple first-round picks in 2026.</p>
+    </div>
+    <div class="card">
+      <div class="card-kicker">Chicago Blackhawks</div>
+      <h3>Pick No. 4 in 2026 NHL Draft</h3>
+      <p>The Blackhawks hold the fourth overall pick in the 2026 NHL Draft. With Connor Bedard now entering his second season, Chicago is building methodically through the draft. The organization is evaluating whether to take the best available player at No. 4 or entertain trade-up discussions.</p>
+    </div>
+    <div class="card">
+      <div class="card-kicker">Chicago Bears</div>
+      <h3>Stadium Legislation Alive — Caleb Williams Enters Year 2</h3>
+      <p>Bears stadium legislation is advancing in Springfield amid the final days of the Illinois spring session. Meanwhile, Caleb Williams heads into his second NFL season as the clear franchise cornerstone. The reigning NFC North champs begin OTAs with Super Bowl expectations for 2026.</p>
+    </div>
+  </div>
+
+  <!-- HEALTH -->
+  <div class="section-head"><h2>💊 Health &amp; Wellness</h2></div>
+  <div class="health-card">
+    <h4>Ozempic Plateau Mechanism Identified — New Research Points to Dose Timing</h4>
+    <p>Researchers have identified the mechanism behind the GLP-1 weight-loss plateau: receptor downregulation in the hypothalamus after sustained exposure. Studies suggest strategic dose cycling — rather than steady escalation — may preserve the drug's effectiveness longer. The finding is significant for the millions of patients on semaglutide who hit a ceiling after 6–12 months.</p>
+  </div>
+  <div class="health-card">
+    <h4>Beans and Legumes Cut High Blood Pressure Risk by Nearly 30%</h4>
+    <p>A large-scale dietary analysis found that regular consumption of beans, lentils, chickpeas, tofu, and soy foods reduces the risk of hypertension by up to 30%. The effect was strongest in participants who replaced red meat with legumes rather than simply adding them to an existing diet. The finding is consistent with plant-forward dietary guidelines and adds to the growing evidence base for functional nutrition.</p>
+  </div>
+  <div class="health-card">
+    <h4>Longevity Medicine 2026: Healthspan Over Lifespan</h4>
+    <p>The Global Wellness Summit's 2026 report identifies the shift from lifespan to healthspan as the defining trend in medicine and wellness. Key focus areas: mitochondrial support, inflammation reduction, muscle mass preservation, restorative sleep, and community connection. The old model of "add years to your life" is being replaced by "add life to your years" — with measurable biomarkers to match.</p>
+  </div>
+
+  <div class="divider"></div>
+  <div class="section-head"><h2>🎲 Closing Notes</h2></div>
+  <div class="trivia-grid">
+    <div class="trivia-box">
+      <div class="trivia-label">Random Fact of the Day</div>
+      <h4>Chicago has more movable bridges than any city on Earth.</h4>
+      <p>With 38 movable bridges spanning the Chicago River and its branches, Chicago leads the world in this engineering category — a legacy of the city's rapid 19th-century industrial expansion and its need to accommodate both river traffic and street-level commerce simultaneously.</p>
+    </div>
+    <div class="trivia-box">
+      <div class="trivia-label">Word of the Day</div>
+      <h4>Exuberance</h4>
+      <p>From Latin <em>exuberare</em>, meaning "to be abundant." In markets: irrational exuberance describes asset price inflation driven by investor enthusiasm beyond what fundamentals warrant. First popularized by Fed Chair Alan Greenspan in 1996 — now echoed by Jamie Dimon in 2026.</p>
+    </div>
+    <div class="trivia-box">
+      <div class="trivia-label">Quote of the Day</div>
+      <h4>"The art of war is of vital importance to the State."</h4>
+      <p>— Sun Tzu, <em>The Art of War</em>. On the inaugural day of The Daily Ledger, with US and Iranian forces still exchanging fire, the oldest strategic wisdom feels freshly relevant.</p>
+    </div>
   </div>
 
 </div>
 
 <footer>
-  <div class="footer-title">The Daily Ledger</div>
-  <p>Curated daily for Chicago, Illinois &nbsp;·&nbsp; Est. May 2026</p>
-  <p>Published at <a href="https://unclejim7.github.io/The-Daily-Ledger">unclejim7.github.io/The-Daily-Ledger</a></p>
+  Curated daily for Nunya Biz &nbsp;·&nbsp; Est. May 2026 in GFY, USA &nbsp;·&nbsp; <a href="archive.html">Archive</a> &nbsp;·&nbsp; Published Wednesday, May 27, 2026 &nbsp;·&nbsp; The Daily Ledger
 </footer>
 
 </body>
