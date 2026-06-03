@@ -1,188 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Daily Ledger — Monday, June 1, 2026</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Ledger — Monday, June 1, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- EDITION NAV -->
 <nav class="edition-nav">
   <a href="2026-05-31.html">← May 31</a>
-  <span class="nav-sep"></span>
-  <a href="archive.html">📁 Archive</a>
-  <span class="nav-sep"></span>
-  <a href="2026-06-02.html">June 2 →</a>
+  <span class="nav-archive"><a href="archive.html">📁 Archive</a></span>
+  <a href="2026-06-02.html">Jun 2 →</a>
 </nav>
 
-<!-- TICKER -->
 <div class="ticker-wrap">
-  <span class="ticker-label">Markets</span>
+  <div class="ticker-label">Markets</div>
   <div class="ticker-track">
-    <span class="ticker-item"><span class="t-name">DJIA</span> 51,078 <span class="t-up">▲ +0.09%</span></span>
-    <span class="ticker-item"><span class="t-name">S&amp;P 500</span> 7,599 <span class="t-up">▲ +0.26%</span></span>
-    <span class="ticker-item"><span class="t-name">NASDAQ</span> 27,086 <span class="t-up">▲ +0.42%</span></span>
-    <span class="ticker-item"><span class="t-name">BTC</span> $72,145 <span class="t-dn">▼ −2.27%</span></span>
-    <span class="ticker-item"><span class="t-name">GOLD</span> $4,530 <span class="t-up">▲ +0.8%</span></span>
-    <span class="ticker-item"><span class="t-name">OIL (Brent)</span> $94.33 <span class="t-dn">▼ −0.68%</span></span>
-    <span class="ticker-item"><span class="t-name">10-YR</span> 4.48% <span class="t-up">▲ +2bps</span></span>
-    <span class="ticker-item"><span class="t-name">NVDA</span> <span class="t-up">▲ +6.1%</span></span>
-    <span class="ticker-item"><span class="t-name">DJIA</span> 51,078 <span class="t-up">▲ +0.09%</span></span>
-    <span class="ticker-item"><span class="t-name">S&amp;P 500</span> 7,599 <span class="t-up">▲ +0.26%</span></span>
-    <span class="ticker-item"><span class="t-name">NASDAQ</span> 27,086 <span class="t-up">▲ +0.42%</span></span>
-    <span class="ticker-item"><span class="t-name">BTC</span> $72,145 <span class="t-dn">▼ −2.27%</span></span>
-    <span class="ticker-item"><span class="t-name">GOLD</span> $4,530 <span class="t-up">▲ +0.8%</span></span>
-    <span class="ticker-item"><span class="t-name">OIL (Brent)</span> $94.33 <span class="t-dn">▼ −0.68%</span></span>
-    <span class="ticker-item"><span class="t-name">10-YR</span> 4.48% <span class="t-up">▲ +2bps</span></span>
-    <span class="ticker-item"><span class="t-name">NVDA</span> <span class="t-up">▲ +6.1%</span></span>
+    <span>S&amp;P 500 Futures +0.2% · June opens at record highs</span>
+    <span>Nasdaq +8.1% for May — Best Month of 2026</span>
+    <span>Dow Jones closed May at 51,032 — Record</span>
+    <span>Bitcoin ~$73,500 · ETF outflows $2.3B in May</span>
+    <span>30-Yr Fixed 6.53% · Fannie Mae sees 6.1–6.3% all year</span>
+    <span>FOMC June 16–17 · Warsh's first meeting</span>
+    <span>U.S.–Iran 60-Day MOU · Awaiting Trump Signature</span>
+    <span>White Sox sweep Detroit 3–0</span>
+    <span>Cubs split St. Louis weekend series</span>
+    <span>Bulls coaching search · Sweeney to Orlando · New frontrunner</span>
+    <span>Blackhawks #4 pick · Draft June 26 Buffalo</span>
+    <span>S&amp;P 500 Futures +0.2% · June opens at record highs</span>
+    <span>Nasdaq +8.1% for May — Best Month of 2026</span>
+    <span>Dow Jones closed May at 51,032 — Record</span>
+    <span>Bitcoin ~$73,500 · ETF outflows $2.3B in May</span>
+    <span>30-Yr Fixed 6.53% · Fannie Mae sees 6.1–6.3% all year</span>
+    <span>FOMC June 16–17 · Warsh's first meeting</span>
+    <span>U.S.–Iran 60-Day MOU · Awaiting Trump Signature</span>
+    <span>White Sox sweep Detroit 3–0</span>
+    <span>Cubs split St. Louis weekend series</span>
+    <span>Bulls coaching search · Sweeney to Orlando · New frontrunner</span>
+    <span>Blackhawks #4 pick · Draft June 26 Buffalo</span>
   </div>
 </div>
 
-<!-- MASTHEAD -->
 <header class="masthead">
-  <div class="masthead-eyebrow">Est. May 2026 · Vol. I</div>
-  <h1 class="masthead-title">The Daily Ledger</h1>
+  <div class="masthead-vol">Vol. I · No. 6 · Chicagoland Edition</div>
+  <div class="masthead-title">The Daily Ledger</div>
+  <span class="masthead-diamond">✦</span>
+  <div class="masthead-tagline">Truth, Clearly Delivered</div>
   <div class="masthead-rule"></div>
-  <div class="masthead-meta">
+  <div class="masthead-dateline">
     <span>Monday, June 1, 2026</span>
-    <span class="m-sep">·</span>
     <span>Chicago, Illinois</span>
-    <span class="m-sep">·</span>
-    <span>Edition No. 6</span>
-    <span class="m-sep">·</span>
-    <span>Curated Daily for Nunya Biz</span>
   </div>
+  <div class="masthead-url"><a href="https://unclejim7.github.io/The-Daily-Ledger">unclejim7.github.io/The-Daily-Ledger</a></div>
 </header>
 
-<div class="container">
+<div class="paper-body">
 
-  <!-- WEATHER -->
-  <div class="section-head"><h2>☁ Chicagoland Weather</h2></div>
+  <div class="section-head">
+    <span class="section-head-icon">🌤️</span>
+    <h2>Chicagoland Weather</h2>
+    <div class="section-divider"></div>
+  </div>
+
   <div class="weather-banner">
-    <div class="weather-icon">⛅</div>
-    <div class="weather-main">
-      <div class="weather-temp">68° F</div>
-      <div class="weather-desc">Partly Cloudy — Chicago, IL</div>
-    </div>
-    <div class="weather-details">
-      <span>🌡 High 68° / Low 59°</span>
-      <span>💨 NW 4 mph</span>
-      <span>☀️ Sunrise 5:16 AM · Sunset 8:20 PM</span>
-      <span>📅 Tue: 70° / Wed: 75°</span>
+    <div class="weather-icon">🌤️</div>
+    <div class="weather-content">
+      <div class="weather-headline">June Opens Clearing and Mild After a Wet Weekend</div>
+      <div class="weather-body">After Sunday's unseasonably cold rain, June 1 brings improving skies. Partly cloudy Monday with highs recovering to the mid-60s. A pleasant stretch builds through midweek before the next system arrives late Thursday. The contrast from Sunday's 50°F high to Tuesday's 72°F forecast is a classic early-June pattern in Chicagoland.</div>
+      <div class="weather-days">
+        <div class="weather-day"><strong>🌤️ Mon Jun 1</strong> H 66° / L 50° — Partly cloudy, improving</div>
+        <div class="weather-day"><strong>☀️ Tue Jun 2</strong> H 72° / L 55° — Mostly sunny, pleasant</div>
+        <div class="weather-day"><strong>☀️ Wed Jun 3</strong> H 74° / L 56° — Nice early June weather</div>
+      </div>
     </div>
   </div>
 
-  <!-- FRONT PAGE -->
-  <div class="section-head"><h2>📰 Front Page</h2></div>
+  <div class="section-head">
+    <span class="section-head-icon">📈</span>
+    <h2>Markets &amp; Finance</h2>
+    <div class="section-divider"></div>
+  </div>
 
   <div class="lead-story">
-    <div class="lead-kicker">Breaking · Iran War &amp; Diplomacy</div>
-    <h1>US–Iran 60-Day MOU Agreed in Principle — Trump Edits Text; Signature Pending</h1>
-    <p>The United States and Iran have reached agreement in principle on a 60-day ceasefire memorandum of understanding, according to regional sources, but no final signed text has been released. President Trump personally edited terms over the weekend, stiffening language around highly enriched uranium and the reopening of the Strait of Hormuz. Treasury Secretary Bessent confirmed there will be no sanctions relief until Tehran physically transfers its stockpile of enriched uranium. US forces launched "defensive strikes" in southern Iran Friday night; Iran responded by hitting targets in Kuwait with ballistic missiles. Markets opened cautiously optimistic Monday as Nvidia's Computex news drove tech higher, partially offsetting the war risk premium.</p>
+    <div class="lead-kicker">June Opens</div>
+    <div class="lead-headline">June Begins at Record Highs — Warsh Era Starts, Iran Deal Pending</div>
+    <div class="lead-body">June 1 opens with U.S. equity markets at all-time highs after the best May since 2003. The S&amp;P 500 closed May up 5%, the Nasdaq +8.1%, and the Dow at 51,032. Futures are modestly positive Monday morning. The market's agenda for June is clear: Kevin Warsh's first FOMC meeting on June 16–17, the long-awaited Iran MOU signature, and the Senate's handling of the OBBBA tax bill. Any one of those three events could set the tone for the summer. Bitcoin spot ETFs saw $2.3 billion in outflows during May despite BTC holding near $73,500 — an unusual divergence that analysts attribute to profit-taking by early institutional adopters.</div>
   </div>
 
   <div class="card-grid">
     <div class="card">
-      <div class="card-kicker">Markets · June Opens</div>
-      <h3>Nasdaq Closes Above 27K for First Time</h3>
-      <p>All three major indexes set new intraday and closing records Monday. The Nasdaq crossed 27,000 for the first time ever, closing at 27,086. S&amp;P closed just above 7,600. The Dow added 46 points. Nvidia led, rising 6%+ on its new PC chip announcement at Computex. Energy was the only other S&amp;P sector in the green.</p>
+      <div class="card-kicker">Federal Reserve</div>
+      <h3>June 17 — Warsh's First FOMC Decision</h3>
+      <p>Kevin Warsh chairs his first Federal Open Market Committee meeting June 16–17. The fed funds rate is at 3.50–3.75%. Markets expect a hold but are watching for any shift in the committee's forward guidance language. Warsh's first press conference will be scrutinized for signals on his tolerance for above-target inflation versus his stated preference for credibility restoration.</p>
     </div>
     <div class="card">
-      <div class="card-kicker">May Recap</div>
-      <h3>May: Nasdaq +8%, S&amp;P +5%, Dow +3% — All Records</h3>
-      <p>May closed as one of the best months of 2026 for equities. The S&amp;P 500 logged its 9th straight weekly gain — the longest such streak since 2023. Dell surged 33% in a single session on blowout earnings. The war premium on oil kept energy stocks elevated throughout the month.</p>
+      <div class="card-kicker">Iran / Oil</div>
+      <h3>MOU Awaiting Trump Signature — Deal or No Deal?</h3>
+      <p>The 60-day ceasefire MOU between the U.S. and Iran is agreed upon by negotiators but still awaits President Trump's personal sign-off. Trump's additions — stricter missile verification, expanded inspection rights — remain contested by Tehran. The window is open; the question is whether either side blinks first. Oil is trading with a binary outcome premium.</p>
+    </div>
+  </div>
+
+  <div class="market-table-wrap">
+    <table class="market-table">
+      <thead>
+        <tr><th>Index / Asset</th><th>May Close</th><th>MTD</th><th>Note</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>S&amp;P 500</td><td>~7,580</td><td><span class="pill pill-up">+5.0%</span></td><td>Record close</td></tr>
+        <tr><td>Nasdaq</td><td>~26,972</td><td><span class="pill pill-up">+8.1%</span></td><td>Best May since '03</td></tr>
+        <tr><td>Dow Jones</td><td>51,032</td><td><span class="pill pill-up">+2.9%</span></td><td>Record</td></tr>
+        <tr><td>Bitcoin</td><td>~$73,500</td><td><span class="pill pill-down">ETF outflows</span></td><td>Holding near ATH</td></tr>
+        <tr><td>WTI Crude</td><td>~$74</td><td><span class="pill pill-down">−4%</span></td><td>Iran deal hopes</td></tr>
+        <tr><td>Gold</td><td>~$3,280</td><td><span class="pill pill-up">+1.2%</span></td><td>Geopolitical bid</td></tr>
+        <tr><td>30-Yr Mortgage</td><td>6.53%</td><td>—</td><td>Freddie Mac</td></tr>
+        <tr><td>Fed Funds Rate</td><td>3.50–3.75%</td><td>—</td><td>Hold expected Jun 17</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="section-head">
+    <span class="section-head-icon">₿</span>
+    <h2>Bitcoin &amp; Crypto</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="crypto-panel">
+    <div class="crypto-card">
+      <div class="crypto-name">Bitcoin</div>
+      <div class="crypto-price">~$73.5K</div>
+      <div class="crypto-change text-muted">ETF outflows</div>
+    </div>
+    <div class="crypto-card">
+      <div class="crypto-name">Ethereum</div>
+      <div class="crypto-price">~$2,600</div>
+      <div class="crypto-change text-up">▲ Recovering</div>
+    </div>
+    <div class="crypto-card">
+      <div class="crypto-name">Mkt Cap</div>
+      <div class="crypto-price">~$3.3T</div>
+      <div class="crypto-change">Consolidating</div>
+    </div>
+  </div>
+
+  <div class="section-head">
+    <span class="section-head-icon">🏛️</span>
+    <h2>Macro &amp; Federal Reserve</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-kicker">PCE / Inflation</div>
+      <h3>PCE at 3.8% — No Relief in Sight Before Fall</h3>
+      <p>April PCE held at 3.8% year-over-year — the highest in three years. Core PCE at 3.3%. Services inflation, particularly in rent and insurance, is driving persistence. The Fed's path to 2% now extends well into 2027 under most forecasts. Warsh inherits a hotter-than-target inflation environment with limited room to ease.</p>
     </div>
     <div class="card">
-      <div class="card-kicker">Fed Watch</div>
-      <h3>Warsh's First Presser June 17 Is the Real Event</h3>
-      <p>Markets have priced 97% probability of no rate change at the June 16–17 FOMC. But the dot plot and Warsh's first press conference will define the trajectory for the rest of 2026. PCE at 3.8% gives the new chair little room to sound dovish. Fear &amp; Greed Index sitting at 59.2 — firmly greed territory.</p>
+      <div class="card-kicker">Labor Market</div>
+      <h3>Jobs Report Friday — Consensus 145K New Jobs</h3>
+      <p>Friday's May employment report is the week's key economic event. Consensus forecasts call for approximately 145,000 new jobs and an unemployment rate holding at 4.1%. A strong number would reinforce the "higher for longer" rates narrative; a miss could reopen the rate cut conversation ahead of the June 17 FOMC.</p>
     </div>
   </div>
 
-  <!-- MARKETS -->
-  <div class="section-head"><h2>📈 Markets &amp; Finance</h2></div>
-  <table class="market-table">
-    <thead>
-      <tr><th>Index / Asset</th><th>Level</th><th>Change</th><th>Note</th></tr>
-    </thead>
-    <tbody>
-      <tr><td class="t-name">Dow Jones</td><td>51,078.88</td><td><span class="pill-up">+0.09%</span></td><td>Record close</td></tr>
-      <tr><td class="t-name">S&amp;P 500</td><td>7,599.96</td><td><span class="pill-up">+0.26%</span></td><td>Above 7,600 intraday</td></tr>
-      <tr><td class="t-name">Nasdaq Composite</td><td>27,086.81</td><td><span class="pill-up">+0.42%</span></td><td>First close above 27K</td></tr>
-      <tr><td class="t-name">Bitcoin (BTC)</td><td>$72,145</td><td><span class="pill-dn">−2.27%</span></td><td>ETF outflows continue</td></tr>
-      <tr><td class="t-name">Gold</td><td>$4,530</td><td><span class="pill-up">+0.80%</span></td><td>War premium bid</td></tr>
-      <tr><td class="t-name">Brent Crude</td><td>$94.33</td><td><span class="pill-dn">−0.68%</span></td><td>Deal hopes ease</td></tr>
-      <tr><td class="t-name">10-Year Treasury</td><td>4.48%</td><td><span class="pill-dn">+2 bps</span></td><td>Iran uncertainty</td></tr>
-    </tbody>
-  </table>
-
-  <!-- REAL ESTATE -->
-  <div class="section-head"><h2>🏠 Real Estate</h2></div>
-  <div class="card">
-    <div class="card-kicker">Mortgage Rates · June 1</div>
-    <h3>30-Year Fixed at 6.53% (Freddie Mac) — Oil Is the Culprit</h3>
-    <p>The Freddie Mac weekly average for the 30-year fixed mortgage came in at 6.53% on June 1. Mortgage News Daily showed 6.6% intraday as the 10-year yield ticked higher on Iran news. Analysts at NerdWallet noted rates aren't likely to be "a game changer" for June buyers or sellers in either direction. NAHB still projects sub-6% by year-end if the Iran conflict resolves. Inventory continues to rise — spring listings are finally outpacing buyers for the first time this cycle.</p>
+  <div class="section-head">
+    <span class="section-head-icon">🌐</span>
+    <h2>Current Events</h2>
+    <div class="section-divider"></div>
   </div>
 
-  <!-- SPORTS -->
-  <div class="section-head"><h2>⚾ Chicago Sports</h2></div>
+  <div class="lead-story">
+    <div class="lead-kicker">Iran</div>
+    <div class="lead-headline">Iran MOU: The Last Mile Is the Hardest</div>
+    <div class="lead-body">Diplomats describe the Iran ceasefire MOU as "95% complete" — but that last 5% is the hardest. Trump's insisted additions to the verification protocol and missile restrictions represent genuine red lines for Tehran, which views any constraints on its missile program as a concession too far. U.S. officials counter that a deal without verification is worse than no deal. The Muscat talks are continuing through the weekend; a decision one way or the other is expected by Wednesday. The market has priced in roughly 70% probability of a deal based on oil's current level — a collapse would push WTI toward $85 immediately.</div>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-kicker">Domestic</div>
+      <h3>OBBBA Reaches Senate — Deficit Hawks Mobilizing</h3>
+      <p>The Senate received the House-passed OBBBA Friday. Majority Leader Thune has promised a floor vote before July 4. The SALT expansion, 199A extension, and PMI deductibility restoration are the provisions most important to middle and upper-middle income taxpayers. The fiscal cost — estimated at $3.8 trillion over 10 years — is drawing opposition from a bloc of five Republican senators.</p>
+    </div>
+    <div class="card">
+      <div class="card-kicker">Economy</div>
+      <h3>Memorial Day Travel Record — But K-Shaped Recovery Deepens</h3>
+      <p>AAA's record 43 million Memorial Day travelers masked a deepening consumer bifurcation: affluent households are spending freely while lower-income consumers show rising delinquency rates and reduced discretionary spending. The "K-shaped" economy — up for the top, down for the bottom — is now the consensus characterization of the 2026 consumer landscape.</p>
+    </div>
+  </div>
+
+  <div class="section-head">
+    <span class="section-head-icon">🏠</span>
+    <h2>Real Estate</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-kicker">National</div>
+      <h3>Pending Sales Fall 3.2% in April — 3rd Straight Monthly Drop</h3>
+      <p>The NAR's pending home sales index fell 3.2% month-over-month in April — the third consecutive monthly decline. The lock-in effect remains dominant: homeowners sitting on sub-3% pandemic mortgages have no financial incentive to sell and upgrade at 6.5%. Until rates drop meaningfully, transaction volume stays depressed.</p>
+    </div>
+    <div class="card">
+      <div class="card-kicker">Chicago</div>
+      <h3>North Shore Condos Buck the Slowdown</h3>
+      <p>Evanston and Wilmette condos are moving in under 20 days with multiple offers — a pocket of demand strength in an otherwise sluggish market. Downsizing baby boomers and remote workers are driving condo demand on the North Shore, while single-family activity remains muted at current rates.</p>
+    </div>
+  </div>
+
+  <div class="section-head">
+    <span class="section-head-icon">💼</span>
+    <h2>Tax &amp; Accounting</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="card-full">
+    <h3>June Planning Calendar: What's on the Tax Radar This Month</h3>
+    <p>June is a quieter month on the tax calendar but several items deserve attention. Q2 estimated tax payments are due June 16 — the same day the FOMC meets. If the OBBBA passes with retroactive effective dates, Q2 estimates may need to be recalculated. Illinois filers should note that the state has not conformed to all federal changes; a federal SALT expansion does not automatically change Illinois' own tax treatment. For business owners, the June 30 deadline for certain retirement plan establishment elections in some plan types is worth confirming with your plan administrator. Payroll tax deposits continue on their regular schedule regardless of federal legislative action.</p>
+  </div>
+
+  <div class="section-head">
+    <span class="section-head-icon">📡</span>
+    <h2>Armstrong Economics</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="armstrong-box">
+    <h3>Armstrong: June Opens the Summer Cycle — Watch the Dollar</h3>
+    <p>Martin Armstrong's Socrates system enters June flagging the dollar as the key variable for the summer cycle. A strong dollar driven by capital inflows — which his model has been predicting — acts as a deflationary force globally but is bullish for U.S. equities as international capital seeks dollar-denominated assets. Armstrong has noted that the Iran conflict's resolution, when it comes, will not end the capital flight dynamic: the structural problems in Europe, China, and emerging markets that are driving flows into the U.S. predate the conflict and will persist after it. His September–October cyclical test window remains the key watch date for a potential correction within the larger bull structure.</p>
+  </div>
+
+  <div class="section-head">
+    <span class="section-head-icon">⚾</span>
+    <h2>Chicago Sports</h2>
+    <div class="section-divider"></div>
+  </div>
+
   <div class="scorecard">
-    <div class="scorecard-header">MLB · Saturday, May 30 — Final</div>
+    <div class="scorecard-header">⚾ Chicago Cubs · NL Central Leaders</div>
     <div class="scorecard-teams">
-      <div class="team-block"><div class="team-name">Chicago Cubs</div><div class="team-score winner">6</div></div>
-      <div class="score-vs">FINAL</div>
-      <div class="team-block"><div class="team-name">St. Louis Cardinals</div><div class="team-score">1</div></div>
+      <span class="team-name">Cubs</span>
+      <span class="score-vs">Split St. Louis weekend · 31-27 · Open at home vs CIN</span>
     </div>
-    <div class="scorecard-note">Game 1 of series at St. Louis · Cubs won</div>
+    <div class="scorecard-note">The Cubs went 1-2 in St. Louis over the weekend but maintained their NL Central lead entering June. Imanaga pitched well in a no-decision Saturday. The offense is clicking — the Cubs return home for a series against Cincinnati starting tonight. Kyle Tucker continues to provide lineup protection.</div>
   </div>
+
   <div class="scorecard">
-    <div class="scorecard-header">MLB · Sunday, May 31 — Final</div>
+    <div class="scorecard-header">⚾ Chicago White Sox · Sweep City</div>
     <div class="scorecard-teams">
-      <div class="team-block"><div class="team-name">Chicago White Sox</div><div class="team-score winner">2</div></div>
-      <div class="score-vs">FINAL</div>
-      <div class="team-block"><div class="team-name">Detroit Tigers</div><div class="team-score">1</div></div>
+      <span class="team-name">White Sox</span>
+      <span class="score-vs">Swept Detroit 3–0 · At Minnesota tonight</span>
     </div>
-    <div class="scorecard-note">Swept Detroit 3-game series · Head to Minnesota</div>
+    <div class="scorecard-note">The White Sox finished their best stretch of the season — a three-game sweep of Detroit. Young pitching led the way. The team heads to Minnesota Monday for a three-game set. Murakami continues to develop at a remarkable pace.</div>
   </div>
+
   <div class="card-grid">
     <div class="card">
       <div class="card-kicker">Chicago Bulls</div>
-      <h3>Sean Sweeney Off the Board — Chris Quinn Now the Frontrunner</h3>
-      <p>Orlando hired the Bulls' lead coaching candidate Sean Sweeney, pulling him off Chicago's board. Chris Quinn of the Miami Heat has emerged as the new frontrunner. The Bulls hold picks 4, 15, 38, and 56 in the June 24 NBA Draft. The hire is targeted for the second week of June.</p>
+      <h3>Sweeney to Orlando — Bulls Search Resets</h3>
+      <p>Sean Sweeney officially accepted the Orlando Magic head coaching job, removing the Bulls' reported frontrunner from the market. The search resets with Nate Oats (Alabama), James Borrego, and several other candidates still in consideration. The Bulls are reportedly expanding their search to include international coaches.</p>
     </div>
     <div class="card">
       <div class="card-kicker">Chicago Blackhawks</div>
-      <h3>Pick No. 4 — Chase Reid Emerging in Mocks</h3>
-      <p>With McKenna and Stenberg consensus 1-2, the Blackhawks' 4th overall pick is trending toward defenseman Chase Reid in most mock drafts. GM Kyle Davidson confirmed the team would listen on the pick but the return would need to be significant. Dennis Hull passed away at 81 — mourned by the entire organization.</p>
+      <h3>Draft 25 Days Away — #4 Pick Scouting Intensifies</h3>
+      <p>The NHL Draft in Buffalo is 25 days away and the Blackhawks' scouting staff is in final evaluation mode. Chase Reid remains the trending pick at #4 in most mock drafts. The organization is also exploring trade-up scenarios if a target slides or trade-down scenarios if a surplus of value appears.</p>
     </div>
   </div>
 
-  <!-- HEALTH -->
-  <div class="section-head"><h2>💊 Health &amp; Wellness</h2></div>
-  <div class="health-card">
-    <h4>Optimal Sleep Window: 6.4–7.8 Hours — Too Much Is Nearly as Bad as Too Little</h4>
-    <p>A major sleep analysis published in May found the sweet spot for cognitive performance and longevity sits between 6.4 and 7.8 hours per night. Sleeping more than 9 hours regularly produced health outcomes nearly as poor as sleeping under 5.5 hours. The finding challenges the conventional "always get 8 hours" advice and suggests that sleep quality and consistency matter as much as raw duration.</p>
+  <div class="section-head">
+    <span class="section-head-icon">💊</span>
+    <h2>Health &amp; Wellness</h2>
+    <div class="section-divider"></div>
   </div>
 
-  <div class="divider"></div>
-  <div class="section-head"><h2>🎲 Closing Notes</h2></div>
+  <div class="card-grid">
+    <div class="card">
+      <div class="card-kicker">Sleep</div>
+      <h3>Consistent Sleep Schedule Matters More Than Hours Alone</h3>
+      <p>New research from the University of Michigan found that sleep timing consistency — going to bed and waking at the same time daily — provides longevity benefits independent of total sleep duration. Irregular sleepers showed elevated inflammatory markers and higher cardiovascular risk even when they logged adequate total hours. The fix is behavioral, not pharmaceutical.</p>
+    </div>
+    <div class="card">
+      <div class="card-kicker">Metabolic Health</div>
+      <h3>Muscle Mass at 50 Predicts Quality of Life at 75</h3>
+      <p>A 25-year longitudinal study published in JAMA Network Open found that lean muscle mass at age 50 was the strongest predictor of functional independence at age 75 — stronger than cardiovascular fitness, cognitive scores, or bone density. Resistance training in midlife isn't optional for healthy aging; it's the mechanism by which healthy aging happens.</p>
+    </div>
+  </div>
+
+  <div class="pull-quote">
+    <p>June begins where May ended — at the top. The question is whether the climb continues or whether the summit marks the turn. Watch Warsh on June 17. That press conference will tell you a lot.</p>
+    <cite>— Editor's Observation, June 1, 2026</cite>
+  </div>
+
+  <div class="section-head">
+    <span class="section-head-icon">✍️</span>
+    <h2>Editor's Dispatch</h2>
+    <div class="section-divider"></div>
+  </div>
+
+  <div class="editor-dispatch">
+    <h3>The Summer That Will Define the Year</h3>
+    <p>June 1 is a starting line. The next 90 days will answer the questions May left open: Does Iran get a deal or does the conflict reignite? Does Warsh signal a hawkish reset or work within the existing framework? Does the OBBBA pass the Senate intact or get carved up by deficit hawks? Does Bitcoin's ETF outflow divergence resolve bullishly or bearishly? Does the jobs market continue to hold or start to crack? Every one of those questions has a clear bull answer and a clear bear answer, and the market is currently pricing the bull answer for all of them simultaneously. That's a setup that rewards patience, humility, and discipline. Stay long, stay alert, and don't confuse a good May with a guaranteed June. See you tomorrow.</p>
+  </div>
+
+  <div class="section-head">
+    <span class="section-head-icon">🎲</span>
+    <h2>Daily Extras</h2>
+    <div class="section-divider"></div>
+  </div>
+
   <div class="trivia-grid">
     <div class="trivia-box">
       <div class="trivia-label">Random Fact</div>
-      <h4>The entire internet weighs about 50 grams.</h4>
-      <p>The mass of all electrons in motion carrying digital information across the global internet at any given moment is estimated at roughly 50 grams — about the weight of a strawberry. The information itself is weightless.</p>
+      <h4>June Is Named After the Roman Goddess Juno</h4>
+      <p>June takes its name from Juno, the Roman goddess of marriage and queen of the gods. June was historically considered the luckiest month for marriages — a tradition that persists today, as June remains one of the two most popular wedding months in the United States alongside October.</p>
     </div>
     <div class="trivia-box">
       <div class="trivia-label">Word of the Day</div>
-      <h4>Shibboleth</h4>
-      <p>From Hebrew, originally meaning "ear of grain." In modern use: any political or institutional test of insider status — a word, phrase, or custom used to identify members of a group or separate insiders from outsiders.</p>
+      <h4>Forward Guidance</h4>
+      <p>Central bank communication about the future path of monetary policy. When the Fed says "we expect rates to remain elevated," that's forward guidance — a tool to manage market expectations without actually changing rates. Warsh's first press conference on June 17 is primarily a forward guidance event: what does he signal about the next 12 months?</p>
     </div>
     <div class="trivia-box">
       <div class="trivia-label">Quote of the Day</div>
-      <h4>"In the middle of every difficulty lies opportunity."</h4>
-      <p>— Albert Einstein. A useful frame for a morning when stock markets are at all-time highs even as a war remains unsettled, inflation runs hot, and a new Fed chair faces his first real test.</p>
+      <h4>"It ain't over 'til it's over."</h4>
+      <p>— Yogi Berra, New York Yankees legend. The Iran deal isn't done until Trump signs. The OBBBA isn't law until Biden — sorry, Trump — signs it. The Cubs aren't division champs until October. Yogi's wisdom applies everywhere in June 2026.</p>
     </div>
   </div>
 
