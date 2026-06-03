@@ -1,6 +1,6 @@
 /* ================================================================
    THE DAILY LEDGER — style.css
-   Dark broadsheet · v5 · sticky nav fix
+   Dark broadsheet · v6 · sticky nav + ticker · 2026-06-02
    ================================================================ */
 
 /* ── GOOGLE FONTS ─────────────────────────────────────────────── */
@@ -96,7 +96,7 @@ img { max-width: 100%; }
 /* ── TICKER ───────────────────────────────────────────────────── */
 .ticker-wrap {
   position: sticky;
-  top: 41px;
+  top: 43px;
   z-index: 9998;
   width: 100%;
   overflow: hidden;
@@ -106,7 +106,6 @@ img { max-width: 100%; }
   height: 34px;
   display: flex;
   align-items: center;
-  position: relative;
 }
 .ticker-label {
   flex-shrink: 0;
