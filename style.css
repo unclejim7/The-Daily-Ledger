@@ -131,7 +131,7 @@ img { max-width: 100%; }
 .ticker-track {
   display: flex;
   white-space: nowrap;
-  animation: ticker-scroll 28s linear infinite;
+  animation: ticker-scroll 16s linear infinite;
   will-change: transform;
 }
 .ticker-track span {
