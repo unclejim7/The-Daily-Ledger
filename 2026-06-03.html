@@ -1,328 +1,312 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Daily Ledger — Wednesday, June 3, 2026</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Daily Ledger — June 3, 2026</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
 <nav class="edition-nav">
-  <a href="2026-06-02.html">← Jun 2</a>
-  <span class="nav-archive"><a href="archive.html">📁 Archive</a></span>
-  <span class="nav-disabled">Jun 4 →</span>
+  <a href="2026-06-02.html" class="nav-link">← June 2</a>
+  <a href="archive.html" class="nav-link">📁 Archive</a>
+  <a href="2026-06-04.html" class="nav-link">June 4 →</a>
 </nav>
 
+<!-- TICKER -->
 <div class="ticker-wrap">
-  <div class="ticker-label">Markets</div>
   <div class="ticker-track">
-    <span>S&amp;P 500 ▲ Crosses 7,600 — New All-Time High</span>
-    <span>HPE +19% on Computex AI Chip News</span>
-    <span>Dow +0.45% · Nasdaq +0.03%</span>
-    <span>Iran Ceasefire Wobbles — Tehran Suspends Mediator Contact</span>
-    <span>WTI Crude ▲ Geopolitical Premium Returns</span>
-    <span>30-Yr Fixed 6.54% · Freddie Mac Benchmark</span>
-    <span>Bitcoin Consolidating Near $73K</span>
-    <span>FOMC June 16–17 · Warsh First Meeting</span>
-    <span>Jobs Report Friday · Consensus +145K</span>
-    <span>Cubs W · NL Central Lead Extends</span>
-    <span>White Sox at Minnesota</span>
-    <span>S&amp;P 500 ▲ Crosses 7,600 — New All-Time High</span>
-    <span>HPE +19% on Computex AI Chip News</span>
-    <span>Dow +0.45% · Nasdaq +0.03%</span>
-    <span>Iran Ceasefire Wobbles — Tehran Suspends Mediator Contact</span>
-    <span>WTI Crude ▲ Geopolitical Premium Returns</span>
-    <span>30-Yr Fixed 6.54% · Freddie Mac Benchmark</span>
-    <span>Bitcoin Consolidating Near $73K</span>
-    <span>FOMC June 16–17 · Warsh First Meeting</span>
-    <span>Jobs Report Friday · Consensus +145K</span>
-    <span>Cubs W · NL Central Lead Extends</span>
-    <span>White Sox at Minnesota</span>
+    <span class="ticker-item">📉 S&amp;P 500 <span class="dn">▼ 0.74%</span> reverses from 7,609 record</span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">📉 DOW <span class="dn">▼ 1.21%</span> — Russell also drops 1.25%</span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">📉 NASDAQ <span class="dn">▼ 0.89%</span> — Broadcom after-hours -14%</span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">₿ BTC <span class="dn">▼ $67,088</span> — 11-day ETF outflow streak, $3.45B</span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">🛢 OIL <span class="up">▲ near $98</span> — Iran-Kuwait drones hit airport</span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">🏠 30-YR MORTGAGE <span class="neutral">6.586%</span> — Spring season in high gear</span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">🏦 FED FUNDS <span class="neutral">3.50–3.75%</span> — Warsh June 16–17 debut looms</span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">⚾ CUBS <span class="dn">L 2–1</span> vs Athletics — Game 1 loss at Wrigley</span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">⚾ WHITE SOX <span class="dn">L 6–4</span> vs Twins — series finale today 12:40 PM</span>
+    <span class="ticker-sep">◆</span>
+    <span class="ticker-item">🌡 CHICAGOLAND <span class="neutral">88°F / 66°F</span> — Hot and humid Wednesday</span>
   </div>
 </div>
 
+<!-- MASTHEAD -->
 <header class="masthead">
-  <div class="masthead-vol">Vol. I · No. 8 · Chicagoland Edition</div>
-  <div class="masthead-title">The Daily Ledger</div>
-  <span class="masthead-diamond">✦</span>
-  <div class="masthead-tagline">Truth, Clearly Delivered</div>
+  <div class="masthead-kicker">CHICAGO, ILLINOIS — WEDNESDAY, JUNE 3, 2026</div>
+  <h1 class="masthead-title">The Daily Ledger</h1>
   <div class="masthead-rule"></div>
-  <div class="masthead-dateline">
-    <span>Wednesday, June 3, 2026</span>
-    <span>Chicago, Illinois</span>
+  <div class="masthead-meta">
+    <span>Vol. I, No. 8</span>
+    <span class="masthead-dot">◆</span>
+    <span>Est. May 2026</span>
+    <span class="masthead-dot">◆</span>
+    <span>Markets · Geopolitics · Sports · Wellness</span>
   </div>
-  <div class="masthead-url"><a href="https://unclejim7.github.io/The-Daily-Ledger">unclejim7.github.io/The-Daily-Ledger</a></div>
 </header>
 
 <div class="paper-body">
 
-  <div class="section-head">
-    <span class="section-head-icon">☀️</span>
-    <h2>Chicagoland Weather</h2>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="weather-banner">
-    <div class="weather-icon">☀️</div>
-    <div class="weather-content">
-      <div class="weather-headline">Warm and Sunny Wednesday — Front Arrives Thursday</div>
-      <div class="weather-body">Chicago enjoys another beautiful early-June day Wednesday with highs in the mid-70s and plenty of sunshine. A frontal system approaches from the northwest Thursday afternoon, bringing increasing clouds and shower chances by evening. The weekend looks to recover nicely with drier conditions returning by Saturday.</div>
-      <div class="weather-days">
-        <div class="weather-day"><strong>☀️ Wed Jun 3</strong> H 74° / L 56° — Sunny, warm</div>
-        <div class="weather-day"><strong>⛅ Thu Jun 4</strong> H 69° / L 54° — Clouds build, PM showers</div>
-        <div class="weather-day"><strong>🌧️ Fri Jun 5</strong> H 64° / L 51° — Overcast, scattered rain</div>
-      </div>
+  <section class="lead-story">
+    <div class="section-label">Top Story</div>
+    <h2 class="lead-headline">S&amp;P Hits 7,609 Record — Then Iran Drones Kuwait and Broadcom Misses: The Rally's First Real Test</h2>
+    <p class="lead-byline">MARKETS &amp; GEOPOLITICS DESK — WEDNESDAY, JUNE 3, 2026</p>
+    <p>Nine straight weeks of record closes hit a wall Wednesday. The S&amp;P 500 had closed above 7,600 for the first time ever on Tuesday — then retreated sharply as oil surged, the Russell and Dow both dropped over one percent, and Broadcom's quarterly miss sent chipmaker stocks tumbling in after-hours trading. Iranian drones struck Kuwait's international airport, killing one person and testing the ceasefire for the second time in a week.</p>
+    <p>The broader bull market thesis remains intact — markets are still near all-time highs — but the compression of risks heading into the June 16–17 FOMC under Kevin Warsh, persistent oil above $95, and a cracking crypto market have created the conditions for a more sustained pullback than the dip-buyers have faced since the spring.</p>
+    <div class="pull-quote">
+      <blockquote>"The market gave you nine straight weeks. Now it's asking: do you still believe?"</blockquote>
+      <cite>— The Ledger</cite>
     </div>
-  </div>
+  </section>
 
-  <div class="section-head">
-    <span class="section-head-icon">📈</span>
-    <h2>Markets &amp; Finance</h2>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="lead-story">
-    <div class="lead-kicker">Markets</div>
-    <div class="lead-headline">S&amp;P 500 Crosses 7,600 as Iran Ceasefire Wobbles and Chip Stocks Surge</div>
-    <div class="lead-body">The S&amp;P 500 closed above 7,600 for the first time Tuesday — the latest milestone in a run that has produced nine consecutive weekly gains. Hewlett Packard Enterprise surged 19% on AI chip news from the Computex Taipei conference, dragging broader technology higher. The Dow added 0.45% while the Nasdaq barely edged up 0.03%. But the backdrop remained unsettled. Semiofficial Iranian news agencies reported that Tehran had suspended contact with ceasefire mediators in protest of Israeli military operations in Lebanon and Gaza, sending oil higher and introducing a new layer of geopolitical uncertainty. The market largely shrugged off the Iran headline — for now — choosing instead to focus on the AI hardware story and the upcoming jobs report Friday.</div>
-  </div>
-
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-kicker">AI Hardware</div>
-      <h3>HPE +19% — Computex Fuels Next Leg of AI Trade</h3>
-      <p>Hewlett Packard Enterprise's 19% single-session surge Tuesday was driven by announcements at Computex Taipei showcasing next-generation AI server configurations. The Computex conference has become a major catalyst for AI hardware stocks — similar to how Dell's earnings were a catalyst two weeks ago. The message is consistent: every hyperscaler is still spending aggressively on infrastructure.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">Iran / Oil</div>
-      <h3>Tehran Suspends Mediator Contact — Oil Premium Returns</h3>
-      <p>Iran's suspension of contact with ceasefire mediators — citing Israeli military activity in Lebanon and Gaza — injected fresh uncertainty into energy markets. WTI crude jumped on the news, partially reversing the deal-optimism decline from last week. Analysts note this may be a negotiating tactic rather than a permanent rupture, but it resets the timeline for any MOU signature.</p>
-    </div>
-  </div>
-
-  <div class="market-table-wrap">
+  <section class="section-block">
+    <div class="section-label">Markets &amp; Finance</div>
+    <h3 class="section-hed">Wednesday's Close — June 3, 2026</h3>
     <table class="market-table">
       <thead>
-        <tr><th>Index / Asset</th><th>Level</th><th>Move</th><th>Note</th></tr>
+        <tr><th>Index / Asset</th><th>Level</th><th>Change</th></tr>
       </thead>
       <tbody>
-        <tr><td>S&amp;P 500</td><td>&gt;7,600</td><td><span class="pill pill-up">▲ New ATH</span></td><td>9 straight weekly wins</td></tr>
-        <tr><td>Dow Jones</td><td>—</td><td><span class="pill pill-up">▲ +0.45%</span></td><td>Steady</td></tr>
-        <tr><td>Nasdaq</td><td>—</td><td><span class="pill pill-up">▲ +0.03%</span></td><td>Mixed tech</td></tr>
-        <tr><td>HPE</td><td>—</td><td><span class="pill pill-up">▲ +19%</span></td><td>Computex AI news</td></tr>
-        <tr><td>WTI Crude</td><td>~$76</td><td><span class="pill pill-down">▲ Geopolitical</span></td><td>Iran talks stall</td></tr>
-        <tr><td>Bitcoin</td><td>~$73K</td><td>—</td><td>Consolidating</td></tr>
-        <tr><td>Gold</td><td>~$3,300</td><td><span class="pill pill-up">▲</span></td><td>Safe haven bid</td></tr>
-        <tr><td>30-Yr Mortgage</td><td>6.54%</td><td>—</td><td>Freddie Mac</td></tr>
+        <tr><td>S&amp;P 500</td><td>~7,554 est.</td><td><span class="pill-dn">▼ 0.74%</span></td></tr>
+        <tr><td>Dow Jones</td><td>—</td><td><span class="pill-dn">▼ 1.21%</span></td></tr>
+        <tr><td>Nasdaq</td><td>—</td><td><span class="pill-dn">▼ 0.89%</span></td></tr>
+        <tr><td>Russell 2000</td><td>—</td><td><span class="pill-dn">▼ 1.25%</span></td></tr>
+        <tr><td>Broadcom (AVGO)</td><td>—</td><td><span class="pill-dn">▼ 7% AH</span></td></tr>
+        <tr><td>Bitcoin</td><td>$67,088</td><td><span class="pill-dn">Falling</span></td></tr>
+        <tr><td>Crude Oil</td><td>~$98</td><td><span class="pill-up">▲ 3-day rally</span></td></tr>
+        <tr><td>10-Yr Treasury</td><td>4.496%</td><td><span class="pill-dn">+5 bps</span></td></tr>
+        <tr><td>30-Yr Treasury</td><td>5.00%</td><td><span class="pill-dn">+3.8 bps</span></td></tr>
       </tbody>
     </table>
-  </div>
+  </section>
 
-  <div class="section-head">
-    <span class="section-head-icon">₿</span>
-    <h2>Bitcoin &amp; Crypto</h2>
-    <div class="section-divider"></div>
-  </div>
+  <section class="section-block">
+    <div class="section-label">Federal Reserve</div>
+    <h3 class="section-hed">Warsh's First Meeting June 16–17 — Easing Bias Removal Is the Real Story</h3>
+    <p>Markets broadly expect a hold at 3.50–3.75% but the language in the statement matters enormously. Warsh inherited the most divided FOMC since 1992 — four dissents at the April meeting — and must signal his inflation-fighting credibility without triggering a bond market revolt. Traders see a 63% probability of a rate hike before July 2027. Ed Yardeni has warned the market will decide the Fed is behind the curve if no hawkish shift comes in June.</p>
+  </section>
 
-  <div class="crypto-panel">
-    <div class="crypto-card">
-      <div class="crypto-name">Bitcoin</div>
-      <div class="crypto-price">~$73K</div>
-      <div class="crypto-change text-muted">Consolidating</div>
+  <section class="section-block">
+    <div class="section-label">Geopolitics</div>
+    <h3 class="section-hed">Iran Drones Kuwait Airport; House Rebukes Trump; Lebanon Ceasefire in Tatters</h3>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-cat">Kuwait Strike</div>
+        <h4 class="card-hed">Drone Attack Kills One at Kuwait Airport</h4>
+        <p>Iranian drones hit Kuwait International Airport late Wednesday, killing one person and adding fresh kinetic pressure to ceasefire negotiations. Oil surged on the news. The strike tests the April 8 ceasefire framework for the Nth time and underscores Iran's proxy network remains operational despite the U.S. naval blockade.</p>
+      </div>
+      <div class="card">
+        <div class="card-cat">Lebanon</div>
+        <h4 class="card-hed">Hezbollah Nominally Agrees to Ceasefire; IDF Strikes Continue</h4>
+        <p>After Trump announced Hezbollah agreed to a U.S. ceasefire proposal, the Lebanese militia accepted. Israel promptly said it would continue striking southern Lebanon "as planned." Defense Minister Katz denied a ceasefire was in effect. Qatar worked through the weekend to preserve de-escalation. A UN peacekeeper was injured in a mortar attack.</p>
+      </div>
+      <div class="card">
+        <div class="card-cat">Washington</div>
+        <h4 class="card-hed">House Passes War Powers Resolution</h4>
+        <p>The House approved a resolution to halt military action against Iran, rebuking Trump. The bill is unlikely to survive the Senate but marks growing congressional resistance to open-ended war powers. Trump said a deal is achievable "over the next week" — a deadline that passed as of today.</p>
+      </div>
+      <div class="card">
+        <div class="card-cat">Economy</div>
+        <h4 class="card-hed">Disruption Into 2027 Would "Slam" Global Economy</h4>
+        <p>A new report warns that continued disruption of Middle East energy supplies into 2027 would deliver a severe blow to the global economy — higher inflation, slower growth, and compressed corporate margins across energy-dependent sectors. The SpaceX IPO, Anthropic listing, and OpenAI float are all in the pipeline; a prolonged war premium could compress valuations.</p>
+      </div>
     </div>
-    <div class="crypto-card">
-      <div class="crypto-name">Ethereum</div>
-      <div class="crypto-price">~$2,620</div>
-      <div class="crypto-change text-up">▲ Steady</div>
-    </div>
-    <div class="crypto-card">
-      <div class="crypto-name">Mkt Cap</div>
-      <div class="crypto-price">~$3.3T</div>
-      <div class="crypto-change">Range-bound</div>
-    </div>
-  </div>
+  </section>
 
-  <div class="section-head">
-    <span class="section-head-icon">🏛️</span>
-    <h2>Macro &amp; Federal Reserve</h2>
-    <div class="section-divider"></div>
-  </div>
+  <section class="section-block">
+    <div class="section-label">Bitcoin &amp; Crypto</div>
+    <h3 class="section-hed">BTC at $67,088 — ETF Streak Hits 11 Days, $3.45B Outflows</h3>
+    <div class="crypto-panel">
+      <div class="crypto-box">
+        <div class="crypto-label">BTC Price</div>
+        <div class="crypto-val dn-val">$67,088</div>
+        <div class="crypto-sub">Falling sharply</div>
+      </div>
+      <div class="crypto-box">
+        <div class="crypto-label">ETF Outflow Streak</div>
+        <div class="crypto-val dn-val">11 Days</div>
+        <div class="crypto-sub">Record consecutive outflows</div>
+      </div>
+      <div class="crypto-box">
+        <div class="crypto-label">Total May ETF Outflows</div>
+        <div class="crypto-val dn-val">$3.45B</div>
+        <div class="crypto-sub">Institutional rotation out</div>
+      </div>
+      <div class="crypto-box">
+        <div class="crypto-label">$60K Floor Risk</div>
+        <div class="crypto-val">18%</div>
+        <div class="crypto-sub">Polymarket probability</div>
+      </div>
+    </div>
+    <p>Bitcoin has broken the $68K floor and is now testing $65K. The 61.8% Fibonacci retracement at $67,182 is now overhead resistance. The selloff is being driven by record ETF outflows, a rotation into AI stocks and upcoming IPOs, and a hawkish Fed environment. Cascading leveraged liquidations accelerated the move. Polymarket gives 18% odds of a $57,500 flush this month.</p>
+  </section>
 
-  <div class="card-grid">
+  <section class="section-block">
+    <div class="section-label">Real Estate &amp; Mortgage</div>
+    <h3 class="section-hed">30-Year Rate at 6.586% — Spring Season In High Gear Despite Elevated Rates</h3>
+    <div class="card-grid two-col">
+      <div class="card">
+        <div class="card-cat">Rates — June 3</div>
+        <ul class="rate-list">
+          <li><strong>30-Year Fixed:</strong> <span class="text-gold">6.586%</span></li>
+          <li><strong>30-Year Refi:</strong> 6.678%</li>
+          <li><strong>15-Year Fixed:</strong> 5.701%</li>
+        </ul>
+      </div>
+      <div class="card">
+        <div class="card-cat">Market Context</div>
+        <p>Freddie Mac's benchmark 30-year averaged 6.53% for the week. The MBA's Bob Broeksmit notes purchase demand still runs ahead of last year, showing market resilience. Rates have risen since the start of the Iran war as oil prices push inflation. Experts expect rates above 6% through year-end.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="weather-banner">
+    <div class="weather-icon-main">🌡</div>
+    <div class="weather-main-info">
+      <div class="weather-location">CHICAGOLAND · WEDNESDAY, JUNE 3</div>
+      <div class="weather-temp">88°F</div>
+      <div class="weather-desc">Hot &amp; Humid — Low 66°F · A steamy early-June afternoon</div>
+    </div>
+    <div class="weather-week">
+      <div class="weather-day">
+        <div class="weather-day-name">WED</div>
+        <div class="weather-day-icon">☀️</div>
+        <div class="weather-day-hi">88°</div>
+        <div class="weather-day-lo">66°</div>
+      </div>
+      <div class="weather-day">
+        <div class="weather-day-name">THU</div>
+        <div class="weather-day-icon">🌤</div>
+        <div class="weather-day-hi">71°</div>
+        <div class="weather-day-lo">54°</div>
+      </div>
+      <div class="weather-day">
+        <div class="weather-day-name">FRI</div>
+        <div class="weather-day-icon">⛅</div>
+        <div class="weather-day-hi">72°</div>
+        <div class="weather-day-lo">51°</div>
+      </div>
+      <div class="weather-day">
+        <div class="weather-day-name">SAT</div>
+        <div class="weather-day-icon">☀️</div>
+        <div class="weather-day-hi">75°</div>
+        <div class="weather-day-lo">55°</div>
+      </div>
+      <div class="weather-day">
+        <div class="weather-day-name">SUN</div>
+        <div class="weather-day-icon">☀️</div>
+        <div class="weather-day-hi">74°</div>
+        <div class="weather-day-lo">52°</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-block">
+    <div class="section-label">Chicago Sports</div>
+    <h3 class="section-hed">Cubs Drop Game 1 to Athletics 2–1; Sox Series Finale at Noon; Bulls Still Searching</h3>
+
+    <div class="scorecard">
+      <div class="scorecard-teams">
+        <div class="scorecard-team">
+          <span class="team-abbr">CHC</span>
+          <span class="team-score loss-score">1</span>
+        </div>
+        <span class="scorecard-vs">FINAL · Tue Jun 2</span>
+        <div class="scorecard-team">
+          <span class="team-abbr">ATH</span>
+          <span class="team-score">2</span>
+        </div>
+      </div>
+      <p>The Cubs fell to the Athletics 2–1 in Game 1 at Wrigley Tuesday. A tight pitchers' duel decided by one run. Tonight's rematch is Game 2 of the series at 7:05 PM. The Giants visit this weekend. The Cubs need to protect home field before traveling to Colorado next week.</p>
+    </div>
+
+    <div class="scorecard">
+      <div class="scorecard-teams">
+        <div class="scorecard-team">
+          <span class="team-abbr">CWS</span>
+          <span class="team-score loss-score">4</span>
+        </div>
+        <span class="scorecard-vs">FINAL · Tue Jun 2</span>
+        <div class="scorecard-team">
+          <span class="team-abbr">MIN</span>
+          <span class="team-score">6</span>
+        </div>
+      </div>
+      <p>The White Sox dropped Game 2 to the Twins 6–4, falling to 0–2 in the series. Today's rubber game is at 12:40 PM CDT at Target Field — a chance to salvage a split before the Phillies series this weekend.</p>
+    </div>
+
     <div class="card">
-      <div class="card-kicker">Jobs Report Preview</div>
-      <h3>Friday May Payrolls — The Week's Pivot Point</h3>
-      <p>The May nonfarm payrolls report drops Friday at 8:30 AM ET. Consensus: +145,000 jobs, unemployment steady at 4.1%. Recent jobless claims data has been slightly elevated, creating a whisper number below consensus. A miss would reopen the rate cut conversation heading into Warsh's June 17 FOMC debut; a beat reaffirms higher-for-longer.</p>
+      <div class="card-cat">Chicago Bulls</div>
+      <h4 class="card-hed">Sean Sweeney Goes to Orlando; Bulls Widen Net</h4>
+      <p>The Bulls missed out on top target Sean Sweeney, who signed with the Orlando Magic. The search now includes BYU's Kevin Young, Hawks assistant Ryan Schmidt, Cavs assistant Johnnie Bryant, and others. Per Brett Siegel, a hire is expected by the second week of June. The Bulls hold the No. 4 overall pick in the June 2026 draft.</p>
     </div>
+
     <div class="card">
-      <div class="card-kicker">Federal Reserve</div>
-      <h3>Warsh Era: 13 Days to First Decision</h3>
-      <p>Kevin Warsh chairs his first FOMC meeting in 13 days. The fed funds rate sits at 3.50–3.75%. A hold is near-certain; what the market is pricing is Warsh's communication style. Does he sound like a rule-based hawk who'll keep rates elevated, or does he soften the edges? His first press conference sets the tone for the summer.</p>
+      <div class="card-cat">Chicago Blackhawks</div>
+      <h4 class="card-hed">Bedard Deal Imminent; No. 4 Pick Trade Buzz Continues</h4>
+      <p>Connor Bedard's extension is in final stages — Pierre LeBrun says a deal could close this month, projected at $12–15M/year on an 8-year term. GM Kyle Davidson is openly willing to trade the No. 4 pick at the June 26 draft in Buffalo. The Draft Combine wraps June 6. Bedard posted a career-high 75 points in 69 games this season.</p>
     </div>
-  </div>
+  </section>
 
-  <div class="section-head">
-    <span class="section-head-icon">🌐</span>
-    <h2>Current Events</h2>
-    <div class="section-divider"></div>
-  </div>
+  <section class="section-block">
+    <div class="section-label">Armstrong Economics</div>
+    <h3 class="section-hed">Market Talk June 3: Yields Rise Globally; ECM Downcycle Midpoint in Focus</h3>
+    <p>Armstrong's June 3 Market Talk showed broad yield increases: US 10-year at 4.496% (+5 bps), 30-year hitting 5.00%, European spreads widening. Top commodity gainers: Orange Juice (+5.72%), Heating Oil (+4.11%), Crude Oil (+2.65%). Top losers: Palladium (-4.38%), Milk (-4.67%). The ECM's June 2026 downcycle midpoint remains the macro backdrop — Armstrong's model has flagged this as the precursor to a yearlong confidence decline into mid-2027.</p>
+  </section>
 
-  <div class="lead-story">
-    <div class="lead-kicker">Geopolitics</div>
-    <div class="lead-headline">Iran Pulls Back from Ceasefire Table — Citing Israeli Actions in Lebanon and Gaza</div>
-    <div class="lead-body">Iran's suspension of contact with U.S.-backed ceasefire mediators Tuesday marked the most significant setback in the MOU process since talks began in Muscat six weeks ago. Tehran cited ongoing Israeli military operations in Lebanon and Gaza as incompatible with the spirit of negotiations — a linkage the U.S. has consistently rejected, arguing the two conflicts are separate. The development does not mean the talks are dead: Iranian officials left open the possibility of resuming contact once "conditions change." But it resets the clock on the MOU timeline and reintroduces the oil shock scenario that markets had largely priced out. WTI crude jumped $2 on the news. U.S. officials expressed frustration privately while publicly calling for Iran to return to the table.</div>
-  </div>
-
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-kicker">Congress</div>
-      <h3>Senate Finance Committee Marks Up OBBBA — SALT Takes Shape</h3>
-      <p>The Senate Finance Committee concluded two days of markup sessions on the One Big Beautiful Bill Act. The SALT deduction cap survived but was trimmed: the Senate version phases in the $40,000 cap over three years rather than immediately. The 199A passthrough extension and PMI deductibility restoration both survived markup largely intact.</p>
+  <section class="section-block">
+    <div class="section-label">Health &amp; Wellness</div>
+    <h3 class="section-hed">Thymus as Longevity Predictor; Methionine Boosts Infection Survival; Fasting Rewires the Brain</h3>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-cat">Longevity Science</div>
+        <h4 class="card-hed">AI Reveals Thymus as a Longevity Organ</h4>
+        <p>A Mass General Brigham study using AI on CT scans found that healthier thymus glands — the immune organ behind the sternum — correlate strongly with better cancer survival and aging outcomes. The thymus shrinks dramatically after puberty, but its residual function in midlife is a meaningful longevity signal. Preserve your immune infrastructure while you can.</p>
+      </div>
+      <div class="card">
+        <div class="card-cat">Infection Research</div>
+        <h4 class="card-hed">Methionine Dramatically Improves Survival in Severe Infections</h4>
+        <p>A Salk Institute study found that supplementing with methionine — a dietary amino acid found in eggs, meat, and fish — dramatically improved survival rates in mice facing severe infections and inflammatory conditions. The findings suggest a possible nutritional intervention pathway for sepsis and other life-threatening inflammatory events.</p>
+      </div>
+      <div class="card">
+        <div class="card-cat">Weight &amp; Metabolism</div>
+        <h4 class="card-hed">Intermittent Fasting Rewires Both Gut and Brain</h4>
+        <p>A new study of obese adults found that intermittent fasting caused significant weight loss, improved metabolic markers, and notable shifts in gut bacteria — alongside measurable changes in brain scan activity. The gut-brain axis appears to be a key mechanism in how fasting works, beyond simple caloric restriction. The brain is being rewired; the hunger signals are changing at the source.</p>
+      </div>
     </div>
-    <div class="card">
-      <div class="card-kicker">Tech / Policy</div>
-      <h3>EU AI Act Compliance Costs Hit $4B for U.S. Tech Sector</h3>
-      <p>Industry estimates released Tuesday put the first-year compliance cost of the EU AI Act at approximately $4 billion for U.S. technology companies with European operations. The costs cover documentation, auditing, model cards, and human oversight infrastructure. Several smaller AI startups are reportedly considering pulling EU operations entirely rather than bearing the compliance burden.</p>
-    </div>
-  </div>
+  </section>
 
-  <div class="section-head">
-    <span class="section-head-icon">🏠</span>
-    <h2>Real Estate</h2>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-kicker">Rates</div>
-      <h3>30-Year Fixed at 6.54% — Freddie Mac Weekly</h3>
-      <p>The Freddie Mac weekly survey showed the 30-year fixed rate ticking up one basis point to 6.54%. The rate has been in a narrow band between 6.50% and 6.60% for six weeks — neither rising enough to kill demand entirely nor falling enough to unlock the frozen existing-home market. Fannie Mae's forecast of 6.1–6.3% by year-end looks increasingly optimistic.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">Chicago</div>
-      <h3>Chicago Ranked #4 Most Competitive Metro — Redfin</h3>
-      <p>Redfin's May competitiveness index ranked Chicago the 4th most competitive major metro in the country, behind only Boston, Seattle, and Denver. The ranking reflects the combination of relatively affordable prices (vs. coastal peers), strong employment base, and severely constrained inventory. The average Chicago-area home is selling in 18 days with 3.2 offers.</p>
-    </div>
-  </div>
-
-  <div class="section-head">
-    <span class="section-head-icon">💼</span>
-    <h2>Tax &amp; Accounting</h2>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="card-full">
-    <h3>Senate SALT Changes: What the Phase-In Means for Illinois Filers</h3>
-    <p>The Senate Finance Committee's decision to phase in the SALT cap increase over three years — rather than the House's immediate jump to $40,000 — is meaningful for Illinois taxpayers. Under the Senate version, the cap would rise from $10,000 to approximately $20,000 in 2026, $30,000 in 2027, and $40,000 in 2028. For a Chicagoland homeowner paying $18,000 in annual property taxes, the 2026 benefit would be roughly $800–$1,200 in federal tax savings (depending on marginal rate) — meaningful but not the full relief the House version promised. Tax advisors should update their modeling to reflect the Senate version as the more likely outcome, while noting that the House-Senate conference process could still change the final number.</p>
-  </div>
-
-  <div class="section-head">
-    <span class="section-head-icon">📡</span>
-    <h2>Armstrong Economics</h2>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="armstrong-box">
-    <h3>Armstrong: Iran Setback Is a Delay, Not a Reversal — Capital Flows Unchanged</h3>
-    <p>Martin Armstrong's framework would treat Tuesday's Iran mediator suspension as a cyclical delay rather than a structural reversal. His Socrates model does not rely on the Iran deal as a prerequisite for the equity bull thesis — the capital flight dynamic driving U.S. asset prices operates independently of any single geopolitical event. Armstrong has consistently argued that the structural problems in European sovereign debt, Chinese property markets, and emerging market instability are the real drivers of dollar-denominated asset inflows. Iran resolving or not resolving changes the oil price and the risk-premium on energy, but does not alter the fundamental capital allocation shift that is sustaining the U.S. equity bull. His September–October watch window remains unchanged.</p>
-  </div>
-
-  <div class="section-head">
-    <span class="section-head-icon">⚾</span>
-    <h2>Chicago Sports</h2>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="scorecard">
-    <div class="scorecard-header">⚾ Cubs W — NL Central Lead Extends</div>
-    <div class="scorecard-teams">
-      <span class="team-name">Cubs</span>
-      <span class="score-vs">W vs. Cincinnati Tuesday · 33-27 · Home stand continues</span>
-    </div>
-    <div class="scorecard-note">The Cubs won again Tuesday, extending their NL Central lead to 3 games over Milwaukee. The rotation continues to be the story — five quality starts in the last six games. Kyle Tucker's presence in the lineup is forcing pitchers to deal with Happ and Crow-Armstrong more carefully; the offense is better protected than it's been all season.</div>
-  </div>
-
-  <div class="scorecard">
-    <div class="scorecard-header">⚾ White Sox · At Minnesota</div>
-    <div class="scorecard-teams">
-      <span class="team-name">White Sox</span>
-      <span class="score-vs">Series at Minnesota continues · Murakami watch</span>
-    </div>
-    <div class="scorecard-note">The White Sox continue their road series in Minnesota Wednesday. Yoshida Murakami remains the storyline — 21 home runs through 58 games puts him on one of the most remarkable power paces in franchise history. The team is still rebuilding but Murakami has given the fanbase something genuine to watch.</div>
-  </div>
-
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-kicker">Chicago Bulls</div>
-      <h3>Nate Oats Emerges as New Frontrunner</h3>
-      <p>With Sean Sweeney gone to Orlando, Alabama head coach Nate Oats has emerged as the new frontrunner for the Bulls head coaching vacancy. Oats built Alabama into a consistent NCAA tournament program emphasizing pace, shooting, and player development — priorities that align with the Bulls' stated rebuild philosophy. An interview is expected this week.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">Chicago Blackhawks</div>
-      <h3>23 Days to Draft — Reid Consensus Firms Up</h3>
-      <p>Mock draft consensus around Chase Reid at #4 for the Blackhawks has solidified. The Athletic's final pre-draft board lists Reid as the clear fourth-best prospect regardless of position. The Blackhawks' blue line development alongside Bedard is the organizational priority; Reid fits the profile precisely.</p>
-    </div>
-  </div>
-
-  <div class="section-head">
-    <span class="section-head-icon">💊</span>
-    <h2>Health &amp; Wellness</h2>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-kicker">Longevity</div>
-      <h3>AI Study: Thymus Health May Predict Lifespan</h3>
-      <p>A Mass General Brigham AI study analyzing imaging data from 50,000 patients found that thymus size and activity — measurable on chest CT scans — was one of the strongest predictors of biological age and remaining lifespan. The thymus, which shrinks with age, appears to be a master regulator of immune system health; people with larger, more active thymus glands at 60 showed immune profiles more typical of 45-year-olds.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">Nutrition / Immunity</div>
-      <h3>Methionine Restriction Boosts Infection Survival — Salk Institute</h3>
-      <p>Researchers at the Salk Institute found that temporarily restricting dietary methionine — an amino acid found primarily in meat and eggs — significantly improved survival rates from bacterial infections in animal models. The mechanism involves a metabolic shift that starves pathogens of a key building block while preserving host cell function. Human trials are in early planning stages.</p>
-    </div>
-  </div>
-
-  <div class="pull-quote">
-    <p>The S&amp;P crosses 7,600 and Iran pulls back from the table on the same day. Markets shrug at the Iran headline and celebrate the chip news. That tells you exactly where the market's attention is right now — and where it isn't.</p>
-    <cite>— Editor's Observation, June 3, 2026</cite>
-  </div>
-
-  <div class="section-head">
-    <span class="section-head-icon">✍️</span>
-    <h2>Editor's Dispatch</h2>
-    <div class="section-divider"></div>
-  </div>
-
-  <div class="editor-dispatch">
-    <h3>7,600 and Complications</h3>
-    <p>The S&amp;P 500 crossed 7,600 Tuesday. That's a number worth pausing on — barely six months ago, 7,000 felt like a stretch. Now 7,600 is just another Wednesday milestone. HPE up 19% on chip news from a tech conference in Taipei. The AI trade is not narrowing; it's broadening with every earnings season and every trade show. But Iran pulled back from the ceasefire table, citing Lebanon and Gaza. Oil jumped. The MOU timeline reset. The market barely blinked. That confidence is either wisdom or complacency — and the jobs report Friday will give us a data point on which one it is. If payrolls come in weak, the Iran setback will matter more. If they come in strong, the bull case rolls on. Two days away. Stay tuned.</p>
-  </div>
-
-  <div class="section-head">
-    <span class="section-head-icon">🎲</span>
-    <h2>Daily Extras</h2>
-    <div class="section-divider"></div>
-  </div>
+  <section class="section-block editors-dispatch">
+    <div class="section-label">Editor's Dispatch</div>
+    <p>The record run snapped. Wednesday gave back a fraction of what nine consecutive weeks of gains delivered — and the reason isn't a mystery. You can't have oil near $100, a drone war that hits Gulf airports, a Broadcom miss, a Bitcoin waterfall, and a Fed meeting in two weeks without eventually getting a session like this. The question is whether this is healthy profit-taking or the beginning of something longer. The honest answer: we don't know yet. What we do know is that the S&amp;P at 7,554 is still within spitting distance of its all-time high. The correction, if it is one, has barely started. Watch the 30-year Treasury at 5.00%. That's the ceiling. If it breaks higher, the equity selloff gets a second wind.</p>
+  </section>
 
   <div class="trivia-grid">
     <div class="trivia-box">
-      <div class="trivia-label">Random Fact</div>
-      <h4>Chicago's Water Intake Cribs Extend Two Miles Into Lake Michigan</h4>
-      <p>Chicago draws its drinking water from Lake Michigan through two intake cribs located nearly two miles offshore. The cribs were built in the 1860s and remain operational today. The city's water system serves over 5 million people — one of the largest municipal water systems in the world — and the lake provides an essentially limitless freshwater source, which is increasingly recognized as a strategic long-term asset.</p>
+      <div class="trivia-label">Random Fact of the Day</div>
+      <h4>Broadcom's Tentacles</h4>
+      <p>Broadcom, whose earnings miss rattled chipmakers Wednesday night, makes chips used in roughly 99% of all internet traffic — routers, data center switching, and Wi-Fi infrastructure. Its products are in virtually every major cloud server farm in the world. When Broadcom hiccups, the entire AI infrastructure trade feels it.</p>
     </div>
     <div class="trivia-box">
       <div class="trivia-label">Word of the Day</div>
-      <h4>Geopolitical Risk Premium</h4>
-      <p>The extra return investors demand — or extra price consumers pay — to compensate for uncertainty caused by political conflict or instability. Iran's suspension of mediator contact immediately rebuilt the geopolitical risk premium in oil markets that had been fading as deal optimism grew. Premium goes up when conflict risk rises; it compresses when diplomacy advances.</p>
+      <h4>Contango <span class="text-muted">(n.)</span></h4>
+      <p>A futures market condition where future delivery prices exceed current spot prices — implying markets expect current tightness (like the Iran war oil premium) to ease over time. Today's oil market is in moderate contango. The market is betting on a deal. The drones keep suggesting otherwise.</p>
     </div>
     <div class="trivia-box">
       <div class="trivia-label">Quote of the Day</div>
-      <h4>"In the middle of difficulty lies opportunity."</h4>
-      <p>— Albert Einstein. The Iran setback is a difficulty. The opportunity is that oil is cheap relative to where it would be if the conflict escalates — and anyone who believes the deal eventually gets done is looking at discounted energy assets right now.</p>
+      <h4>"The time to buy is when there's blood in the streets."</h4>
+      <p>— Attributed to Baron Rothschild. Markets are at all-time highs with literal blood in the Middle East. Rothschild's maxim cuts both ways. The brave call is that the war resolves and you're long. The prudent call is that nine straight weekly wins is enough for now.</p>
     </div>
   </div>
 
