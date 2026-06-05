@@ -47,7 +47,7 @@ body {
   padding: 9px 28px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  justify-content: space-between;
   font-family: 'Source Sans 3', sans-serif;
   font-size: 0.78rem;
   letter-spacing: .05em;
@@ -55,6 +55,13 @@ body {
   top: 0;
   z-index: 100;
 }
+/* Hide legacy ticker label that some older editions had */
+.ticker-label { display: none; }
+/* Legacy ticker class aliases */
+.ticker-item { font-family: 'Source Sans 3', sans-serif; font-size: 0.74rem; font-weight: 600; color: var(--text-muted); padding: 0 14px; }
+.t-name { color: var(--text-dim); margin-right: 4px; }
+.t-up { color: var(--up); }
+.t-dn { color: var(--dn); }
 .edition-nav a {
   color: var(--text-muted);
   border: 1px solid var(--gold-dim);
