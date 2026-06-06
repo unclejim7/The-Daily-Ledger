@@ -1,489 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>The Daily Ledger — Friday, June 5, 2026</title>
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Daily Ledger — Friday, June 5, 2026</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <!-- EDITION NAV -->
 <nav class="edition-nav">
-  <a href="2026-06-04.html">← Jun 4</a>
+  <a href="2026-06-04.html">← June 4</a>
   <a href="archive.html">📁 Archive</a>
-  <span class="nav-disabled">Jun 6 →</span>
+  <a href="2026-06-06.html">June 6 →</a>
 </nav>
 
 <!-- TICKER -->
-<div class="ticker-bar">
+<div class="ticker-wrap">
   <div class="ticker-track">
-    <span class="ticker-item"><strong>DOW</strong> 51,561 <span class="ticker-up">▲ 1.73%</span></span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>S&amp;P</strong> 7,584 <span class="ticker-down">▼ 0.63%</span></span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>NASDAQ</strong> 26,831 <span class="ticker-down">▼ 1.13%</span></span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>BTC</strong> $62,875 <span class="ticker-down">▼ 14.3% wk</span></span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>30YR MTG</strong> 6.48%</span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>OIL WTI</strong> ~$96 <span class="ticker-up">▲ Iran premium</span></span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>FED RATE</strong> 3.50–3.75% <span class="ticker-item">FOMC Jun 16–17</span></span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>CUBS</strong> W 7–6 vs ATH ⚾</span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>WHITE SOX</strong> W 8–0 vs MIN ⚾</span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>WEATHER</strong> Chicago 83°F · Rain likely 73%</span>
-    <span class="ticker-dot">◆</span>
-    <!-- duplicate for seamless loop -->
-    <span class="ticker-item"><strong>DOW</strong> 51,561 <span class="ticker-up">▲ 1.73%</span></span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>S&amp;P</strong> 7,584 <span class="ticker-down">▼ 0.63%</span></span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>NASDAQ</strong> 26,831 <span class="ticker-down">▼ 1.13%</span></span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>BTC</strong> $62,875 <span class="ticker-down">▼ 14.3% wk</span></span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>30YR MTG</strong> 6.48%</span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>OIL WTI</strong> ~$96 <span class="ticker-up">▲ Iran premium</span></span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>FED RATE</strong> 3.50–3.75% <span class="ticker-item">FOMC Jun 16–17</span></span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>CUBS</strong> W 7–6 vs ATH ⚾</span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>WHITE SOX</strong> W 8–0 vs MIN ⚾</span>
-    <span class="ticker-dot">◆</span>
-    <span class="ticker-item"><strong>WEATHER</strong> Chicago 83°F · Rain likely 73%</span>
-    <span class="ticker-dot">◆</span>
+    <span class="ticker-dot">◆</span> S&amp;P 500 7,584.31 <span class="up">▲ Record</span>
+    <span class="ticker-dot">◆</span> NASDAQ 27,093.90 <span class="flat">─ 0.03%</span>
+    <span class="ticker-dot">◆</span> DOW 51,307.79 <span class="up">▲ New ATH</span>
+    <span class="ticker-dot">◆</span> BTC ~$63,682 <span class="down">▼ Continued Slide</span>
+    <span class="ticker-dot">◆</span> 30-YR MTG 6.59% <span class="flat">─ Elevated</span>
+    <span class="ticker-dot">◆</span> FED FUNDS 3.50–3.75% <span class="flat">─ Hold</span>
+    <span class="ticker-dot">◆</span> CUBS 7 Athletics 6 — W <span class="up">▲ Split Series</span>
+    <span class="ticker-dot">◆</span> WHITE SOX vs PHI — Today 5:40 PM
+    <span class="ticker-dot">◆</span> CHICAGO — High 78°F · Partly Cloudy
+    <span class="ticker-dot">◆</span> S&amp;P 500 7,584.31 <span class="up">▲ Record</span>
+    <span class="ticker-dot">◆</span> NASDAQ 27,093.90 <span class="flat">─ 0.03%</span>
+    <span class="ticker-dot">◆</span> DOW 51,307.79 <span class="up">▲ New ATH</span>
+    <span class="ticker-dot">◆</span> BTC ~$63,682 <span class="down">▼ Continued Slide</span>
+    <span class="ticker-dot">◆</span> 30-YR MTG 6.59% <span class="flat">─ Elevated</span>
+    <span class="ticker-dot">◆</span> FED FUNDS 3.50–3.75% <span class="flat">─ Hold</span>
+    <span class="ticker-dot">◆</span> CUBS 7 Athletics 6 — W <span class="up">▲ Split Series</span>
+    <span class="ticker-dot">◆</span> WHITE SOX vs PHI — Today 5:40 PM
+    <span class="ticker-dot">◆</span> CHICAGO — High 78°F · Partly Cloudy
   </div>
 </div>
 
 <!-- MASTHEAD -->
 <header class="masthead">
-  <div class="masthead-eyebrow">Est. May 2026 &nbsp;·&nbsp; Vol. I, No. 10</div>
+  <div class="masthead-vol">Vol. I &nbsp;·&nbsp; No. 10 &nbsp;·&nbsp; Chicagoland Edition</div>
   <h1 class="masthead-title">The Daily Ledger</h1>
-  <div class="masthead-rule">
-    <hr><span>◆</span><hr>
+  <div class="masthead-rule"></div>
+  <div class="masthead-diamond">✦ &nbsp; ✦ &nbsp; ✦</div>
+  <p class="masthead-tagline">Truth, Clearly Delivered</p>
+  <div class="masthead-meta">
+    <span>Friday, June 5, 2026</span>
+    <span class="masthead-meta-sep">|</span>
+    <span>Chicago, Illinois</span>
+    <span class="masthead-meta-sep">|</span>
+    <span>unclejim7.github.io/The-Daily-Ledger</span>
   </div>
-  <div class="masthead-dateline">Friday, June 5, 2026 &nbsp;·&nbsp; Chicago, Illinois &nbsp;·&nbsp; Markets &amp; Macroeconomics · Fed Policy · Real Estate · Bitcoin · Geopolitics · Sports · Wellness</div>
 </header>
 
-<div class="container">
+<main class="page-wrap">
 
-  <!-- ── MARKETS & FINANCE ───────────────────────────────────── -->
-  <section class="section-block">
-    <div class="section-header">
-      <span class="section-label">Markets &amp; Finance</span>
-      <hr class="section-rule">
-    </div>
-
+  <section>
+    <div class="section-head"><span class="section-head-icon">📈</span> Markets &amp; Finance</div>
     <div class="lead-story">
-      <div class="lead-kicker">Friday Recap · June 5, 2026</div>
-      <h2 class="lead-headline">Dow Hits Record, Tech Slumps as Jobs Data Scrambles the Week's Narrative</h2>
-      <p class="lead-body">
-        A strong May jobs report — 172,000 nonfarm payrolls added, unemployment holding at 4.3% — sent Treasury yields higher and forced a sharp rotation out of chip stocks, sending the Nasdaq down 1.13% even as the Dow climbed to a fresh record close of 51,561.93, a gain of 1.73%. The S&amp;P 500 shed 0.63%. Russell 2000 outperformed, gaining 1.45%, suggesting the rotation is broadening the market rather than breaking it. Broadcom's unchanged AI chip targets added to the chip sector selloff on Thursday, while UnitedHealth, JPMorgan, and Walmart provided Dow ballast. Friday morning marks the third consecutive session of divergent index performance — a hallmark of late-cycle sector rotation.
-      </p>
+      <div class="lead-kicker">Record Close</div>
+      <h2 class="lead-headline">S&amp;P Breaks 7,600 for First Time — Dow Hits All-Time High as Rotation Lifts Defensives</h2>
+      <div class="lead-body">
+        <p>The S&amp;P 500 closed at 7,584.31 Thursday — its first close above 7,600 — while the Dow Jones Industrial Average surged 874.86 points to a record close of 51,561.93. The Nasdaq eked out a 0.03% gain at 27,093.90 as investors rotated out of semiconductor names and into non-tech blue chips.</p>
+        <p>UnitedHealth led the Dow higher, rising more than 5%. JPMorgan Chase added 3% and Walmart gained nearly 1%. On the flip side, chip names were under pressure ahead of Friday's Broadcom earnings release, with Marvell Technology having surged 25% earlier in the week after Nvidia CEO Jensen Huang called it a potential trillion-dollar company. Quantinuum completed a $1.68B IPO at Nasdaq, priced at $60, opening at $68.</p>
+      </div>
     </div>
-
     <div class="market-table-wrap">
       <table class="market-table">
         <thead>
-          <tr>
-            <th>Index / Asset</th>
-            <th>Level</th>
-            <th>Day Change</th>
-            <th>Context</th>
-          </tr>
+          <tr><th>Index</th><th>Close</th><th>Change</th><th>%</th></tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Dow Jones Industrial Avg</td>
-            <td>51,561.93</td>
-            <td><span class="pill-up">+1.73%</span></td>
-            <td>Record close Thu; UNH, JPM led</td>
-          </tr>
-          <tr>
-            <td>S&amp;P 500</td>
-            <td>7,584.31</td>
-            <td><span class="pill-down">−0.63%</span></td>
-            <td>Chip weakness; mixed session</td>
-          </tr>
-          <tr>
-            <td>Nasdaq Composite</td>
-            <td>26,831</td>
-            <td><span class="pill-down">−1.13%</span></td>
-            <td>Semi selloff; AVGO flat guidance</td>
-          </tr>
-          <tr>
-            <td>Russell 2000</td>
-            <td>—</td>
-            <td><span class="pill-up">+1.45%</span></td>
-            <td>Small-caps outperform; rotation signal</td>
-          </tr>
-          <tr>
-            <td>Bitcoin (BTC)</td>
-            <td>$62,875</td>
-            <td><span class="pill-down">−14.3% wk</span></td>
-            <td>13-day ETF outflow streak; $4.4B out</td>
-          </tr>
-          <tr>
-            <td>WTI Crude Oil</td>
-            <td>~$96/bbl</td>
-            <td>Elevated</td>
-            <td>Iran war premium persists; ceasefire fragile</td>
-          </tr>
-          <tr>
-            <td>10-Yr Treasury Yield</td>
-            <td>~4.45%</td>
-            <td>Rising</td>
-            <td>Jobs beat pushed yields higher</td>
-          </tr>
-          <tr>
-            <td>Gold</td>
-            <td>~$4,680/oz</td>
-            <td>Elevated</td>
-            <td>War premium; ECM cycle awareness</td>
-          </tr>
+          <tr><td>S&amp;P 500</td><td>7,584.31</td><td>+9.47</td><td class="up">▲ 0.13%</td></tr>
+          <tr><td>Dow Jones</td><td>51,307.79</td><td>+228.91</td><td class="up">▲ 0.45%</td></tr>
+          <tr><td>Nasdaq</td><td>27,093.90</td><td>+7.42</td><td class="up">▲ 0.03%</td></tr>
+          <tr><td>BTC (June 4)</td><td>$63,682</td><td>−$3,283</td><td class="down">▼ Continued Drop</td></tr>
+          <tr><td>30-Yr Mtg</td><td>6.588%</td><td>−2 bps</td><td class="flat">─ Slight Ease</td></tr>
         </tbody>
       </table>
     </div>
+  </section>
 
-    <div class="card-grid mt-24">
+  <hr class="section-divider">
+
+  <section>
+    <div class="section-head"><span class="section-head-icon">🏛️</span> Federal Reserve</div>
+    <div class="card-grid">
       <div class="card">
-        <div class="card-kicker">Jobs Report · May 2026</div>
-        <h3>172K Payrolls Added — Unemployment Holds at 4.3%</h3>
-        <p>May nonfarm payrolls came in at 172,000, above consensus, with March revised upward from 178K to 185K. Average hourly earnings came in marginally below estimates. The two-month surge is the strongest since 2024. Initial jobless claims hit 225,000 for the week ending May 30 — highest since February — a counter-signal that the labor market may be softening around the edges even as headline numbers beat.</p>
+        <div class="card-kicker">Warsh Era</div>
+        <h3>New Chair Confirmed 54–45 — First FOMC Meeting June 16–17</h3>
+        <p>Kevin Warsh was confirmed May 13 and took the helm May 15. His first FOMC as Chair is scheduled for June 16–17. Markets price virtually no chance of a 2026 cut. Warsh has signaled preference for lower rates but faces a committee oriented toward keeping options open for hikes given sticky inflation.</p>
       </div>
       <div class="card">
-        <div class="card-kicker">Macro Watch</div>
-        <h3>Dow at Record, But Breadth Is Misleading</h3>
-        <p>Evercore ISI's Julian Emanuel flagged that record concentration in a handful of AI names is driving index strength and masking a challenging consumer and geopolitical backdrop. The Dow's Thursday surge was almost entirely UnitedHealth (+5%) and JPMorgan (+3%). Walmart provided modest support. The semiconductor complex — Broadcom, Nvidia, AMD — continues to be the drag. Quantinuum's Nasdaq IPO on June 4 added quantum computing buzz to the mix.</p>
-      </div>
-      <div class="card">
-        <div class="card-kicker">Tax &amp; Accounting Watch</div>
-        <h3>CPI Due June 10 — FOMC Week Will Be the Real Test</h3>
-        <p>The May CPI report lands Wednesday, June 10 — four days before Warsh's first FOMC opens. Energy prices elevated by the Iran conflict remain a wildcard. If CPI surprises hot again, the rate-hold case hardens further and any easing bias signal from the new Fed chair gets complicated on arrival. For tax planning purposes, the higher-for-longer rate environment continues to favor shorter-duration instruments and tax-loss harvesting on bond positions acquired at lower yields.</p>
+        <div class="card-kicker">Rate Outlook</div>
+        <h3>CPI at 3.8% — Rate Cut Case Getting Harder to Make</h3>
+        <p>April CPI clocked 3.8% annualized — the highest since May 2023 — following oil price increases tied to the Iran conflict. The Fed Funds rate sits at 3.50–3.75%. CME FedWatch shows near-zero probability of any 2026 cut. A hike is increasingly in the conversation if inflation doesn't cool.</p>
       </div>
     </div>
   </section>
 
-  <!-- ── FEDERAL RESERVE ────────────────────────────────────── -->
-  <section class="section-block">
-    <div class="section-header">
-      <span class="section-label">Federal Reserve</span>
-      <hr class="section-rule">
-    </div>
+  <hr class="section-divider">
 
-    <div class="lead-story">
-      <div class="lead-kicker">FOMC · June 16–17 · Warsh's First</div>
-      <h2 class="lead-headline">Markets Price 97.8% Hold — Jobs Beat Kills Any Residual Cut Odds</h2>
-      <p class="lead-body">
-        Prediction markets now price a 97.8% probability that Warsh's inaugural FOMC meeting on June 16–17 ends with rates unchanged at 3.50–3.75%. The strong May jobs report was the final nail in the coffin for any June cut speculation. J.P. Morgan Research expects the Fed to remain on hold through all of 2026 before hiking 25 bps in Q3 2027. The 8-4 April vote — most dissents since 1992 — reflects genuine internal tension, but the hawkish anchor holds. Polymarket puts 57% odds on zero cuts across all of 2026. Powell, who remains on the board, said he'll keep a low profile but won't leave until the administration's investigation is resolved. Warsh is one vote on the FOMC — he can lobby for easing but cannot manufacture consensus on his own.
-      </p>
-    </div>
-
-    <div class="pull-quote">
-      <p>Barring a meaningful shift in the Middle East or the labor market, it would be surprising if Warsh could foster consensus among the 12-person FOMC to resume easing in his first month.</p>
-      <cite>— Hiring Lab Analysts, via TheStreet</cite>
-    </div>
-  </section>
-
-  <!-- ── BITCOIN & CRYPTO ───────────────────────────────────── -->
-  <section class="section-block">
-    <div class="section-header">
-      <span class="section-label">Bitcoin &amp; Crypto</span>
-      <hr class="section-rule">
-    </div>
-
+  <section>
+    <div class="section-head"><span class="section-head-icon">₿</span> Bitcoin &amp; Crypto</div>
     <div class="crypto-panel">
       <div class="crypto-box">
-        <div class="label">Bitcoin (BTC)</div>
-        <div class="price">$62,875</div>
-        <div class="change"><span class="pill-down">−14.3% WK</span></div>
+        <div class="crypto-label">Bitcoin (BTC)</div>
+        <div class="crypto-price">~$63,682</div>
+        <div class="crypto-sub down">▼ June 4 rate</div>
       </div>
       <div class="crypto-box">
-        <div class="label">ETH</div>
-        <div class="price">$1,867</div>
-        <div class="change"><span class="pill-down">−6.5% 24H</span></div>
+        <div class="crypto-label">BTC ATH (Oct 2025)</div>
+        <div class="crypto-price">$126,198</div>
+        <div class="crypto-sub flat">─ 49.6% off peak</div>
       </div>
       <div class="crypto-box">
-        <div class="label">BTC Market Cap</div>
-        <div class="price">$1.26T</div>
-        <div class="change text-muted">Down from ATH $128K Oct '25</div>
-      </div>
-      <div class="crypto-box">
-        <div class="label">Fear &amp; Greed Index</div>
-        <div class="price" style="font-size:1.15rem;">12 — Extreme Fear</div>
-        <div class="change text-muted">RSI deeply oversold</div>
+        <div class="crypto-label">May ETF Outflows</div>
+        <div class="crypto-price">$2.3B</div>
+        <div class="crypto-sub down">▼ Record 2026 Exit</div>
       </div>
     </div>
-
-    <div class="card mt-24">
-      <div class="card-kicker">Saylor's Sell · ETF Exodus</div>
-      <h3>Strategy Sells 32 BTC — First Sale Since 2022 — Triggers Cascade</h3>
-      <p>Michael Saylor's Strategy disclosed a $2.5M sale of 32 bitcoin, its first since 2022 and only second ever. The move — small in absolute terms — shattered the "never sell" narrative that underpinned a generation of institutional BTC confidence. The disclosure triggered $320M in leveraged-long liquidations. Cumulative spot ETF outflows have now reached $4.4 billion over 13 consecutive days, a record streak. Institutional money is rotating into AI infrastructure and the Quantinuum IPO. Every major support level — $68K, $65K, $64K — has broken. $62,000 is the current line in the sand. Below that: $60K and then $55K are the major floors cited by analysts. Daily RSI is deeply oversold, a level that has historically preceded relief bounces — but selling conviction remains high.</p>
+    <div class="card-grid" style="margin-top:18px;">
+      <div class="card">
+        <div class="card-kicker">Trend</div>
+        <h3>Bitcoin on Pace for Worst Week Since February</h3>
+        <p>Bitcoin extended its recent decline through June 4, trading around $63,682 — its lowest since late February. Record ETF outflows in May ($2.3B net) reflect institutional retreat. Analysts at Changelly project a June range of $69,700–$80,400 if capital returns; Finbold's AI model sees a drop to $62,678 by month-end if outflows continue.</p>
+      </div>
     </div>
   </section>
 
-  <!-- ── REAL ESTATE & MORTGAGE ─────────────────────────────── -->
-  <section class="section-block">
-    <div class="section-header">
-      <span class="section-label">Real Estate &amp; Mortgage</span>
-      <hr class="section-rule">
-    </div>
+  <hr class="section-divider">
 
+  <section>
+    <div class="section-head"><span class="section-head-icon">🌐</span> Geopolitics</div>
     <div class="card-grid">
       <div class="card">
-        <div class="card-kicker">Freddie Mac PMMS · June 4, 2026</div>
-        <h3>30-Year Fixed Ticks Down to 6.48% — Affordability Marginally Improving</h3>
-        <p>The weekly Freddie Mac survey clocked the 30-year fixed at 6.48%, down from 6.53% the prior week and well below the 6.85% seen a year ago. Freddie notes that with rates in the mid-6% range and income growth outpacing home price gains, affordability is "marginally improving." Bankrate's daily read for June 5 sits at 6.52%. The 15-year fixed averaged 5.79%, also down from last week. Despite the modest rate improvement, MBA data shows mortgage applications are at their slowest weekly pace since April — buyers aren't convinced the window is open yet.</p>
+        <div class="card-kicker">US–Iran Talks</div>
+        <h3>Trump "Honored" to Meet New Iranian Leader If Deal Materializes</h3>
+        <p>President Trump said Thursday he'd be "honored" to meet Iran's Supreme Leader Mojtaba Khamenei if conditions were right. Negotiations continue through Pakistani and Omani intermediaries focused on extending the ceasefire, reopening the Strait of Hormuz, and a nuclear memorandum. Key issues remain unresolved: enrichment limits, sanctions relief, and enforcement timelines.</p>
       </div>
       <div class="card">
-        <div class="card-kicker">Housing Market Pulse</div>
-        <h3>Lock-In Effect Persists — Inventory Tight Despite Softening Demand</h3>
-        <p>The May jobs beat and higher Treasury yields pushed mortgage rates back up Friday morning, partially erasing the week's improvement. Zillow projects rates will stay above 6% through all of 2026. The lock-in effect — millions of homeowners sitting on sub-4% mortgages from 2020–21 — continues to suppress existing inventory. New construction is projected to be the slowest since 2019. Texas and Florida are now buyer's markets; the Midwest and Northeast remain seller's markets. The 30-year conforming loan limit for 2026 sits at $832,750.</p>
-      </div>
-      <div class="card">
-        <div class="card-kicker">Berkshire &amp; Housing</div>
-        <h3>Greg Abel's First Big Deal: $8.5B Housing Bet</h3>
-        <p>Warren Buffett's successor Greg Abel has launched his tenure at Berkshire Hathaway with an $8.5 billion housing-sector deal — described as "familiar on purpose: cash, housing, and a business the company already understands." The move signals conviction in long-term housing demand even amid the rate headwinds. For Berkshire observers, the deal is a statement that Abel intends to run the playbook, not reinvent it — disciplined capital deployment into real assets at a reasonable price.</p>
+        <div class="card-kicker">Oil Markets</div>
+        <h3>Crude Declining Off $98 Peak — But Inflation Premium Persists</h3>
+        <p>WTI crude oil has been declining after its earlier spike toward $98/barrel. The geopolitical risk premium remains embedded in energy prices and is a key driver of elevated US CPI. Progress in Iran talks could meaningfully lower oil prices and ease the Fed's inflation calculus.</p>
       </div>
     </div>
   </section>
 
-  <!-- ── GEOPOLITICS / CURRENT EVENTS ──────────────────────── -->
-  <section class="section-block">
-    <div class="section-header">
-      <span class="section-label">Current Events &amp; Geopolitics</span>
-      <hr class="section-rule">
-    </div>
+  <hr class="section-divider">
 
-    <div class="lead-story">
-      <div class="lead-kicker">Iran War · Day ~97 of Ceasefire</div>
-      <h2 class="lead-headline">Iran Drones Kuwait Airport, Ceasefire Talks Frozen — Oil Holds $96</h2>
-      <p class="lead-body">
-        Iranian drones struck Kuwait's main international airport Wednesday, killing one person and wounding dozens in a terminal building — the latest back-and-forth test of the fragile April 8 ceasefire. Iran's semiofficial agencies reported the country had halted communication with mediators over extending the truce, demanding that a separate ceasefire in Lebanon be enforced first. President Trump said negotiations continued. The ceasefire — brokered by Pakistan after the U.S.-Israel strikes of February 28, 2026 killed Iran's supreme leader and destroyed much of its military infrastructure — has held in a technical sense while collapsing in practice. The Strait of Hormuz remains contested. Oil at $96/bbl reflects an ongoing war premium that is keeping inflation elevated and the Fed on hold. Hezbollah rejected the latest Lebanon ceasefire proposal Thursday, killing four in Israeli strikes the same day.
-      </p>
-    </div>
-
+  <section>
+    <div class="section-head"><span class="section-head-icon">🏠</span> Real Estate &amp; Mortgage Rates</div>
     <div class="card-grid">
       <div class="card">
-        <div class="card-kicker">Economy Under Fire</div>
-        <h3>Jobless Claims Hit Highest Since the Iran War Began</h3>
-        <p>Initial jobless claims for the week ending May 30 reached 225,000 — the highest level since the Iran war began in February, per the Labor Department. The 13,000 jump from the prior week and the miss against the 215,000 consensus estimate suggests energy-sector disruption is beginning to ripple into the labor market. The Iran conflict has driven a sustained spike in fuel costs that is pressuring transport, manufacturing, and consumer discretionary sectors.</p>
+        <div class="card-kicker">Current Rate</div>
+        <h3>30-Year Fixed: 6.588% — Slight Dip From Thursday</h3>
+        <p>The average 30-year fixed purchase mortgage eased slightly to 6.588% on June 5 per Zillow data, from 6.604% on June 4. Freddie Mac's June 1 PMMS weekly average was 6.53%. Refinance rates are running higher, around 6.68–6.70%. Housing affordability has improved year-over-year but remains well below pandemic-era lows.</p>
       </div>
       <div class="card">
-        <div class="card-kicker">Treasury Watch</div>
-        <h3>Bessent Testifies Before House on Treasury Priorities</h3>
-        <p>Treasury Secretary Scott Bessent appeared before the House on June 4 to address department priorities. The ballooning public sector debt, constrained fiscal room, and ongoing budget stalemate remain the core structural concerns on Capitol Hill. The combination of elevated defense spending from the Iran conflict, Iran-related energy disruptions, and the existing deficit trajectory has narrowed the fiscal options available to any near-term stimulus push.</p>
+        <div class="card-kicker">Outlook</div>
+        <h3>Rates Expected 6.0–6.4% Through Mid-2027</h3>
+        <p>Forecasters at Fannie Mae, the MBA, and major banks converge on a 6.0–6.4% range for 30-year mortgages through at least mid-2027. The lock-in effect keeps resale inventory depressed. Monthly median mortgage payment is $2,152, per the MBA, keeping affordability strained for first-time buyers.</p>
       </div>
     </div>
   </section>
 
-  <!-- ── ARMSTRONG ECONOMICS ────────────────────────────────── -->
-  <section class="section-block">
-    <div class="section-header">
-      <span class="section-label">Armstrong Economics</span>
-      <hr class="section-rule">
-    </div>
+  <hr class="section-divider">
 
+  <section>
+    <div class="section-head"><span class="section-head-icon">📡</span> Armstrong Economics</div>
     <div class="armstrong-block">
-      <h3>ECM War Cycle Flags 2026–2027 as Critical — Nikkei Slips, Shanghai Mixed</h3>
-      <p>
-        Armstrong's Market Talk for June 4 showed Asian markets mixed: Nikkei 225 dropped 931 points (–1.36%) to 67,470; Shanghai fell –0.64%. Armstrong has long flagged his Economic Confidence Model's war cycle targeting 2026–2027 as a "Panic Cycle" period for international conflict — the Iran war's timing maps almost exactly to that forecast. On the ECM, the June 2026 period represents a downcycle midpoint, with a forecast yearlong plunge into mid-2027. Armstrong has noted that gold and silver benchmarks converge in very late 2026 and early 2027 — a potential peak signal. His War Cycle's 25.049-year peak falls in 2026/2027, aligning with the current Iran/Lebanon escalation arc. The question he poses: if wars last 3–5 years and 2026/2027 marks years 4–5 of the broader conflict cycle since Ukraine 2022, what does that mean for gold's trajectory into the benchmark convergence?
-      </p>
+      <h3>Armstrong Market Talk — June 3–5, 2026</h3>
+      <p>Armstrong's bond yield data this week showed US 10-year yields at 4.496% and the 30-year crossing 5.00% — consistent with his ECM framework's June 2026 cycle inflection warning. Peripheral European yields continued to widen (Italy +12 bps, Turkey +270 bps) while commodity markets showed energy inflation persistence (crude +2.65%, heating oil +4.11% on June 3).</p>
+      <p>Armstrong's war cycle and capital flow models have been flagging this period as a critical juncture where sovereign debt stress builds and capital rotates toward the US dollar despite widening US deficits. The strong Friday jobs print (172K) adds complexity to the rate and cycle picture, consistent with the type of "late-cycle" labor market strength Armstrong models often show preceding a meaningful inflection.</p>
     </div>
   </section>
 
-  <!-- ── CHICAGOLAND WEATHER ─────────────────────────────────── -->
-  <section class="section-block">
-    <div class="section-header">
-      <span class="section-label">Chicagoland Weather</span>
-      <hr class="section-rule">
-    </div>
+  <hr class="section-divider">
 
+  <section>
+    <div class="section-head"><span class="section-head-icon">🌤️</span> Chicagoland Weather</div>
     <div class="weather-banner">
-      <h2>Chicago, Illinois — Friday, June 5</h2>
-      <div class="weather-current">
-        <div class="weather-temp">83°F</div>
-        <div class="weather-desc">Warm &amp; humid · Rain likely (73% chance) · 0.3" est. · Wind 16–25 mph</div>
-      </div>
-      <div class="weather-week">
-        <div class="weather-day">
-          <div class="day-name">Today</div>
-          <div class="day-high">83°</div>
-          <div class="day-low">69° lo</div>
-        </div>
-        <div class="weather-day">
-          <div class="day-name">Sat</div>
-          <div class="day-high">57°</div>
-          <div class="day-low">50° lo</div>
-        </div>
-        <div class="weather-day">
-          <div class="day-name">Sun</div>
-          <div class="day-high">49°</div>
-          <div class="day-low">47° lo</div>
-        </div>
-        <div class="weather-day">
-          <div class="day-name">Mon</div>
-          <div class="day-high">58°</div>
-          <div class="day-low">41° lo</div>
-        </div>
-        <div class="weather-day">
-          <div class="day-name">Tue</div>
-          <div class="day-high">57°</div>
-          <div class="day-low">49° lo</div>
-        </div>
-        <div class="weather-day">
-          <div class="day-name">Wed</div>
-          <div class="day-high">67°</div>
-          <div class="day-low">50° lo</div>
-        </div>
-        <div class="weather-day">
-          <div class="day-name">Thu</div>
-          <div class="day-high">67°</div>
-          <div class="day-low">50° lo</div>
-        </div>
-      </div>
-      <p class="text-muted mt-16" style="font-size:0.82rem;">Sunrise 5:16 AM · Sunset 8:21 PM · Humidity avg 68% · Barometric pressure 29.86 inHg · UV Index 9.1</p>
-      <p class="text-muted" style="font-size:0.82rem; margin-top:6px;">⚠ Sharp temperature drop this weekend — 83° today crashes to 57° Saturday as a cold front moves through. Rain and storms expected Friday evening. Dress in layers this weekend.</p>
-    </div>
-  </section>
-
-  <!-- ── CHICAGO SPORTS ─────────────────────────────────────── -->
-  <section class="section-block">
-    <div class="section-header">
-      <span class="section-label">Chicago Sports</span>
-      <hr class="section-rule">
-    </div>
-
-    <div class="card-grid">
-      <!-- CUBS -->
-      <div class="card">
-        <div class="card-kicker">Chicago Cubs · MLB</div>
-        <h3>Cubs Take Rubber Game 7–6 Over A's, Begin Giants Series Today</h3>
-        <div class="scorecard" style="margin-top:12px;">
-          <div class="scorecard-teams">
-            <span class="scorecard-team">Cubs</span>
-            <span class="scorecard-score">7</span>
-            <span class="scorecard-team">Athletics</span>
-            <span class="scorecard-score">6</span>
-          </div>
-          <div class="scorecard-result">Win · Thu Jun 4 · Series win 2–1</div>
-          <div class="scorecard-note">After dropping Games 1 and 2 (1–2, 4–5), the Cubs rallied to take the rubber match 7–6 on Thursday night at Wrigley. The series win over Oakland gives the Cubs momentum heading into a weekend home stand vs. San Francisco. First pitch today (Friday) at 1:20 PM CDT.</div>
-        </div>
-      </div>
-
-      <!-- WHITE SOX -->
-      <div class="card">
-        <div class="card-kicker">Chicago White Sox · MLB</div>
-        <h3>Sox Obliterate Twins 8–0 to Split Series, Travel to Philly</h3>
-        <div class="scorecard" style="margin-top:12px;">
-          <div class="scorecard-teams">
-            <span class="scorecard-team">White Sox</span>
-            <span class="scorecard-score">8</span>
-            <span class="scorecard-team">Twins</span>
-            <span class="scorecard-score">0</span>
-          </div>
-          <div class="scorecard-result">Win · Wed Jun 3 · Split series 1–1</div>
-          <div class="scorecard-note">After dropping the Tuesday opener 6–4, the Sox responded with a dominant 8–0 shutout Wednesday to salvage the split in Minnesota. The team now travels to Philadelphia, with the first game at Citizens Bank Park Friday at 5:40 PM CDT.</div>
-        </div>
-      </div>
-
-      <!-- BULLS -->
-      <div class="card">
-        <div class="card-kicker">Chicago Bulls · NBA Offseason</div>
-        <h3>Wes Unseld Jr. Emerges as Finalist — Kevin Young in the Mix Too</h3>
-        <p>The Bulls' coaching search enters its finalist stage. Top target Sean Sweeney is off the board — the Magic hired him Friday, a significant loss for Chicago's front office. According to The Stein Line, incumbent assistant Wes Unseld Jr. is expected to be among the finalists despite his underwhelming 43–120 record as Wizards head coach. Jerry Stackhouse (Golden State) and Micah Nori (Minnesota) addressed the rumors publicly. BYU coach Kevin Young is also in early conversations per ESPN's Jamal Collier. GM Bryson Graham has 10+ candidates and two first-round draft picks — the team's own lottery pick and Portland's — plus $60M in cap space. NBA Draft is June 23–24 in Brooklyn.</p>
-      </div>
-
-      <!-- BLACKHAWKS -->
-      <div class="card">
-        <div class="card-kicker">Chicago Blackhawks · NHL</div>
-        <h3>No. 4 Pick, Bedard Contract in Limbo — Draft Combine Opens in Buffalo</h3>
-        <p>The 2026 NHL Draft Combine opened this week in Buffalo, 21 days before the draft itself (June 26–27, KeyBank Center). Blackhawks GM Kyle Davidson confirmed he's open to trading the No. 4 overall pick but the return "would have to be a darn good NHL player." Top mock drafts have the Hawks selecting for star power. Connor Bedard's contract talks are described as "very tight-lipped" — could conclude in June but no one is in a rush. Jack Pridham declined to re-sign, re-entering the draft. Draft capital is formidable: 15 picks in the first three rounds of the next three drafts, tied for third-most in the NHL. Dennis Hull, 81, the "Silver Jet," passed away this week.</p>
+      <div class="weather-icon">🌤️</div>
+      <div class="weather-content">
+        <div class="weather-headline">Friday: Partly Cloudy, High 78°F</div>
+        <p>A mostly pleasant June Friday in Chicagoland. High near 78°F with partly cloudy skies and a low around 68°F. Light southerly winds. The weekend brings a similar pattern with high 80°F Saturday — good baseball weather for both the Cubs (vs. Giants, 1:20 PM) and White Sox (at Phillies, 3:05 PM) on Saturday.</p>
       </div>
     </div>
   </section>
 
-  <!-- ── HEALTH & WELLNESS ──────────────────────────────────── -->
-  <section class="section-block">
-    <div class="section-header">
-      <span class="section-label">Health, Wellness &amp; Fitness</span>
-      <hr class="section-rule">
+  <hr class="section-divider">
+
+  <section>
+    <div class="section-head"><span class="section-head-icon">⚾</span> Chicago Sports</div>
+
+    <div class="scorecard">
+      <div class="scorecard-label">⚾ Cubs — Thursday Result</div>
+      <div class="scorecard-teams">
+        <span class="scorecard-team">Cubs</span>
+        <span class="scorecard-score">7</span>
+        <span class="scorecard-vs">vs</span>
+        <span class="scorecard-score">6</span>
+        <span class="scorecard-team">Athletics</span>
+      </div>
+      <div class="scorecard-note">The Cubs rebounded with a gutty 7–6 win over the Athletics on Thursday evening (June 4), splitting the three-game home series after losing Game 1. Today (Friday, June 5) they open a new series vs. the San Francisco Giants at 1:20 PM CDT at Wrigley.</div>
+    </div>
+
+    <div class="scorecard">
+      <div class="scorecard-label">⚾ White Sox — Weekend Preview</div>
+      <div class="scorecard-teams">
+        <span class="scorecard-team">White Sox</span>
+        <span class="scorecard-vs">at</span>
+        <span class="scorecard-team">Phillies</span>
+      </div>
+      <div class="scorecard-note">After an 8–0 blowout win over Minnesota on June 3, the White Sox travel to Philadelphia for a three-game series. Game 1 is tonight (June 5) at 5:40 PM CDT.</div>
     </div>
 
     <div class="card-grid">
       <div class="card">
-        <div class="card-kicker">Longevity Research</div>
-        <h3>5 Minutes of Sleep, 2 Minutes of Exercise, Half a Vegetable — Add a Year</h3>
-        <p>A University of Sydney study of 59,078 UK Biobank participants found that tiny, combined improvements to sleep, physical activity, and diet can significantly extend lifespan. The minimum combo: just five extra minutes of sleep nightly, two minutes of moderate-to-vigorous activity daily, and half a serving of additional vegetables. The group making these micro-changes lived about one year longer than the worst-performing cohort. The maximum gain was 9.35 additional life years — achieved by 42–103 minutes of added exercise plus 7–8 hours nightly sleep plus a very healthy diet. A Harvard analysis confirmed: adding just 5 minutes a day of moderate-vigorous activity may prevent up to 10% of deaths over an 8-year window.</p>
+        <div class="card-kicker">🏀 Bulls Coaching Search</div>
+        <h3>Top Target Sweeney Goes to Orlando — Quinn, Nori, Unseld Jr. Lead</h3>
+        <p>San Antonio Spurs associate head coach Sean Sweeney — ranked first on many Bulls candidate lists — was hired by the Orlando Magic. Chicago's search now focuses on Chris Quinn (Miami), Micah Nori (Minnesota), and Wes Unseld Jr. (Bulls assistant). EVP Bryson Graham expects to name finalists by early next week. NBA Draft is June 23; Bulls hold pick No. 4.</p>
       </div>
       <div class="card">
-        <div class="card-kicker">Strength &amp; Longevity Trends · 2026</div>
-        <h3>Strength Training Tops Weight Loss as America's Primary Fitness Goal</h3>
-        <p>Life Time's 2026 wellness survey of 750+ respondents found strength training is now the top health goal (42.3%), surpassing weight loss for the first time. 46.5% plan to lift more in 2026. Longevity is cited as a motivation by 33.2% — up sharply from prior years. AI-guided fitness tools are used regularly by 35.3% of respondents, with another 36.4% curious to try. The broader trend: recovery is no longer seen as optional luxury — saunas, cryotherapy, cold plunges, and lymphatic drainage are entering mainstream gym culture. Cold treatments in particular are surging not just for competitive athletes but as everyday stress management tools.</p>
-      </div>
-      <div class="card">
-        <div class="card-kicker">Sleep Science</div>
-        <h3>Sleep Outranks Diet and Exercise for Life Expectancy — Oregon Health Study</h3>
-        <p>A study from Oregon Health &amp; Science University found that sleep is the single most important lifestyle factor for life expectancy, second only to not smoking — outranking both diet and exercise. Quality sleep supports healthy metabolism, immune function, mood, focus, and stress resilience. It also makes all the other healthy behaviors easier to maintain. The sweet spot: 7–9 hours nightly for brain, immune, and cardiovascular health. Adults who sleep poorly are less likely to exercise consistently, eat well, or make sound daily decisions — creating a negative feedback loop that compounds over years.</p>
+        <div class="card-kicker">🏒 Blackhawks</div>
+        <h3>Draft Combine in Buffalo — Stenberg Looking Available at #4</h3>
+        <p>The 2026 NHL Draft Combine opened this week in Buffalo. Consensus has the Blackhawks targeting Swedish winger Ivar Stenberg at #4, with Vancouver likely taking Caleb Malhotra at #3. GM Kyle Davidson is fielding trade offers for the pick but the bar is high. Draft is June 27 in St. Louis.</p>
       </div>
     </div>
   </section>
 
-  <!-- ── EDITOR'S DISPATCH ──────────────────────────────────── -->
-  <section class="section-block">
-    <div class="section-header">
-      <span class="section-label">Editor's Dispatch</span>
-      <hr class="section-rule">
-    </div>
+  <hr class="section-divider">
 
-    <div class="editors-dispatch">
-      <h3>On the Week That Was</h3>
-      <p>
-        It's been a week of spectacular divergences. The Dow sets a record while Nasdaq bleeds chip stocks. Bitcoin falls 14% as AI stocks surge. Iran and the U.S. are technically in a ceasefire while Iran drones Kuwait's airport. The jobs market adds 172K and initial claims quietly hit their highest since the war started. Warsh walks into the FOMC chair two weeks from today with zero political cover for a cut — jobs are too strong, oil too hot, and the committee too divided. Meanwhile the Cubs finally beat Oakland after dropping the first two. The White Sox went full nuclear on the Twins. And Chicagoland is about to go from 83° today to 57° tomorrow — classic Chicago giving you summer and November back-to-back. Stay sharp out there.
-      </p>
+  <section>
+    <div class="section-head"><span class="section-head-icon">💊</span> Health &amp; Wellness</div>
+    <div class="card-grid">
+      <div class="card">
+        <div class="card-kicker">Supplements</div>
+        <h3>Collagen Study: Works — But Requires Consistent Long-Term Use</h3>
+        <p>A review of nearly 8,000 participants found collagen supplements improve skin health and ease osteoarthritis symptoms when taken consistently over longer periods. Modest benefits also found for muscle mass and joint pain. The key caveat: sporadic use showed minimal benefit — consistency is the variable.</p>
+      </div>
+      <div class="card">
+        <div class="card-kicker">GLP-1 Research</div>
+        <h3>Semaglutide Linked to Lower Addiction Risk in 600K-Person Study</h3>
+        <p>A study of over 600,000 US veterans found that GLP-1 receptor agonists like semaglutide may reduce the likelihood of developing substance use disorders involving alcohol, nicotine, and cannabis. Adds to mounting evidence that GLP-1s may reshape treatment of chronic disease well beyond metabolic conditions.</p>
+      </div>
+      <div class="card">
+        <div class="card-kicker">Cancer Breakthrough</div>
+        <h3>KRAS Mutation Finally Targeted — Pancreatic Cancer Survival May Double</h3>
+        <p>Scientists cracked the long-considered "undruggable" KRAS mutation that drives most pancreatic cancers. The new drug daraxonrasib showed potential to nearly double survival rates in early trials. Given pancreatic cancer's historically dismal prognosis, this represents one of the most significant oncology advances in years.</p>
+      </div>
     </div>
   </section>
 
-  <!-- ── TRIVIA / RANDOM FACT / WORD / QUOTE ────────────────── -->
-  <section class="section-block">
-    <div class="section-header">
-      <span class="section-label">End Notes</span>
-      <hr class="section-rule">
-    </div>
+  <hr class="section-divider">
 
+  <section>
+    <div class="section-head"><span class="section-head-icon">🎲</span> Daily Essentials</div>
     <div class="trivia-grid">
       <div class="trivia-box">
-        <div class="trivia-label">Random Fact of the Day</div>
-        <h4>The First Futures Market Was in Japan</h4>
-        <p>The world's first organized futures market was the Dōjima Rice Exchange in Osaka, Japan, established in 1730. Samurai were paid in rice stipends and needed a way to convert rice into currency — so they created standardized contracts for future rice delivery. Modern commodities trading, including today's oil futures that set WTI at $96, descends directly from that 18th-century rice market.</p>
+        <div class="trivia-label">Random Fact</div>
+        <div class="trivia-value">The Quantinuum IPO priced at $60 — and opened at $68 per share Thursday.</div>
+        <div class="trivia-sub">The quantum computing firm raised $1.68 billion, valuing itself at $17.6 billion at the first trade price on its Nasdaq debut.</div>
       </div>
       <div class="trivia-box">
         <div class="trivia-label">Word of the Day</div>
-        <h4>Brinkmanship</h4>
-        <p>The practice of pursuing a dangerous policy to the limits of safety before stopping — typically used in geopolitics. Coined in the Cold War era, it describes exactly what the U.S. and Iran are doing right now: maintaining a technical ceasefire while continuing to strike each other's assets, daring the other side to break the framework entirely. Today's Hormuz standoff is textbook brinkmanship.</p>
+        <div class="trivia-value">Breakeven</div>
+        <div class="trivia-sub"><em>n.</em> In bond markets, the difference between nominal Treasury yields and TIPS yields — a market-implied measure of expected inflation. Rising breakevens are the Fed's warning light.</div>
       </div>
       <div class="trivia-box">
         <div class="trivia-label">Quote of the Day</div>
-        <h4>"It's not whether you're right or wrong that's important, but how much money you make when you're right and how much you lose when you're wrong."</h4>
-        <p>— George Soros. In a week where Bitcoin lost 14%, AI stocks gained, and the Dow hit a record while the Nasdaq fell — the asymmetry of outcomes is the entire ballgame. Warsh inherits a Fed where being right about inflation might still cost you everything if the timing is off.</p>
+        <div class="trivia-value">"Price is what you pay. Value is what you get."</div>
+        <div class="trivia-sub">— Warren Buffett. Especially worth remembering during record-high market sessions the day before a potential selloff.</div>
       </div>
     </div>
   </section>
 
-</div><!-- /container -->
+  <div class="editors-dispatch">
+    <h3>✦ Editor's Dispatch</h3>
+    <p>Thursday felt like a celebration. The Dow hit an all-time high. The S&amp;P crossed 7,600 for the first time. Marvell got anointed by Jensen Huang. Quantinuum went public and the quantum computing story felt real. But even then, under the surface, there was a rotation happening — money moving out of semis and into defensives. It looked like profit-taking. By Friday morning, it was clear it was something more. Markets tell stories in advance; Thursday's rotation was the first paragraph of Friday's chapter. Warsh's June 16 FOMC meeting cannot come fast enough. Stay sharp, Nunya.</p>
+  </div>
 
-<footer>
-  Curated daily for Nunya Biz &nbsp;·&nbsp; Est. May 2026 in GFY, USA &nbsp;·&nbsp; <a href="archive.html">Archive</a> &nbsp;·&nbsp; Published Friday, June 5, 2026 &nbsp;·&nbsp; The Daily Ledger Vol. I, No. 10
+</main>
+
+<footer class="site-footer">
+  <p>The Daily Ledger &nbsp;·&nbsp; Vol. I, No. 10 &nbsp;·&nbsp; Friday, June 5, 2026</p>
+  <p style="margin-top:6px;">Curated daily for Nunya Biz &nbsp;·&nbsp; Est. May 2026 in GFY, USA &nbsp;·&nbsp; <a href="https://unclejim7.github.io/The-Daily-Ledger">unclejim7.github.io/The-Daily-Ledger</a></p>
 </footer>
 
 </body>
