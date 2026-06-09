@@ -4,128 +4,287 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>The Daily Ledger — Archive</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Source+Sans+3:wght@300;400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <style>
+    /* Archive-specific additions — scoped to archive page only */
+    .archive-nav {
+      background: #0a0908;
+      border-bottom: 1px solid #2a2720;
+      padding: 0 1.5rem;
+      height: 44px;
+      display: flex;
+      align-items: center;
+    }
+    .archive-nav a {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #c9a227;
+      text-decoration: none;
+    }
+    .archive-nav a:hover { color: #c8481a; }
+    .archive-header {
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+      border-bottom: 3px double #2a2720;
+    }
+    .archive-header .masthead-title {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 900;
+      color: #ede4ce;
+      line-height: 1;
+      margin-bottom: 0.4rem;
+    }
+    .archive-header .sub {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.72rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: #8a8070;
+      margin-bottom: 0.5rem;
+    }
+    .archive-header .tagline {
+      font-family: 'Playfair Display', serif;
+      font-style: italic;
+      color: #8a8070;
+      font-size: 0.95rem;
+    }
+    .month-group {
+      max-width: 760px;
+      margin: 0 auto 2.5rem;
+      padding: 0 1.2rem;
+    }
+    .month-label {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: #c8481a;
+      border-top: 2px solid #c8481a;
+      padding-top: 0.4rem;
+      margin: 2.2rem 0 1rem;
+    }
+    .archive-entry {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 0.8rem 1rem;
+      border-bottom: 1px solid #2a2720;
+      flex-wrap: wrap;
+    }
+    .archive-entry:hover { background: #161510; }
+    .entry-meta { flex: 1; min-width: 180px; }
+    .entry-num {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: #8a8070;
+    }
+    .entry-date {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #ede4ce;
+    }
+    .entry-day {
+      font-size: 0.82rem;
+      color: #8a8070;
+    }
+    .badge-latest {
+      display: inline-block;
+      background: #c8481a;
+      color: #fff;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.62rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      margin-left: 0.6rem;
+      vertical-align: middle;
+    }
+    .read-btn {
+      display: inline-block;
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 0.75rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: #c9a227;
+      border: 1px solid #c9a227;
+      padding: 0.3rem 0.8rem;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+    .read-btn:hover { background: #c9a227; color: #0f0e0c; text-decoration: none; }
+    .archive-footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      border-top: 3px double #2a2720;
+      font-size: 0.78rem;
+      letter-spacing: 0.08em;
+      color: #8a8070;
+      margin-top: 2rem;
+    }
+    .archive-footer strong { color: #c9a227; }
+  </style>
 </head>
 <body>
 
-<nav class="edition-nav">
+<div class="archive-nav">
   <a href="index.html">← Today's Edition</a>
-  <span class="nav-center">📁 Archive</span>
-  <span></span>
-</nav>
+</div>
 
-<div style="height:calc(var(--nav-h));"></div>
+<div class="archive-header">
+  <div class="sub">Edition Archive &nbsp;·&nbsp; Vol. I</div>
+  <div class="masthead-title">The Daily Ledger</div>
+  <div class="masthead-diamond" style="color:#c9a227;font-size:0.9rem;letter-spacing:0.4em;margin:0.35rem 0;">✦ ✦ ✦</div>
+  <div class="tagline">Truth, Clearly Delivered &nbsp;·&nbsp; Chicago, Illinois</div>
+</div>
 
-<div class="archive-page">
-  <div class="archive-top-nav">
-    <a href="index.html">← Today's Edition</a>
-    <h1>The Daily Ledger</h1>
-    <span style="font-size:0.75rem; color:var(--cream-dim);">Est. May 2026</span>
-  </div>
-
-  <div class="masthead-diamond" style="text-align:center; margin-bottom:1.5rem;">✦ ✦ ✦</div>
-
-  <div class="archive-month">June 2026</div>
+<div class="month-group">
+  <div class="month-label">June 2026</div>
 
   <div class="archive-entry">
-    <div class="archive-entry-date">Monday, June 8, 2026 &mdash; Vol. I, No. 13</div>
-    <div class="archive-entry-badges">
-      <span class="badge-latest">Latest</span>
-      <a href="2026-06-08.html" class="btn-read">Read →</a>
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 14 <span class="badge-latest">Latest</span></div>
+      <div class="entry-date">June 9, 2026</div>
+      <div class="entry-day">Tuesday</div>
     </div>
+    <a href="2026-06-09.html" class="read-btn">Read →</a>
   </div>
 
   <div class="archive-entry">
-    <div class="archive-entry-date">Sunday, June 7, 2026 &mdash; Vol. I, No. 12</div>
-    <div class="archive-entry-badges">
-      <a href="2026-06-07.html" class="btn-read">Read →</a>
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 13</div>
+      <div class="entry-date">June 8, 2026</div>
+      <div class="entry-day">Monday</div>
     </div>
+    <a href="2026-06-08.html" class="read-btn">Read →</a>
   </div>
 
   <div class="archive-entry">
-    <div class="archive-entry-date">Saturday, June 6, 2026 &mdash; Vol. I, No. 11</div>
-    <div class="archive-entry-badges">
-      <a href="2026-06-06.html" class="btn-read">Read →</a>
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 12</div>
+      <div class="entry-date">June 7, 2026</div>
+      <div class="entry-day">Sunday</div>
     </div>
+    <a href="2026-06-07.html" class="read-btn">Read →</a>
   </div>
 
   <div class="archive-entry">
-    <div class="archive-entry-date">Friday, June 5, 2026 &mdash; Vol. I, No. 10</div>
-    <div class="archive-entry-badges">
-      <a href="2026-06-05.html" class="btn-read">Read →</a>
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 11</div>
+      <div class="entry-date">June 6, 2026</div>
+      <div class="entry-day">Saturday</div>
     </div>
+    <a href="2026-06-06.html" class="read-btn">Read →</a>
   </div>
 
   <div class="archive-entry">
-    <div class="archive-entry-date">Thursday, June 4, 2026 &mdash; Vol. I, No. 9</div>
-    <div class="archive-entry-badges">
-      <a href="2026-06-04.html" class="btn-read">Read →</a>
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 10</div>
+      <div class="entry-date">June 5, 2026</div>
+      <div class="entry-day">Friday</div>
     </div>
+    <a href="2026-06-05.html" class="read-btn">Read →</a>
   </div>
 
   <div class="archive-entry">
-    <div class="archive-entry-date">Wednesday, June 3, 2026 &mdash; Vol. I, No. 8</div>
-    <div class="archive-entry-badges">
-      <a href="2026-06-03.html" class="btn-read">Read →</a>
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 9</div>
+      <div class="entry-date">June 4, 2026</div>
+      <div class="entry-day">Thursday</div>
     </div>
+    <a href="2026-06-04.html" class="read-btn">Read →</a>
   </div>
 
   <div class="archive-entry">
-    <div class="archive-entry-date">Tuesday, June 2, 2026 &mdash; Vol. I, No. 7</div>
-    <div class="archive-entry-badges">
-      <a href="2026-06-02.html" class="btn-read">Read →</a>
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 8</div>
+      <div class="entry-date">June 3, 2026</div>
+      <div class="entry-day">Wednesday</div>
     </div>
+    <a href="2026-06-03.html" class="read-btn">Read →</a>
   </div>
 
   <div class="archive-entry">
-    <div class="archive-entry-date">Monday, June 1, 2026 &mdash; Vol. I, No. 6</div>
-    <div class="archive-entry-badges">
-      <a href="2026-06-01.html" class="btn-read">Read →</a>
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 7</div>
+      <div class="entry-date">June 2, 2026</div>
+      <div class="entry-day">Tuesday</div>
     </div>
-  </div>
-
-  <div class="archive-month">May 2026</div>
-
-  <div class="archive-entry">
-    <div class="archive-entry-date">Sunday, May 31, 2026 &mdash; Vol. I, No. 5</div>
-    <div class="archive-entry-badges">
-      <a href="2026-05-31.html" class="btn-read">Read →</a>
-    </div>
+    <a href="2026-06-02.html" class="read-btn">Read →</a>
   </div>
 
   <div class="archive-entry">
-    <div class="archive-entry-date">Saturday, May 30, 2026 &mdash; Vol. I, No. 4</div>
-    <div class="archive-entry-badges">
-      <a href="2026-05-30.html" class="btn-read">Read →</a>
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 6</div>
+      <div class="entry-date">June 1, 2026</div>
+      <div class="entry-day">Monday</div>
     </div>
+    <a href="2026-06-01.html" class="read-btn">Read →</a>
+  </div>
+
+  <div class="month-label">May 2026</div>
+
+  <div class="archive-entry">
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 5</div>
+      <div class="entry-date">May 31, 2026</div>
+      <div class="entry-day">Sunday</div>
+    </div>
+    <a href="2026-05-31.html" class="read-btn">Read →</a>
   </div>
 
   <div class="archive-entry">
-    <div class="archive-entry-date">Friday, May 29, 2026 &mdash; Vol. I, No. 3</div>
-    <div class="archive-entry-badges">
-      <a href="2026-05-29.html" class="btn-read">Read →</a>
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 4</div>
+      <div class="entry-date">May 30, 2026</div>
+      <div class="entry-day">Saturday</div>
     </div>
+    <a href="2026-05-30.html" class="read-btn">Read →</a>
   </div>
 
   <div class="archive-entry">
-    <div class="archive-entry-date">Thursday, May 28, 2026 &mdash; Vol. I, No. 2</div>
-    <div class="archive-entry-badges">
-      <a href="2026-05-28.html" class="btn-read">Read →</a>
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 3</div>
+      <div class="entry-date">May 29, 2026</div>
+      <div class="entry-day">Friday</div>
     </div>
+    <a href="2026-05-29.html" class="read-btn">Read →</a>
   </div>
 
   <div class="archive-entry">
-    <div class="archive-entry-date">Wednesday, May 27, 2026 &mdash; Vol. I, No. 1</div>
-    <div class="archive-entry-badges">
-      <a href="2026-05-27.html" class="btn-read">Read →</a>
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 2</div>
+      <div class="entry-date">May 28, 2026</div>
+      <div class="entry-day">Thursday</div>
     </div>
+    <a href="2026-05-28.html" class="read-btn">Read →</a>
+  </div>
+
+  <div class="archive-entry">
+    <div class="entry-meta">
+      <div class="entry-num">Vol. I, No. 1</div>
+      <div class="entry-date">May 27, 2026</div>
+      <div class="entry-day">Wednesday — Inaugural Edition</div>
+    </div>
+    <a href="2026-05-27.html" class="read-btn">Read →</a>
   </div>
 
 </div>
 
-<footer>
-  <p>Curated daily for Nunya Biz &nbsp;·&nbsp; Est. May 2026 in GFY, USA &nbsp;·&nbsp; unclejim7.github.io/The-Daily-Ledger</p>
-</footer>
+<div class="archive-footer">
+  <strong>The Daily Ledger</strong> &nbsp;·&nbsp; Curated for Nunya Biz &nbsp;·&nbsp; Est. May 2026 in GFY, USA &nbsp;·&nbsp; Vol. I
+  <br>Truth, Clearly Delivered &nbsp;·&nbsp; Chicago, Illinois
+</div>
 
 </body>
 </html>
