@@ -1,442 +1,573 @@
-/* =============================================
-   THE DAILY LEDGER — CSS v7 CANONICAL
-   Dark-theme broadsheet stylesheet
-   ============================================= */
+/* ══════════════════════════════════════════════════════
+   THE DAILY LEDGER — style.css  v7 canonical
+   Dark broadsheet · Playfair Display + Source Sans 3
+   ══════════════════════════════════════════════════════ */
 
+/* ── VARIABLES ── */
 :root {
   --bg:       #0f0e0c;
-  --ink:      #ede4ce;
+  --surface:  #1a1814;
+  --border:   #2e2b25;
+  --text:     #ede4ce;
+  --muted:    #a89880;
   --accent:   #c8481a;
   --gold:     #c9a227;
-  --muted:    #8a8070;
-  --rule:     #2a2720;
-  --card-bg:  #161510;
   --nav-h:    44px;
   --ticker-h: 36px;
 }
 
+/* ── RESET & BASE ── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
 html { scroll-behavior: smooth; }
 
 body {
   background: var(--bg);
-  color: var(--ink);
+  color: var(--text);
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 17px;
-  line-height: 1.6;
+  font-size: 16px;
+  line-height: 1.65;
   min-height: 100vh;
 }
 
 a { color: var(--gold); text-decoration: none; }
-a:hover { color: var(--accent); text-decoration: underline; }
+a:hover { text-decoration: underline; }
 
-/* ---- EDITION NAV ---- */
+img { max-width: 100%; display: block; }
+
+/* ── EDITION NAV BAR ── */
 .edition-nav {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   z-index: 100;
   height: var(--nav-h);
-  background: #0a0908;
-  border-bottom: 1px solid var(--rule);
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 1.5rem;
+  padding: 0 1.25rem;
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 0.82rem;
-  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
+  color: var(--muted);
 }
-.edition-nav a { color: var(--gold); }
-.edition-nav a:hover { color: var(--accent); }
-.nav-disabled { color: var(--muted); cursor: default; }
-.nav-archive { color: var(--ink); opacity: 0.7; }
-.nav-archive:hover { color: var(--gold); opacity: 1; }
 
-/* ---- TICKER ---- */
+.edition-nav a { color: var(--gold); }
+.edition-nav a:hover { color: var(--text); text-decoration: none; }
+.nav-disabled { color: var(--border); cursor: default; }
+.nav-archive { color: var(--muted); }
+.nav-archive:hover { color: var(--text); }
+
+/* ── TICKER ── */
 .ticker-wrap {
+  position: -webkit-sticky;
+  position: sticky;
+  top: var(--nav-h);
+  z-index: 90;
   height: var(--ticker-h);
   background: var(--accent);
-  overflow: hidden;
   display: flex;
   align-items: center;
+  width: 100%;
+  overflow: clip;
 }
-.ticker-label { display: none; }
+
 .ticker-track {
   display: flex;
   white-space: nowrap;
   animation: ticker-scroll 28s linear infinite;
-}
-.ticker-track span {
-  padding: 0 2.5rem;
-  font-size: 0.8rem;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.72rem;
   font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
   color: #fff;
-  letter-spacing: 0.04em;
-}
-.ticker-track span::after {
-  content: '◆';
-  margin-left: 2.5rem;
-  opacity: 0.5;
-}
-@keyframes ticker-scroll {
-  0%   { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
 }
 
-/* ---- MASTHEAD ---- */
+.ticker-dot { margin: 0 1.1rem; opacity: 0.6; }
+
+@keyframes ticker-scroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+/* ── MASTHEAD ── */
 .masthead {
   text-align: center;
   padding: 2.5rem 1rem 1.5rem;
-  border-bottom: 3px double var(--rule);
+  border-bottom: 3px double var(--border);
 }
+
 .masthead-vol {
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--muted);
   margin-bottom: 0.4rem;
 }
+
 .masthead-title {
   font-family: 'Playfair Display', serif;
   font-size: clamp(2.8rem, 8vw, 5.5rem);
-  font-weight: 900;
-  color: var(--ink);
+  font-weight: 700;
   letter-spacing: -0.01em;
-  line-height: 1;
-  margin-bottom: 0.35rem;
+  color: var(--text);
+  line-height: 1.05;
 }
+
 .masthead-diamond {
-  color: var(--gold);
-  font-size: 0.9rem;
-  letter-spacing: 0.4em;
-  margin-bottom: 0.35rem;
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
 }
+
 .masthead-tagline {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: var(--muted);
-  margin-bottom: 0.9rem;
+  margin-bottom: 0.75rem;
 }
+
 .masthead-rule {
   border: none;
-  border-top: 1px solid var(--rule);
-  margin: 0.7rem auto;
-  width: 80%;
+  border-top: 1px solid var(--border);
+  margin: 0.75rem auto;
+  max-width: 640px;
 }
+
 .masthead-dateline {
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
 }
 
-/* ---- LAYOUT ---- */
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 1.2rem;
+.masthead-url {
+  font-size: 0.68rem;
+  color: var(--border);
+  letter-spacing: 0.06em;
+  margin-top: 0.2rem;
 }
 
-/* ---- SECTION HEADS ---- */
+/* ── LAYOUT WRAPPER ── */
+.page-wrap {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* ── SECTION HEADERS ── */
 .section-head {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 0.68rem;
+  font-size: 0.66rem;
   font-weight: 700;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--accent);
-  border-top: 2px solid var(--accent);
-  padding-top: 0.4rem;
-  margin: 2.4rem 0 1.1rem;
+  margin: 2rem 0 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--accent);
 }
 
-/* ---- LEAD STORY ---- */
-.lead-story {
-  border-bottom: 1px solid var(--rule);
-  padding-bottom: 1.8rem;
-  margin-bottom: 1.6rem;
+.section-head-icon { font-size: 0.9rem; }
+
+.section-divider {
+  border: none;
+  border-top: 1px solid var(--border);
+  margin: 2rem 0;
 }
-.lead-story h2 {
+
+/* ── LEAD STORY ── */
+.lead-story {
+  border-top: 4px solid var(--accent);
+  padding: 1.5rem 0 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.lead-kicker {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.4rem;
+}
+
+.lead-headline {
   font-family: 'Playfair Display', serif;
   font-size: clamp(1.6rem, 4vw, 2.4rem);
   font-weight: 700;
-  color: var(--ink);
   line-height: 1.2;
-  margin-bottom: 0.5rem;
+  color: var(--text);
+  margin-bottom: 0.75rem;
 }
-.lead-story .byline {
-  font-size: 0.75rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+
+.lead-body {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 1rem;
   color: var(--muted);
-  margin-bottom: 0.9rem;
-}
-.lead-story p { color: #cdc3ad; margin-bottom: 0.8rem; }
-
-/* ---- PULL QUOTE ---- */
-.pull-quote {
-  border-left: 3px solid var(--gold);
-  padding: 0.8rem 1.2rem;
-  margin: 1.5rem 0;
-  font-family: 'Playfair Display', serif;
-  font-style: italic;
-  font-size: 1.15rem;
-  color: var(--gold);
-  background: #161410;
+  max-width: 72ch;
+  line-height: 1.7;
 }
 
-/* ---- CARD GRID ---- */
+.lead-body strong { color: var(--text); }
+
+/* ── CARD GRID ── */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-  gap: 1.1rem;
-  margin-bottom: 1.6rem;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
 }
+
 .card {
-  background: var(--card-bg);
-  border: 1px solid var(--rule);
-  border-top: 2px solid var(--gold);
-  padding: 1.1rem;
+  background: var(--surface);
+  padding: 1.1rem 1.25rem;
 }
+
+.card-kicker {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.35rem;
+}
+
 .card h3 {
   font-family: 'Playfair Display', serif;
   font-size: 1.05rem;
   font-weight: 700;
-  color: var(--ink);
-  margin-bottom: 0.5rem;
+  color: var(--text);
   line-height: 1.3;
-}
-.card p { font-size: 0.9rem; color: #bdb3a0; margin-bottom: 0.4rem; }
-.card .tag {
-  display: inline-block;
-  font-size: 0.66rem;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
-/* ---- MARKET TABLE ---- */
-.market-table-wrap { overflow-x: auto; margin-bottom: 1.4rem; }
-.market-table { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
+.card p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.6;
+}
+
+.card p strong { color: var(--text); }
+
+.card-full {
+  grid-column: 1 / -1;
+}
+
+/* ── MARKET TABLE ── */
+.market-table-wrap {
+  overflow-x: auto;
+  margin-bottom: 1.5rem;
+}
+
+.market-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 0.88rem;
+}
+
 .market-table th {
   text-align: left;
-  font-size: 0.68rem;
-  letter-spacing: 0.12em;
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
-  border-bottom: 1px solid var(--rule);
-  padding: 0.4rem 0.7rem;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid var(--border);
 }
+
 .market-table td {
-  padding: 0.5rem 0.7rem;
-  border-bottom: 1px solid var(--rule);
-  color: #cdc3ad;
+  padding: 0.55rem 0.75rem;
+  border-bottom: 1px solid var(--border);
+  color: var(--text);
 }
-.market-table tr:hover td { background: #171612; }
-.up   { color: #4caf7d; font-weight: 600; }
-.down { color: var(--accent); font-weight: 600; }
+
+.market-table tr:last-child td { border-bottom: none; }
+
+.up   { color: #4caf50; }
+.down { color: #ef5350; }
 .flat { color: var(--muted); }
 
-/* ---- CRYPTO PANEL ---- */
+/* ── CRYPTO PANEL ── */
 .crypto-panel {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
-  gap: 0.9rem;
-  margin-bottom: 1.4rem;
-}
-.crypto-card {
-  background: var(--card-bg);
-  border: 1px solid var(--rule);
-  padding: 1rem 1.1rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-}
-.crypto-card .c-name {
-  font-size: 0.7rem;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  color: var(--muted);
-}
-.crypto-card .c-price {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.45rem;
-  font-weight: 700;
-  color: var(--ink);
-}
-.crypto-card .c-change { font-size: 0.85rem; font-weight: 600; }
-
-/* ---- WEATHER BANNER ---- */
-.weather-banner {
-  background: linear-gradient(135deg, #131210 0%, #1a1815 100%);
-  border: 1px solid var(--rule);
-  border-left: 4px solid var(--gold);
-  padding: 1.2rem 1.5rem;
-  margin-bottom: 1.6rem;
   display: flex;
   flex-wrap: wrap;
-  gap: 1.5rem;
-  align-items: center;
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
 }
-.weather-temp {
-  font-family: 'Playfair Display', serif;
-  font-size: 2.8rem;
+
+.crypto-box {
+  flex: 1 1 160px;
+  background: var(--surface);
+  padding: 1rem 1.25rem;
+}
+
+.crypto-box .label {
+  font-size: 0.62rem;
   font-weight: 700;
-  color: var(--gold);
-  line-height: 1;
-}
-.weather-details { flex: 1; min-width: 200px; }
-.weather-details h4 {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 0.7rem;
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--muted);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.25rem;
 }
-.weather-details p { font-size: 0.92rem; color: #cdc3ad; margin-bottom: 0.2rem; }
 
-/* ---- SPORTS GRID ---- */
-.sports-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+.crypto-box .value {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.crypto-box .change {
+  font-size: 0.82rem;
+  margin-top: 0.2rem;
+}
+
+/* ── PULL QUOTE ── */
+.pull-quote {
+  border-left: 3px solid var(--gold);
+  margin: 1.5rem 0;
+  padding: 0.75rem 1.25rem;
+  background: var(--surface);
+}
+
+.pull-quote p {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.05rem;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.pull-quote cite {
+  display: block;
+  margin-top: 0.4rem;
+  font-size: 0.72rem;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+/* ── WEATHER BANNER ── */
+.weather-banner {
+  display: flex;
+  align-items: center;
   gap: 1rem;
-  margin-bottom: 1.4rem;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  padding: 1rem 1.25rem;
+  margin-bottom: 1.5rem;
 }
-.score-card {
-  background: var(--card-bg);
-  border: 1px solid var(--rule);
-  padding: 0.9rem 1rem;
+
+.weather-icon { font-size: 2.2rem; flex-shrink: 0; }
+
+.weather-content { flex: 1; }
+
+.weather-headline {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+  margin-bottom: 0.25rem;
 }
-.score-card .sport-label {
+
+.weather-content p {
+  font-size: 0.88rem;
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* ── SPORTS ROW ── */
+.sports-row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-bottom: 1rem;
+}
+
+.sports-item {
+  background: var(--surface);
+  padding: 0.9rem 1.1rem;
+}
+
+.sports-item .team {
   font-size: 0.65rem;
+  font-weight: 700;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--accent);
-  margin-bottom: 0.5rem;
+  color: var(--muted);
+  margin-bottom: 0.2rem;
 }
-.score-card .matchup {
-  font-family: 'Playfair Display', serif;
-  font-size: 1rem;
-  color: var(--ink);
-  margin-bottom: 0.3rem;
-}
-.score-card .result { font-size: 1.3rem; font-weight: 700; color: var(--gold); margin-bottom: 0.3rem; }
-.score-card .note { font-size: 0.82rem; color: var(--muted); }
 
-/* ---- EDITOR'S DISPATCH ---- */
-.editors-dispatch {
-  background: #111008;
-  border: 1px solid var(--rule);
-  border-top: 3px solid var(--accent);
-  padding: 1.4rem 1.6rem;
-  margin: 2rem 0;
+.sports-item .score {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--text);
 }
-.editors-dispatch h4 {
-  font-family: 'Source Sans 3', sans-serif;
-  font-size: 0.68rem;
-  letter-spacing: 0.16em;
+
+.sports-item .detail {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+.win  { color: #4caf50; }
+.loss { color: #ef5350; }
+
+/* ── TRIVIA TRIPTYCH ── */
+.trivia-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+  margin-bottom: 2rem;
+}
+
+.trivia-card {
+  background: var(--surface);
+  padding: 1.1rem 1.25rem;
+}
+
+.trivia-card .t-label {
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   color: var(--accent);
-  margin-bottom: 0.7rem;
+  margin-bottom: 0.3rem;
 }
+
+.trivia-card .t-value {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  color: var(--text);
+  line-height: 1.45;
+}
+
+.trivia-card .t-sub {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.3rem;
+}
+
+/* ── EDITOR'S DISPATCH ── */
+.editors-dispatch {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--gold);
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.editors-dispatch .dispatch-head {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.6rem;
+}
+
 .editors-dispatch p {
   font-family: 'Playfair Display', serif;
   font-style: italic;
-  font-size: 0.97rem;
-  color: #cdc3ad;
-  line-height: 1.7;
-}
-
-/* ---- TRIVIA TRIPTYCH ---- */
-.trivia-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
-  gap: 1rem;
-  margin-bottom: 2rem;
-}
-.trivia-card {
-  background: var(--card-bg);
-  border: 1px solid var(--rule);
-  border-bottom: 3px solid var(--gold);
-  padding: 1rem 1.1rem;
-}
-.trivia-card .t-label {
-  font-size: 0.65rem;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--gold);
-  margin-bottom: 0.4rem;
-}
-.trivia-card .t-word {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.2rem;
-  font-weight: 700;
-  color: var(--ink);
-  margin-bottom: 0.3rem;
-}
-.trivia-card p { font-size: 0.87rem; color: #bdb3a0; }
-
-/* ---- FOOTER ---- */
-.site-footer {
-  text-align: center;
-  padding: 2rem 1rem;
-  border-top: 3px double var(--rule);
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
+  font-size: 0.95rem;
   color: var(--muted);
-  margin-top: 2rem;
+  line-height: 1.65;
 }
-.site-footer strong { color: var(--gold); }
 
-/* ---- ARMSTRONG BLOCK ---- */
-.armstrong-block {
-  background: #0d0c0a;
-  border: 1px solid var(--rule);
-  border-left: 4px solid var(--accent);
-  padding: 1.2rem 1.5rem;
-  margin-bottom: 1.4rem;
+/* ── FOOTER ── */
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 1.5rem 1rem;
+  text-align: center;
+  font-size: 0.72rem;
+  letter-spacing: 0.08em;
+  color: var(--border);
+  text-transform: uppercase;
 }
-.armstrong-block h3 {
+
+/* ── ARCHIVE PAGE ── */
+.archive-nav {
+  background: var(--surface);
+  border-bottom: 1px solid var(--border);
+  padding: 0.75rem 1.25rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+}
+
+.archive-month {
   font-family: 'Playfair Display', serif;
   font-size: 1.1rem;
-  color: var(--accent);
-  margin-bottom: 0.6rem;
+  font-weight: 700;
+  color: var(--gold);
+  margin: 1.5rem 0 0.5rem;
+  padding-bottom: 0.3rem;
+  border-bottom: 1px solid var(--border);
 }
-.armstrong-block p { font-size: 0.92rem; color: #cdc3ad; margin-bottom: 0.5rem; }
-.armstrong-rates {
+
+.archive-entry {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem 1.5rem;
-  margin-top: 0.8rem;
-  font-size: 0.82rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.6rem 0;
+  border-bottom: 1px solid var(--border);
+  font-size: 0.9rem;
 }
-.armstrong-rates span { color: var(--muted); }
-.armstrong-rates strong { color: var(--ink); }
 
-/* ---- HEALTH ITEMS ---- */
-.health-item {
-  border-bottom: 1px solid var(--rule);
-  padding: 1rem 0;
-}
-.health-item:last-child { border-bottom: none; }
-.health-item h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.05rem;
-  color: var(--ink);
-  margin-bottom: 0.4rem;
-}
-.health-item p { font-size: 0.9rem; color: #bdb3a0; }
+.archive-entry:last-child { border-bottom: none; }
 
-/* ---- RESPONSIVE ---- */
+.archive-date { color: var(--text); }
+.archive-badge {
+  background: var(--accent);
+  color: #fff;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.15rem 0.5rem;
+  margin-left: 0.5rem;
+  border-radius: 2px;
+}
+
+.archive-read {
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+/* ── RESPONSIVE ── */
 @media (max-width: 600px) {
   .masthead-title { font-size: 2.4rem; }
-  .edition-nav { font-size: 0.72rem; padding: 0 0.8rem; }
-  .card-grid, .sports-grid, .crypto-panel { grid-template-columns: 1fr; }
-  .weather-banner { flex-direction: column; gap: 0.8rem; }
+  .card-grid { grid-template-columns: 1fr; }
+  .crypto-panel { flex-direction: column; }
+  .sports-row { grid-template-columns: 1fr; }
+  .trivia-grid { grid-template-columns: 1fr; }
+  .archive-entry { flex-wrap: wrap; gap: 0.4rem; }
 }
