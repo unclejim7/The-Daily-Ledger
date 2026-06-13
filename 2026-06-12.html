@@ -1,334 +1,246 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The Daily Ledger — Friday, June 12, 2026</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Daily Ledger — Vol. I, No. 17 — June 12, 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=Libre+Baskerville:ital@0;1&family=Source+Sans+3:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<!-- EDITION NAV — forward arrow PATCHED to live link -->
 <nav class="edition-nav">
-  <a href="2026-06-11.html">&larr; June 11</a>
-  <a href="archive.html" class="nav-archive">&#128193; Archive</a>
-  <a href="2026-06-13.html">June 13 &rarr;</a>
+  <a href="2026-06-11.html">← June 11</a>
+  <a href="archive.html" class="nav-archive">📁 Archive</a>
+  <a href="2026-06-13.html">June 13 →</a>
 </nav>
 
-<!-- TICKER -->
 <div class="ticker-wrap">
   <div class="ticker-track">
-    S&amp;P Futures +0.20%&nbsp;&bull;&nbsp;Nasdaq Futures +0.29%&nbsp;&bull;&nbsp;Dow Futures +0.09%&nbsp;&bull;&nbsp;BTC $63,491&nbsp;&bull;&nbsp;Gold $4,206&nbsp;&bull;&nbsp;Crude Oil $86.74&nbsp;&bull;&nbsp;30-Yr Mortgage 6.52%&nbsp;&bull;&nbsp;US 10-Yr 4.533%&nbsp;&bull;&nbsp;US 30-Yr 5.01%&nbsp;&bull;&nbsp;SpaceX SPCX IPO $135&nbsp;&bull;&nbsp;Iran Peace Deal Imminent&nbsp;&bull;&nbsp;VIX 19.44 &minus;12.5%&nbsp;&bull;&nbsp;Cubs beat Rockies 9&ndash;3 Thu&nbsp;&bull;&nbsp;Sox sweep Braves series&nbsp;&bull;&nbsp;Chicago High 86°F&nbsp;&#9728;&nbsp;&bull;&nbsp;
-    S&amp;P Futures +0.20%&nbsp;&bull;&nbsp;Nasdaq Futures +0.29%&nbsp;&bull;&nbsp;Dow Futures +0.09%&nbsp;&bull;&nbsp;BTC $63,491&nbsp;&bull;&nbsp;Gold $4,206&nbsp;&bull;&nbsp;Crude Oil $86.74&nbsp;&bull;&nbsp;30-Yr Mortgage 6.52%&nbsp;&bull;&nbsp;US 10-Yr 4.533%&nbsp;&bull;&nbsp;US 30-Yr 5.01%&nbsp;&bull;&nbsp;SpaceX SPCX IPO $135&nbsp;&bull;&nbsp;Iran Peace Deal Imminent&nbsp;&bull;&nbsp;VIX 19.44 &minus;12.5%&nbsp;&bull;&nbsp;Cubs beat Rockies 9&ndash;3 Thu&nbsp;&bull;&nbsp;Sox sweep Braves series&nbsp;&bull;&nbsp;Chicago High 86°F&nbsp;&#9728;&nbsp;&bull;&nbsp;
+    <span>SPACEX (SPCX) DEBUTS ON NASDAQ AT $135, LARGEST IPO IN HISTORY</span><span class="ticker-dot">•</span>
+    <span>DOW +354 PTS TO 51,202</span><span class="ticker-dot">•</span>
+    <span>S&amp;P 500 +0.5%, NASDAQ +0.3%</span><span class="ticker-dot">•</span>
+    <span>BTC $63,458</span><span class="ticker-dot">•</span>
+    <span>30-YR MORTGAGE 6.52%, UP FROM 6.48%</span><span class="ticker-dot">•</span>
+    <span>TRUMP: IRAN DEAL "ALMOST COMPLETE"</span><span class="ticker-dot">•</span>
+    <span>FOMC PREVIEW: WARSH'S FIRST MEETING JUN 16-17</span><span class="ticker-dot">•</span>
+    <span>WHITE SOX 8, DODGERS 2</span><span class="ticker-dot">•</span>
+    <span>CUBS 9, ROCKIES 3 — SALVAGE COLORADO SERIES</span><span class="ticker-dot">•</span>
+    <span>CHICAGO: SUNNY, LESS HUMID, HIGH NEAR 80</span><span class="ticker-dot">•</span>
+    <!-- duplicate for seamless loop -->
+    <span>SPACEX (SPCX) DEBUTS ON NASDAQ AT $135, LARGEST IPO IN HISTORY</span><span class="ticker-dot">•</span>
+    <span>DOW +354 PTS TO 51,202</span><span class="ticker-dot">•</span>
+    <span>S&amp;P 500 +0.5%, NASDAQ +0.3%</span><span class="ticker-dot">•</span>
+    <span>BTC $63,458</span><span class="ticker-dot">•</span>
+    <span>30-YR MORTGAGE 6.52%, UP FROM 6.48%</span><span class="ticker-dot">•</span>
+    <span>TRUMP: IRAN DEAL "ALMOST COMPLETE"</span><span class="ticker-dot">•</span>
+    <span>FOMC PREVIEW: WARSH'S FIRST MEETING JUN 16-17</span><span class="ticker-dot">•</span>
+    <span>WHITE SOX 8, DODGERS 2</span><span class="ticker-dot">•</span>
+    <span>CUBS 9, ROCKIES 3 — SALVAGE COLORADO SERIES</span><span class="ticker-dot">•</span>
+    <span>CHICAGO: SUNNY, LESS HUMID, HIGH NEAR 80</span><span class="ticker-dot">•</span>
   </div>
 </div>
 
-<!-- MASTHEAD -->
 <header class="masthead">
-  <div class="masthead-vol">Vol. I &nbsp;&middot;&nbsp; No. 17 &nbsp;&middot;&nbsp; Friday Edition</div>
-  <div class="masthead-title">The Daily Ledger</div>
-  <div class="masthead-diamond">&#9670; &#9670; &#9670;</div>
-  <div class="masthead-tagline">Curated intelligence for the discerning reader</div>
+  <div class="masthead-vol">Vol. I · No. 17 · Established May 2026, GFY, USA</div>
+  <h1 class="masthead-title">The Daily Ledger</h1>
+  <div>
+    <span class="masthead-diamond">◆</span>
+    <span class="masthead-tagline">Markets, Money &amp; the Macro View — Curated for Nunya Biz</span>
+    <span class="masthead-diamond">◆</span>
+  </div>
   <hr class="masthead-rule">
-  <div class="masthead-dateline">Chicago, Illinois &nbsp;&middot;&nbsp; Friday, June 12, 2026</div>
+  <div class="masthead-dateline">Chicago, Illinois &nbsp;·&nbsp; Friday, June 12, 2026</div>
   <div class="masthead-url">unclejim7.github.io/The-Daily-Ledger</div>
 </header>
 
-<main class="page-wrap">
+<div class="weather-banner-top">
+  <div class="weather-banner">
+    <div class="weather-icon">🌤️</div>
+    <div class="weather-content">
+      <div class="weather-eyebrow">Chicagoland Forecast</div>
+      <div class="weather-headline">Sunshine Returns After a Brutal Storm Stretch</div>
+      <p>After Thursday's tornado outbreak across northern Illinois, Friday brought a welcome reprieve — sunny skies, lower humidity, and highs near 80°F. Conditions continue improving into the weekend.</p>
+      <div class="weather-stats">
+        <div class="ws-item"><strong>80°F</strong>High Today</div>
+        <div class="ws-item"><strong>59°F</strong>Overnight Low</div>
+        <div class="ws-item"><strong>SW 10-15 mph</strong>Wind</div>
+        <div class="ws-item"><strong>Sunny</strong>Conditions</div>
+      </div>
+    </div>
+  </div>
+</div>
 
-  <!-- ═══ LEAD STORY ═══ -->
+<div class="ledger-body">
+
+  <!-- ===================== LEAD STORY ===================== -->
   <section class="lead-story">
-    <div class="lead-kicker">Breaking &bull; Geopolitics</div>
-    <h1 class="lead-headline">SpaceX Makes History — And Iran May Sign Sunday</h1>
+    <div class="lead-kicker">Markets &amp; Geopolitics</div>
+    <h2 class="lead-headline">SpaceX Roars Onto Nasdaq in Largest IPO Ever as Iran Deal Optimism Lifts Wall Street</h2>
     <div class="lead-body">
-      <p>Two seismic events collide on the same Friday morning. Elon Musk's <strong>SpaceX begins trading on the Nasdaq</strong> today under ticker <strong>SPCX</strong> at a fixed $135 IPO price — raising $75 billion at a $1.78 trillion valuation, the largest public market debut in history. Simultaneously, President Trump told reporters that a <strong>peace deal with Iran could be signed as early as this Sunday</strong> in Switzerland, on the sidelines of the G7 summit in Evian, France. The dual catalysts lit up equity futures pre-market: S&amp;P 500 futures rose 0.6%, Nasdaq futures climbed 0.29%, and Bitcoin jumped 1.1%. The VIX cratered 12.5% to 19.44 — its sharpest single-session drop in weeks.</p>
+      <p>SpaceX made its long-awaited Nasdaq debut Friday under ticker SPCX, pricing at $135 a share and opening near $150 before surging more than 20% intraday — in what's being called the largest IPO in corporate history, raising an estimated $75 billion for data center and compute buildout. MSCI moved quickly to add the stock to its Large-Cap and Standard indexes.</p>
+      <p>The listing landed against a backdrop of growing optimism that the U.S. and Iran are nearing a peace deal. President Trump said Thursday the U.S. would cancel planned strikes, calling all points of a deal "essentially agreed," while Iranian state media suggested a U.S.-approved peace text makes a deal "highly" likely — though not yet done. The Dow gained 354 points (+0.70%) to close at 51,202, with the S&amp;P 500 and Nasdaq also higher and the VIX falling nearly 12%.</p>
     </div>
   </section>
 
-  <!-- ═══ MARKETS ═══ -->
-  <div class="section-head"><span class="section-head-icon">📈</span> Markets &amp; Finance</div>
+  <!-- ===================== MARKETS & FINANCE ===================== -->
+  <div class="section-head">
+    <span class="section-head-icon">📈</span>
+    <h2>Markets &amp; Finance</h2>
+  </div>
 
   <div class="market-table-wrap">
     <table class="market-table">
       <thead>
-        <tr>
-          <th>Instrument</th>
-          <th>Last</th>
-          <th>Change</th>
-          <th>Note</th>
-        </tr>
+        <tr><th>Index / Asset</th><th>Level</th><th>Change</th></tr>
       </thead>
       <tbody>
-        <tr><td>S&amp;P 500 Futures</td><td>7,410.50</td><td class="up">+0.20%</td><td>Iran deal optimism, SpaceX IPO hype</td></tr>
-        <tr><td>Nasdaq Futures</td><td>29,549.75</td><td class="up">+0.29%</td><td>Tech bid; RKLB +4.5%, joins Nasdaq-100 June 22</td></tr>
-        <tr><td>Dow Futures</td><td>50,921.00</td><td class="up">+0.09%</td><td>Thu close: Dow +1.86%, S&amp;P +1.75%, Nasdaq +2.54%</td></tr>
-        <tr><td>Russell 2000 Futures</td><td>2,924.90</td><td class="up">+0.10%</td><td>Small-caps tracking broad risk-on</td></tr>
-        <tr><td>VIX</td><td>19.44</td><td class="down">&minus;12.51%</td><td>Fear gauge collapses on peace signals</td></tr>
-        <tr><td>Gold</td><td>$4,206.10</td><td class="up">+2.24%</td><td>War premium intact; Iran deal not signed yet</td></tr>
-        <tr><td>Crude Oil (Jul '26)</td><td>$86.74</td><td class="down">&minus;1.11%</td><td>Paring gains; Hormuz reopening priced in</td></tr>
-        <tr><td>US 10-Yr Treasury</td><td>4.533%</td><td class="flat">&mdash;</td><td>Watch: FOMC June 16–17 dot plot</td></tr>
-        <tr><td>US 30-Yr Treasury</td><td>5.01%</td><td class="flat">&mdash;</td><td>Two-decade high; bond market skeptical of cuts</td></tr>
-        <tr><td>SpaceX (SPCX)</td><td>$135.00</td><td class="flat">IPO</td><td>Largest IPO ever; $1.78T valuation, Nasdaq</td></tr>
+        <tr><td>Dow Jones Industrial Average</td><td>51,202.26</td><td class="up">+354.10 (+0.70%)</td></tr>
+        <tr><td>S&amp;P 500</td><td>~7,360</td><td class="up">+0.50%</td></tr>
+        <tr><td>Nasdaq Composite</td><td>—</td><td class="up">+0.30%</td></tr>
+        <tr><td>CBOE Volatility Index (VIX)</td><td>—</td><td class="down">−11.9%</td></tr>
       </tbody>
     </table>
   </div>
 
   <div class="card-grid">
-    <div class="card">
-      <div class="card-kicker">Thursday Close</div>
-      <h3>Bulls Dominated Thursday's Session</h3>
-      <p>Stocks surged Thursday after Trump cancelled evening Iran strikes and claimed a Middle East deal was "agreed in principle." <strong>Dow +930 pts (+1.86%)</strong>, S&amp;P 500 +1.75%, Nasdaq +2.54%. Honeywell led the Dow (+6.43%), followed by Boeing (+5.79%). Micron and AMD soared 11% and 8% respectively on AI positioning ahead of the SpaceX IPO.</p>
+    <div class="card card-full">
+      <div class="card-kicker">SpaceX IPO</div>
+      <h3>SPCX Opens at $150, Surges Past $160 Intraday</h3>
+      <p>Indications of interest ahead of the open suggested SPCX could trade around $175, roughly 30% above its $135 IPO price. Trading desks reported the stock opened closer to $150-$162 before settling into active trading, with the AI-to-space company up more than 15% from its listing price moments after the bell.</p>
     </div>
     <div class="card">
-      <div class="card-kicker">IPO Watch</div>
-      <h3>SPCX: History Debuts on Nasdaq Today</h3>
-      <p>SpaceX priced at <strong>$135/share</strong>, raising ~$75B — more than triple Alibaba's 2019 record. The $1.78T valuation makes SPCX instantly one of the largest public companies on Earth. Starlink generates 61% of revenue. Anthropic has also confidentially filed its IPO prospectus, with OpenAI preparing to follow.</p>
+      <div class="card-kicker">FOMC Preview</div>
+      <h3>Warsh's First Meeting Looms June 16-17</h3>
+      <p>Next week's FOMC decision marks Kevin Warsh's first as Fed Chair, complete with a fresh dot plot and Summary of Economic Projections. A hold is widely expected, with the real focus on whether the Committee shifts its bias from easing toward neutral.</p>
     </div>
     <div class="card">
-      <div class="card-kicker">Movers &amp; Shakers</div>
-      <h3>Winners, Losers Pre-Market</h3>
-      <p><strong class="up">Up:</strong> Public Storage (PSA) +7.13%, Playtika (PLTK) +5.43%, Rocket Lab (RKLB) +4.5% on Nasdaq-100 addition, Magnificent 7 ETF (MAGS) +0.79%. <strong class="down">Down:</strong> Adobe (ADBE) &minus;7% (earnings miss), DoubleVerify (DV) &minus;4.2%, Virgin Galactic (SPCE) &minus;10% after prior session's spike.</p>
-    </div>
-  </div>
-
-  <hr class="section-divider">
-
-  <!-- ═══ FEDERAL RESERVE ═══ -->
-  <div class="section-head"><span class="section-head-icon">🏛️</span> Federal Reserve</div>
-
-  <div class="pull-quote">
-    <p>"The Federal Reserve is not expected to move rates in the June meeting, and we believe they will be on hold for the rest of 2026. There will, however, likely be an explicit move away from a bias toward easing to a neutral stance on rates."</p>
-    <cite>— J.P. Morgan Wealth Management Chief Investment Strategist Phil Camporeale</cite>
-  </div>
-
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-kicker">June 16–17 FOMC</div>
-      <h3>Warsh's First Meeting: The Dot Plot Is What Matters</h3>
-      <p>The June 16–17 FOMC is Chair Kevin Warsh's debut as the Fed's 17th chair (sworn in May 22). Current target rate: <strong>3.50%–3.75%</strong> — unchanged across three consecutive meetings. Markets price a hold as near-certain. The real event: the new dot plot and SEP projections. Traders are watching whether September cuts remain on the table or get pushed to 2027.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">Macro Picture</div>
-      <h3>Inflation Above Target, Labor Market Resilient</h3>
-      <p>May CPI came in at <strong>4.2% YoY</strong> — a three-year high driven by the Iran-war energy shock. Core PCE forecast was revised up to 2.7% in the March SEP. Unemployment hovers near <strong>4.4%</strong>. The 30-year Treasury at 5.01% marks a two-decade high as bond traders demand compensation for entrenched inflation risk.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">Former Chair</div>
-      <h3>Powell Stays on Board — For Now</h3>
-      <p>Jerome Powell agreed to remain on the Fed board until he's satisfied the administration's criminal investigation into him has concluded "with finality and transparency." Powell expects a normal transition for Warsh. The split between Warsh's general dovishness and the committee's inflation-fighting hawkish dissenters sets up a contentious first press conference.</p>
+      <div class="card-kicker">Mortgage Rates</div>
+      <h3>30-Year Fixed Ticks Up to 6.52%</h3>
+      <p>Freddie Mac's PMMS showed the 30-year fixed-rate mortgage averaging 6.52% for the week, up from 6.48%, while the 15-year rose to 5.84% from 5.79%. Both remain well below year-ago levels.</p>
     </div>
   </div>
 
-  <hr class="section-divider">
-
-  <!-- ═══ BITCOIN / CRYPTO ═══ -->
-  <div class="section-head"><span class="section-head-icon">₿</span> Bitcoin &amp; Crypto</div>
+  <!-- ===================== BITCOIN & CRYPTO ===================== -->
+  <div class="section-head">
+    <span class="section-head-icon">₿</span>
+    <h2>Bitcoin &amp; Crypto</h2>
+  </div>
 
   <div class="crypto-panel">
     <div class="crypto-box">
-      <div class="label">Bitcoin (BTC)</div>
-      <div class="value">$63,491</div>
-      <div class="change up">+$1,424 &nbsp;(+2.29%)</div>
+      <div class="cb-name">Bitcoin (BTC)</div>
+      <div class="cb-price">$63,458</div>
+      <div class="cb-change flat">Range-bound near consolidation floor</div>
     </div>
     <div class="crypto-box">
-      <div class="label">Market Cap</div>
-      <div class="value">$2.25T</div>
-      <div class="change up">Crypto market +1.7%</div>
-    </div>
-    <div class="crypto-box">
-      <div class="label">Fear &amp; Greed</div>
-      <div class="value">12</div>
-      <div class="change down">Extreme Fear — held 3 days</div>
-    </div>
-    <div class="crypto-box">
-      <div class="label">24-Hr Volume</div>
-      <div class="value">$79.3B</div>
-      <div class="change up">Up from $77.6B yesterday</div>
+      <div class="cb-name">Fear &amp; Greed Index</div>
+      <div class="cb-price">~12</div>
+      <div class="cb-change down">Extreme Fear</div>
     </div>
   </div>
-
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-kicker">Iran Catalyst</div>
-      <h3>BTC Rises 1.1% on Peace Signal, Risk Assets Rally</h3>
-      <p>Bitcoin climbed from <strong>$62,113</strong> to <strong>$63,491</strong> as Trump's peace overture lifted risk sentiment broadly. BTC remains down ~48% from October 2025 ATH of $126,080. The $65K psychological floor, breached earlier this month, continues to act as resistance. DeFi rebounded sharply — up 5.2% vs. June 11's 1.8% decline.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">Sector News</div>
-      <h3>Privacy Flaw, NFTfi Shutdown, AVAX Nasdaq Debut</h3>
-      <p><strong>Bitcoin Core 31.0:</strong> A &minus;privatebroadcast feature leaks IP addresses under certain network conditions; fix arrives in version 31.1 — disable the feature now. <strong>NFTfi</strong> shuts down after 6 years ($737M loans processed), citing a shrinking market. <strong>Avalanche Treasury Co.</strong> (AVAT) debuted on Nasdaq holding 15 million AVAX tokens.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">Institutional</div>
-      <h3>MicroStrategy's 32 BTC Sale Triggered $320M in Liquidations</h3>
-      <p>Strategy (MicroStrategy) sold 32 BTC worth $2.5M as part of a monthly dividend plan. The unexpected sale triggered <strong>$320M in leveraged-long liquidations</strong>, accelerating Bitcoin's June correction. BlackRock's IBIT ETF recorded 11 consecutive days of outflows before stabilizing. Mastercard expanded 24/7 on-chain settlement across blockchain networks.</p>
-    </div>
-  </div>
-
-  <hr class="section-divider">
-
-  <!-- ═══ GEOPOLITICS ═══ -->
-  <div class="section-head"><span class="section-head-icon">🌍</span> Geopolitics</div>
-
-  <div class="lead-story" style="border-top-color: var(--gold);">
-    <div class="lead-kicker">U.S.–Iran War</div>
-    <h2 class="lead-headline">Deal Could Be Signed Sunday in Switzerland</h2>
-    <div class="lead-body">
-      <p>Trump said Thursday that a peace accord could be finalized as soon as this weekend, coinciding with the <strong>G7 summit in Evian, France (June 15–17)</strong>. Iran's semi-official Fars news agency reported Tehran is "likely" to accept a draft agreement, though no final text has been approved. A full signing is eyed for <strong>Switzerland</strong>. The U.S. shot down two Iranian drones attempting to strike ships in the Strait of Hormuz early Thursday morning — underscoring the fragility of the ceasefire even as diplomacy accelerates. Trump extended the ceasefire open-endedly in late April, maintaining the naval blockade until negotiations conclude "one way or the other."</p>
-    </div>
-  </div>
-
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-kicker">Context</div>
-      <h3>The War That Shook Global Markets</h3>
-      <p>U.S.-Israeli strikes on Iran began <strong>February 28, 2026</strong>, killing Supreme Leader Khamenei and targeting nuclear and military infrastructure. Iran's counter-measures included closing the <strong>Strait of Hormuz</strong>, driving crude above $100/bbl and pushing U.S. CPI to a 3-year high of 4.2%. An April 8 ceasefire mediated by Pakistan has been repeatedly strained by drone and naval incidents.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">Market Impact</div>
-      <h3>Oil Softens as Hormuz Reopening Gets Priced In</h3>
-      <p>Crude fell 1.11% to <strong>$86.74/bbl</strong> as traders begin discounting a Hormuz reopening and the end of the naval blockade. WTI had traded as high as $96 this week. Gold, paradoxically, gained 2.24% to $4,206 — reflecting both residual war premium and investors hedging against the inflation legacy of the energy shock.</p>
-    </div>
-  </div>
-
-  <hr class="section-divider">
-
-  <!-- ═══ REAL ESTATE ═══ -->
-  <div class="section-head"><span class="section-head-icon">🏠</span> Real Estate &amp; Mortgage Rates</div>
 
   <div class="card-grid">
     <div class="card card-full">
-      <div class="card-kicker">Freddie Mac PMMS — Week of June 11, 2026</div>
-      <h3>30-Year Mortgage Ticks Up to 6.52% — But Buyers Are Coming Back</h3>
-      <p>The <strong>30-year fixed-rate mortgage averaged 6.52%</strong> for the week ending June 11, up from 6.48% the prior week. The <strong>15-year FRM averaged 5.84%</strong>, up from 5.79%. Both remain below year-ago levels (30-yr was 6.84% last June; 15-yr was 5.97%). Freddie Mac's chief economist noted that stronger employment momentum has helped existing home sales reach a <strong>five-month high</strong> — "homebuyers are looking past short-term rate fluctuations and actively entering the market." The FOMC meeting next week could push rates higher if Warsh signals a prolonged pause or a hawkish tilt in the dot plot.</p>
+      <div class="card-kicker">Liquidity Watch</div>
+      <h3>BTC Holds Steady as SpaceX Listing Pulls Liquidity Toward Equities</h3>
+      <p>Bitcoin held near $63,458, finding tentative support amid a broader liquidity drain across risk assets as institutional attention focused on the SpaceX listing. Altcoins were similarly quiet during early Asian trading hours, with speculative futures leverage at its lowest level this quarter.</p>
     </div>
   </div>
 
-  <hr class="section-divider">
+  <!-- ===================== CURRENT EVENTS ===================== -->
+  <div class="section-head">
+    <span class="section-head-icon">🌍</span>
+    <h2>Current Events</h2>
+  </div>
 
-  <!-- ═══ ARMSTRONG ECONOMICS ═══ -->
-  <div class="section-head"><span class="section-head-icon">📊</span> Armstrong Economics</div>
+  <div class="card-grid">
+    <div class="card card-full">
+      <div class="card-kicker">U.S.-Iran Conflict</div>
+      <h3>Trump Cancels Strikes, Calls Deal "Essentially Agreed"</h3>
+      <p>President Trump said Thursday he was canceling planned strikes on Iran, telling reporters that all points of a peace deal were essentially agreed upon. Iranian state media (FARS) said the U.S. approval of Iran's proposed deal text makes a deal "highly" likely, though stressed nothing is final yet.</p>
+    </div>
+  </div>
 
   <div class="pull-quote">
-    <p>Global bond yields tell the real story: US 30-year at 5.01%, UK Gilts at 4.913%, Germany Bunds at 3.052%, Italy at 3.819%. Capital is crowding into the short end, and the US 10-year at 4.533% represents a sustained de-anchoring of inflation expectations. Armstrong's War Cycle and the ECM both flagged 2026 as a volatility pivot. Every day the Strait of Hormuz stays closed — or threatened — resets the inflation baseline for the entire cycle.</p>
-    <cite>— Armstrong Economics Market Talk, June 9–11, 2026 (compiled)</cite>
+    <blockquote>"It is hard to believe that a little company that started in a warehouse in El Segundo is going public in the largest IPO ever."</blockquote>
+    <cite>— Elon Musk, on SpaceX's Nasdaq debut</cite>
   </div>
 
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-kicker">Bond Markets</div>
-      <h3>Yield Curve Under Pressure at Every Node</h3>
-      <p>From the June 9 Market Talk: <strong>US 2s: 4.14%, US 10s: 4.533%, US 30s: 5.01%</strong>. UK Gilts 4.913%, Bunds 3.052%, France 3.713%, Italy 3.819%. The spread between the 10-year Treasury and S&amp;P 500 earnings yield is at its widest since early 2002 — bonds are competing with stocks for capital allocation in a way not seen since the dot-com bust.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">ECM &amp; War Cycle</div>
-      <h3>2026 as a Structural Pivot Year</h3>
-      <p>Armstrong's Economic Confidence Model has flagged this year as a critical turning point in the political-economic cycle. The Iran war, energy inflation, and simultaneous Fed leadership transition create the kind of compounding macro shock the ECM models as characteristic of major cycle turns. Watch for volatility to persist well past any formal ceasefire — the inflation legacy typically outlasts the conflict by 18–24 months.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">Commodity Snapshot</div>
-      <h3>Commodities Mixed on War-Premium Unwind</h3>
-      <p>From June 9 data: <strong>Top gainers:</strong> Orange Juice +4.51%, Palladium +1.39%. <strong>Top losers:</strong> Crude Oil &minus;3.53%, Brent &minus;3.12%, Silver &minus;3.73%, Butter &minus;3.07%. The energy-complex selloff on ceasefire hopes contrasts with metals softness — gold's +2.24% today stands as the outlier, driven by safe-haven demand even as war premiums thin.</p>
-    </div>
+  <!-- ===================== CHICAGO SPORTS ===================== -->
+  <div class="section-head">
+    <span class="section-head-icon">🏆</span>
+    <h2>Chicago Sports &amp; Highlights</h2>
   </div>
 
-  <hr class="section-divider">
-
-  <!-- ═══ WEATHER ═══ -->
-  <div class="section-head"><span class="section-head-icon">🌤️</span> Chicagoland Weather</div>
-
-  <div class="weather-banner">
-    <div class="weather-icon">⛅</div>
-    <div class="weather-content">
-      <div class="weather-headline">Partly Sunny, High Near 86°F — Post-Tornado Recovery Weekend</div>
-      <p><strong>Today (Fri Jun 12):</strong> Partly sunny, high near <strong>86°F</strong>. SSW winds 5–10 mph shifting to SE by afternoon. Tonight: mostly cloudy, low around 63°F. <strong>Saturday:</strong> Mostly sunny, high near 83°F, gusts to 15 mph. <strong>Sunday:</strong> Sunny, high near 71°F, NE winds 10–15 mph. <strong>Monday:</strong> Sunny, high near 79°F. The NWS confirmed a <strong>tornado outbreak across northern Illinois and NW Indiana</strong> on Thursday, June 11 — the weather service postponed its routine radio test until today. The severe weather pattern pivoting across the Midwest's midsection is expected to shift east by this weekend, leaving Chicago with clearing skies and a welcome cool-down Sunday.</p>
+  <div class="sports-item">
+    <div class="sports-score">
+      <div class="sc-teams">CHC @ COL</div>
+      <div class="sc-result sc-win">9–3</div>
+    </div>
+    <div class="sports-desc">
+      <h4>Cubs Salvage Series Finale at Coors Field</h4>
+      <p>The Cubs salvaged the series finale in Colorado with a 9-3 win Thursday, bouncing back from a tough start to the week. Chicago now heads to San Francisco for a weekend set with the Giants.</p>
     </div>
   </div>
 
-  <hr class="section-divider">
-
-  <!-- ═══ CHICAGO SPORTS ═══ -->
-  <div class="section-head"><span class="section-head-icon">⚾</span> Chicago Sports</div>
-
-  <div class="card-grid">
-    <div class="card">
-      <div class="card-kicker">Chicago Cubs &bull; MLB</div>
-      <h3>Cubs Split at Coors — Salvage Series Finale 9–3</h3>
-      <p>After dropping back-to-back games in Denver (COL 7–3 Tue, COL 3–2 Wed), the Cubs answered on Thursday afternoon: <strong class="win">CHC 9, COL 3</strong>. A split to salvage from a tough Coors Field road trip. Up next: <strong>Cubs at San Francisco Giants</strong> — three-game series begins tonight (Fri, 9:15 PM CDT) and runs through Sunday. Then Colorado returns to Wrigley for a three-game home stand starting Monday, June 15.</p>
+  <div class="sports-item">
+    <div class="sports-score">
+      <div class="sc-teams">CWS vs LAD</div>
+      <div class="sc-result sc-win">8–2</div>
     </div>
-    <div class="card">
-      <div class="card-kicker">Chicago White Sox &bull; MLB</div>
-      <h3>Sox Sweep Atlanta — Open Dodgers Series Tonight</h3>
-      <p>The Sox have momentum: <strong class="win">CWS 6–5 over ATL (Tue)</strong>, then <strong class="win">CWS 2–1 over ATL (Wed)</strong> — a series sweep of the Atlanta Braves at home. Now the test: the <strong>Los Angeles Dodgers arrive at Guaranteed Rate Field</strong> for a three-game weekend set beginning tonight, 6:40 PM CDT. If the Sox can split this one, it's a confidence-building week worth remembering.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">Around the League &bull; Other Sports</div>
-      <h3>Rocket Lab Joins Nasdaq-100 — Sports-Tech Crossover</h3>
-      <p><strong>NBA:</strong> Bulls coaching search ongoing — no hire announced. <strong>NHL:</strong> Blackhawks continue 2026 draft positioning watch. <strong>NFL:</strong> Bears in full offseason program. <strong>Other:</strong> Rocket Lab (RKLB) joins the Nasdaq-100 pre-market June 22, a reminder that the sports-entertainment-tech convergence cycle continues as SpaceX makes its debut today.</p>
+    <div class="sports-desc">
+      <h4>White Sox Open Dodgers Series With Statement Win</h4>
+      <p>The White Sox dismantled the Dodgers 8-2 on Friday night, opening their weekend series against the defending-pedigree LA squad in dominant fashion. The series continues Saturday at Guaranteed Rate Field.</p>
     </div>
   </div>
 
-  <hr class="section-divider">
-
-  <!-- ═══ HEALTH & WELLNESS ═══ -->
-  <div class="section-head"><span class="section-head-icon">💪</span> Health, Wellness &amp; Fitness</div>
-
-  <div class="card-grid">
-    <div class="card card-full">
-      <div class="card-kicker">New Research &bull; Published Today in BJSM</div>
-      <h3>Scientists Find the Strength Training Sweet Spot for a Longer Life</h3>
-      <p>A landmark study published today in the <em>British Journal of Sports Medicine</em> — drawing on 30 years of data from 147,374 participants across three major Harvard cohorts — has identified the optimal weekly dose of resistance training for mortality reduction. The benefits were greatest when strength training was <strong>combined with aerobic exercise</strong>, confirming what exercise scientists have long suspected: concurrent training is the longevity gold standard. The study tracked brisk walking, running, swimming, cycling, and stair climbing as aerobic activities. <strong>Key takeaway:</strong> doing some resistance training matters far more than the specific routine — even simple weekly sessions yield significant mortality benefit.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">Policy</div>
-      <h3>Medicare Now Reimburses Doctors for Exercise Assessments</h3>
-      <p>Starting in 2026, Medicare reimburses physicians for assessing patients' <strong>physical activity levels and nutrition habits</strong> during clinical visits — formally recognizing exercise as a measurable clinical factor, not just lifestyle advice. HSA and FSA rules now allow pre-tax spending on fitness apps, home gym equipment, and recovery products. The Health Fitness Association is calling on Congress to expand exercise-based prevention programs for older adults.</p>
-    </div>
-    <div class="card">
-      <div class="card-kicker">Nutrition Science</div>
-      <h3>8,500 Steps a Day May Be the Weight-Maintenance Target</h3>
-      <p>A new international analysis suggests approximately <strong>8,500 steps per day</strong> is the threshold for keeping weight off after dieting — a more specific target than the long-standing 10,000-step heuristic. Separately: the Biggest Collagen Study yet (nearly 8,000 participants) confirmed that collagen supplements improve skin health and ease osteoarthritis symptoms when taken <strong>consistently over longer periods</strong>, with modest additional benefits for muscle recovery.</p>
-    </div>
+  <!-- ===================== HEALTH & WELLNESS ===================== -->
+  <div class="section-head">
+    <span class="section-head-icon">💪</span>
+    <h2>Health, Wellness &amp; Fitness</h2>
   </div>
 
-  <hr class="section-divider">
+  <div class="health-item">
+    <h4>Strength Training + Aerobic Combo: The Longevity Gold Standard</h4>
+    <p>A major new study tracking 147,000 participants over 30 years found that combining strength training with regular aerobic exercise produced the strongest longevity benefits of any exercise pattern studied — reinforcing that "do both" remains the simplest, best-supported advice in the fitness research literature.</p>
+  </div>
 
-  <!-- ═══ TRIVIA TRIPTYCH ═══ -->
-  <div class="section-head"><span class="section-head-icon">🎲</span> Closing Triptych</div>
+  <!-- ===================== EDITOR'S DISPATCH ===================== -->
+  <div class="editors-dispatch">
+    <div class="ed-label">Editor's Dispatch</div>
+    <p>Friday delivered one of the more remarkable single-day market stories in recent memory — the largest IPO ever, on the same day diplomats inched closer to ending a war that's been rattling energy markets for months. Whether SpaceX's debut marks a genuine risk-on turning point or a one-day sugar high will become clearer once next week's FOMC meeting forces investors to confront the inflation data they've been able to ignore amid all the geopolitical drama. Enjoy the sunshine this weekend — Chicago has earned it after this week's storms.</p>
+  </div>
+
+  <!-- ===================== TRIVIA TRIPTYCH ===================== -->
+  <div class="section-head">
+    <span class="section-head-icon">✦</span>
+    <h2>The Daily Triptych</h2>
+  </div>
 
   <div class="trivia-grid">
     <div class="trivia-card">
-      <div class="t-label">Random Fact of the Day</div>
-      <div class="t-value">The largest IPO in history — SpaceX — debuted on the very same day Chicago's NWS was assessing a tornado outbreak from the previous evening. Markets indifferent to weather; weather indifferent to markets.</div>
-      <div class="t-sub">SPCX · Nasdaq · June 12, 2026 · $1.78T</div>
+      <div class="tc-label">Random Fact</div>
+      <p style="font-size:0.92rem; line-height:1.6; color: var(--cream);">SpaceX's Falcon 9 booster has now been reused over 400 times across the fleet, a reusability milestone that was considered science fiction just over a decade ago.</p>
     </div>
     <div class="trivia-card">
-      <div class="t-label">Word of the Day</div>
-      <div class="t-value"><strong>Détente</strong> (n.)</div>
-      <div class="t-sub">The easing of hostility or strained relations between nations through diplomacy. From French <em>détente</em> — a relaxing, from <em>détendre</em>, to loosen. Appropriate, given what may be signed in Switzerland this Sunday.</div>
+      <div class="tc-label">Word of the Day</div>
+      <div class="tc-word">oversubscribed</div>
+      <p class="tc-def"><em>(adjective)</em> — when demand for shares in an offering exceeds the number available. <em>"The SpaceX IPO was massively oversubscribed ahead of its debut."</em></p>
     </div>
     <div class="trivia-card">
-      <div class="t-label">Quote of the Day</div>
-      <div class="t-value">"The most courageous act is still to think for yourself. Aloud."</div>
-      <div class="t-sub">— Coco Chanel</div>
+      <div class="tc-label">Quote of the Day</div>
+      <p style="font-size:0.95rem; line-height:1.65; font-family:'Libre Baskerville', serif; font-style: italic; color: var(--cream);">"It is hard to believe that a little company that started in a warehouse in El Segundo is going public in the largest IPO ever."</p>
+      <p class="tc-def" style="margin-top:0.5rem;">— Elon Musk</p>
     </div>
   </div>
 
-  <!-- EDITOR'S DISPATCH -->
-  <div class="editors-dispatch">
-    <div class="dispatch-head">Editor's Dispatch</div>
-    <p>A Friday that may be remembered. SpaceX goes public as markets digest a possible Iran deal by Sunday — two headlines that would have seemed impossible in combination a decade ago. The VIX collapse is telling: markets believe. Whether the belief holds through next week's FOMC is another matter. For now, enjoy the Cubs' road win, the Sox's sweep, and an 86-degree Friday with clearing skies after Thursday's tornadoes. That's a good enough day. — The Editor</p>
-  </div>
+</div>
 
-</main>
-
-<footer class="footer">
-  <div class="page-wrap">
-    Curated daily for Nunya Biz &nbsp;&middot;&nbsp; Est. May 2026 in GFY, USA &nbsp;&middot;&nbsp; unclejim7.github.io/The-Daily-Ledger
-  </div>
+<footer class="ledger-footer">
+  <span>The Daily Ledger</span> · Curated daily for Nunya Biz · Est. May 2026 in GFY, USA
 </footer>
 
 </body>

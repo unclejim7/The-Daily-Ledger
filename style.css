@@ -1,6 +1,7 @@
 /* ============================================================
-   THE DAILY LEDGER — style.css  (v7 canonical)
+   THE DAILY LEDGER — style.css  (v8 canonical)
    Dark broadsheet · Playfair Display + Source Sans 3
+   v8: weather banner moved to top placement, enhanced styling
    ============================================================ */
 
 /* ---------- Variables ---------- */
@@ -63,10 +64,14 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Ticker ---------- */
 .ticker-wrap {
+  position: -webkit-sticky;
+  position: sticky;
+  top: var(--nav-h);
+  z-index: 90;
   width: 100%;
   height: var(--ticker-h);
   background: var(--orange);
-  overflow: hidden;
+  overflow: clip;
   display: flex;
   align-items: center;
 }
@@ -338,31 +343,85 @@ img { max-width: 100%; display: block; }
   color: var(--gold);
 }
 
-/* ---------- Weather Banner ---------- */
-.weather-banner {
-  background: var(--surface);
-  border: 1px solid var(--border);
-  border-top: 3px solid var(--gold);
-  border-radius: 4px;
-  padding: 1.2rem 1.4rem;
-  display: flex;
-  align-items: flex-start;
-  gap: 1.2rem;
-  margin: 1rem 0;
+/* ---------- Weather Banner (TOP PLACEMENT — signature element) ---------- */
+.weather-banner-top {
+  max-width: 1140px;
+  margin: 1.5rem auto 0;
+  padding: 0 1rem;
 }
-.weather-icon { font-size: 2.8rem; line-height: 1; }
-.weather-content { flex: 1; }
+.weather-banner {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1f1c14 0%, #1a1815 45%, #201a10 100%);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1.4rem 1.6rem;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.4), inset 0 1px 0 rgba(237,228,206,0.04);
+}
+.weather-banner::before {
+  content: "";
+  position: absolute;
+  top: -40%;
+  right: -10%;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(201,162,39,0.16) 0%, rgba(201,162,39,0) 70%);
+  pointer-events: none;
+}
+.weather-banner::after {
+  content: "";
+  position: absolute;
+  left: 0; top: 0; bottom: 0;
+  width: 4px;
+  background: linear-gradient(180deg, var(--gold), var(--orange));
+}
+.weather-icon {
+  font-size: 3rem;
+  line-height: 1;
+  flex-shrink: 0;
+  filter: drop-shadow(0 4px 10px rgba(0,0,0,0.45));
+}
+.weather-content { flex: 1; position: relative; z-index: 1; }
+.weather-eyebrow {
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 0.35rem;
+}
 .weather-headline {
   font-family: 'Playfair Display', serif;
-  font-size: 1.15rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: var(--cream);
-  margin-bottom: 0.3rem;
+  margin-bottom: 0.35rem;
 }
 .weather-content p {
-  font-size: 0.87rem;
+  font-size: 0.88rem;
   color: var(--cream-dim);
   line-height: 1.6;
+}
+.weather-stats {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.6rem;
+  flex-wrap: wrap;
+}
+.weather-stats .ws-item {
+  font-size: 0.75rem;
+  color: var(--cream-dim);
+  letter-spacing: 0.04em;
+}
+.weather-stats .ws-item strong {
+  color: var(--gold);
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  display: block;
 }
 
 /* ---------- Sports Items ---------- */
@@ -584,6 +643,7 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 600px) {
-  .weather-banner { flex-direction: column; }
+  .weather-banner { flex-direction: column; text-align: center; }
+  .weather-stats { justify-content: center; }
   .archive-entry { flex-direction: column; align-items: flex-start; }
 }
