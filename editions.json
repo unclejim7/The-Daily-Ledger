@@ -1,0 +1,288 @@
+{
+  "volume": "I",
+  "latest_edition": 20,
+  "editions": [
+    {
+      "edition": 20,
+      "date": "2026-06-15",
+      "day_of_week": "Monday",
+      "filename": "2026-06-15.html",
+      "headline": "\"The Deal With Iran Is Now Complete\": Trump Authorizes Reopening of Strait of Hormuz, Markets Surge to Start the Week",
+      "teaser": "Trump declares the U.S.-Iran deal \"now complete\" and authorizes reopening the Strait of Hormuz, sending Dow futures up 463 points and crude oil down over 5% as the VIX collapses 14%.",
+      "stats": {
+        "btc": 66157,
+        "gold": 4355.70,
+        "wti_crude": 80.34,
+        "vix": 16.64,
+        "mortgage_30yr": "6.52%",
+        "dow_futures": 52068.00
+      }
+    },
+    {
+      "edition": 1,
+      "date": "2026-05-27",
+      "day_of_week": "Wednesday",
+      "filename": "2026-05-27.html",
+      "headline": "Dow Surges to Record as Chips Dump — Warsh Nomination Rattles Bond Market",
+      "teaser": "Dow Jones gains 282 points to a record 50,234 even as chip stocks slump and the Warsh Fed nomination pushes the 10-year yield to 4.52%.",
+      "stats": {
+        "dow": 50234,
+        "sp500": 7571,
+        "nasdaq": 26910,
+        "btc": 107200,
+        "gold": 3285,
+        "wti_crude": 91.40,
+        "10yr_yield": "4.52%",
+        "mortgage_30yr": "6.71%"
+      }
+    },
+    {
+      "edition": 2,
+      "date": "2026-05-28",
+      "day_of_week": "Thursday",
+      "filename": "2026-05-28.html",
+      "headline": "Markets Shrug Off Iran Headlines — Dow Hits Second Consecutive Record Close",
+      "teaser": "Dow notches second straight record close at 50,516 as Warsh confirmation odds rise and Iran ceasefire talks continue in Oman.",
+      "stats": {
+        "sp500": 7602,
+        "dow": 50516,
+        "nasdaq": 27194,
+        "btc": 108400,
+        "gold": 3298,
+        "wti_crude": 90.80,
+        "10yr_yield": "4.55%"
+      }
+    },
+    {
+      "edition": 3,
+      "date": "2026-05-29",
+      "day_of_week": "Friday",
+      "filename": "2026-05-29.html",
+      "headline": "S&P Hits Record Close as Iran Deal Framework Signals Ceasefire — PCE Inflation Complicates Fed Math",
+      "teaser": "S&P 500 closes at record 7,609 as Iran ceasefire framework emerges from Oman talks; PCE inflation comes in hot at 3.8%.",
+      "stats": {
+        "sp500": 7609,
+        "dow": 50688,
+        "nasdaq": 27309,
+        "btc": 109600,
+        "gold": 3271,
+        "wti_crude": 87.80,
+        "pce_inflation": "3.8%",
+        "mortgage_30yr": "6.71%"
+      }
+    },
+    {
+      "edition": 4,
+      "date": "2026-05-30",
+      "day_of_week": "Saturday",
+      "filename": "2026-05-30.html",
+      "headline": "May Ends at Records Across the Board — Dow Crosses 51,000 for the First Time",
+      "teaser": "Dow Jones crosses 51,000 for the first time ever as May closes out with records across major indices.",
+      "stats": {
+        "sp500": 7580,
+        "btc": 108900,
+        "dow": 51000
+      }
+    },
+    {
+      "edition": 5,
+      "date": "2026-05-31",
+      "day_of_week": "Sunday",
+      "filename": "2026-05-31.html",
+      "headline": "Month-End Recap: May 2026 Was One for the History Books — What June Holds",
+      "teaser": "A look back at a record-setting May 2026 and a preview of what June has in store for markets, the Fed, and geopolitics.",
+      "stats": {
+        "sp500": 7580,
+        "btc": 108900
+      }
+    },
+    {
+      "edition": 6,
+      "date": "2026-06-01",
+      "day_of_week": "Monday",
+      "filename": "2026-06-01.html",
+      "headline": "Iran MOU Signed — Markets Surge to New Records as Ceasefire Takes Effect",
+      "teaser": "S&P 500 hits 7,621 and the Dow crosses 51,188 as a signed Iran memorandum of understanding sends markets to fresh records.",
+      "stats": {
+        "sp500": 7621,
+        "dow": 51188,
+        "btc": 104800
+      }
+    },
+    {
+      "edition": 7,
+      "date": "2026-06-02",
+      "day_of_week": "Tuesday",
+      "filename": "2026-06-02.html",
+      "headline": "Markets Reverse From Records — Bitcoin Plunges 31% in 9 Days as Saylor Breaks \"Never Sell\" Pledge",
+      "teaser": "S&P 500 falls 0.74% from its record as Bitcoin plunges to $72,400, down 31% in nine days, after Strategy's Michael Saylor breaks his \"never sell\" pledge.",
+      "stats": {
+        "sp500": 7609,
+        "btc": 72400
+      }
+    },
+    {
+      "edition": 8,
+      "date": "2026-06-03",
+      "day_of_week": "Wednesday",
+      "filename": "2026-06-03.html",
+      "headline": "Iran Drones Kuwait's Airport — Ceasefire Collapses, Oil Spikes, Stocks Fall",
+      "teaser": "The four-day Iran ceasefire collapses after drone strikes on Kuwait International Airport; oil spikes to $97.80 and Bitcoin falls to $67,200.",
+      "stats": {
+        "sp500": 7553,
+        "dow": 50407,
+        "nasdaq": 27007,
+        "btc": 67200,
+        "gold": 3450,
+        "wti_crude": 97.80,
+        "10yr_yield": "4.58%"
+      }
+    },
+    {
+      "edition": 9,
+      "date": "2026-06-04",
+      "day_of_week": "Thursday",
+      "filename": "2026-06-04.html",
+      "headline": "Dow Smashes Record +1.73% as Chips Drag Nasdaq — Rotation Accelerates Into Jobs Friday",
+      "teaser": "Dow Jones surges 874 points (+1.73%) to a fresh record as a rotation out of chip stocks accelerates ahead of Friday's jobs report.",
+      "stats": {
+        "sp500": 7584.31,
+        "btc": 63682
+      }
+    },
+    {
+      "edition": 10,
+      "date": "2026-06-05",
+      "day_of_week": "Friday",
+      "filename": "2026-06-05.html",
+      "headline": "S&P Breaks 7,600 for First Time — Dow Hits All-Time High as Rotation Lifts Defensives",
+      "teaser": "S&P 500 closes at a record 7,584.31, breaking 7,600 intraday, as defensive sectors lead a rotation-driven rally to fresh Dow highs.",
+      "stats": {
+        "sp500": 7584.31,
+        "btc": 63682
+      }
+    },
+    {
+      "edition": 11,
+      "date": "2026-06-06",
+      "day_of_week": "Saturday",
+      "filename": "2026-06-06.html",
+      "headline": "Chips Crater — Nasdaq Suffers Worst Day Since April 2025 as Broadcom Disappoints",
+      "teaser": "Nasdaq plunges 4.18% — its worst session since April 2025 — as Broadcom's guidance disappoints and chip stocks lead a broad selloff to S&P 7,383.74.",
+      "stats": {
+        "sp500": 7383.74,
+        "btc": 62500
+      }
+    },
+    {
+      "edition": 12,
+      "date": "2026-06-07",
+      "day_of_week": "Sunday",
+      "filename": "2026-06-07.html",
+      "headline": "Week Ends on Sour Note: Nasdaq Falls 4.7% as Chip Selloff Accelerates on Hot Jobs Data",
+      "teaser": "Nasdaq falls roughly 4.7% for the week as a hot May jobs report (172,000 vs. consensus) reignites fears the Fed will hold rates higher for longer.",
+      "stats": {
+        "btc": 65000
+      }
+    },
+    {
+      "edition": 13,
+      "date": "2026-06-08",
+      "day_of_week": "Monday",
+      "filename": "2026-06-08.html",
+      "headline": "Chip Stocks Rebound; Nasdaq and Russell 2000 Book Small Comeback After Friday's Rout",
+      "teaser": "Chip stocks rebound and S&P 500 futures rise 0.4% premarket as easing Iran hostilities help markets recover from Friday's 4%+ Nasdaq rout.",
+      "stats": {
+        "btc": 63079,
+        "eth": 1690,
+        "10yr_yield": "4.549%",
+        "30yr_yield": "5.02%",
+        "mortgage_30yr": "6.48%"
+      }
+    },
+    {
+      "edition": 14,
+      "date": "2026-06-09",
+      "day_of_week": "Tuesday",
+      "filename": "2026-06-09.html",
+      "headline": "U.S. Launches Self-Defense Strikes on Iran as Markets Reel; Nasdaq, S&P Plunge on Tech Selloff",
+      "teaser": "The U.S. launches self-defense strikes on Iran as the Nasdaq and S&P 500 fall roughly 1% amid a renewed tech selloff.",
+      "stats": {
+        "btc": 63500
+      }
+    },
+    {
+      "edition": 15,
+      "date": "2026-06-10",
+      "day_of_week": "Wednesday",
+      "filename": "2026-06-10.html",
+      "headline": "Dow Sheds 953 Points as CPI Hits Three-Year High — US Resumes Iran Strikes",
+      "teaser": "Dow drops 953 points below the 50,000 floor and Nasdaq falls 1.98% as May CPI hits a three-year high of 4.2% and the US resumes strikes on Iran.",
+      "stats": {
+        "dow": 49918.78,
+        "nasdaq": 25169.50,
+        "btc": 61531,
+        "eth": 1620,
+        "mortgage_30yr": "6.48%",
+        "cpi": "4.2%"
+      }
+    },
+    {
+      "edition": 16,
+      "date": "2026-06-11",
+      "day_of_week": "Thursday",
+      "filename": "2026-06-11.html",
+      "headline": "Trump Cancels Iran Strikes — Markets Surge; Tornado Outbreak Hits Chicago",
+      "teaser": "Trump cancels planned Iran strikes, sending the Dow up 930 points (+1.86%) and the S&P 500 up 1.75%, as a tornado outbreak hits northern Illinois and NW Indiana.",
+      "stats": {
+        "sp500": 7396,
+        "dow": 50841,
+        "nasdaq": 29465,
+        "btc": 63021,
+        "gold": 4112.10,
+        "wti_crude": 89.25,
+        "10yr_yield": "4.547%",
+        "30yr_yield": "5.01%",
+        "vix": 22.3,
+        "cpi": "4.2%"
+      }
+    },
+    {
+      "edition": 17,
+      "date": "2026-06-12",
+      "day_of_week": "Friday",
+      "filename": "2026-06-12.html",
+      "headline": "SpaceX Roars Onto Nasdaq in Largest IPO Ever as Iran Deal Optimism Lifts Wall Street",
+      "teaser": "SpaceX debuts on Nasdaq under ticker SPCX in the largest IPO in corporate history, raising roughly $75 billion, as Iran deal optimism lifts the Dow 354 points to 51,202.",
+      "stats": {
+        "dow": 51202.26,
+        "btc": 63458,
+        "mortgage_30yr": "6.52%"
+      }
+    },
+    {
+      "edition": 18,
+      "date": "2026-06-13",
+      "day_of_week": "Saturday",
+      "filename": "2026-06-13.html",
+      "headline": "\"Peace Has Never Been This Close\": Pakistan Says U.S.-Iran Deal Text Finalized, Signing Could Come Within 24 Hours",
+      "teaser": "Pakistan says a finalized U.S.-Iran deal text could be signed within 24 hours as the S&P 500 rises 0.5% to close just shy of 7,400.",
+      "stats": {
+        "sp500": 7397,
+        "btc": 64091
+      }
+    },
+    {
+      "edition": 19,
+      "date": "2026-06-14",
+      "day_of_week": "Sunday",
+      "filename": "2026-06-14.html",
+      "headline": "Qatari Mediators Race to Tehran as Trump Declares Hormuz Deal \"Scheduled\" for His Birthday",
+      "teaser": "Qatari mediators race to Tehran for a potential breakthrough as Trump says a Hormuz-related deal is \"scheduled\" to land on his birthday; S&P 500 rises 1.75% to 7,394.30.",
+      "stats": {
+        "sp500": 7394.30,
+        "btc": 64385
+      }
+    }
+  ]
+}
