@@ -39,10 +39,14 @@ Claude acts as writer and chief editor — running all research searches in para
 
 ## Design
 
-- **Dark mode** — near-black background (`#0f0e0c`), warm cream text (`#ede4ce`), orange-red accents (`#c8481a`), gold highlights (`#c9a227`)
-- **Full broadsheet layout** — masthead, scrolling ticker, section headers, cards, market tables, weather banner, sports items, pull quotes, editor’s dispatch
+- **Dark mode (default)** — near-black background (`#0f0e0c`), warm cream text (`#ede4ce`), orange-red accents (`#c8481a`), gold highlights (`#c9a227`)
+- **Light mode toggle** — every edition and the archive include a Light/Dark mode switch in the top nav (session-only, no data stored)
+- **Full broadsheet layout** — masthead, scrolling ticker, section headers, cards, market tables, weather banner with custom SVG icons, sports items, pull quotes, editor’s dispatch
+- **“On This Day” callback** — each edition recalls the headline and key market stats from one week prior, with then-vs-now comparisons
+- **Market sparklines** — inline SVG trend charts for Bitcoin and the S&P 500 across the full run of editions
+- **Print-friendly** — a dedicated print stylesheet flattens the dark theme to a clean, readable layout for anyone who wants a hard copy
 - **Mobile-friendly**, multi-file output (HTML + shared external CSS)
-- **Typography:** Playfair Display, Source Sans 3 (Google Fonts)
+- **Typography:** Playfair Display, Libre Baskerville, Source Sans 3 (Google Fonts)
 - All styling lives in `style.css` — no inline styles in any HTML file
 
 -----
@@ -52,13 +56,32 @@ Claude acts as writer and chief editor — running all research searches in para
 ```
 /
 ├── index.html              ← Today's edition (homepage)
-├── archive.html            ← Full archive of all past editions
+├── archive.html            ← Searchable archive of all past editions
 ├── YYYY-MM-DD.html         ← Permanent dated copy of each edition
 ├── style.css               ← Shared stylesheet for all editions
+├── editions.json           ← Structured metadata for every edition
+├── feed.xml                ← RSS feed of all editions
+├── TEMPLATE_NOTES.md        ← Internal notes on template features
 └── README.md
 ```
 
-Each edition includes a **navigation bar** linking to the previous edition, the archive, and (once the next edition is generated) the following day’s edition — creating a fully browsable chain of issues.
+Each edition includes a **navigation bar** linking to the previous edition, the archive, a light/dark mode toggle, and (once the next edition is generated) the following day’s edition — creating a fully browsable chain of issues.
+
+-----
+
+## Archive & Search
+
+All past editions are permanently preserved as dated HTML files and indexed in [archive.html](https://unclejim7.github.io/The-Daily-Ledger/archive.html). The archive is generated from `editions.json` and includes:
+
+- A **search box** that filters editions by date, headline, or topic in real time
+- A one-line **teaser** for every edition
+- Editions grouped by month and year, newest first, with the current issue marked **Latest**
+
+-----
+
+## RSS Feed
+
+Subscribe to [feed.xml](https://unclejim7.github.io/The-Daily-Ledger/feed.xml) in any feed reader to get new editions as they’re published. The feed is generated from `editions.json` and includes a title, link, and teaser for every edition.
 
 -----
 
@@ -69,20 +92,24 @@ Each `run tdl` run:
 1. Confirms the current date
 1. Runs all research searches in parallel across every coverage category (markets, Fed, crypto, geopolitics, mortgage rates, Armstrong Economics, weather, Cubs/Sox/Bulls/Hawks/Bears, health)
 1. Fetches the Chicagoland forecast from the National Weather Service
-1. Generates today’s edition and writes 5 files:
+1. Generates today’s edition — including the “On This Day” callback and updated sparkline charts — and writes the following files:
+
 - `index.html` — today’s edition as the homepage
 - `YYYY-MM-DD.html` — today’s permanent dated archive copy
-- `archive.html` — updated archive index with today’s edition on top, marked **Latest**
+- `editions.json` — today’s edition metadata appended, edition count incremented
+- `archive.html` — regenerated from `editions.json` with today’s edition on top, marked **Latest**
+- `feed.xml` — regenerated from `editions.json` with today’s edition added
 - Previous day’s `YYYY-MM-DD.html` — patched so its forward-navigation arrow becomes a live link to today
 - `style.css` — shared stylesheet (re-uploaded only when changed)
+
 1. Files are pushed to this repository
 1. GitHub Pages serves the updated site within ~30 seconds
 
 -----
 
-## Archive
+## Corrections
 
-All past editions are permanently preserved as dated HTML files and linked from [archive.html](https://unclejim7.github.io/The-Daily-Ledger/archive.html). Editions are grouped by month and year, with the newest issue always shown at the top with a **Latest** badge.
+If a prior edition needs a factual correction, it’s noted in a small **Corrections** box near the top of the relevant day’s edition — used only when needed, so most editions won’t have one.
 
 -----
 
@@ -90,7 +117,7 @@ All past editions are permanently preserved as dated HTML files and linked from 
 
 - **AI engine:** [Claude](https://claude.ai) (Anthropic) — writer, editor, researcher, and publisher
 - **Hosting:** GitHub Pages (free, static)
-- **Languages:** HTML, CSS
+- **Languages:** HTML, CSS, vanilla JavaScript (search/filter, mode toggle — no frameworks, no build step)
 - **Data sources:** Live web search, National Weather Service API, Armstrong Economics
 - **Fonts:** Google Fonts
 
