@@ -1,7 +1,23 @@
 {
   "volume": "I",
-  "latest_edition": 20,
+  "latest_edition": 21,
   "editions": [
+    {
+      "edition": 21,
+      "date": "2026-06-16",
+      "day_of_week": "Tuesday",
+      "filename": "2026-06-16.html",
+      "headline": "Kevin Warsh's Fed Era Begins: First FOMC Meeting Opens Today as Inflation Runs Hot and Trump Says He \"Loved\" It",
+      "teaser": "Kevin Warsh opens his first FOMC meeting as Fed chair with a rate hold expected, May CPI at 4.2%, and Monday's Iran-deal rally still echoing through fresh record closes.",
+      "stats": {
+        "btc": 66433,
+        "eth": 1792,
+        "sp500": 7554.29,
+        "dow": 51671.03,
+        "nasdaq": 26683.94,
+        "mortgage_30yr": "6.32%"
+      }
+    },
     {
       "edition": 20,
       "date": "2026-06-15",
@@ -264,8 +280,8 @@
       "edition": 18,
       "date": "2026-06-13",
       "day_of_week": "Saturday",
-      "filename": "2026-06-13.html",
       "headline": "\"Peace Has Never Been This Close\": Pakistan Says U.S.-Iran Deal Text Finalized, Signing Could Come Within 24 Hours",
+      "filename": "2026-06-13.html",
       "teaser": "Pakistan says a finalized U.S.-Iran deal text could be signed within 24 hours as the S&P 500 rises 0.5% to close just shy of 7,400.",
       "stats": {
         "sp500": 7397,
