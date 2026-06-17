@@ -1,7 +1,23 @@
 {
   "volume": "I",
-  "latest_edition": 21,
+  "latest_edition": 22,
   "editions": [
+    {
+      "edition": 22,
+      "date": "2026-06-17",
+      "day_of_week": "Wednesday",
+      "filename": "2026-06-17.html",
+      "headline": "Decision Day: Warsh Delivers First Rate Verdict at 2 PM as Bond Market Bets Shift From Cuts to Hikes",
+      "teaser": "Kevin Warsh's first FOMC decision lands at 2 PM with a hold all but certain, but the dot plot and his debut press conference will show how a divided committee is leaning as 2026 rate-hike odds climb to 50.5%.",
+      "stats": {
+        "btc": 64881,
+        "eth": 1772,
+        "sp500": 7511.35,
+        "dow": 51999.67,
+        "nasdaq": 26376.34,
+        "mortgage_30yr": "6.29%"
+      }
+    },
     {
       "edition": 21,
       "date": "2026-06-16",
