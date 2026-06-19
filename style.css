@@ -1,7 +1,7 @@
 /* ============================================================
-   THE DAILY LEDGER — style.css  (v8 canonical)
+   THE DAILY LEDGER — style.css  (v9 canonical)
    Dark broadsheet · Playfair Display + Source Sans 3
-   v8: weather banner moved to top placement, enhanced styling
+   v9: ticker redesigned — frosted glass, 32s scroll, gold dots
    ============================================================ */
 
 /* ---------- Variables ---------- */
@@ -28,7 +28,12 @@ body.light-mode {
   --cream:      #2a2520;
   --cream-dim:  #6e6354;
 }
-body.light-mode .ticker-track { color: #fff; }
+body.light-mode .ticker-wrap {
+  background: rgba(246, 241, 230, 0.6);
+  border-bottom-color: rgba(201, 162, 39, 0.25);
+  border-top-color: rgba(42, 37, 32, 0.08);
+}
+body.light-mode .ticker-track { color: var(--cream-dim); }
 body.light-mode .market-table .up   { color: #2e7d32; }
 body.light-mode .market-table .down { color: #c0392b; }
 
@@ -110,7 +115,11 @@ img { max-width: 100%; display: block; }
   z-index: 90;
   width: 100%;
   height: var(--ticker-h);
-  background: var(--orange);
+  background: rgba(15, 14, 12, 0.55);
+  backdrop-filter: blur(12px) saturate(160%);
+  -webkit-backdrop-filter: blur(12px) saturate(160%);
+  border-bottom: 1px solid rgba(201, 162, 39, 0.18);
+  border-top: 1px solid rgba(237, 228, 206, 0.06);
   overflow: clip;
   display: flex;
   align-items: center;
@@ -118,12 +127,12 @@ img { max-width: 100%; display: block; }
 .ticker-track {
   display: inline-flex;
   white-space: nowrap;
-  animation: ticker-scroll 28s linear infinite;
+  animation: ticker-scroll 32s linear infinite;
   font-family: 'Source Sans 3', sans-serif;
-  font-size: 0.78rem;
-  font-weight: 600;
-  letter-spacing: 0.05em;
-  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.09em;
+  color: var(--cream-dim);
   text-transform: uppercase;
 }
 @keyframes ticker-scroll {
@@ -133,7 +142,8 @@ img { max-width: 100%; display: block; }
 .ticker-dot {
   display: inline-block;
   margin: 0 1.1rem;
-  opacity: 0.7;
+  color: var(--gold);
+  opacity: 0.5;
 }
 
 /* ---------- Masthead ---------- */
