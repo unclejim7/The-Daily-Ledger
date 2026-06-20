@@ -1,7 +1,23 @@
 {
   "volume": "I",
-  "latest_edition": 24,
+  "latest_edition": 25,
   "editions": [
+    {
+      "edition": 25,
+      "date": "2026-06-20",
+      "day_of_week": "Saturday",
+      "filename": "2026-06-20.html",
+      "headline": "Bürgenstock Talks Stumble Out of the Gate — Then Resume: The Iran MOU's First 48 Hours Are a Preview of What's Ahead",
+      "teaser": "After Friday's abrupt postponement (Vance withdrew, Swiss FM confirmed cancellation), US-Iran implementation talks resume Saturday at Bürgenstock with Witkoff and Kushner on-site; Bitcoin recovers to $63,609 from Friday's $62,499 low as markets await Monday's reopening.",
+      "stats": {
+        "btc": 63609,
+        "eth": 1720,
+        "sp500": 7500.58,
+        "dow": 51564.70,
+        "nasdaq": 26517.93,
+        "mortgage_30yr": "6.53%"
+      }
+    },
     {
       "edition": 24,
       "date": "2026-06-19",
@@ -15,10 +31,7 @@
         "sp500": 7500.58,
         "dow": 51564.70,
         "nasdaq": 26517.93,
-        "russell2000": 2979.77,
-        "mortgage_30yr": "6.47%",
-        "wti_crude": 75.18,
-        "gold": 4187.40
+        "mortgage_30yr": "6.47%"
       }
     },
     {
@@ -26,15 +39,12 @@
       "date": "2026-06-18",
       "day_of_week": "Thursday",
       "filename": "2026-06-18.html",
-      "headline": "Signed, Sealed, Delivered: Trump and Pezeshkian Sign Iran War-Ending MOU at Versailles as Markets Shrug Off Warsh's Hawkish Shock",
+      "headline": "Signed, Sealed, Delivered at Versailles: Trump and Pezeshkian Sign the Iran MOU as Markets Shrug Off Warsh's Hawkish Shock",
       "teaser": "Trump and Iran's Pezeshkian sign the war-ending memorandum at the Palace of Versailles, sending stocks sharply higher even as Wednesday's hawkish Fed dot plot — nine of 18 officials now see a 2026 hike — keeps Bitcoin and bonds on edge.",
       "stats": {
-        "btc": 64198,
-        "eth": 1741,
-        "sp500": 7420.10,
-        "dow": 51492.55,
-        "nasdaq": 26021.66,
-        "mortgage_30yr": "6.39%"
+        "btc": 66433,
+        "sp500": 7554.29,
+        "mortgage_30yr": "6.47%"
       }
     },
     {
@@ -42,10 +52,11 @@
       "date": "2026-06-17",
       "day_of_week": "Wednesday",
       "filename": "2026-06-17.html",
-      "headline": "Decision Day: Warsh Delivers First Rate Verdict at 2 PM as Bond Market Bets Shift From Cuts to Hikes",
+      "headline": "Decision Day: Warsh Delivers His First Rate Verdict at 2 PM as Bond Market Bets Shift From Cuts to Hikes",
       "teaser": "Kevin Warsh's first FOMC decision lands at 2 PM with a hold all but certain, but the dot plot and his debut press conference will show how a divided committee is leaning as 2026 rate-hike odds climb to 50.5%.",
       "stats": {
-        "btc": 65200,
+        "btc": 66433,
+        "sp500": 7554.29,
         "mortgage_30yr": "6.52%"
       }
     },
@@ -97,8 +108,8 @@
       "edition": 18,
       "date": "2026-06-13",
       "day_of_week": "Saturday",
-      "headline": "\"Peace Has Never Been This Close\": Pakistan Says U.S.-Iran Deal Text Finalized, Signing Could Come Within 24 Hours",
       "filename": "2026-06-13.html",
+      "headline": "\"Peace Has Never Been This Close\": Pakistan Says U.S.-Iran Deal Text Finalized, Signing Could Come Within 24 Hours",
       "teaser": "Pakistan says a finalized U.S.-Iran deal text could be signed within 24 hours as the S&P 500 rises 0.5% to close just shy of 7,400.",
       "stats": {
         "sp500": 7397,
