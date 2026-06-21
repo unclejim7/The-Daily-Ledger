@@ -127,7 +127,7 @@ img { max-width: 100%; display: block; }
 .ticker-track {
   display: inline-flex;
   white-space: nowrap;
-  animation: ticker-scroll 32s linear infinite;
+  animation: ticker-scroll 45s linear infinite;
   font-family: 'Source Sans 3', sans-serif;
   font-size: 0.75rem;
   font-weight: 500;
