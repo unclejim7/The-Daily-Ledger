@@ -1,7 +1,26 @@
 {
   "volume": "I",
-  "latest_edition": 25,
+  "latest_edition": 26,
   "editions": [
+    {
+      "edition": 26,
+      "date": "2026-06-21",
+      "day_of_week": "Sunday",
+      "filename": "2026-06-21.html",
+      "headline": "Vance Meets Iranians Face-to-Face at Bürgenstock — The 60-Day Nuclear Clock Is Ticking",
+      "teaser": "JD Vance, Steve Witkoff, and Jared Kushner sit across from Iran's delegation at Switzerland's Bürgenstock resort on Sunday, opening the 60-day nuclear sprint under the Islamabad MOU as Lebanon fighting tests the ceasefire's limits; Bitcoin holds $62,947, the 30-year mortgage ticks up to 6.53%, and Kevin Warsh's hawkish FOMC debut keeps rate-hike expectations live for July.",
+      "stats": {
+        "btc": 62947,
+        "eth": 1698,
+        "sp500": 7500.58,
+        "dow": 51564.70,
+        "nasdaq": 26517.93,
+        "mortgage_30yr": "6.53%",
+        "wti_crude": 76.54,
+        "gold": 4172.90,
+        "10yr_yield": "4.49%"
+      }
+    },
     {
       "edition": 25,
       "date": "2026-06-20",
