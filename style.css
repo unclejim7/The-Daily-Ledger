@@ -116,6 +116,7 @@ img { max-width: 100%; display: block; }
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   text-transform: uppercase;
+  white-space: nowrap;
   padding: 0.25rem 0.6rem;
   border-radius: 3px;
   cursor: pointer;
