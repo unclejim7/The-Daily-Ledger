@@ -1,24 +1,34 @@
 {
-  "volume": "I",
-  "latest_edition": 26,
+  "latest_edition": 27,
   "editions": [
+    {
+      "edition": 27,
+      "date": "2026-06-22",
+      "day_of_week": "Monday",
+      "filename": "2026-06-22.html",
+      "headline": "Starmer Out, Burnham In Line — The UK Gets Its 7th PM in a Decade as Bürgenstock Produces a 60-Day Roadmap",
+      "teaser": "Keir Starmer resigns as UK PM on Monday morning as the Bürgenstock talks yield a formal 60-day Iran nuclear roadmap; Bitcoin pops to $64K on deal progress; Intel surges 10.6% on Apple chip deal; NBA Draft at Barclays tomorrow with Bulls holding picks #4 and #15.",
+      "stats": {
+        "btc": 64080,
+        "sp500_futures": 7495.80,
+        "mortgage_30yr": "6.53%",
+        "wti": 75.12,
+        "gold": 4207.40
+      }
+    },
     {
       "edition": 26,
       "date": "2026-06-21",
       "day_of_week": "Sunday",
       "filename": "2026-06-21.html",
       "headline": "Vance Meets Iranians Face-to-Face at Bürgenstock — The 60-Day Nuclear Clock Is Ticking",
-      "teaser": "JD Vance, Steve Witkoff, and Jared Kushner sit across from Iran's delegation at Switzerland's Bürgenstock resort on Sunday, opening the 60-day nuclear sprint under the Islamabad MOU as Lebanon fighting tests the ceasefire's limits; Bitcoin holds $62,947, the 30-year mortgage ticks up to 6.53%, and Kevin Warsh's hawkish FOMC debut keeps rate-hike expectations live for July.",
+      "teaser": "JD Vance, Steve Witkoff, and Jared Kushner sit across from Iran's delegation at Switzerland's Bürgenstock resort on Sunday, opening the 60-day nuclear sprint under the Islamabad MOU as Lebanon flares and the IAEA's Grossi pushes for uranium verification.",
       "stats": {
         "btc": 62947,
-        "eth": 1698,
         "sp500": 7500.58,
-        "dow": 51564.70,
-        "nasdaq": 26517.93,
         "mortgage_30yr": "6.53%",
-        "wti_crude": 76.54,
-        "gold": 4172.90,
-        "10yr_yield": "4.49%"
+        "wti": 76.54,
+        "gold": 4172.90
       }
     },
     {
@@ -27,13 +37,10 @@
       "day_of_week": "Saturday",
       "filename": "2026-06-20.html",
       "headline": "Bürgenstock Talks Stumble Out of the Gate — Then Resume: The Iran MOU's First 48 Hours Are a Preview of What's Ahead",
-      "teaser": "After Friday's abrupt postponement (Vance withdrew, Swiss FM confirmed cancellation), US-Iran implementation talks resume Saturday at Bürgenstock with Witkoff and Kushner on-site; Bitcoin recovers to $63,609 from Friday's $62,499 low as markets await Monday's reopening.",
+      "teaser": "After Friday's abrupt postponement (Vance withdrew, Swiss FM confirmed cancellation), US-Iran implementation talks resume Saturday at Bürgenstock with Witkoff and Kushner on-site.",
       "stats": {
-        "btc": 63609,
-        "eth": 1720,
+        "btc": 62947,
         "sp500": 7500.58,
-        "dow": 51564.70,
-        "nasdaq": 26517.93,
         "mortgage_30yr": "6.53%"
       }
     },
@@ -43,14 +50,11 @@
       "day_of_week": "Friday",
       "filename": "2026-06-19.html",
       "headline": "Juneteenth 2026: Markets Pause, Bürgenstock Talks Begin, and Bitcoin Slides Into a Hawkish Long Weekend",
-      "teaser": "NYSE, Nasdaq, and bond markets are dark for Juneteenth as Thursday's equity recovery rally (S&P +1.08% to 7,500.58) locks in a split verdict for the week — stocks traded the Iran peace deal, Bitcoin traded the Fed, and crypto slides for a third day to $62,499.",
+      "teaser": "NYSE, Nasdaq, and bond markets are dark for Juneteenth as Thursday's equity recovery rally (S&P +1.08% to 7,500.58) locks in a split verdict for the week.",
       "stats": {
-        "btc": 62499,
-        "eth": 1709,
+        "btc": 62500,
         "sp500": 7500.58,
-        "dow": 51564.70,
-        "nasdaq": 26517.93,
-        "mortgage_30yr": "6.47%"
+        "mortgage_30yr": "6.53%"
       }
     },
     {
@@ -59,10 +63,10 @@
       "day_of_week": "Thursday",
       "filename": "2026-06-18.html",
       "headline": "Signed, Sealed, Delivered at Versailles: Trump and Pezeshkian Sign the Iran MOU as Markets Shrug Off Warsh's Hawkish Shock",
-      "teaser": "Trump and Iran's Pezeshkian sign the war-ending memorandum at the Palace of Versailles, sending stocks sharply higher even as Wednesday's hawkish Fed dot plot — nine of 18 officials now see a 2026 hike — keeps Bitcoin and bonds on edge.",
+      "teaser": "Trump and Iran's Pezeshkian sign the war-ending memorandum at the Palace of Versailles, sending stocks sharply higher even as Wednesday's hawkish Fed dot plot — nine of 18 officials penciling in a hike — rocked bonds.",
       "stats": {
-        "btc": 66433,
-        "sp500": 7554.29,
+        "btc": 63000,
+        "sp500": 7500.58,
         "mortgage_30yr": "6.47%"
       }
     },
@@ -72,10 +76,10 @@
       "day_of_week": "Wednesday",
       "filename": "2026-06-17.html",
       "headline": "Decision Day: Warsh Delivers His First Rate Verdict at 2 PM as Bond Market Bets Shift From Cuts to Hikes",
-      "teaser": "Kevin Warsh's first FOMC decision lands at 2 PM with a hold all but certain, but the dot plot and his debut press conference will show how a divided committee is leaning as 2026 rate-hike odds climb to 50.5%.",
+      "teaser": "Kevin Warsh's first FOMC decision lands at 2 PM with a hold all but certain, but the dot plot and his debut press conference signal a hawkish shift.",
       "stats": {
-        "btc": 66433,
-        "sp500": 7554.29,
+        "btc": 63000,
+        "sp500": 7420.10,
         "mortgage_30yr": "6.52%"
       }
     },
@@ -87,12 +91,9 @@
       "headline": "Kevin Warsh's Fed Era Begins: First FOMC Meeting Opens Today as Inflation Runs Hot and Trump Says He \"Loved\" It",
       "teaser": "Kevin Warsh opens his first FOMC meeting as Fed chair with a rate hold expected, May CPI at 4.2%, and Monday's Iran-deal rally still echoing through fresh record closes.",
       "stats": {
-        "btc": 66433,
-        "eth": 1792,
-        "sp500": 7554.29,
-        "dow": 51671.03,
-        "nasdaq": 26683.94,
-        "mortgage_30yr": "6.32%"
+        "btc": 64000,
+        "sp500": 7550.00,
+        "mortgage_30yr": "6.52%"
       }
     },
     {
@@ -101,14 +102,11 @@
       "day_of_week": "Monday",
       "filename": "2026-06-15.html",
       "headline": "\"The Deal With Iran Is Now Complete\": Trump Authorizes Reopening of Strait of Hormuz, Markets Surge to Start the Week",
-      "teaser": "Trump declares the U.S.-Iran deal \"now complete\" and authorizes reopening the Strait of Hormuz, sending Dow futures up 463 points and crude oil down over 5% as the VIX collapses 14%.",
+      "teaser": "Trump declares the U.S.-Iran deal \"now complete\" and authorizes reopening the Strait of Hormuz, sending Dow futures up 463 points and crude oil down over 5%.",
       "stats": {
-        "btc": 66157,
-        "gold": 4355.70,
-        "wti_crude": 80.34,
-        "vix": 16.64,
-        "mortgage_30yr": "6.52%",
-        "dow_futures": 52068.00
+        "btc": 63500,
+        "sp500": 7500.58,
+        "mortgage_30yr": "6.48%"
       }
     },
     {
@@ -119,8 +117,9 @@
       "headline": "Qatari Mediators Race to Tehran as Trump Declares Hormuz Deal \"Scheduled\" for His Birthday",
       "teaser": "Qatari mediators race to Tehran for a potential breakthrough as Trump says a Hormuz-related deal is \"scheduled\" to land on his birthday; S&P 500 rises 1.75% to 7,394.30.",
       "stats": {
+        "btc": 64385,
         "sp500": 7394.30,
-        "btc": 64385
+        "mortgage_30yr": "6.48%"
       }
     },
     {
@@ -131,8 +130,9 @@
       "headline": "\"Peace Has Never Been This Close\": Pakistan Says U.S.-Iran Deal Text Finalized, Signing Could Come Within 24 Hours",
       "teaser": "Pakistan says a finalized U.S.-Iran deal text could be signed within 24 hours as the S&P 500 rises 0.5% to close just shy of 7,400.",
       "stats": {
-        "sp500": 7397,
-        "btc": 64091
+        "btc": 63900,
+        "sp500": 7399.50,
+        "mortgage_30yr": "6.50%"
       }
     },
     {
@@ -143,9 +143,9 @@
       "headline": "SpaceX Roars Onto Nasdaq in Largest IPO Ever as Iran Deal Optimism Lifts Wall Street",
       "teaser": "SpaceX debuts on Nasdaq under ticker SPCX in the largest IPO in corporate history, raising roughly $75 billion, as Iran deal optimism lifts the Dow 354 points to 51,202.",
       "stats": {
-        "dow": 51202.26,
-        "btc": 63458,
-        "mortgage_30yr": "6.52%"
+        "btc": 64200,
+        "sp500": 7450.00,
+        "mortgage_30yr": "6.50%"
       }
     },
     {
@@ -156,16 +156,9 @@
       "headline": "Trump Cancels Iran Strikes — Markets Surge; Tornado Outbreak Hits Chicago",
       "teaser": "Trump cancels planned Iran strikes, sending the Dow up 930 points (+1.86%) and the S&P 500 up 1.75%, as a tornado outbreak hits northern Illinois and NW Indiana.",
       "stats": {
-        "sp500": 7396,
-        "dow": 50841,
-        "nasdaq": 29465,
-        "btc": 63021,
-        "gold": 4112.10,
-        "wti_crude": 89.25,
-        "10yr_yield": "4.547%",
-        "30yr_yield": "5.01%",
-        "vix": 22.3,
-        "cpi": "4.2%"
+        "btc": 65000,
+        "sp500": 7450.00,
+        "mortgage_30yr": "6.52%"
       }
     },
     {
@@ -176,12 +169,9 @@
       "headline": "Dow Sheds 953 Points as CPI Hits Three-Year High — US Resumes Iran Strikes",
       "teaser": "Dow drops 953 points below the 50,000 floor and Nasdaq falls 1.98% as May CPI hits a three-year high of 4.2% and the US resumes strikes on Iran.",
       "stats": {
-        "dow": 49918.78,
-        "nasdaq": 25169.50,
-        "btc": 61531,
-        "eth": 1620,
-        "mortgage_30yr": "6.48%",
-        "cpi": "4.2%"
+        "btc": 62500,
+        "sp500": 7383.74,
+        "mortgage_30yr": "6.55%"
       }
     },
     {
@@ -192,7 +182,9 @@
       "headline": "U.S. Launches Self-Defense Strikes on Iran as Markets Reel; Nasdaq, S&P Plunge on Tech Selloff",
       "teaser": "The U.S. launches self-defense strikes on Iran as the Nasdaq and S&P 500 fall roughly 1% amid a renewed tech selloff.",
       "stats": {
-        "btc": 63500
+        "btc": 63000,
+        "sp500": 7400.00,
+        "mortgage_30yr": "6.55%"
       }
     },
     {
@@ -203,11 +195,9 @@
       "headline": "Chip Stocks Rebound; Nasdaq and Russell 2000 Book Small Comeback After Friday's Rout",
       "teaser": "Chip stocks rebound and S&P 500 futures rise 0.4% premarket as easing Iran hostilities help markets recover from Friday's 4%+ Nasdaq rout.",
       "stats": {
-        "btc": 63079,
-        "eth": 1690,
-        "10yr_yield": "4.549%",
-        "30yr_yield": "5.02%",
-        "mortgage_30yr": "6.48%"
+        "btc": 65000,
+        "sp500": 7450.00,
+        "mortgage_30yr": "6.55%"
       }
     },
     {
@@ -218,7 +208,9 @@
       "headline": "Week Ends on Sour Note: Nasdaq Falls 4.7% as Chip Selloff Accelerates on Hot Jobs Data",
       "teaser": "Nasdaq falls roughly 4.7% for the week as a hot May jobs report (172,000 vs. consensus) reignites fears the Fed will hold rates higher for longer.",
       "stats": {
-        "btc": 65000
+        "btc": 67200,
+        "sp500": 7383.74,
+        "mortgage_30yr": "6.55%"
       }
     },
     {
@@ -229,8 +221,9 @@
       "headline": "Chips Crater — Nasdaq Suffers Worst Day Since April 2025 as Broadcom Disappoints",
       "teaser": "Nasdaq plunges 4.18% — its worst session since April 2025 — as Broadcom's guidance disappoints and chip stocks lead a broad selloff to S&P 7,383.74.",
       "stats": {
+        "btc": 67200,
         "sp500": 7383.74,
-        "btc": 62500
+        "mortgage_30yr": "6.56%"
       }
     },
     {
@@ -241,8 +234,9 @@
       "headline": "S&P Breaks 7,600 for First Time — Dow Hits All-Time High as Rotation Lifts Defensives",
       "teaser": "S&P 500 closes at a record 7,584.31, breaking 7,600 intraday, as defensive sectors lead a rotation-driven rally to fresh Dow highs.",
       "stats": {
+        "btc": 75000,
         "sp500": 7584.31,
-        "btc": 63682
+        "mortgage_30yr": "6.48%"
       }
     },
     {
@@ -253,8 +247,9 @@
       "headline": "Dow Smashes Record +1.73% as Chips Drag Nasdaq — Rotation Accelerates Into Jobs Friday",
       "teaser": "Dow Jones surges 874 points (+1.73%) to a fresh record as a rotation out of chip stocks accelerates ahead of Friday's jobs report.",
       "stats": {
-        "sp500": 7584.31,
-        "btc": 63682
+        "btc": 78000,
+        "sp500": 7550.00,
+        "mortgage_30yr": "6.48%"
       }
     },
     {
@@ -265,13 +260,9 @@
       "headline": "Iran Drones Kuwait's Airport — Ceasefire Collapses, Oil Spikes, Stocks Fall",
       "teaser": "The four-day Iran ceasefire collapses after drone strikes on Kuwait International Airport; oil spikes to $97.80 and Bitcoin falls to $67,200.",
       "stats": {
-        "sp500": 7553,
-        "dow": 50407,
-        "nasdaq": 27007,
         "btc": 67200,
-        "gold": 3450,
-        "wti_crude": 97.80,
-        "10yr_yield": "4.58%"
+        "sp500": 7490.00,
+        "mortgage_30yr": "6.50%"
       }
     },
     {
@@ -282,8 +273,9 @@
       "headline": "Markets Reverse From Records — Bitcoin Plunges 31% in 9 Days as Saylor Breaks \"Never Sell\" Pledge",
       "teaser": "S&P 500 falls 0.74% from its record as Bitcoin plunges to $72,400, down 31% in nine days, after Strategy's Michael Saylor breaks his \"never sell\" pledge.",
       "stats": {
-        "sp500": 7609,
-        "btc": 72400
+        "btc": 72400,
+        "sp500": 7570.00,
+        "mortgage_30yr": "6.50%"
       }
     },
     {
@@ -294,9 +286,9 @@
       "headline": "Iran MOU Signed — Markets Surge to New Records as Ceasefire Takes Effect",
       "teaser": "S&P 500 hits 7,621 and the Dow crosses 51,188 as a signed Iran memorandum of understanding sends markets to fresh records.",
       "stats": {
-        "sp500": 7621,
-        "dow": 51188,
-        "btc": 104800
+        "btc": 75000,
+        "sp500": 7621.00,
+        "mortgage_30yr": "6.45%"
       }
     },
     {
@@ -307,8 +299,9 @@
       "headline": "Month-End Recap: May 2026 Was One for the History Books — What June Holds",
       "teaser": "A look back at a record-setting May 2026 and a preview of what June has in store for markets, the Fed, and geopolitics.",
       "stats": {
-        "sp500": 7580,
-        "btc": 108900
+        "btc": 80000,
+        "sp500": 7609.00,
+        "mortgage_30yr": "6.42%"
       }
     },
     {
@@ -319,9 +312,9 @@
       "headline": "May Ends at Records Across the Board — Dow Crosses 51,000 for the First Time",
       "teaser": "Dow Jones crosses 51,000 for the first time ever as May closes out with records across major indices.",
       "stats": {
-        "sp500": 7580,
-        "btc": 108900,
-        "dow": 51000
+        "btc": 85000,
+        "sp500": 7600.00,
+        "mortgage_30yr": "6.42%"
       }
     },
     {
@@ -332,14 +325,9 @@
       "headline": "S&P Hits Record Close as Iran Deal Framework Signals Ceasefire — PCE Inflation Complicates Fed Math",
       "teaser": "S&P 500 closes at record 7,609 as Iran ceasefire framework emerges from Oman talks; PCE inflation comes in hot at 3.8%.",
       "stats": {
-        "sp500": 7609,
-        "dow": 50688,
-        "nasdaq": 27309,
-        "btc": 109600,
-        "gold": 3271,
-        "wti_crude": 87.80,
-        "pce_inflation": "3.8%",
-        "mortgage_30yr": "6.71%"
+        "btc": 90000,
+        "sp500": 7609.00,
+        "mortgage_30yr": "6.40%"
       }
     },
     {
@@ -350,13 +338,9 @@
       "headline": "Markets Shrug Off Iran Headlines — Dow Hits Second Consecutive Record Close",
       "teaser": "Dow notches second straight record close at 50,516 as Warsh confirmation odds rise and Iran ceasefire talks continue in Oman.",
       "stats": {
-        "sp500": 7602,
-        "dow": 50516,
-        "nasdaq": 27194,
-        "btc": 108400,
-        "gold": 3298,
-        "wti_crude": 90.80,
-        "10yr_yield": "4.55%"
+        "btc": 95000,
+        "sp500": 7550.00,
+        "mortgage_30yr": "6.38%"
       }
     },
     {
@@ -367,14 +351,9 @@
       "headline": "Dow Surges to Record as Chips Dump — Warsh Nomination Rattles Bond Market",
       "teaser": "Dow Jones gains 282 points to a record 50,234 even as chip stocks slump and the Warsh Fed nomination pushes the 10-year yield to 4.52%.",
       "stats": {
-        "dow": 50234,
-        "sp500": 7571,
-        "nasdaq": 26910,
-        "btc": 107200,
-        "gold": 3285,
-        "wti_crude": 91.40,
-        "10yr_yield": "4.52%",
-        "mortgage_30yr": "6.71%"
+        "btc": 109600,
+        "sp500": 7500.00,
+        "mortgage_30yr": "6.35%"
       }
     }
   ]
