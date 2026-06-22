@@ -1,7 +1,7 @@
 /* ============================================================
-   THE DAILY LEDGER — style.css  (v9 canonical)
+   THE DAILY LEDGER — style.css  (v10 canonical)
    Dark broadsheet · Playfair Display + Source Sans 3
-   v9: ticker redesigned — frosted glass, 32s scroll, gold dots
+   v10: ticker up/down color spans (green/red)
    ============================================================ */
 
 /* ---------- Variables ---------- */
@@ -164,6 +164,8 @@ img { max-width: 100%; display: block; }
   color: var(--gold);
   opacity: 0.5;
 }
+.ticker-up   { color: #5cb85c; font-weight: 600; }
+.ticker-down { color: #d9534f; font-weight: 600; }
 
 /* ---------- Masthead ---------- */
 .masthead {
