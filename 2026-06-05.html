@@ -10,9 +10,12 @@
 
 <!-- EDITION NAV -->
 <nav class="edition-nav">
-  <a href="2026-06-04.html">← June 4</a>
-  <a href="archive.html">📁 Archive</a>
-  <a href="2026-06-06.html">June 6 →</a>
+  <a href="2026-06-04.html">← Jun 4</a>
+  <a href="archive.html" class="nav-archive">&#128193; Archive</a>
+  <span class="nav-right">
+    <a href="2026-06-06.html">Jun 6 →</a>
+    <button class="mode-toggle" id="modeToggle" aria-label="Toggle light and dark mode">Light Mode</button>
+  </span>
 </nav>
 
 <!-- TICKER -->
@@ -290,5 +293,16 @@
   <p style="margin-top:6px;">Curated daily for Nunya Biz &nbsp;·&nbsp; Est. May 2026 in GFY, USA &nbsp;·&nbsp; <a href="https://unclejim7.github.io/The-Daily-Ledger">unclejim7.github.io/The-Daily-Ledger</a></p>
 </footer>
 
+
+<script>
+(function(){
+  var btn = document.getElementById('modeToggle');
+  if (!btn) return;
+  btn.addEventListener('click', function(){
+    document.body.classList.toggle('light-mode');
+    btn.textContent = document.body.classList.contains('light-mode') ? 'Dark Mode' : 'Light Mode';
+  });
+})();
+</script>
 </body>
 </html>

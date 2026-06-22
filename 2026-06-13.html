@@ -12,9 +12,12 @@
 <body>
 
 <nav class="edition-nav">
-  <a href="2026-06-12.html">← June 12</a>
-  <a href="archive.html" class="nav-archive">📁 Archive</a>
-  <a href="2026-06-14.html">June 14 →</a>
+  <a href="2026-06-12.html">← Jun 12</a>
+  <a href="archive.html" class="nav-archive">&#128193; Archive</a>
+  <span class="nav-right">
+    <a href="2026-06-14.html">Jun 14 →</a>
+    <button class="mode-toggle" id="modeToggle" aria-label="Toggle light and dark mode">Light Mode</button>
+  </span>
 </nav>
 
 <div class="ticker-wrap">
@@ -346,5 +349,16 @@
   <span>The Daily Ledger</span> · Curated daily for Nunya Biz · Est. May 2026 in GFY, USA
 </footer>
 
+
+<script>
+(function(){
+  var btn = document.getElementById('modeToggle');
+  if (!btn) return;
+  btn.addEventListener('click', function(){
+    document.body.classList.toggle('light-mode');
+    btn.textContent = document.body.classList.contains('light-mode') ? 'Dark Mode' : 'Light Mode';
+  });
+})();
+</script>
 </body>
 </html>

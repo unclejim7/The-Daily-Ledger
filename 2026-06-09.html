@@ -12,9 +12,12 @@
 <body>
 
 <nav class="edition-nav">
-  <a href="2026-06-08.html">← June 8</a>
-  <a href="archive.html">📁 Archive</a>
-  <a href="2026-06-10.html">June 10 →</a>
+  <a href="2026-06-08.html">← Jun 8</a>
+  <a href="archive.html" class="nav-archive">&#128193; Archive</a>
+  <span class="nav-right">
+    <a href="2026-06-10.html">Jun 10 →</a>
+    <button class="mode-toggle" id="modeToggle" aria-label="Toggle light and dark mode">Light Mode</button>
+  </span>
 </nav>
 
 <div class="ticker-wrap">
@@ -277,5 +280,16 @@
   <a href="archive.html">View Archive</a>
 </footer>
 
+
+<script>
+(function(){
+  var btn = document.getElementById('modeToggle');
+  if (!btn) return;
+  btn.addEventListener('click', function(){
+    document.body.classList.toggle('light-mode');
+    btn.textContent = document.body.classList.contains('light-mode') ? 'Dark Mode' : 'Light Mode';
+  });
+})();
+</script>
 </body>
 </html>
