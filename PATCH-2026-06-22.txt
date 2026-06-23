@@ -1,0 +1,12 @@
+PATCH INSTRUCTION FOR 2026-06-22.html
+===============================================
+In the <nav class="edition-nav"> block, find:
+
+    <span class="nav-disabled">Jun 23 &rarr;</span>
+
+Replace with:
+
+    <a href="2026-06-23.html">Jun 23 &rarr;</a>
+
+This is the ONLY change needed to the No.27 file.
+All other content remains identical.

@@ -17,10 +17,6 @@
   --ticker-h:   36px;
 }
 
-/* ---------- Light Mode ----------
-   Toggled via .light-mode class on <body>.
-   Orange/gold accents stay constant across modes —
-   only the surface/text tokens flip. */
 body.light-mode {
   --bg:         #f6f1e6;
   --surface:    #fffdf8;
@@ -37,7 +33,6 @@ body.light-mode .ticker-track { color: var(--cream-dim); }
 body.light-mode .market-table .up   { color: #2e7d32; }
 body.light-mode .market-table .down { color: #c0392b; }
 
-/* ---------- Reset ---------- */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body {
@@ -52,7 +47,6 @@ a { color: var(--gold); text-decoration: none; }
 a:hover { color: var(--orange); }
 img { max-width: 100%; display: block; }
 
-/* ---------- Edition Nav ---------- */
 .edition-nav {
   position: sticky;
   top: 0;
@@ -82,7 +76,6 @@ img { max-width: 100%; display: block; }
 .edition-nav a:hover { color: var(--gold); }
 .nav-disabled { opacity: 0.35; cursor: default; }
 
-/* Center column — Archive link */
 .nav-archive {
   justify-self: center;
   font-size: 0.75rem;
@@ -100,7 +93,6 @@ img { max-width: 100%; display: block; }
   color: var(--gold) !important;
 }
 
-/* Right column — next arrow + toggle */
 .nav-right {
   display: flex;
   align-items: center;
@@ -108,7 +100,6 @@ img { max-width: 100%; display: block; }
   gap: 1rem;
 }
 
-/* ---------- Mode Toggle ---------- */
 .mode-toggle {
   background: none;
   border: 1px solid var(--border);
@@ -128,7 +119,6 @@ img { max-width: 100%; display: block; }
   border-color: var(--gold);
 }
 
-/* ---------- Ticker ---------- */
 .ticker-wrap {
   position: -webkit-sticky;
   position: sticky;
@@ -169,7 +159,6 @@ img { max-width: 100%; display: block; }
 .ticker-up   { color: #5cb85c; font-weight: 600; }
 .ticker-down { color: #d9534f; font-weight: 600; }
 
-/* ---------- Masthead ---------- */
 .masthead {
   text-align: center;
   padding: 2.5rem 1rem 1.5rem;
@@ -227,14 +216,12 @@ img { max-width: 100%; display: block; }
   margin-top: 0.25rem;
 }
 
-/* ---------- Layout wrapper ---------- */
 .ledger-body {
   max-width: 1140px;
   margin: 0 auto;
   padding: 0 1rem 3rem;
 }
 
-/* ---------- On This Day ---------- */
 .otd-card {
   position: relative;
   background: var(--surface);
@@ -310,7 +297,6 @@ img { max-width: 100%; display: block; }
 .otd-stat .otd-delta-up { color: #5cb85c; }
 .otd-stat .otd-delta-down { color: #d9534f; }
 
-/* ---------- Section Headers ---------- */
 .section-head {
   display: flex;
   align-items: center;
@@ -334,7 +320,6 @@ img { max-width: 100%; display: block; }
   margin: 1.5rem 0;
 }
 
-/* ---------- Lead Story ---------- */
 .lead-story {
   padding: 1.5rem 0;
   border-bottom: 1px solid var(--border);
@@ -365,7 +350,6 @@ img { max-width: 100%; display: block; }
 }
 .lead-body p + p { margin-top: 0.75rem; }
 
-/* ---------- Card Grid ---------- */
 .card-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
@@ -403,7 +387,6 @@ img { max-width: 100%; display: block; }
   grid-column: 1 / -1;
 }
 
-/* ---------- Market Table ---------- */
 .market-table-wrap {
   overflow-x: auto;
   margin: 1rem 0;
@@ -434,7 +417,6 @@ img { max-width: 100%; display: block; }
 .down { color: #d9534f; }
 .flat { color: var(--cream-dim); }
 
-/* ---------- Crypto Panel ---------- */
 .crypto-panel {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -467,7 +449,6 @@ img { max-width: 100%; display: block; }
   margin-top: 0.15rem;
 }
 
-/* ---------- Pull Quote ---------- */
 .pull-quote {
   border-left: 4px solid var(--orange);
   margin: 1.5rem 0;
@@ -492,7 +473,6 @@ img { max-width: 100%; display: block; }
   color: var(--gold);
 }
 
-/* ---------- Weather Banner (TOP PLACEMENT — signature element) ---------- */
 .weather-banner-top {
   max-width: 1140px;
   margin: 1.5rem auto 0;
@@ -573,7 +553,7 @@ img { max-width: 100%; display: block; }
   display: block;
 }
 
-/* ---------- Sports Items ---------- */
+.sports-row { margin: 1rem 0; }
 .sports-item {
   display: flex;
   align-items: flex-start;
@@ -619,7 +599,6 @@ img { max-width: 100%; display: block; }
   line-height: 1.55;
 }
 
-/* ---------- Health Items ---------- */
 .health-item {
   padding: 0.9rem 0;
   border-bottom: 1px solid var(--border);
@@ -638,7 +617,6 @@ img { max-width: 100%; display: block; }
   line-height: 1.6;
 }
 
-/* ---------- Trivia Triptych ---------- */
 .trivia-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -689,7 +667,6 @@ img { max-width: 100%; display: block; }
   margin-top: 0.5rem;
 }
 
-/* ---------- Editor's Dispatch ---------- */
 .editors-dispatch {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -714,7 +691,6 @@ img { max-width: 100%; display: block; }
   line-height: 1.7;
 }
 
-/* ---------- Footer ---------- */
 .ledger-footer {
   text-align: center;
   padding: 2rem 1rem;
@@ -726,23 +702,6 @@ img { max-width: 100%; display: block; }
 }
 .ledger-footer span { color: var(--orange); }
 
-/* ---------- Archive Page ---------- */
-.archive-header {
-  text-align: center;
-  padding: 2rem 1rem 1.5rem;
-  border-bottom: 3px double var(--border);
-}
-.archive-header h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: clamp(1.8rem, 5vw, 3rem);
-  color: var(--cream);
-}
-.archive-header p {
-  font-size: 0.8rem;
-  color: var(--cream-dim);
-  margin-top: 0.5rem;
-  letter-spacing: 0.08em;
-}
 .archive-month {
   font-family: 'Source Sans 3', sans-serif;
   font-size: 0.7rem;
@@ -805,7 +764,6 @@ img { max-width: 100%; display: block; }
   color: var(--bg);
 }
 
-/* ---------- Archive Search ---------- */
 .archive-search-wrap {
   max-width: 1140px;
   margin: 0 auto;
@@ -857,7 +815,6 @@ img { max-width: 100%; display: block; }
   max-width: 60ch;
 }
 
-/* ---------- Sparkline ---------- */
 .sparkline-wrap {
   background: var(--surface);
   border: 1px solid var(--border);
@@ -893,7 +850,6 @@ img { max-width: 100%; display: block; }
 .sparkline-fill { fill: url(#sparkline-gradient); opacity: 0.18; }
 .sparkline-dot { fill: var(--orange); }
 
-/* ---------- Weather Icons (SVG) ---------- */
 .wx-icon {
   width: 3rem;
   height: 3rem;
@@ -907,7 +863,6 @@ img { max-width: 100%; display: block; }
 .wx-icon .wx-snow   { fill: var(--cream); }
 .wx-icon .wx-outline { stroke: var(--cream-dim); stroke-width: 1.5; fill: none; }
 
-/* ---------- Corrections Box ---------- */
 .corrections-box {
   border: 1px solid var(--border);
   border-left: 3px solid var(--cream-dim);
@@ -932,7 +887,6 @@ img { max-width: 100%; display: block; }
 }
 .corrections-box p + p { margin-top: 0.4rem; }
 
-/* ---------- Responsive ---------- */
 @media (max-width: 600px) {
   .weather-banner { flex-direction: column; text-align: center; }
   .weather-stats { justify-content: center; }
@@ -941,7 +895,6 @@ img { max-width: 100%; display: block; }
   .otd-headline { max-width: 100%; }
 }
 
-/* ---------- Print ---------- */
 @media print {
   .edition-nav, .ticker-wrap, .mode-toggle, .archive-search-wrap { display: none !important; }
   body { background: #fff; color: #111; }
