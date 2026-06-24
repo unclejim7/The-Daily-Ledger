@@ -3,16 +3,24 @@
   <channel>
     <title>The Daily Ledger</title>
     <link>https://unclejim7.github.io/The-Daily-Ledger/</link>
-    <description>Truth, Clearly Delivered. Daily financial, geopolitical, and Chicago news.</description>
+    <description>Truth, Clearly Delivered — A daily broadsheet covering markets, Bitcoin, geopolitics, and Chicago.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 23 Jun 2026 07:45:00 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 24 Jun 2026 08:00:00 -0500</lastBuildDate>
     <atom:link href="https://unclejim7.github.io/The-Daily-Ledger/feed.xml" rel="self" type="application/rss+xml"/>
+
+    <item>
+      <title>No. 29 — All Eyes on Micron Tonight: Markets Attempt a Bounce After the AI Rout, But the HBM Number Will Decide Everything</title>
+      <link>https://unclejim7.github.io/The-Daily-Ledger/2026-06-24.html</link>
+      <pubDate>Wed, 24 Jun 2026 07:00:00 -0500</pubDate>
+      <description><![CDATA[S&P 500 futures edge higher after Tuesday's brutal session (S&P −1.44%, Nasdaq −2.21%) as markets await Micron's fiscal Q3 earnings at 4:30 PM ET — the Street expects $34.5B revenue and 932% EPS growth, but HBM guidance is the only number that matters. Meanwhile, Bulls land Caleb Wilson at #4 and Dailyn Swain at #15; Giannis traded to Miami; Alphabet joins the Dow next Monday; BofA calls for three Fed hikes in 2026.]]></description>
+      <guid>https://unclejim7.github.io/The-Daily-Ledger/2026-06-24.html</guid>
+    </item>
 
     <item>
       <title>No. 28 — The AI Gravity Check: SpaceX Slides, Korea Craters, and the Nasdaq Faces Its Worst Day Since the IPO Selloff Began</title>
       <link>https://unclejim7.github.io/The-Daily-Ledger/2026-06-23.html</link>
       <pubDate>Tue, 23 Jun 2026 07:00:00 -0500</pubDate>
-      <description><![CDATA[South Korea's KOSPI plunges 10%, Samsung and SK Hynix crater 12%+, SpaceX (SPCX) falls to $154.60 after announcing a $20B bond sale, and Nasdaq futures drop 1.66% premarket; Bitcoin slips to $62,325; Oracle cuts 18,000 jobs citing AI; Micron Q3 earnings tomorrow; NBA Draft tonight with Bulls holding picks #4 and #15; White Sox walk off to beat Guardians 6-5, tying the AL Central lead.]]></description>
+      <description><![CDATA[South Korea's KOSPI plunges 10%, Samsung and SK Hynix crater 12%+, SpaceX falls to $154.60 after its $20B bond sale, and Nasdaq futures drop 1.66% premarket; Bitcoin slips to $62,325; Oracle cuts 18,000 jobs citing AI; Micron earnings tomorrow; NBA Draft tonight with Bulls holding picks #4 and #15.]]></description>
       <guid>https://unclejim7.github.io/The-Daily-Ledger/2026-06-23.html</guid>
     </item>
 
@@ -36,7 +44,7 @@
       <title>No. 25 — Bürgenstock Talks Stumble Out of the Gate — Then Resume: The Iran MOU's First 48 Hours Are a Preview of What's Ahead</title>
       <link>https://unclejim7.github.io/The-Daily-Ledger/2026-06-20.html</link>
       <pubDate>Sat, 20 Jun 2026 07:00:00 -0500</pubDate>
-      <description><![CDATA[After Friday's abrupt postponement, US-Iran implementation talks resume Saturday at Bürgenstock with Witkoff and Kushner on-site.]]></description>
+      <description><![CDATA[After Friday's abrupt postponement (Vance withdrew, Swiss FM confirmed cancellation), US-Iran implementation talks resume Saturday at Bürgenstock with Witkoff and Kushner on-site.]]></description>
       <guid>https://unclejim7.github.io/The-Daily-Ledger/2026-06-20.html</guid>
     </item>
 
@@ -44,7 +52,7 @@
       <title>No. 24 — Juneteenth 2026: Markets Pause, Bürgenstock Talks Begin, and Bitcoin Slides Into a Hawkish Long Weekend</title>
       <link>https://unclejim7.github.io/The-Daily-Ledger/2026-06-19.html</link>
       <pubDate>Fri, 19 Jun 2026 07:00:00 -0500</pubDate>
-      <description><![CDATA[NYSE, Nasdaq, and bond markets are dark for Juneteenth as Thursday's equity recovery rally locks in a split verdict for the week.]]></description>
+      <description><![CDATA[NYSE, Nasdaq, and bond markets are dark for Juneteenth as Thursday's equity recovery rally (S&P +1.08% to 7,500.58) locks in a split verdict for the week.]]></description>
       <guid>https://unclejim7.github.io/The-Daily-Ledger/2026-06-19.html</guid>
     </item>
 
@@ -52,7 +60,7 @@
       <title>No. 23 — Signed, Sealed, Delivered at Versailles: Trump and Pezeshkian Sign the Iran MOU as Markets Shrug Off Warsh's Hawkish Shock</title>
       <link>https://unclejim7.github.io/The-Daily-Ledger/2026-06-18.html</link>
       <pubDate>Thu, 18 Jun 2026 07:00:00 -0500</pubDate>
-      <description><![CDATA[Trump and Iran's Pezeshkian sign the war-ending memorandum at the Palace of Versailles, sending stocks sharply higher.]]></description>
+      <description><![CDATA[Trump and Iran's Pezeshkian sign the war-ending memorandum at the Palace of Versailles, sending stocks sharply higher even as Wednesday's hawkish Fed dot plot rattled bond markets.]]></description>
       <guid>https://unclejim7.github.io/The-Daily-Ledger/2026-06-18.html</guid>
     </item>
 
@@ -60,7 +68,7 @@
       <title>No. 22 — Decision Day: Warsh Delivers His First Rate Verdict at 2 PM as Bond Market Bets Shift From Cuts to Hikes</title>
       <link>https://unclejim7.github.io/The-Daily-Ledger/2026-06-17.html</link>
       <pubDate>Wed, 17 Jun 2026 07:00:00 -0500</pubDate>
-      <description><![CDATA[Kevin Warsh's first FOMC decision lands at 2 PM with a hold all but certain; dot plot signals nine of 18 officials pencil in a 2026 hike.]]></description>
+      <description><![CDATA[Kevin Warsh's first FOMC decision lands at 2 PM with a hold all but certain, but the dot plot and his debut press conference will show how a divided committee is leaning.]]></description>
       <guid>https://unclejim7.github.io/The-Daily-Ledger/2026-06-17.html</guid>
     </item>
 
@@ -76,7 +84,7 @@
       <title>No. 20 — "The Deal With Iran Is Now Complete": Trump Authorizes Reopening of Strait of Hormuz, Markets Surge to Start the Week</title>
       <link>https://unclejim7.github.io/The-Daily-Ledger/2026-06-15.html</link>
       <pubDate>Mon, 15 Jun 2026 07:00:00 -0500</pubDate>
-      <description><![CDATA[Trump declares the U.S.-Iran deal "now complete" and authorizes reopening the Strait of Hormuz, sending Dow futures up 463 points.]]></description>
+      <description><![CDATA[Trump declares the U.S.-Iran deal "now complete" and authorizes reopening the Strait of Hormuz, sending Dow futures up 463 points and crude oil down over 5% as the VIX collapses.]]></description>
       <guid>https://unclejim7.github.io/The-Daily-Ledger/2026-06-15.html</guid>
     </item>
 
