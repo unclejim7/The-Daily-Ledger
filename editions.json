@@ -1,13 +1,26 @@
 {
-  "latest_edition": 31,
+  "latest_edition": 32,
   "editions": [
+    {
+      "edition": 32,
+      "date": "2026-06-27",
+      "day_of_week": "Saturday",
+      "filename": "2026-06-27.html",
+      "headline": "OpenAI Blinks: IPO Pushed to 2027 as SpaceX\u2019s 32% Post-Debut Collapse Kills Appetite for Trillion-Dollar AI Debuts \u2014 The Week the AI Bubble Started Leaking",
+      "teaser": "OpenAI delays its IPO to 2027 as Sam Altman refuses any valuation below $1 trillion and SpaceX (SPCX) crashes 32% from its post-IPO peak; SoftBank plunges 12.5% on the news; Nasdaq posts its 5th consecutive losing session, down 4.6% on the week; Bitcoin falls below $60,000 with Fear & Greed at 13 (Extreme Fear); White Sox demolish the Royals 22-1; Cubs drop Milwaukee opener 6-2; Blackhawks hold NHL Draft picks #34 and #46 today; Chicago heat wave arrives Monday with 95\u00b0F+ through July 4th.",
+      "stats": {
+        "btc": 59800,
+        "sp500": 7354.02,
+        "mortgage_30yr": "6.49%"
+      }
+    },
     {
       "edition": 31,
       "date": "2026-06-26",
       "day_of_week": "Friday",
       "filename": "2026-06-26.html",
       "headline": "Apple Drops 6% as RAMageddon Comes for Consumers \u2014 The Memory Boom That Made Micron\u2019s Quarter Now Raises Every Mac and iPad Price by Up to $300",
-      "teaser": "Apple falls 6.12% after raising MacBook and iPad prices by up to $300 overnight, blaming AI-driven memory shortages (\u201cRAMageddon\u201d); the Dow touches an intraday all-time high of 52,655.66 on Caterpillar and Merck\u2019s $11.3B Bio-Techne deal even as Nasdaq logs its 4th straight loss; Bitcoin slips to ~$60,124 (Extreme Fear); Cubs complete 4-game Mets sweep 4-3 in 10 innings on Pete Crow-Armstrong\u2019s walk-off double; Milwaukee series opens tonight.",
+      "teaser": "Apple announces sweeping MacBook and iPad price increases of 17-25%, citing the AI-driven DRAM shortage; Apple falls 6.12%; Micron surges 15.7%, Sandisk +22%, the Dow touches an intraday ATH of 52,655.66; Bitcoin falls to ~$60,124 with Extreme Fear; Freddie Mac 30-yr fixed at 6.49%; Cubs sweep Mets 4-game series (Pete Crow-Armstrong walk-off in 10th); NHL Draft Round 1 in Buffalo.",
       "stats": {
         "btc": 60124,
         "sp500": 7357.49,
@@ -20,7 +33,7 @@
       "day_of_week": "Thursday",
       "filename": "2026-06-25.html",
       "headline": "Micron Delivers Its Strongest Quarter in History \u2014 $41.46B Revenue, $50B Q4 Guidance, and a 17% Pop Rescue the AI Rally",
-      "teaser": "Micron's fiscal Q3 blowout \u2014 $41.46B revenue, $25.11 EPS, 84.9% gross margin \u2014 sends Nasdaq futures up 2% overnight and MU surging 17% premarket; May PCE prints at 4.1% (3-year high) but in-line with estimates, analysts say May was the peak; Qualcomm +9%; Dansby Swanson sets Cubs franchise record with 11 RBI across a doubleheader sweep of the Mets (10-3, 10-5); Blackhawks trade #4 pick to Buffalo for Bowen Byram; NHL Draft Round 1 tonight in Buffalo.",
+      "teaser": "Micron's fiscal Q3 blowout \u2014 $41.46B revenue, $25.11 EPS, 84.9% gross margin \u2014 sends Nasdaq futures up 2% overnight and MU surging 17-18% on open; May PCE prints at 4.1% (3-year high) but in-line with estimates, analysts say May was the peak; Qualcomm +9%; Dansby Swanson sets Cubs franchise record with 11 RBI across a doubleheader sweep of the Mets (10-3, 10-5); Blackhawks trade #4 pick to Buffalo for Bowen Byram; NHL Draft Round 1 tonight in Buffalo.",
       "stats": {
         "btc": 61274,
         "sp500": 7358.22,
