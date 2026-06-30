@@ -1,17 +1,30 @@
 {
-  "latest_edition": 34,
+  "latest_edition": 35,
   "editions": [
+    {
+      "edition": 35,
+      "date": "2026-06-30",
+      "day_of_week": "Tuesday",
+      "filename": "2026-06-30.html",
+      "headline": "Stand-Down Holds, Doha Talks Open Today as Dow's Record Close Above 52,000 Sets the Tone for the Week",
+      "teaser": "The U.S. and Iran agree to stand down after a weekend Hormuz exchange, with technical talks shifting to Doha Tuesday; Monday's Dow closed above 52,000 for the first time (+306.63, 7,440.43 S&P), lifted by Alphabet's Dow debut, Rocket Lab's $8B Iridium deal, and a Supreme Court ruling preserving Fed Governor Lisa Cook's seat; Bitcoin lags below $60K; Cubs beat Padres 3-2, White Sox rout Orioles 8-2; Chicago under an Extreme Heat Warning through Thursday.",
+      "stats": {
+        "btc": 59221,
+        "sp500": 7440.43,
+        "mortgage_30yr": "6.23% APR"
+      }
+    },
     {
       "edition": 34,
       "date": "2026-06-29",
       "day_of_week": "Monday",
       "filename": "2026-06-29.html",
-      "headline": "Dow Tops 52,000 for the First Time as Supreme Court Blocks Trump From Firing Fed Governor Lisa Cook",
-      "teaser": "Dow closes at a record 52,182.74 (+0.59%), S&P 500 jumps 1.18% to 7,440.43, and Nasdaq surges 2.07% to 25,820.14 after the Supreme Court rules 5–4 that Cook keeps her Fed seat while narrowing Humphrey's Executor elsewhere; Alphabet debuts in the Dow (+4.96%), Rocket Lab announces an $8B Iridium acquisition, Comcast confirms its NBCUniversal spinoff, and Bitcoin slips to ~$59,800 as Strategy authorizes its first-ever Bitcoin sale of up to $1.25B.",
+      "headline": "Dow Closes Above 52,000 for First Time as Supreme Court Preserves Fed Governor Cook's Seat",
+      "teaser": "The Dow closes above 52,000 for the first time ever as the Supreme Court's 5-4 ruling blocks Trump from firing Fed Governor Lisa Cook; Alphabet debuts in the Dow up nearly 5%; Rocket Lab announces $8B Iridium acquisition; Strategy authorizes its first-ever Bitcoin sell of up to $1.25B as BTC slides near $59,800; Cubs beat Padres 3-2, White Sox rout Orioles 8-2; Extreme heat warning issued for Chicagoland.",
       "stats": {
         "btc": 59800,
         "sp500": 7440.43,
-        "mortgage_30yr": "6.17%-6.54%"
+        "mortgage_30yr": "6.28% APR"
       }
     },
     {
@@ -19,12 +32,11 @@
       "date": "2026-06-28",
       "day_of_week": "Sunday",
       "filename": "2026-06-28.html",
-      "headline": "The Ceasefire Cracks — US Strikes Iran Again After KIKU Tanker Drone Attack as the 11-Day-Old MOU Faces Its Most Severe Test",
-      "teaser": "US strikes Iran again after the KIKU tanker drone attack near Hormuz; IRGC retaliates and Bahrain is hit by Iranian drones; S&P 500 at 7,354.02, Bitcoin ~$60,255 as Q2 closes with BTC down ~18% on the month; White Sox post franchise-record 10th straight home series win; Chicagoland heat wave warning issued for the week ahead.",
+      "headline": "Iran Strikes Bahrain and Kuwait as US Resumes Attacks on Iranian Military Targets",
+      "teaser": "Iran launches retaliatory strikes on Bahrain and Kuwait after the US resumes attacks on Iranian military targets, with Trump warning of further escalation; oil and markets digest the renewed hostilities ahead of the week's Doha-track diplomacy.",
       "stats": {
         "btc": 60255,
-        "sp500": 7354.02,
-        "mortgage_30yr": "6.47%"
+        "sp500": 7354.02
       }
     },
     {
@@ -32,12 +44,11 @@
       "date": "2026-06-27",
       "day_of_week": "Saturday",
       "filename": "2026-06-27.html",
-      "headline": "OpenAI Delays IPO to 2027 as SpaceX's Post-Debut Collapse and a Fifth Straight Nasdaq Losing Session Bifurcate the AI Trade",
-      "teaser": "OpenAI pushes its IPO to 2027 citing SpaceX's 32% post-debut collapse and SoftBank's 12.5% single-day drop; Nasdaq logs a fifth consecutive losing session, down 4.6% on the week, as the AI trade splits between infrastructure winners (Micron +15.7%) and software losers; Bitcoin sits below $60,000 in Extreme Fear; White Sox blow out Kansas City 22-1; heat wave warning issued for the week ahead.",
+      "headline": "OpenAI Delays IPO to 2027 as SpaceX Collapses 32% Post-Debut and the Nasdaq Logs a Fifth Straight Losing Session",
+      "teaser": "OpenAI pushes its IPO to 2027, SpaceX falls 32% from its debut high, and SoftBank drops 12.5% in a single session as the Nasdaq's losing streak extends to five days (week -4.6%); Bitcoin slides below $60,000 into Extreme Fear; White Sox rout Royals 22-1; Cubs drop the Milwaukee series opener 6-2; heat wave warning issued for the northwest suburbs.",
       "stats": {
-        "btc": 59800,
-        "sp500": 7354.02,
-        "mortgage_30yr": "6.48%"
+        "btc": 59083,
+        "sp500": 7363.0
       }
     },
     {
@@ -45,12 +56,11 @@
       "date": "2026-06-26",
       "day_of_week": "Friday",
       "filename": "2026-06-26.html",
-      "headline": "Markets Steady Into the Weekend as the Nasdaq's Losing Streak Tests the 50-Day Moving Average",
-      "teaser": "The S&P 500 closes just below its 50-day moving average for the first time since early April as the AI-trade selloff persists into Friday; Bitcoin holds near $60,500 in Extreme Fear; markets brace for a holiday-shortened week with the June jobs report moved up to Thursday.",
+      "headline": "Nasdaq and S&P 500 Tread Water Amid Tech Sell-Off, Reported OpenAI IPO Delay",
+      "teaser": "Markets tread water as reports surface that OpenAI is delaying its IPO; tech sell-off continues to pressure the Nasdaq amid ongoing Iran ceasefire dynamics and Fed rate uncertainty.",
       "stats": {
         "btc": 60500,
-        "sp500": 7363.0,
-        "mortgage_30yr": "6.48%"
+        "sp500": 7358.22
       }
     },
     {
