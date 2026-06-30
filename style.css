@@ -108,7 +108,7 @@ img { max-width: 100%; display: block; }
   gap: 1rem;
 }
 
-/* ---------- Mode Toggle ---------- */
+/* ---------- Mode Toggle (emoji icon button: 🌙 dark / ☀️ light) ---------- */
 .mode-toggle {
   background: none;
   border: 1px solid var(--border);
@@ -129,8 +129,8 @@ img { max-width: 100%; display: block; }
 }
 .mode-toggle:hover {
   color: var(--gold);
-  transform: scale(1.08);
   border-color: var(--gold);
+  transform: scale(1.08);
 }
 
 /* ---------- Ticker ---------- */
