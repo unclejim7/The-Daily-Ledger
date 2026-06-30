@@ -15,7 +15,7 @@
   <a href="index.html">&larr; Latest Edition</a>
   <span class="nav-archive-label" style="justify-self:center;color:var(--gold);font-size:0.75rem;font-weight:700;letter-spacing:0.18em;">&#128193; Archive</span>
   <span class="nav-right">
-    <button class="mode-toggle" id="modeToggle" aria-label="Toggle light and dark mode">Light Mode</button>
+    <button class="mode-toggle" id="modeToggle" aria-label="Toggle light and dark mode">&#127769;</button>
   </span>
 </nav>
 
@@ -37,11 +37,11 @@
 
   <div class="archive-month">June 2026</div>
 
-  <div class="archive-entry" data-search="2026-06-29 monday us iran stand down doha talks tuesday futures surge comcast nbcuniversal spinoff alphabet dow openai ipo delay bitcoin heat wave cubs white sox nfp">
+  <div class="archive-entry" data-search="2026-06-29 monday dow 52000 supreme court lisa cook fed independence rocket lab iridium alphabet dow bitcoin strategy sell trump iran no longer exist doha white sox cubs heat wave">
     <div class="archive-entry-info">
       <div class="ae-date">No. 34 &mdash; Monday, June 29, 2026 <span class="badge-latest">Latest</span></div>
-      <a class="ae-dow" href="2026-06-29.html">U.S. and Iran &lsquo;Stand Down for Now&rsquo; &mdash; Both Sides Halt Attacks, Agree to Doha Talks Tuesday as Futures Surge and Q3 Opens With a Fragile Reprieve</a>
-      <p class="ae-teaser">U.S. and Iran agree to halt military exchanges and meet in Doha Tuesday; S&P futures +0.8%, Nasdaq 100 +1.2% on stand-down news. Comcast splits into two public companies, spinning off NBCUniversal and Sky (CMCSA +22%). OpenAI leans toward delaying its IPO to 2027. Alphabet officially joins the Dow. Cubs win Milwaukee series finale 4&ndash;3; White Sox split Royals series after historic 22&ndash;1 Friday blowout. Extreme heat warning &mdash; 94&deg;F today, 95&deg;F Tue&ndash;Wed.</p>
+      <a class="ae-dow" href="2026-06-29.html">Dow Closes Above 52,000 for the First Time as Supreme Court Blocks Trump From Firing Fed Governor Lisa Cook &mdash; A Q3-Opening Relief Rally Built on Two Separate Reprieves</a>
+      <p class="ae-teaser">Supreme Court rules 5&ndash;4 that Trump cannot fire Fed Governor Lisa Cook, preserving central bank independence; Dow closes at a record 52,182.74, S&P 500 +1.18%, Nasdaq +2.07%. Rocket Lab announces $8B acquisition of Iridium to challenge SpaceX/Starlink. Alphabet debuts in the Dow (+4.82%). Bitcoin falls to ~$59,083 after Strategy authorizes its first-ever $1.25B BTC sell program. Trump warns Iran &ldquo;will no longer exist&rdquo; after weekend strikes; Doha talks proceed Tuesday regardless. White Sox rout Orioles 8&ndash;2. Extreme Heat Warning for Cook County through Wednesday &mdash; heat index up to 106&deg;F.</p>
     </div>
     <a href="2026-06-29.html" class="archive-read-btn">Read &rarr;</a>
   </div>
@@ -356,7 +356,7 @@
   var btn = document.getElementById('modeToggle');
   if (btn) btn.addEventListener('click', function() {
     var isLight = document.body.classList.toggle('light-mode');
-    btn.textContent = isLight ? 'Dark Mode' : 'Light Mode';
+    btn.textContent = isLight ? '\u2600\ufe0f' : '\ud83c\udf19';
   });
 
   var searchInput = document.getElementById('archiveSearch');
