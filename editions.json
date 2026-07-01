@@ -1,6 +1,19 @@
 {
-  "latest_edition": 35,
+  "latest_edition": 36,
   "editions": [
+    {
+      "edition": 36,
+      "date": "2026-07-01",
+      "day_of_week": "Wednesday",
+      "filename": "2026-07-01.html",
+      "headline": "Warsh Makes His Global Debut in Sintra as Bitcoin Slides Below $58,500 to Cap Wall Street's Best Quarter Since 2020",
+      "teaser": "Fed Chair Kevin Warsh joins Lagarde, Bailey, and Macklem at the ECB Forum in Sintra and declines to signal a July move, a day after the Dow's second straight record close (52,319.20) capped the S&P 500 and Nasdaq's best quarter since 2020; Bitcoin extends its slide to ~$58,300 after spot ETFs posted their worst month on record; Witkoff and Kushner report \"positive\" Doha talks with Qatar; Cubs and White Sox both look to sweep series finales amid an Extreme Heat Warning.",
+      "stats": {
+        "btc": 58300,
+        "sp500": 7449.36,
+        "mortgage_30yr": "6.36%"
+      }
+    },
     {
       "edition": 35,
       "date": "2026-06-30",
@@ -68,8 +81,8 @@
       "date": "2026-06-25",
       "day_of_week": "Thursday",
       "filename": "2026-06-25.html",
-      "headline": "Micron Delivers Its Strongest Quarter in History — $41.46B Revenue, $50B Q4 Guidance, and a 17% Pop Rescue the AI Rally",
-      "teaser": "Micron's fiscal Q3 blowout — $41.46B revenue, $25.11 EPS, 84.9% gross margin — sends Nasdaq futures up 2% overnight and MU surging 17-18% on open; May PCE prints at 4.1% (3-year high) but in-line with estimates, analysts say May was the peak; Qualcomm +9%; Dansby Swanson sets Cubs franchise record with 11 RBI across a doubleheader sweep of the Mets (10-3, 10-5); Blackhawks trade #4 pick to Buffalo for Bowen Byram; NHL Draft Round 1 tonight in Buffalo.",
+      "headline": "Micron Delivers Its Strongest Quarter in History \u2014 $41.46B Revenue, $50B Q4 Guidance, and a 17% Pop Rescue the AI Rally",
+      "teaser": "Micron's fiscal Q3 blowout \u2014 $41.46B revenue, $25.11 EPS, 84.9% gross margin \u2014 sends Nasdaq futures up 2% overnight and MU surging 17-18% on open; May PCE prints at 4.1% (3-year high) but in-line with estimates, analysts say May was the peak; Qualcomm +9%; Dansby Swanson sets Cubs franchise record with 11 RBI across a doubleheader sweep of the Mets (10-3, 10-5); Blackhawks trade #4 pick to Buffalo for Bowen Byram; NHL Draft Round 1 tonight in Buffalo.",
       "stats": {
         "btc": 61274,
         "sp500": 7358.22,
@@ -82,7 +95,7 @@
       "day_of_week": "Wednesday",
       "filename": "2026-06-24.html",
       "headline": "All Eyes on Micron Tonight: Markets Attempt a Bounce After the AI Rout, But the HBM Number Will Decide Everything",
-      "teaser": "S&P 500 futures edge higher after Tuesday's brutal session (S&P −1.44%, Nasdaq −2.21%) as markets await Micron's fiscal Q3 earnings at 4:30 PM ET; Bulls land Caleb Wilson #4 and Dailyn Swain #15; Giannis traded to Miami; Alphabet joins the Dow Monday; BofA calls for three Fed hikes in 2026.",
+      "teaser": "S&P 500 futures edge higher after Tuesday's brutal session (S&P \u22121.44%, Nasdaq \u22122.21%) as markets await Micron's fiscal Q3 earnings at 4:30 PM ET; Bulls land Caleb Wilson #4 and Dailyn Swain #15; Giannis traded to Miami; Alphabet joins the Dow Monday; BofA calls for three Fed hikes in 2026.",
       "stats": {
         "btc": 62100,
         "sp500": 7365.46,
@@ -107,8 +120,8 @@
       "date": "2026-06-22",
       "day_of_week": "Monday",
       "filename": "2026-06-22.html",
-      "headline": "Starmer Out, Burnham In Line — The UK Gets Its 7th PM in a Decade as Bürgenstock Produces a 60-Day Roadmap",
-      "teaser": "Keir Starmer resigns as UK PM on Monday morning as the Bürgenstock talks yield a formal 60-day Iran nuclear roadmap; Bitcoin pops to $64K; Intel surges 10.6% on Apple chip deal; NBA Draft at Barclays tomorrow with Bulls holding picks #4 and #15.",
+      "headline": "Starmer Out, Burnham In Line \u2014 The UK Gets Its 7th PM in a Decade as B\u00fcrgenstock Produces a 60-Day Roadmap",
+      "teaser": "Keir Starmer resigns as UK PM on Monday morning as the B\u00fcrgenstock talks yield a formal 60-day Iran nuclear roadmap; Bitcoin pops to $64K; Intel surges 10.6% on Apple chip deal; NBA Draft at Barclays tomorrow with Bulls holding picks #4 and #15.",
       "stats": {
         "btc": 64000,
         "sp500": 7500.58
@@ -119,8 +132,8 @@
       "date": "2026-06-21",
       "day_of_week": "Sunday",
       "filename": "2026-06-21.html",
-      "headline": "Vance Meets Iranians Face-to-Face at Bürgenstock — The 60-Day Nuclear Clock Is Ticking",
-      "teaser": "JD Vance, Steve Witkoff, and Jared Kushner sit across from Iran's delegation at Switzerland's Bürgenstock resort on Sunday, opening the 60-day nuclear sprint under the Islamabad MOU.",
+      "headline": "Vance Meets Iranians Face-to-Face at B\u00fcrgenstock \u2014 The 60-Day Nuclear Clock Is Ticking",
+      "teaser": "JD Vance, Steve Witkoff, and Jared Kushner sit across from Iran's delegation at Switzerland's B\u00fcrgenstock resort on Sunday, opening the 60-day nuclear sprint under the Islamabad MOU.",
       "stats": {
         "btc": 63609,
         "sp500": 7500.58
@@ -131,8 +144,8 @@
       "date": "2026-06-20",
       "day_of_week": "Saturday",
       "filename": "2026-06-20.html",
-      "headline": "Bürgenstock Talks Stumble Out of the Gate — Then Resume: The Iran MOU's First 48 Hours Are a Preview of What's Ahead",
-      "teaser": "After Friday's abrupt postponement, US-Iran implementation talks resume Saturday at Bürgenstock with Witkoff and Kushner on-site.",
+      "headline": "B\u00fcrgenstock Talks Stumble Out of the Gate \u2014 Then Resume: The Iran MOU's First 48 Hours Are a Preview of What's Ahead",
+      "teaser": "After Friday's abrupt postponement, US-Iran implementation talks resume Saturday at B\u00fcrgenstock with Witkoff and Kushner on-site.",
       "stats": {
         "btc": 63609,
         "sp500": 7500.58
@@ -143,7 +156,7 @@
       "date": "2026-06-19",
       "day_of_week": "Friday",
       "filename": "2026-06-19.html",
-      "headline": "Juneteenth 2026: Markets Pause, Bürgenstock Talks Begin, and Bitcoin Slides Into a Hawkish Long Weekend",
+      "headline": "Juneteenth 2026: Markets Pause, B\u00fcrgenstock Talks Begin, and Bitcoin Slides Into a Hawkish Long Weekend",
       "teaser": "NYSE, Nasdaq, and bond markets are dark for Juneteenth as Thursday's equity recovery rally (S&P +1.08% to 7,500.58) locks in a split verdict for the week.",
       "stats": {
         "btc": 63609,
@@ -240,7 +253,7 @@
       "date": "2026-06-11",
       "day_of_week": "Thursday",
       "filename": "2026-06-11.html",
-      "headline": "Trump Cancels Iran Strikes — Markets Surge; Tornado Outbreak Hits Chicago",
+      "headline": "Trump Cancels Iran Strikes \u2014 Markets Surge; Tornado Outbreak Hits Chicago",
       "teaser": "Trump cancels planned Iran strikes, sending the Dow up 930 points (+1.86%) and the S&P 500 up 1.75%, as a tornado outbreak hits northern Illinois and NW Indiana.",
       "stats": {
         "btc": 67500,
@@ -252,7 +265,7 @@
       "date": "2026-06-10",
       "day_of_week": "Wednesday",
       "filename": "2026-06-10.html",
-      "headline": "Dow Sheds 953 Points as CPI Hits Three-Year High — US Resumes Iran Strikes",
+      "headline": "Dow Sheds 953 Points as CPI Hits Three-Year High \u2014 US Resumes Iran Strikes",
       "teaser": "Dow drops 953 points below the 50,000 floor and Nasdaq falls 1.98% as May CPI hits a three-year high of 4.2% and the US resumes strikes on Iran.",
       "stats": {
         "btc": 67200,
@@ -300,8 +313,8 @@
       "date": "2026-06-06",
       "day_of_week": "Saturday",
       "filename": "2026-06-06.html",
-      "headline": "Chips Crater — Nasdaq Suffers Worst Day Since April 2025 as Broadcom Disappoints",
-      "teaser": "Nasdaq plunges 4.18% — its worst session since April 2025 — as Broadcom's guidance disappoints and chip stocks lead a broad selloff to S&P 7,383.74.",
+      "headline": "Chips Crater \u2014 Nasdaq Suffers Worst Day Since April 2025 as Broadcom Disappoints",
+      "teaser": "Nasdaq plunges 4.18% \u2014 its worst session since April 2025 \u2014 as Broadcom's guidance disappoints and chip stocks lead a broad selloff to S&P 7,383.74.",
       "stats": {
         "btc": 70000,
         "sp500": 7383.74
@@ -312,7 +325,7 @@
       "date": "2026-06-05",
       "day_of_week": "Friday",
       "filename": "2026-06-05.html",
-      "headline": "S&P Breaks 7,600 for First Time — Dow Hits All-Time High as Rotation Lifts Defensives",
+      "headline": "S&P Breaks 7,600 for First Time \u2014 Dow Hits All-Time High as Rotation Lifts Defensives",
       "teaser": "S&P 500 closes at a record 7,584.31, breaking 7,600 intraday, as defensive sectors lead a rotation-driven rally to fresh Dow highs.",
       "stats": {
         "btc": 72000,
@@ -324,7 +337,7 @@
       "date": "2026-06-04",
       "day_of_week": "Thursday",
       "filename": "2026-06-04.html",
-      "headline": "Dow Smashes Record +1.73% as Chips Drag Nasdaq — Rotation Accelerates Into Jobs Friday",
+      "headline": "Dow Smashes Record +1.73% as Chips Drag Nasdaq \u2014 Rotation Accelerates Into Jobs Friday",
       "teaser": "Dow Jones surges 874 points (+1.73%) to a fresh record as a rotation out of chip stocks accelerates ahead of Friday's jobs report.",
       "stats": {
         "btc": 74000,
@@ -336,7 +349,7 @@
       "date": "2026-06-03",
       "day_of_week": "Wednesday",
       "filename": "2026-06-03.html",
-      "headline": "Iran Drones Kuwait's Airport — Ceasefire Collapses, Oil Spikes, Stocks Fall",
+      "headline": "Iran Drones Kuwait's Airport \u2014 Ceasefire Collapses, Oil Spikes, Stocks Fall",
       "teaser": "The four-day Iran ceasefire collapses after drone strikes on Kuwait International Airport; oil spikes to $97.80 and Bitcoin falls to $67,200.",
       "stats": {
         "btc": 67200,
@@ -348,7 +361,7 @@
       "date": "2026-06-02",
       "day_of_week": "Tuesday",
       "filename": "2026-06-02.html",
-      "headline": "Markets Reverse From Records — Bitcoin Plunges 31% in 9 Days as Saylor Breaks 'Never Sell' Pledge",
+      "headline": "Markets Reverse From Records \u2014 Bitcoin Plunges 31% in 9 Days as Saylor Breaks 'Never Sell' Pledge",
       "teaser": "S&P 500 falls 0.74% from its record as Bitcoin plunges to $72,400, down 31% in nine days, after Strategy's Michael Saylor breaks his 'never sell' pledge.",
       "stats": {
         "btc": 72400,
@@ -360,7 +373,7 @@
       "date": "2026-06-01",
       "day_of_week": "Monday",
       "filename": "2026-06-01.html",
-      "headline": "Iran MOU Signed — Markets Surge to New Records as Ceasefire Takes Effect",
+      "headline": "Iran MOU Signed \u2014 Markets Surge to New Records as Ceasefire Takes Effect",
       "teaser": "S&P 500 hits 7,621 and the Dow crosses 51,188 as a signed Iran memorandum of understanding sends markets to fresh records.",
       "stats": {
         "btc": 85000,
@@ -372,7 +385,7 @@
       "date": "2026-05-31",
       "day_of_week": "Sunday",
       "filename": "2026-05-31.html",
-      "headline": "Month-End Recap: May 2026 Was One for the History Books — What June Holds",
+      "headline": "Month-End Recap: May 2026 Was One for the History Books \u2014 What June Holds",
       "teaser": "A look back at a record-setting May 2026 and a preview of what June has in store for markets, the Fed, and geopolitics.",
       "stats": {
         "btc": 91000,
@@ -384,7 +397,7 @@
       "date": "2026-05-30",
       "day_of_week": "Saturday",
       "filename": "2026-05-30.html",
-      "headline": "May Ends at Records Across the Board — Dow Crosses 51,000 for the First Time",
+      "headline": "May Ends at Records Across the Board \u2014 Dow Crosses 51,000 for the First Time",
       "teaser": "Dow Jones crosses 51,000 for the first time ever as May closes out with records across major indices.",
       "stats": {
         "btc": 96000,
@@ -396,7 +409,7 @@
       "date": "2026-05-29",
       "day_of_week": "Friday",
       "filename": "2026-05-29.html",
-      "headline": "S&P Hits Record Close as Iran Deal Framework Signals Ceasefire — PCE Inflation Complicates Fed Math",
+      "headline": "S&P Hits Record Close as Iran Deal Framework Signals Ceasefire \u2014 PCE Inflation Complicates Fed Math",
       "teaser": "S&P 500 closes at record 7,609 as Iran ceasefire framework emerges from Oman talks; PCE inflation comes in hot at 3.8%.",
       "stats": {
         "btc": 100000,
@@ -408,7 +421,7 @@
       "date": "2026-05-28",
       "day_of_week": "Thursday",
       "filename": "2026-05-28.html",
-      "headline": "Markets Shrug Off Iran Headlines — Dow Hits Second Consecutive Record Close",
+      "headline": "Markets Shrug Off Iran Headlines \u2014 Dow Hits Second Consecutive Record Close",
       "teaser": "Dow notches second straight record close at 50,516 as Warsh confirmation odds rise and Iran ceasefire talks continue in Oman.",
       "stats": {
         "btc": 105000,
@@ -420,7 +433,7 @@
       "date": "2026-05-27",
       "day_of_week": "Wednesday",
       "filename": "2026-05-27.html",
-      "headline": "Dow Surges to Record as Chips Dump — Warsh Nomination Rattles Bond Market",
+      "headline": "Dow Surges to Record as Chips Dump \u2014 Warsh Nomination Rattles Bond Market",
       "teaser": "Dow Jones gains 282 points to a record 50,234 even as chip stocks slump and the Warsh Fed nomination pushes the 10-year yield to 4.52%.",
       "stats": {
         "btc": 109600,
