@@ -1,17 +1,30 @@
 {
-  "latest_edition": 36,
+  "latest_edition": 37,
   "editions": [
+    {
+      "edition": 37,
+      "date": "2026-07-02",
+      "day_of_week": "Thursday",
+      "filename": "2026-07-02.html",
+      "headline": "June Jobs Report Whiffs at Just 57,000 as Yields Fall and Wall Street Shrugs Off Rate-Hike Fears Into the Holiday",
+      "teaser": "June nonfarm payrolls rise just 57,000 \u2014 well short of the 115,000 forecast \u2014 as unemployment unexpectedly dips to 4.2%, pulling the 2-year yield down and easing July-hike odds; Dow, S&P open higher before gains moderate as chip stocks keep lagging; Bitcoin bounces back above $59,800; Dansby Swanson hits three homers and drives in 8 as the Cubs rout the Padres 23-3 to complete a series sweep; White Sox head to Cleveland after dropping the Orioles finale; Chicago's Extreme Heat Warning enters its final day.",
+      "stats": {
+        "btc": 59849,
+        "sp500": 7508.51,
+        "mortgage_30yr": "6.40% APR"
+      }
+    },
     {
       "edition": 36,
       "date": "2026-07-01",
       "day_of_week": "Wednesday",
       "filename": "2026-07-01.html",
       "headline": "Warsh Makes His Global Debut in Sintra as Bitcoin Slides Below $58,500 to Cap Wall Street's Best Quarter Since 2020",
-      "teaser": "Fed Chair Kevin Warsh joins Lagarde, Bailey, and Macklem at the ECB Forum in Sintra and declines to signal a July move, a day after the Dow's second straight record close (52,319.20) capped the S&P 500 and Nasdaq's best quarter since 2020; Bitcoin extends its slide to ~$58,300 after spot ETFs posted their worst month on record; Witkoff and Kushner report \"positive\" Doha talks with Qatar; Cubs and White Sox both look to sweep series finales amid an Extreme Heat Warning.",
+      "teaser": "Fed Chair Kevin Warsh joins Lagarde, Bailey and Macklem at the ECB's Sintra forum, declining to signal a July move; the Dow closes at a second straight record (52,319.20) as Wall Street logs its best quarter since 2020 (S&P +14%, Nasdaq ~20%); Bitcoin slides to ~$58,300 after spot ETFs post their worst month on record, $4.5B in June outflows; Witkoff and Kushner hold \"positive\" Doha talks with Qatar on Iran MOU implementation; Cubs beat Padres 9-7, White Sox rout Orioles 9-3; Chicago's Extreme Heat Warning holds through Thursday evening.",
       "stats": {
         "btc": 58300,
         "sp500": 7449.36,
-        "mortgage_30yr": "6.36%"
+        "mortgage_30yr": "6.36% APR"
       }
     },
     {
