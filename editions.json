@@ -1,13 +1,26 @@
 {
-  "latest_edition": 37,
+  "latest_edition": 38,
   "editions": [
+    {
+      "edition": 38,
+      "date": "2026-07-03",
+      "day_of_week": "Friday",
+      "filename": "2026-07-03.html",
+      "headline": "Wall Street Goes Dark for the Fourth as Dow Caps a Third Record Close This Week; Doha Talks Pause Ahead of Khamenei Funeral",
+      "teaser": "U.S. markets are closed for Independence Day after Thursday's Dow surged 594.83 points to a third record close this week (52,900.07); Bitcoin rebounds to ~$61,680 amid its best week since June's rout; Doha's next US-Iran session is on hold until after six-day funeral processions for slain former Supreme Leader Khamenei begin Saturday; Cubs (49-38) host the Cardinals at Wrigley, White Sox continue at Cleveland; Chicago's heat wave finally breaks with afternoon storms.",
+      "stats": {
+        "btc": 61680,
+        "sp500": 7483.24,
+        "mortgage_30yr": "6.38% APR"
+      }
+    },
     {
       "edition": 37,
       "date": "2026-07-02",
       "day_of_week": "Thursday",
       "filename": "2026-07-02.html",
       "headline": "June Jobs Report Whiffs at Just 57,000 as Yields Fall and Wall Street Shrugs Off Rate-Hike Fears Into the Holiday",
-      "teaser": "June nonfarm payrolls rise just 57,000 \u2014 well short of the 115,000 forecast \u2014 as unemployment unexpectedly dips to 4.2%, pulling the 2-year yield down and easing July-hike odds; Dow, S&P open higher before gains moderate as chip stocks keep lagging; Bitcoin bounces back above $59,800; Dansby Swanson hits three homers and drives in 8 as the Cubs rout the Padres 23-3 to complete a series sweep; White Sox head to Cleveland after dropping the Orioles finale; Chicago's Extreme Heat Warning enters its final day.",
+      "teaser": "U.S. nonfarm payrolls rise just 57,000 in June versus 115,000 expected, though unemployment unexpectedly falls to 4.2%; the 2-year yield drops as July-hike odds fade; Dow adds roughly 0.24% to 52,442.98 while Nasdaq slips on continued chip weakness; Tesla's Q2 deliveries beat at 480,126; Dansby Swanson hits three home runs and drives in 8 as the Cubs rout the Padres 23-3 to complete a sweep; White Sox fall 6-1 in Baltimore; Chicago's Extreme Heat Warning enters its final day.",
       "stats": {
         "btc": 59849,
         "sp500": 7508.51,
@@ -19,11 +32,11 @@
       "date": "2026-07-01",
       "day_of_week": "Wednesday",
       "filename": "2026-07-01.html",
-      "headline": "Warsh Makes His Global Debut in Sintra as Bitcoin Slides Below $58,500 to Cap Wall Street's Best Quarter Since 2020",
-      "teaser": "Fed Chair Kevin Warsh joins Lagarde, Bailey and Macklem at the ECB's Sintra forum, declining to signal a July move; the Dow closes at a second straight record (52,319.20) as Wall Street logs its best quarter since 2020 (S&P +14%, Nasdaq ~20%); Bitcoin slides to ~$58,300 after spot ETFs post their worst month on record, $4.5B in June outflows; Witkoff and Kushner hold \"positive\" Doha talks with Qatar on Iran MOU implementation; Cubs beat Padres 9-7, White Sox rout Orioles 9-3; Chicago's Extreme Heat Warning holds through Thursday evening.",
+      "headline": "Dow Notches Second Straight Record Close at 52,305 as Chip Stocks Slide to Open the Third Quarter",
+      "teaser": "The Dow touches a fresh intraday record before closing essentially flat at 52,305.24, its second consecutive record close, as semiconductor names including Micron and Sandisk tumble more than 10% on profit-taking; the Russell 2000 hits an all-time high; Bending Spoons pops nearly 40% in its Nasdaq debut; Bitcoin opens July near $58,300, its lowest level in 21 months; Cubs sweep the Padres with a historic 23-3 rout; Chicago's Extreme Heat Warning continues.",
       "stats": {
-        "btc": 58300,
-        "sp500": 7449.36,
+        "btc": 58278,
+        "sp500": 7483.23,
         "mortgage_30yr": "6.36% APR"
       }
     },
