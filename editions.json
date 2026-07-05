@@ -1,13 +1,26 @@
 {
-  "latest_edition": 39,
+  "latest_edition": 40,
   "editions": [
+    {
+      "edition": 40,
+      "date": "2026-07-05",
+      "day_of_week": "Sunday",
+      "filename": "2026-07-05.html",
+      "headline": "Bitcoin Reclaims $63,000 as Khamenei's Funeral Enters a Second Day and Wall Street Waits Out a Quiet Weekend",
+      "teaser": "Bitcoin tops $63,000 for the first time in a month as ETF inflows resume and whales keep accumulating, even as markets stay dark until Monday behind Thursday's record Dow close of 52,900.07; the second day of Ali Khamenei's six-day state funeral draws thousands to Tehran's Grand Mosalla as Doha diplomacy remains paused for funeral week; the Cubs (49-39) and White Sox (46-42) both play series finales today looking to avoid weekend sweeps, and a stray shower risk lingers over Chicagoland behind Saturday's holiday storms.",
+      "stats": {
+        "btc": 62900,
+        "sp500": 7483.24,
+        "mortgage_30yr": "6.39% APR"
+      }
+    },
     {
       "edition": 39,
       "date": "2026-07-04",
       "day_of_week": "Saturday",
       "filename": "2026-07-04.html",
-      "headline": "America Turns 250: Record-Breaking Fireworks and Historic Heat Mark the Nation's Semiquincentennial as Iran Pauses for Khamenei's Funeral",
-      "teaser": "The nation marks its 250th birthday with a record-setting 850,000-shell fireworks display planned for the National Mall amid a dangerous heat wave, as markets stay closed for the weekend following Thursday's record Dow close of 52,900.07; Bitcoin holds near $62,450 as ETF outflows show signs of stabilizing; Iran pauses Doha diplomacy for a six-day funeral for slain Supreme Leader Ali Khamenei; Cubs host Cardinals and White Sox play at Cleveland on a stormy Chicago holiday.",
+      "headline": "America Turns 250: A Record-Shattering Fireworks Show and Historic Heat Mark the Semiquincentennial as Iran Pauses for a Funeral",
+      "teaser": "A record-attempt 850,000-shell fireworks display on the National Mall and historic heat headline America's 250th birthday, as Wall Street sits dark behind Thursday's record Dow close of 52,900.07 and Ali Khamenei's six-day state funeral begins in Tehran; the Cardinals rout the Cubs 17-1, the White Sox fight for first place in Cleveland, and evening storms threaten Chicagoland fireworks plans.",
       "stats": {
         "btc": 62450,
         "sp500": 7483.24,
@@ -19,12 +32,11 @@
       "date": "2026-07-03",
       "day_of_week": "Friday",
       "filename": "2026-07-03.html",
-      "headline": "Wall Street Goes Dark for the Fourth as Dow Caps a Third Record Close This Week; Doha Talks Pause Ahead of Khamenei Funeral",
-      "teaser": "The Dow surges 594.83 points to a record 52,900.07 -- its third record close this week -- as June nonfarm payrolls miss badly (57,000 vs. 115,000 expected); markets are closed today for Independence Day as Bitcoin rebounds to $61,680; US-Iran talks in Doha pause for six days of funeral processions for slain Supreme Leader Ali Khamenei.",
+      "headline": "Markets Close Early for Independence Day as Iran Pauses Diplomacy and Cardinals Rout Cubs 17-1",
+      "teaser": "U.S. markets are closed in observance of July 4th after Thursday's record Dow close of 52,900.07; Iran suspends indirect Doha talks with the U.S. ahead of Ali Khamenei's six-day state funeral, which begins with his casket lying in state in Tehran; the Cardinals blast the Cubs 17-1 at Wrigley while the Guardians walk off the White Sox 4-3 in 10 innings to reclaim first place in the AL Central; Bitcoin holds in the high-$50,000s as whale accumulation continues.",
       "stats": {
-        "btc": 61680,
-        "sp500": 7483.24,
-        "mortgage_30yr": "6.38% APR"
+        "btc": 59500,
+        "sp500": 7483.24
       }
     },
     {
@@ -32,12 +44,12 @@
       "date": "2026-07-02",
       "day_of_week": "Thursday",
       "filename": "2026-07-02.html",
-      "headline": "Bitcoin Sinks to a 21-Month Low as Warsh's Sintra Remarks and a Cooling Chip Trade Open the Third Quarter",
-      "teaser": "Bitcoin drops to $58,278 -- its lowest level since September 2024 -- as Fed Chair Kevin Warsh tells the ECB's Sintra forum 'we've seen that prices are too high'; the Dow slips 0.03% to 52,305.24 while the S&P and Nasdaq post modest declines as chip stocks extend their pullback; Bending Spoons pops 42% in its Nasdaq debut.",
+      "headline": "Dow Rockets to a Record Close Above 52,900 as a Soft June Jobs Report Clears the Way for a Fed Pause",
+      "teaser": "The Dow jumps 594.83 points (+1.14%) to a record close of 52,900.07 after June nonfarm payrolls come in at just 57,000 versus 113,000 expected, even as unemployment ticks down to 4.2%; the S&P 500 is essentially flat at 7,483.24 while the Nasdaq falls 0.8% as chip stocks extend their slide and Tesla drops 7.5% despite beating delivery estimates; U.S. spot Bitcoin ETFs snap a 10-day, $4.5 billion outflow streak with a $221.7 million inflow.",
       "stats": {
-        "btc": 61471,
-        "sp500": 7483.23,
-        "mortgage_30yr": "6.40% APR"
+        "btc": 60300,
+        "sp500": 7483.24,
+        "mortgage_30yr": "6.43%"
       }
     },
     {
@@ -45,12 +57,11 @@
       "date": "2026-07-01",
       "day_of_week": "Wednesday",
       "filename": "2026-07-01.html",
-      "headline": "Wall Street Books Its Best First Half Since 2020 as the Dow Closes at a Fresh Record to End Q2",
-      "teaser": "The Dow gains 0.3% to a record 52,319.20 and the S&P 500 adds 0.8% to 7,499.36 as all three major indexes post their best first-half performance since 2020-2021; the Russell 2000 surges nearly 22% for its best half since 1991; Bending Spoons debuts on Nasdaq up 42%; second-quarter earnings season opens in two weeks.",
+      "headline": "Dow Hits Intraday Record Above 52,700 Before Fading as Bitcoin Craters to a 21-Month Low",
+      "teaser": "The Dow surges to a fresh intraday record of 52,742.66 before slipping to close at 52,305.24 as Caterpillar and chip stocks pull back; Bending Spoons pops nearly 40% in its Nasdaq debut and Meta jumps 9% on cloud-business plans; Bitcoin tumbles to a 21-month low near $58,278 as Fed Chair Kevin Warsh tells the ECB's Sintra forum 'we've seen that prices are too high'; the first half of 2026 closes with the Dow up 8.9%, the S&P 500 up 9.6%, and the Russell 2000 up nearly 22% for its best half since 1991.",
       "stats": {
         "btc": 58278,
-        "sp500": 7499.36,
-        "mortgage_30yr": "6.40% APR"
+        "sp500": 7483.23
       }
     },
     {
