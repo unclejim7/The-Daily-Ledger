@@ -1,6 +1,19 @@
 {
-  "latest_edition": 40,
+  "latest_edition": 41,
   "editions": [
+    {
+      "edition": 41,
+      "date": "2026-07-06",
+      "day_of_week": "Monday",
+      "filename": "2026-07-06.html",
+      "headline": "Tehran's Biggest Day Yet: Khamenei's Main Funeral Procession Draws Immense Crowds as Wall Street Reopens to a Tech Rebound",
+      "teaser": "The largest single day of Ali Khamenei's six-day state funeral draws immense crowds toward Azadi Square in Tehran as Doha talks stay paused for funeral week; Wall Street reopens with Nasdaq 100 futures up 1% and S&P futures +0.4% after Thursday's record Dow close of 52,900.07 on a soft June jobs report; SK Hynix launches a ~$28B Nasdaq listing; Bitcoin eases to ~$62,900 off the weekend's $63K+ high; Cubs (50-39) beat Cardinals 6-4 to avoid the sweep, White Sox (47-42) split with Guardians; both teams off today.",
+      "stats": {
+        "btc": 62900,
+        "sp500": 7483.24,
+        "mortgage_30yr": "6.39% APR"
+      }
+    },
     {
       "edition": 40,
       "date": "2026-07-05",
