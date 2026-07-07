@@ -1,6 +1,19 @@
 {
-  "latest_edition": 41,
+  "latest_edition": 42,
   "editions": [
+    {
+      "edition": 42,
+      "date": "2026-07-07",
+      "day_of_week": "Tuesday",
+      "filename": "2026-07-07.html",
+      "headline": "Oil Tanker Struck Near Hormuz as Khamenei's Funeral Moves to Qom — Wall Street's Record Run Meets an Overnight Chip Wobble",
+      "teaser": "A tanker is struck near the Strait of Hormuz as UKMTO warns of renewed Iranian attacks in the waterway, just as Khamenei's funeral procession moves to Qom for prayers at the Jamkaran Mosque; Wall Street enters Tuesday fresh off Monday's record Dow close above 53,000, but Nasdaq 100 futures slip on a fresh Asia chip selloff ahead of Samsung earnings and SK Hynix's ~$28B Nasdaq listing; Bitcoin holds near $63,100; Microsoft cuts 4,800 jobs; Cubs (50-39) open at Baltimore and White Sox (47-42) host the Red Sox tonight.",
+      "stats": {
+        "btc": 63100,
+        "sp500": 7537.43,
+        "mortgage_30yr": "6.36% APR"
+      }
+    },
     {
       "edition": 41,
       "date": "2026-07-06",
