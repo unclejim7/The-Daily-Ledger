@@ -1,6 +1,19 @@
 {
-  "latest_edition": 42,
+  "latest_edition": 43,
   "editions": [
+    {
+      "edition": 43,
+      "date": "2026-07-08",
+      "day_of_week": "Wednesday",
+      "filename": "2026-07-08.html",
+      "headline": "Trump Declares Iran Ceasefire \"Over\" After U.S. Strikes 80+ Targets Overnight — Oil Surges 6%, Wall Street Braces for a Red Open",
+      "teaser": "President Trump declares the U.S.-Iran ceasefire \"over\" from the NATO summit in Ankara after Iran struck three tankers in the Strait of Hormuz and the U.S. retaliated with strikes on 80+ Iranian targets overnight; Iran hit U.S.-linked bases in Kuwait and Bahrain in response, with all projectiles intercepted; oil surges over 6% to a WTI price near $74.80 as Treasury reimposes Iran oil sanctions; U.S. equity futures fall broadly and gold slips despite the turmoil; FOMC minutes from the 9-9 split June meeting release at 2 PM ET; Cubs (51-40) beat Orioles Tuesday while White Sox (47-43) fall to the Red Sox.",
+      "stats": {
+        "btc": 62050,
+        "sp500": 7503.85,
+        "mortgage_30yr": "6.54%"
+      }
+    },
     {
       "edition": 42,
       "date": "2026-07-07",
