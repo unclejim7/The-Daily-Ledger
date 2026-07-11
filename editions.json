@@ -1,6 +1,19 @@
 {
-  "latest_edition": 45,
+  "latest_edition": 46,
   "editions": [
+    {
+      "edition": 46,
+      "date": "2026-07-11",
+      "day_of_week": "Saturday",
+      "filename": "2026-07-11.html",
+      "headline": "Trump Says the Ceasefire Is \"Over\" but Iran Talks Will Continue \u2014 Wall Street Closes the Week Near Records on SK Hynix's Blockbuster Debut",
+      "teaser": "Trump insists the U.S.-Iran ceasefire remains \"over\" even as both sides agree to keep talking, with Iran's Ghalibaf saying \"we have no trust in you\" and a CNN/ISIS analysis finding apparent nuclear-site reconstruction at Parchin and activity at Pickaxe Mountain during the ceasefire window; Wall Street shrugs it off as SK Hynix's $26.5B Nasdaq debut (largest-ever U.S. listing by a foreign company) headlines a Friday close of records-adjacent gains (S&P +0.42% to 7,575.39, Nasdaq +0.29% to 26,281.61, Dow +0.29% to 52,637.01); Bitcoin reclaims $64K; Freddie Mac's 30-year hits 6.49% as NAR reports a record $440,600 median home price; the Kwong COVID-era Form 843 refund window closed Thursday; White Sox (48-45) rout the Athletics 14-1 to take first in the AL Central, Cubs (52-42) are shut out by Hunter Greene; Chicago enjoys one more mild sunny weekend before next week's heat wave.",
+      "stats": {
+        "btc": 64150,
+        "sp500": 7575.39,
+        "mortgage_30yr": "6.49%"
+      }
+    },
     {
       "edition": 45,
       "date": "2026-07-10",
