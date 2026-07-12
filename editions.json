@@ -1,12 +1,25 @@
 {
-  "latest_edition": 46,
+  "latest_edition": 47,
   "editions": [
+    {
+      "edition": 47,
+      "date": "2026-07-12",
+      "day_of_week": "Sunday",
+      "filename": "2026-07-12.html",
+      "headline": "Iran Closes the Strait of Hormuz and Strikes Five Gulf Nations as the US Answers With a Third Round of Airstrikes",
+      "teaser": "Iran's IRGC disables the Cyprus-flagged container ship GFS Galaxy near Oman and declares the Strait of Hormuz closed \"until further notice,\" prompting a third round of US airstrikes on roughly 140 Iranian targets; Tehran retaliates with missile and drone strikes on Bahrain, Kuwait, Qatar, Jordan and Oman, wounding three in Qatar and landing missiles in Jordan, as Ghalibaf declares \"the era of one-sided deals is OVER\"; CENTCOM insists Iran does not control the strait; Wall Street remains closed for the weekend after Friday's S&P 500 close of 7,575.39 on SK Hynix's blockbuster Nasdaq debut, with oil and equity futures set to reopen Sunday evening for the first real read on the escalation; Bitcoin holds near $63,800; Fed Chair Warsh testifies before the House Tuesday with June CPI landing 90 minutes prior; Freddie Mac's 30-year mortgage rate rose to 6.49%; White Sox (49-45) blank the Athletics 1-0 to stay in first place in the AL Central, Cubs (53-42) rally past the Reds 5-3; Chicago enjoys one more sunny day before Monday's heat wave builds in.",
+      "stats": {
+        "btc": 63800,
+        "sp500": 7575.39,
+        "mortgage_30yr": "6.49%"
+      }
+    },
     {
       "edition": 46,
       "date": "2026-07-11",
       "day_of_week": "Saturday",
       "filename": "2026-07-11.html",
-      "headline": "Trump Says the Ceasefire Is \"Over\" but Iran Talks Will Continue \u2014 Wall Street Closes the Week Near Records on SK Hynix's Blockbuster Debut",
+      "headline": "Trump Says the Ceasefire Is \"Over\" but Iran Talks Will Continue — Wall Street Closes the Week Near Records on SK Hynix's Blockbuster Debut",
       "teaser": "Trump insists the U.S.-Iran ceasefire remains \"over\" even as both sides agree to keep talking, with Iran's Ghalibaf saying \"we have no trust in you\" and a CNN/ISIS analysis finding apparent nuclear-site reconstruction at Parchin and activity at Pickaxe Mountain during the ceasefire window; Wall Street shrugs it off as SK Hynix's $26.5B Nasdaq debut (largest-ever U.S. listing by a foreign company) headlines a Friday close of records-adjacent gains (S&P +0.42% to 7,575.39, Nasdaq +0.29% to 26,281.61, Dow +0.29% to 52,637.01); Bitcoin reclaims $64K; Freddie Mac's 30-year hits 6.49% as NAR reports a record $440,600 median home price; the Kwong COVID-era Form 843 refund window closed Thursday; White Sox (48-45) rout the Athletics 14-1 to take first in the AL Central, Cubs (52-42) are shut out by Hunter Greene; Chicago enjoys one more mild sunny weekend before next week's heat wave.",
       "stats": {
         "btc": 64150,
