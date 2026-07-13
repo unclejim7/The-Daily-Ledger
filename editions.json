@@ -1,6 +1,19 @@
 {
-  "latest_edition": 47,
+  "latest_edition": 48,
   "editions": [
+    {
+      "edition": 48,
+      "date": "2026-07-13",
+      "day_of_week": "Monday",
+      "filename": "2026-07-13.html",
+      "headline": "US and Iran Trade Fresh Strikes Overnight as Both Sides Dispute Whether the Strait of Hormuz Is Actually Open",
+      "teaser": "US Central Command carries out a fresh round of overnight strikes on Iran, using one-way attack sea drones for the first time, as Iran continues to insist the Strait of Hormuz is closed \"until further notice\" while CENTCOM maintains it remains open; Bloomberg tracking shows commodity carriers crossing the strait with AIS transponders switched off, with \"dark\" crossings now outnumbering tracked ones for three straight days; Brent crude spikes to $79.29 before paring to ~$78.14, WTI touches $74.41 before settling near $73; Polymarket prices just 22% odds of an \"up\" S&P open Monday, and futures fall sharply before the cash market opens mixed (Dow +0.21%, S&P -0.3%, Nasdaq -0.86%) as KOSPI plunges 9% and Nikkei falls nearly 2% overnight; Bitcoin holds near $63,050, gold slips 1.1% to $4,074.57 despite the war headlines; Warsh testifies before the House Financial Services Committee Tuesday with June CPI landing 90 minutes prior, and JPMorgan, BofA, Goldman, Wells Fargo and Citigroup all report Tuesday; Bankrate's 30-year mortgage hits 6.58% Monday while Freddie Mac's weekly read holds at 6.49%; both the White Sox (50-45, first in the AL Central) and Cubs (54-42, second in the NL Central) enter the All-Star break after series wins, with Pete Crow-Armstrong, Miguel Vargas, Munetaka Murakami and Tristan Peters representing Chicago in Tuesday's Midsummer Classic; Chicagoland's second heat wave of the summer arrives today with a high near 90°F, building into the low 90s through Friday.",
+      "stats": {
+        "btc": 63050,
+        "sp500": 7554.83,
+        "mortgage_30yr": "6.58%"
+      }
+    },
     {
       "edition": 47,
       "date": "2026-07-12",
