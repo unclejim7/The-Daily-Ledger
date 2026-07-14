@@ -1,6 +1,19 @@
 {
-  "latest_edition": 48,
+  "latest_edition": 49,
   "editions": [
+    {
+      "edition": 49,
+      "date": "2026-07-14",
+      "day_of_week": "Tuesday",
+      "filename": "2026-07-14.html",
+      "headline": "US and Iran Trade a Third Night of Strikes as CENTCOM Preps to Reimpose the Hormuz Blockade — Cooling CPI and a Bank Earnings Wall Collide on Wall Street",
+      "teaser": "US Central Command carries out a third straight night of strikes on Iran, using one-way attack sea drones for the first time, as Iran strikes two UAE-flagged tankers with cruise missiles inside Omani waters, killing one crew member; CENTCOM says it will reinstate the Hormuz naval blockade at 4 PM ET Tuesday and Trump floats a 20% transit toll; Brent tops $86 (one-month high) after settling Monday at $83.30 (+9.59%), its biggest jump in six years, while WTI nears $80 after a $78.14 Monday settle; June CPI cools sharply to 3.5% y/y from May's 4.2%, down 0.4% m/m — the largest monthly drop since April 2020 — just 90 minutes before Fed Chair Kevin Warsh delivers his first semiannual testimony to the House Financial Services Committee; JPMorgan ($16.9B profit, EPS $6.14), Wells Fargo (+22% net income), Bank of America (+27% profit) and Goldman Sachs (EPS $20.98, shares +4%) all beat, while IBM plunges over 22% on weak revenue; S&P 500 +0.3% and Nasdaq +1% as chips rebound from Monday's KOSPI-driven rout; Bitcoin holds near $62,780, gold slips to ~$4,010; Bankrate's 30-year mortgage hits a one-month-high 6.64% while Freddie Mac's weekly read holds at 6.49%; Cardinals rookie Jordan Walker stuns Philadelphia to win the Home Run Derby over Kyle Schwarber 12-11 as Munetaka Murakami is eliminated in Round 1; both the White Sox (50-45, first in the AL Central) and Cubs (54-42, second in the NL Central) sit out the All-Star break, with Pete Crow-Armstrong, Miguel Vargas, Murakami and Tristan Peters representing Chicago at tonight's Midsummer Classic in Philadelphia; Chicagoland's heat wave peaks today with highs in the low-to-mid 90s and a heat index near 100.",
+      "stats": {
+        "btc": 62780,
+        "sp500": 7538.09,
+        "mortgage_30yr": "6.64%"
+      }
+    },
     {
       "edition": 48,
       "date": "2026-07-13",
