@@ -1,6 +1,19 @@
 {
-  "latest_edition": 50,
+  "latest_edition": 51,
   "editions": [
+    {
+      "edition": 51,
+      "date": "2026-07-16",
+      "day_of_week": "Thursday",
+      "filename": "2026-07-16.html",
+      "headline": "Sixth Night of Strikes Brings Sirens to Bahrain and Kuwait as Trump Weighs Seizing Iran's Main Oil Terminal \u2014 UnitedHealth's Blowout Offsets a Chip Wobble",
+      "teaser": "U.S. Central Command strikes Iran for a sixth straight day and disables a tanker headed for Kharg Island, Iran's primary oil export terminal, as CNN reports Trump is weighing options to expand the operation, including potentially seizing the island itself; air raid sirens sound in Bahrain and Kuwait, Iran's army confirms at least seven military personnel killed, and Trump says Iran released an American woman detained since December 2024 as a \"gesture of goodwill\"; UnitedHealth Group jumps 7% premarket on an earnings beat and raised guidance, with GE Aerospace and J.B. Hunt also topping estimates, but S&P 500 futures slip 0.2-0.4% and Nasdaq 100 futures fall about 1% after Taiwan Semiconductor's raised capex guidance overshadows its beat, dragging SK Hynix down 11% and Samsung over 7% in Seoul; Fed Chair Kevin Warsh wraps two days of congressional testimony pledging to \"follow the law and follow the data\"; Bitcoin holds near $64,750, up about 4% on the week; WTI trades near $79.70 and Brent near $84.60 as oil stays elevated; the IRS rolls out Automatic Exemption from Penalty (AEP), replacing First-Time Abate for compliant filers; Freddie Mac's weekly mortgage survey is due at noon with Zillow's daily tracker already up to 6.49%; the Cubs (54-42, No. 1 NL Wild Card) and White Sox (50-45, tied atop the AL Central) sit out the final day of the All-Star break with the August 3 trade deadline approaching; Chicago is under an Air Pollution Action Day with the AQI forecast to exceed 150 and highs near the mid-90s.",
+      "stats": {
+        "btc": 64750,
+        "sp500": 7572.40,
+        "mortgage_30yr": "6.49%"
+      }
+    },
     {
       "edition": 50,
       "date": "2026-07-15",
@@ -10,7 +23,7 @@
       "teaser": "U.S. Central Command strikes Iran for a fifth straight day and redirects two vessels attempting to run the reinstated Hormuz naval blockade in its first 17 hours, as Iran says U.S. strikes have killed 30+ civilians and confirms retaliatory strikes on U.S.-linked bases in Kuwait, Bahrain, and Jordan; Trump abandons his proposed 20% Hormuz transit toll in favor of Gulf state trade deals; Fed Chair Kevin Warsh's second day of Senate Banking testimony turns adversarial when Elizabeth Warren accuses him of a tone that \"seems to invite corruption\" over an unanswered blackout-period question, and Warsh responds by pledging to \"follow the law and follow the data\"; June PPI falls 0.3% m/m and the Empire State Manufacturing Index jumps to a four-year-high 15.6, with FedWatch pricing 85.6% odds of a July hold; S&P 500 holds near 7,562 (+0.25%), Nasdaq +0.47%, as ASML's raised guidance gives way to a reversal in Micron (-7-9%) while Morgan Stanley and BlackRock beat on earnings; Bitcoin tops $65,000 for the first time since June 17, up over 4% on cooling inflation data, with Ethereum crossing $1,900; Bankrate's 30-year mortgage holds at 6.59% as Freddie Mac's weekly reading stays at 6.49% ahead of Thursday's update; the AL shuts out the NL 4-0 in the All-Star Game as White Sox third baseman Miguel Vargas homers in the eighth and Cubs center fielder Pete Crow-Armstrong singles, with both Chicago clubs off until Friday; Chicago remains under an Air Quality Alert through midnight with highs near 97\u00b0 and a heat index well above 100\u00b0.",
       "stats": {
         "btc": 65290,
-        "sp500": 7562.43,
+        "sp500": 7572.40,
         "mortgage_30yr": "6.59%"
       }
     },
