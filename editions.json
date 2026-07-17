@@ -1,16 +1,29 @@
 {
-  "latest_edition": 51,
+  "latest_edition": 52,
   "editions": [
+    {
+      "edition": 52,
+      "date": "2026-07-17",
+      "day_of_week": "Friday",
+      "filename": "2026-07-17.html",
+      "headline": "Seventh Day of Strikes Hits Iranian Bridges and Rail as Tehran Strikes Al Udeid and Kuwait — Chip Selloff Deepens as Netflix Slides on Weak Q3 Guide",
+      "teaser": "U.S. strikes hit bridges, a railway junction, and an airport across Hormozgan and Sistan-Baluchestan provinces overnight, killing at least seven to eight and severing routes out of Bandar Abbas, as Iran retaliates by striking Qatar's Al Udeid Air Base (wounding four, including a child) and hitting power and desalination infrastructure in Kuwait and Bahrain, with a tanker struck off Oman and U.S. Marines boarding another vessel in the contested Strait of Hormuz; oil climbs roughly 2% on the escalation, with Brent near $85.76 and WTI near $80.64; U.S. futures point lower (S&P -0.8%, Nasdaq 100 -1.6% to -1.9%) after Thursday's chip-led selloff (S&P -0.51% to 7,533.77, Nasdaq -1.47%) deepens on TSMC's raised 2026 capex guidance ($60-64B) and a weak Netflix Q3 revenue outlook that sent shares down more than 8% after hours; Bitcoin slips to about $62,800; Freddie Mac's 30-year mortgage rises to 6.55%, its third straight weekly increase; gold eases to $3,994 and silver falls nearly 3% per Armstrong's Market Talk; the Cubs (54-42) host the Twins and the White Sox (50-45) open a series at Toronto as both return from the All-Star break; Chicago faces a hot, humid Friday with a high near 87° and heat index values up to 95, with a 50% chance of scattered afternoon storms.",
+      "stats": {
+        "btc": 62810,
+        "sp500": 7533.77,
+        "mortgage_30yr": "6.55%"
+      }
+    },
     {
       "edition": 51,
       "date": "2026-07-16",
       "day_of_week": "Thursday",
       "filename": "2026-07-16.html",
-      "headline": "Sixth Night of Strikes Brings Sirens to Bahrain and Kuwait as Trump Weighs Seizing Iran's Main Oil Terminal \u2014 UnitedHealth's Blowout Offsets a Chip Wobble",
+      "headline": "Sixth Night of Strikes Brings Sirens to Bahrain and Kuwait as Trump Weighs Seizing Iran's Main Oil Terminal — UnitedHealth's Blowout Offsets a Chip Wobble",
       "teaser": "U.S. Central Command strikes Iran for a sixth straight day and disables a tanker headed for Kharg Island, Iran's primary oil export terminal, as CNN reports Trump is weighing options to expand the operation, including potentially seizing the island itself; air raid sirens sound in Bahrain and Kuwait, Iran's army confirms at least seven military personnel killed, and Trump says Iran released an American woman detained since December 2024 as a \"gesture of goodwill\"; UnitedHealth Group jumps 7% premarket on an earnings beat and raised guidance, with GE Aerospace and J.B. Hunt also topping estimates, but S&P 500 futures slip 0.2-0.4% and Nasdaq 100 futures fall about 1% after Taiwan Semiconductor's raised capex guidance overshadows its beat, dragging SK Hynix down 11% and Samsung over 7% in Seoul; Fed Chair Kevin Warsh wraps two days of congressional testimony pledging to \"follow the law and follow the data\"; Bitcoin holds near $64,750, up about 4% on the week; WTI trades near $79.70 and Brent near $84.60 as oil stays elevated; the IRS rolls out Automatic Exemption from Penalty (AEP), replacing First-Time Abate for compliant filers; Freddie Mac's weekly mortgage survey is due at noon with Zillow's daily tracker already up to 6.49%; the Cubs (54-42, No. 1 NL Wild Card) and White Sox (50-45, tied atop the AL Central) sit out the final day of the All-Star break with the August 3 trade deadline approaching; Chicago is under an Air Pollution Action Day with the AQI forecast to exceed 150 and highs near the mid-90s.",
       "stats": {
         "btc": 64750,
-        "sp500": 7572.40,
+        "sp500": 7572.4,
         "mortgage_30yr": "6.49%"
       }
     },
@@ -19,11 +32,11 @@
       "date": "2026-07-15",
       "day_of_week": "Wednesday",
       "filename": "2026-07-15.html",
-      "headline": "Fifth Night of Strikes Collides With Warsh's Senate Showdown \u2014 Cooling PPI and a $65K Bitcoin Breakout Lift Wall Street",
-      "teaser": "U.S. Central Command strikes Iran for a fifth straight day and redirects two vessels attempting to run the reinstated Hormuz naval blockade in its first 17 hours, as Iran says U.S. strikes have killed 30+ civilians and confirms retaliatory strikes on U.S.-linked bases in Kuwait, Bahrain, and Jordan; Trump abandons his proposed 20% Hormuz transit toll in favor of Gulf state trade deals; Fed Chair Kevin Warsh's second day of Senate Banking testimony turns adversarial when Elizabeth Warren accuses him of a tone that \"seems to invite corruption\" over an unanswered blackout-period question, and Warsh responds by pledging to \"follow the law and follow the data\"; June PPI falls 0.3% m/m and the Empire State Manufacturing Index jumps to a four-year-high 15.6, with FedWatch pricing 85.6% odds of a July hold; S&P 500 holds near 7,562 (+0.25%), Nasdaq +0.47%, as ASML's raised guidance gives way to a reversal in Micron (-7-9%) while Morgan Stanley and BlackRock beat on earnings; Bitcoin tops $65,000 for the first time since June 17, up over 4% on cooling inflation data, with Ethereum crossing $1,900; Bankrate's 30-year mortgage holds at 6.59% as Freddie Mac's weekly reading stays at 6.49% ahead of Thursday's update; the AL shuts out the NL 4-0 in the All-Star Game as White Sox third baseman Miguel Vargas homers in the eighth and Cubs center fielder Pete Crow-Armstrong singles, with both Chicago clubs off until Friday; Chicago remains under an Air Quality Alert through midnight with highs near 97\u00b0 and a heat index well above 100\u00b0.",
+      "headline": "Fifth Night of Strikes Collides With Warsh's Senate Showdown — Cooling PPI and a $65K Bitcoin Breakout Lift Wall Street",
+      "teaser": "U.S. Central Command strikes Iran for a fifth straight day and redirects two vessels attempting to run the reinstated Hormuz naval blockade in its first 17 hours, as Iran says U.S. strikes have killed 30+ civilians and confirms retaliatory strikes on U.S.-linked bases in Kuwait, Bahrain, and Jordan; Trump abandons his proposed 20% Hormuz transit toll in favor of Gulf state trade deals; Fed Chair Kevin Warsh's second day of Senate Banking testimony turns adversarial when Elizabeth Warren accuses him of a tone that \"seems to invite corruption\" over an unanswered blackout-period question, and Warsh responds by pledging to \"follow the law and follow the data\"; June PPI falls 0.3% m/m and the Empire State Manufacturing Index jumps to a four-year-high 15.6, with FedWatch pricing 85.6% odds of a July hold; S&P 500 holds near 7,562 (+0.25%), Nasdaq +0.47%, as ASML's raised guidance gives way to a reversal in Micron (-7-9%) while Morgan Stanley and BlackRock beat on earnings; Bitcoin tops $65,000 for the first time since June 17, up over 4% on cooling inflation data, with Ethereum crossing $1,900; Bankrate's 30-year mortgage holds at 6.59% as Freddie Mac's weekly reading stays at 6.49% ahead of Thursday's update; the AL shuts out the NL 4-0 in the All-Star Game as White Sox third baseman Miguel Vargas homers in the eighth and Cubs center fielder Pete Crow-Armstrong singles, with both Chicago clubs off until Friday; Chicago remains under an Air Quality Alert through midnight with highs near 97° and a heat index well above 100°.",
       "stats": {
         "btc": 65290,
-        "sp500": 7572.40,
+        "sp500": 7572.4,
         "mortgage_30yr": "6.59%"
       }
     },
@@ -32,8 +45,8 @@
       "date": "2026-07-14",
       "day_of_week": "Tuesday",
       "filename": "2026-07-14.html",
-      "headline": "US and Iran Trade a Third Night of Strikes as CENTCOM Preps to Reimpose the Hormuz Blockade \u2014 Cooling CPI and a Bank Earnings Wall Collide on Wall Street",
-      "teaser": "US Central Command carries out a third straight night of strikes on Iran, using one-way attack sea drones for the first time, as Iran strikes two UAE-flagged tankers with cruise missiles inside Omani waters, killing one crew member; CENTCOM says it will reinstate the Hormuz naval blockade at 4 PM ET Tuesday and Trump floats a 20% transit toll; Brent tops $86 (one-month high) after settling Monday at $83.30 (+9.59%), its biggest jump in six years, while WTI nears $80 after a $78.14 Monday settle; June CPI cools sharply to 3.5% y/y from May's 4.2%, down 0.4% m/m \u2014 the largest monthly drop since April 2020 \u2014 just 90 minutes before Fed Chair Kevin Warsh delivers his first semiannual testimony to the House Financial Services Committee; JPMorgan ($16.9B profit, EPS $6.14), Wells Fargo (+22% net income), Bank of America (+27% profit) and Goldman Sachs (EPS $20.98, shares +4%) all beat, while IBM plunges over 22% on weak revenue; S&P 500 +0.3% and Nasdaq +1% as chips rebound from Monday's KOSPI-driven rout; Bitcoin holds near $62,780, gold slips to ~$4,010; Bankrate's 30-year mortgage hits a one-month-high 6.64% while Freddie Mac's weekly read holds at 6.49%; Cardinals rookie Jordan Walker stuns Philadelphia to win the Home Run Derby over Kyle Schwarber 12-11 as Munetaka Murakami is eliminated in Round 1; both the White Sox (50-45, first in the AL Central) and Cubs (54-42, second in the NL Central) sit out the All-Star break, with Pete Crow-Armstrong, Miguel Vargas, Murakami and Tristan Peters representing Chicago at tonight's Midsummer Classic in Philadelphia; Chicagoland's heat wave peaks today with highs in the low-to-mid 90s and a heat index near 100.",
+      "headline": "US and Iran Trade a Third Night of Strikes as CENTCOM Preps to Reimpose the Hormuz Blockade — Cooling CPI and a Bank Earnings Wall Collide on Wall Street",
+      "teaser": "US Central Command carries out a third straight night of strikes on Iran, using one-way attack sea drones for the first time, as Iran strikes two UAE-flagged tankers with cruise missiles inside Omani waters, killing one crew member; CENTCOM says it will reinstate the Hormuz naval blockade at 4 PM ET Tuesday and Trump floats a 20% transit toll; Brent tops $86 (one-month high) after settling Monday at $83.30 (+9.59%), its biggest jump in six years, while WTI nears $80 after a $78.14 Monday settle; June CPI cools sharply to 3.5% y/y from May's 4.2%, down 0.4% m/m — the largest monthly drop since April 2020 — just 90 minutes before Fed Chair Kevin Warsh delivers his first semiannual testimony to the House Financial Services Committee; JPMorgan ($16.9B profit, EPS $6.14), Wells Fargo (+22% net income), Bank of America (+27% profit) and Goldman Sachs (EPS $20.98, shares +4%) all beat, while IBM plunges over 22% on weak revenue; S&P 500 +0.3% and Nasdaq +1% as chips rebound from Monday's KOSPI-driven rout; Bitcoin holds near $62,780, gold slips to ~$4,010; Bankrate's 30-year mortgage hits a one-month-high 6.64% while Freddie Mac's weekly read holds at 6.49%; Cardinals rookie Jordan Walker stuns Philadelphia to win the Home Run Derby over Kyle Schwarber 12-11 as Munetaka Murakami is eliminated in Round 1; both the White Sox (50-45, first in the AL Central) and Cubs (54-42, second in the NL Central) sit out the All-Star break, with Pete Crow-Armstrong, Miguel Vargas, Murakami and Tristan Peters representing Chicago at tonight's Midsummer Classic in Philadelphia; Chicagoland's heat wave peaks today with highs in the low-to-mid 90s and a heat index near 100.",
       "stats": {
         "btc": 62780,
         "sp500": 7538.09,
@@ -46,7 +59,7 @@
       "day_of_week": "Monday",
       "filename": "2026-07-13.html",
       "headline": "US and Iran Trade Fresh Strikes Overnight as Both Sides Dispute Whether the Strait of Hormuz Is Actually Open",
-      "teaser": "US Central Command carries out a fresh round of overnight strikes on Iran, using one-way attack sea drones for the first time, as Iran continues to insist the Strait of Hormuz is closed \"until further notice\" while CENTCOM maintains it remains open; Bloomberg tracking shows commodity carriers crossing the strait with AIS transponders switched off, with \"dark\" crossings now outnumbering tracked ones for three straight days; Brent crude spikes to $79.29 before paring to ~$78.14, WTI touches $74.41 before settling near $73; Polymarket prices just 22% odds of an \"up\" S&P open Monday, and futures fall sharply before the cash market opens mixed (Dow +0.21%, S&P -0.3%, Nasdaq -0.86%) as KOSPI plunges 9% and Nikkei falls nearly 2% overnight; Bitcoin holds near $63,050, gold slips 1.1% to $4,074.57 despite the war headlines; Warsh testifies before the House Financial Services Committee Tuesday with June CPI landing 90 minutes prior, and JPMorgan, BofA, Goldman, Wells Fargo and Citigroup all report Tuesday; Bankrate's 30-year mortgage hits 6.58% Monday while Freddie Mac's weekly read holds at 6.49%; both the White Sox (50-45, first in the AL Central) and Cubs (54-42, second in the NL Central) enter the All-Star break after series wins, with Pete Crow-Armstrong, Miguel Vargas, Munetaka Murakami and Tristan Peters representing Chicago in Tuesday's Midsummer Classic; Chicagoland's second heat wave of the summer arrives today with a high near 90\u00b0F, building into the low 90s through Friday.",
+      "teaser": "US Central Command carries out a fresh round of overnight strikes on Iran, using one-way attack sea drones for the first time, as Iran continues to insist the Strait of Hormuz is closed \"until further notice\" while CENTCOM maintains it remains open; Bloomberg tracking shows commodity carriers crossing the strait with AIS transponders switched off, with \"dark\" crossings now outnumbering tracked ones for three straight days; Brent crude spikes to $79.29 before paring to ~$78.14, WTI touches $74.41 before settling near $73; Polymarket prices just 22% odds of an \"up\" S&P open Monday, and futures fall sharply before the cash market opens mixed (Dow +0.21%, S&P -0.3%, Nasdaq -0.86%) as KOSPI plunges 9% and Nikkei falls nearly 2% overnight; Bitcoin holds near $63,050, gold slips 1.1% to $4,074.57 despite the war headlines; Warsh testifies before the House Financial Services Committee Tuesday with June CPI landing 90 minutes prior, and JPMorgan, BofA, Goldman, Wells Fargo and Citigroup all report Tuesday; Bankrate's 30-year mortgage hits 6.58% Monday while Freddie Mac's weekly read holds at 6.49%; both the White Sox (50-45, first in the AL Central) and Cubs (54-42, second in the NL Central) enter the All-Star break after series wins, with Pete Crow-Armstrong, Miguel Vargas, Munetaka Murakami and Tristan Peters representing Chicago in Tuesday's Midsummer Classic; Chicagoland's second heat wave of the summer arrives today with a high near 90°F, building into the low 90s through Friday.",
       "stats": {
         "btc": 63050,
         "sp500": 7554.83,
@@ -71,7 +84,7 @@
       "date": "2026-07-11",
       "day_of_week": "Saturday",
       "filename": "2026-07-11.html",
-      "headline": "Trump Says the Ceasefire Is \"Over\" but Iran Talks Will Continue \u2014 Wall Street Closes the Week Near Records on SK Hynix's Blockbuster Debut",
+      "headline": "Trump Says the Ceasefire Is \"Over\" but Iran Talks Will Continue — Wall Street Closes the Week Near Records on SK Hynix's Blockbuster Debut",
       "teaser": "Trump insists the U.S.-Iran ceasefire remains \"over\" even as both sides agree to keep talking, with Iran's Ghalibaf saying \"we have no trust in you\" and a CNN/ISIS analysis finding apparent nuclear-site reconstruction at Parchin and activity at Pickaxe Mountain during the ceasefire window; Wall Street shrugs it off as SK Hynix's $26.5B Nasdaq debut (largest-ever U.S. listing by a foreign company) headlines a Friday close of records-adjacent gains (S&P +0.42% to 7,575.39, Nasdaq +0.29% to 26,281.61, Dow +0.29% to 52,637.01); Bitcoin reclaims $64K; Freddie Mac's 30-year hits 6.49% as NAR reports a record $440,600 median home price; the Kwong COVID-era Form 843 refund window closed Thursday; White Sox (48-45) rout the Athletics 14-1 to take first in the AL Central, Cubs (52-42) are shut out by Hunter Greene; Chicago enjoys one more mild sunny weekend before next week's heat wave.",
       "stats": {
         "btc": 64150,
@@ -84,7 +97,7 @@
       "date": "2026-07-10",
       "day_of_week": "Friday",
       "filename": "2026-07-10.html",
-      "headline": "Khamenei Laid to Rest in Mashhad as the Ceasefire He Died Over Stays Broken \u2014 Wall Street Looks Past It Toward SK Hynix",
+      "headline": "Khamenei Laid to Rest in Mashhad as the Ceasefire He Died Over Stays Broken — Wall Street Looks Past It Toward SK Hynix",
       "teaser": "Iran's slain Supreme Leader Ali Khamenei is buried before dawn Friday at the Shrine of Imam Reza in Mashhad, closing a six-day funeral that drew over 15 million mourners, while the US-Iran ceasefire remains broken and Pakistan and Qatar work back channels after two nights of renewed strikes; Wall Street shrugs it off, with Thursday's close (S&P +0.81% to 7,543.64, Nasdaq +1.30% to 26,206.89) setting up Friday's main event, SK Hynix's ~$26.5B Nasdaq debut, the largest-ever US listing by a foreign company; Delta tops Q2 estimates and reaffirms guidance; FOMC minutes show a 9-9 split with CME FedWatch now pricing 79% odds of a July hold; Bitcoin holds near $63,900 in a fragile bounce; Cubs (52-41) fall 3-2 to the Orioles missing the sweep, White Sox (47-44) are swept by Boston 2-1; today is the final day to file Form 843 Kwong refund claims.",
       "stats": {
         "btc": 63900,
@@ -97,7 +110,7 @@
       "date": "2026-07-09",
       "day_of_week": "Thursday",
       "filename": "2026-07-09.html",
-      "headline": "Trump Says U.S. \"Already Won Militarily\" as Iran Buries Khamenei in Mashhad \u2014 Markets Shrug Off a Second Night of Strikes",
+      "headline": "Trump Says U.S. \"Already Won Militarily\" as Iran Buries Khamenei in Mashhad — Markets Shrug Off a Second Night of Strikes",
       "teaser": "Iran buries Ali Khamenei today at the Imam Reza shrine in Mashhad as the six-day state funeral concludes, even as the U.S. struck 80+ Iranian targets overnight for a second straight night and Trump tells NATO allies in Ankara \"we've already won militarily\"; Wednesday's session was rough (Dow -1.09% to 52,348.39, S&P -0.28% to 7,482.71) but Thursday futures rise on chip-sector strength ahead of SK Hynix's ~$28B Nasdaq debut; FOMC June minutes show a 9-9 split on a 2026 hike, with Warsh withholding his own dot for the first time ever; Bitcoin holds near $62,850 in Extreme Fear; Cubs (52-40) slug past Orioles 9-7 on four homers while White Sox (47-44) are shut out 0-5 by Boston; final day tomorrow to file Form 843 Kwong COVID-era penalty refund claims.",
       "stats": {
         "btc": 62850,
@@ -110,7 +123,7 @@
       "date": "2026-07-08",
       "day_of_week": "Wednesday",
       "filename": "2026-07-08.html",
-      "headline": "Trump Declares Iran Ceasefire \"Over\" After U.S. Strikes 80+ Targets Overnight \u2014 Oil Surges 6%, Wall Street Braces for a Red Open",
+      "headline": "Trump Declares Iran Ceasefire \"Over\" After U.S. Strikes 80+ Targets Overnight — Oil Surges 6%, Wall Street Braces for a Red Open",
       "teaser": "President Trump declares the U.S.-Iran ceasefire \"over\" from the NATO summit in Ankara after Iran struck three tankers in the Strait of Hormuz and the U.S. retaliated with strikes on 80+ Iranian targets overnight; Iran hit U.S.-linked bases in Kuwait and Bahrain in response, with all projectiles intercepted; oil surges over 6% to a WTI price near $74.80 as Treasury reimposes Iran oil sanctions; U.S. equity futures fall broadly and gold slips despite the turmoil; FOMC minutes from the 9-9 split June meeting release at 2 PM ET; Cubs (51-40) beat Orioles Tuesday while White Sox (47-43) fall to the Red Sox.",
       "stats": {
         "btc": 62050,
@@ -123,7 +136,7 @@
       "date": "2026-07-07",
       "day_of_week": "Tuesday",
       "filename": "2026-07-07.html",
-      "headline": "Oil Tanker Struck Near Hormuz as Khamenei's Funeral Moves to Qom \u2014 Wall Street's Record Run Meets an Overnight Chip Wobble",
+      "headline": "Oil Tanker Struck Near Hormuz as Khamenei's Funeral Moves to Qom — Wall Street's Record Run Meets an Overnight Chip Wobble",
       "teaser": "A tanker is struck near the Strait of Hormuz as UKMTO warns of renewed Iranian attacks in the waterway, just as Khamenei's funeral procession moves to Qom for prayers at the Jamkaran Mosque; Wall Street enters Tuesday fresh off Monday's record Dow close above 53,000, but Nasdaq 100 futures slip on a fresh Asia chip selloff ahead of Samsung earnings and SK Hynix's ~$28B Nasdaq listing; Bitcoin holds near $63,100; Microsoft cuts 4,800 jobs; Cubs (50-39) open at Baltimore and White Sox (47-42) host the Red Sox tonight.",
       "stats": {
         "btc": 63100,
@@ -274,8 +287,8 @@
       "date": "2026-06-25",
       "day_of_week": "Thursday",
       "filename": "2026-06-25.html",
-      "headline": "Micron Delivers Its Strongest Quarter in History \u2014 $41.46B Revenue, $50B Q4 Guidance, and a 17% Pop Rescue the AI Rally",
-      "teaser": "Micron's fiscal Q3 blowout \u2014 $41.46B revenue, $25.11 EPS, 84.9% gross margin \u2014 sends Nasdaq futures up 2% overnight and MU surging 17-18% on open; May PCE prints at 4.1% (3-year high) but in-line with estimates, analysts say May was the peak; Qualcomm +9%; Dansby Swanson sets Cubs franchise record with 11 RBI across a doubleheader sweep of the Mets (10-3, 10-5); Blackhawks trade #4 pick to Buffalo for Bowen Byram; NHL Draft Round 1 tonight in Buffalo.",
+      "headline": "Micron Delivers Its Strongest Quarter in History — $41.46B Revenue, $50B Q4 Guidance, and a 17% Pop Rescue the AI Rally",
+      "teaser": "Micron's fiscal Q3 blowout — $41.46B revenue, $25.11 EPS, 84.9% gross margin — sends Nasdaq futures up 2% overnight and MU surging 17-18% on open; May PCE prints at 4.1% (3-year high) but in-line with estimates, analysts say May was the peak; Qualcomm +9%; Dansby Swanson sets Cubs franchise record with 11 RBI across a doubleheader sweep of the Mets (10-3, 10-5); Blackhawks trade #4 pick to Buffalo for Bowen Byram; NHL Draft Round 1 tonight in Buffalo.",
       "stats": {
         "btc": 61274,
         "sp500": 7358.22,
@@ -288,7 +301,7 @@
       "day_of_week": "Wednesday",
       "filename": "2026-06-24.html",
       "headline": "All Eyes on Micron Tonight: Markets Attempt a Bounce After the AI Rout, But the HBM Number Will Decide Everything",
-      "teaser": "S&P 500 futures edge higher after Tuesday's brutal session (S&P \u22121.44%, Nasdaq \u22122.21%) as markets await Micron's fiscal Q3 earnings at 4:30 PM ET; Bulls land Caleb Wilson #4 and Dailyn Swain #15; Giannis traded to Miami; Alphabet joins the Dow Monday; BofA calls for three Fed hikes in 2026.",
+      "teaser": "S&P 500 futures edge higher after Tuesday's brutal session (S&P −1.44%, Nasdaq −2.21%) as markets await Micron's fiscal Q3 earnings at 4:30 PM ET; Bulls land Caleb Wilson #4 and Dailyn Swain #15; Giannis traded to Miami; Alphabet joins the Dow Monday; BofA calls for three Fed hikes in 2026.",
       "stats": {
         "btc": 62100,
         "sp500": 7365.46,
@@ -313,8 +326,8 @@
       "date": "2026-06-22",
       "day_of_week": "Monday",
       "filename": "2026-06-22.html",
-      "headline": "Starmer Out, Burnham In Line \u2014 The UK Gets Its 7th PM in a Decade as B\u00fcrgenstock Produces a 60-Day Roadmap",
-      "teaser": "Keir Starmer resigns as UK PM on Monday morning as the B\u00fcrgenstock talks yield a formal 60-day Iran nuclear roadmap; Bitcoin pops to $64K; Intel surges 10.6% on Apple chip deal; NBA Draft at Barclays tomorrow with Bulls holding picks #4 and #15.",
+      "headline": "Starmer Out, Burnham In Line — The UK Gets Its 7th PM in a Decade as Bürgenstock Produces a 60-Day Roadmap",
+      "teaser": "Keir Starmer resigns as UK PM on Monday morning as the Bürgenstock talks yield a formal 60-day Iran nuclear roadmap; Bitcoin pops to $64K; Intel surges 10.6% on Apple chip deal; NBA Draft at Barclays tomorrow with Bulls holding picks #4 and #15.",
       "stats": {
         "btc": 64000,
         "sp500": 7500.58
@@ -325,8 +338,8 @@
       "date": "2026-06-21",
       "day_of_week": "Sunday",
       "filename": "2026-06-21.html",
-      "headline": "Vance Meets Iranians Face-to-Face at B\u00fcrgenstock \u2014 The 60-Day Nuclear Clock Is Ticking",
-      "teaser": "JD Vance, Steve Witkoff, and Jared Kushner sit across from Iran's delegation at Switzerland's B\u00fcrgenstock resort on Sunday, opening the 60-day nuclear sprint under the Islamabad MOU.",
+      "headline": "Vance Meets Iranians Face-to-Face at Bürgenstock — The 60-Day Nuclear Clock Is Ticking",
+      "teaser": "JD Vance, Steve Witkoff, and Jared Kushner sit across from Iran's delegation at Switzerland's Bürgenstock resort on Sunday, opening the 60-day nuclear sprint under the Islamabad MOU.",
       "stats": {
         "btc": 63609,
         "sp500": 7500.58
@@ -337,8 +350,8 @@
       "date": "2026-06-20",
       "day_of_week": "Saturday",
       "filename": "2026-06-20.html",
-      "headline": "B\u00fcrgenstock Talks Stumble Out of the Gate \u2014 Then Resume: The Iran MOU's First 48 Hours Are a Preview of What's Ahead",
-      "teaser": "After Friday's abrupt postponement, US-Iran implementation talks resume Saturday at B\u00fcrgenstock with Witkoff and Kushner on-site.",
+      "headline": "Bürgenstock Talks Stumble Out of the Gate — Then Resume: The Iran MOU's First 48 Hours Are a Preview of What's Ahead",
+      "teaser": "After Friday's abrupt postponement, US-Iran implementation talks resume Saturday at Bürgenstock with Witkoff and Kushner on-site.",
       "stats": {
         "btc": 63609,
         "sp500": 7500.58
@@ -349,7 +362,7 @@
       "date": "2026-06-19",
       "day_of_week": "Friday",
       "filename": "2026-06-19.html",
-      "headline": "Juneteenth 2026: Markets Pause, B\u00fcrgenstock Talks Begin, and Bitcoin Slides Into a Hawkish Long Weekend",
+      "headline": "Juneteenth 2026: Markets Pause, Bürgenstock Talks Begin, and Bitcoin Slides Into a Hawkish Long Weekend",
       "teaser": "NYSE, Nasdaq, and bond markets are dark for Juneteenth as Thursday's equity recovery rally (S&P +1.08% to 7,500.58) locks in a split verdict for the week.",
       "stats": {
         "btc": 63609,
@@ -446,7 +459,7 @@
       "date": "2026-06-11",
       "day_of_week": "Thursday",
       "filename": "2026-06-11.html",
-      "headline": "Trump Cancels Iran Strikes \u2014 Markets Surge; Tornado Outbreak Hits Chicago",
+      "headline": "Trump Cancels Iran Strikes — Markets Surge; Tornado Outbreak Hits Chicago",
       "teaser": "Trump cancels planned Iran strikes, sending the Dow up 930 points (+1.86%) and the S&P 500 up 1.75%, as a tornado outbreak hits northern Illinois and NW Indiana.",
       "stats": {
         "btc": 67500,
@@ -458,7 +471,7 @@
       "date": "2026-06-10",
       "day_of_week": "Wednesday",
       "filename": "2026-06-10.html",
-      "headline": "Dow Sheds 953 Points as CPI Hits Three-Year High \u2014 US Resumes Iran Strikes",
+      "headline": "Dow Sheds 953 Points as CPI Hits Three-Year High — US Resumes Iran Strikes",
       "teaser": "Dow drops 953 points below the 50,000 floor and Nasdaq falls 1.98% as May CPI hits a three-year high of 4.2% and the US resumes strikes on Iran.",
       "stats": {
         "btc": 67200,
@@ -506,8 +519,8 @@
       "date": "2026-06-06",
       "day_of_week": "Saturday",
       "filename": "2026-06-06.html",
-      "headline": "Chips Crater \u2014 Nasdaq Suffers Worst Day Since April 2025 as Broadcom Disappoints",
-      "teaser": "Nasdaq plunges 4.18% \u2014 its worst session since April 2025 \u2014 as Broadcom's guidance disappoints and chip stocks lead a broad selloff to S&P 7,383.74.",
+      "headline": "Chips Crater — Nasdaq Suffers Worst Day Since April 2025 as Broadcom Disappoints",
+      "teaser": "Nasdaq plunges 4.18% — its worst session since April 2025 — as Broadcom's guidance disappoints and chip stocks lead a broad selloff to S&P 7,383.74.",
       "stats": {
         "btc": 70000,
         "sp500": 7383.74
@@ -518,7 +531,7 @@
       "date": "2026-06-05",
       "day_of_week": "Friday",
       "filename": "2026-06-05.html",
-      "headline": "S&P Breaks 7,600 for First Time \u2014 Dow Hits All-Time High as Rotation Lifts Defensives",
+      "headline": "S&P Breaks 7,600 for First Time — Dow Hits All-Time High as Rotation Lifts Defensives",
       "teaser": "S&P 500 closes at a record 7,584.31, breaking 7,600 intraday, as defensive sectors lead a rotation-driven rally to fresh Dow highs.",
       "stats": {
         "btc": 72000,
@@ -530,7 +543,7 @@
       "date": "2026-06-04",
       "day_of_week": "Thursday",
       "filename": "2026-06-04.html",
-      "headline": "Dow Smashes Record +1.73% as Chips Drag Nasdaq \u2014 Rotation Accelerates Into Jobs Friday",
+      "headline": "Dow Smashes Record +1.73% as Chips Drag Nasdaq — Rotation Accelerates Into Jobs Friday",
       "teaser": "Dow Jones surges 874 points (+1.73%) to a fresh record as a rotation out of chip stocks accelerates ahead of Friday's jobs report.",
       "stats": {
         "btc": 74000,
@@ -542,7 +555,7 @@
       "date": "2026-06-03",
       "day_of_week": "Wednesday",
       "filename": "2026-06-03.html",
-      "headline": "Iran Drones Kuwait's Airport \u2014 Ceasefire Collapses, Oil Spikes, Stocks Fall",
+      "headline": "Iran Drones Kuwait's Airport — Ceasefire Collapses, Oil Spikes, Stocks Fall",
       "teaser": "The four-day Iran ceasefire collapses after drone strikes on Kuwait International Airport; oil spikes to $97.80 and Bitcoin falls to $67,200.",
       "stats": {
         "btc": 67200,
@@ -554,7 +567,7 @@
       "date": "2026-06-02",
       "day_of_week": "Tuesday",
       "filename": "2026-06-02.html",
-      "headline": "Markets Reverse From Records \u2014 Bitcoin Plunges 31% in 9 Days as Saylor Breaks 'Never Sell' Pledge",
+      "headline": "Markets Reverse From Records — Bitcoin Plunges 31% in 9 Days as Saylor Breaks 'Never Sell' Pledge",
       "teaser": "S&P 500 falls 0.74% from its record as Bitcoin plunges to $72,400, down 31% in nine days, after Strategy's Michael Saylor breaks his 'never sell' pledge.",
       "stats": {
         "btc": 72400,
@@ -566,7 +579,7 @@
       "date": "2026-06-01",
       "day_of_week": "Monday",
       "filename": "2026-06-01.html",
-      "headline": "Iran MOU Signed \u2014 Markets Surge to New Records as Ceasefire Takes Effect",
+      "headline": "Iran MOU Signed — Markets Surge to New Records as Ceasefire Takes Effect",
       "teaser": "S&P 500 hits 7,621 and the Dow crosses 51,188 as a signed Iran memorandum of understanding sends markets to fresh records.",
       "stats": {
         "btc": 85000,
@@ -578,7 +591,7 @@
       "date": "2026-05-31",
       "day_of_week": "Sunday",
       "filename": "2026-05-31.html",
-      "headline": "Month-End Recap: May 2026 Was One for the History Books \u2014 What June Holds",
+      "headline": "Month-End Recap: May 2026 Was One for the History Books — What June Holds",
       "teaser": "A look back at a record-setting May 2026 and a preview of what June has in store for markets, the Fed, and geopolitics.",
       "stats": {
         "btc": 91000,
@@ -590,7 +603,7 @@
       "date": "2026-05-30",
       "day_of_week": "Saturday",
       "filename": "2026-05-30.html",
-      "headline": "May Ends at Records Across the Board \u2014 Dow Crosses 51,000 for the First Time",
+      "headline": "May Ends at Records Across the Board — Dow Crosses 51,000 for the First Time",
       "teaser": "Dow Jones crosses 51,000 for the first time ever as May closes out with records across major indices.",
       "stats": {
         "btc": 96000,
@@ -602,7 +615,7 @@
       "date": "2026-05-29",
       "day_of_week": "Friday",
       "filename": "2026-05-29.html",
-      "headline": "S&P Hits Record Close as Iran Deal Framework Signals Ceasefire \u2014 PCE Inflation Complicates Fed Math",
+      "headline": "S&P Hits Record Close as Iran Deal Framework Signals Ceasefire — PCE Inflation Complicates Fed Math",
       "teaser": "S&P 500 closes at record 7,609 as Iran ceasefire framework emerges from Oman talks; PCE inflation comes in hot at 3.8%.",
       "stats": {
         "btc": 100000,
@@ -614,7 +627,7 @@
       "date": "2026-05-28",
       "day_of_week": "Thursday",
       "filename": "2026-05-28.html",
-      "headline": "Markets Shrug Off Iran Headlines \u2014 Dow Hits Second Consecutive Record Close",
+      "headline": "Markets Shrug Off Iran Headlines — Dow Hits Second Consecutive Record Close",
       "teaser": "Dow notches second straight record close at 50,516 as Warsh confirmation odds rise and Iran ceasefire talks continue in Oman.",
       "stats": {
         "btc": 105000,
@@ -626,7 +639,7 @@
       "date": "2026-05-27",
       "day_of_week": "Wednesday",
       "filename": "2026-05-27.html",
-      "headline": "Dow Surges to Record as Chips Dump \u2014 Warsh Nomination Rattles Bond Market",
+      "headline": "Dow Surges to Record as Chips Dump — Warsh Nomination Rattles Bond Market",
       "teaser": "Dow Jones gains 282 points to a record 50,234 even as chip stocks slump and the Warsh Fed nomination pushes the 10-year yield to 4.52%.",
       "stats": {
         "btc": 109600,
