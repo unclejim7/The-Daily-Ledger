@@ -1,6 +1,19 @@
 {
-  "latest_edition": 52,
+  "latest_edition": 53,
   "editions": [
+    {
+      "edition": 53,
+      "date": "2026-07-18",
+      "day_of_week": "Saturday",
+      "filename": "2026-07-18.html",
+      "headline": "Iran War Fallout Deepens Into the Weekend as 10,000 Lose Water and Bahrain Intercepts Fresh Strikes — Wall Street Closes Its Worst Week in Months",
+      "teaser": "Iran's national water company says roughly 10,000 people across 20 villages are without water after Friday night's seventh consecutive round of U.S. strikes, which hit bridges, a railway junction, and an airport near Bandar Abbas, as Iran's Health Ministry puts the toll since July 6 at 50+ killed and 500+ wounded; Bahrain's air defenses intercept a fresh wave of Iranian attacks Saturday after Kuwait reported a fire at a power and desalination plant; Wall Street closes its worst week in months (S&P -1.6%, Nasdaq -2.9%, Dow -0.9% for the week; Friday: S&P -1.01% to 7,457.69, Nasdaq -1.40% to 25,520.24, Dow -406.55 to 52,146.42) as the PHLX Semiconductor Index confirms a bear market, down 20.2% from its June 22 record on Moonshot AI's Kimi K3 model release and continued fallout from Netflix's weak guide and TSMC's raised capex; President Trump accuses China of 2020 election interference in a Thursday address, declassifying documents Beijing calls \"entirely fabricated,\" straining the U.S.-China trade truce; Bitcoin recovers to ~$64,100 over the weekend after Friday's $62,810 low; Freddie Mac's 30-year mortgage rises to 6.55%, a third straight weekly increase; the White Sox (51-45) rout the Blue Jays 12-4 to stand alone in first place in the AL Central, while the Cubs (54-43) fall to the Twins 5-2 with a rematch today at Wrigley; Chicago sees a warm, hazy Saturday with a high near 87° and a 54% chance of isolated afternoon storms.",
+      "stats": {
+        "btc": 64100,
+        "sp500": 7457.69,
+        "mortgage_30yr": "6.55%"
+      }
+    },
     {
       "edition": 52,
       "date": "2026-07-17",
