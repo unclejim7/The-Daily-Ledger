@@ -1,6 +1,19 @@
 {
-  "latest_edition": 53,
+  "latest_edition": 54,
   "editions": [
+    {
+      "edition": 54,
+      "date": "2026-07-19",
+      "day_of_week": "Sunday",
+      "filename": "2026-07-19.html",
+      "headline": "Iran Declares the MOU “Suspended” After an Eighth Night of U.S. Strikes as the American Death Toll Climbs to 16",
+      "teaser": "U.S. Central Command carries out an eighth consecutive night of strikes on Iran early Sunday, hitting an under-construction nuclear power plant near Bandar Abbas and Qeshm Island, as Tehran declares the 60-day memorandum of understanding “suspended” following Friday's deadliest attack yet: two U.S. service members killed and a third missing after Iran struck Jordan's Muwaffaq Salti Air Base, bringing the American death toll in the war to 16; Kuwait's power and desalination plant is hit for a second straight day, and Bahrain and Kuwait both report intercepting fresh Iranian aerial attacks Sunday morning; Wall Street closed Friday on its worst week in months (S&P 500 -1.01% to 7,457.69, Nasdaq -1.40% to 25,520.24, Dow -406.55 to 52,146.42; week: S&P -1.6%, Nasdaq -2.9%) as the PHLX Semiconductor Index confirmed a bear market; oil surged into the weekend, with Brent settling at $88.10 (+4.6%, +16% on the week) and WTI at $82.49 (+4.5%); Bitcoin holds near $64,850, up from Friday's $62,810 low; gold ticks back above $4,000 to ~$4,017; Freddie Mac's 30-year mortgage holds at 6.55%, a third straight weekly increase, as NAR reports June's median existing home price hit a record $440,600; the White Sox (51-46) stay alone in first place in the AL Central after a 1-0 loss to Toronto Saturday, and the Cubs (55-43) bounce back 6-2 over the Twins, with both clubs playing series finales today; Chicago sees hazy sunshine and mid-80s with an Air Quality Alert extended through Monday for wildfire smoke, ahead of a severe storm threat Monday.",
+      "stats": {
+        "btc": 64850,
+        "sp500": 7457.69,
+        "mortgage_30yr": "6.55%"
+      }
+    },
     {
       "edition": 53,
       "date": "2026-07-18",
