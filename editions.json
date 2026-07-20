@@ -1,6 +1,19 @@
 {
-  "latest_edition": 54,
+  "latest_edition": 55,
   "editions": [
+    {
+      "edition": 55,
+      "date": "2026-07-20",
+      "day_of_week": "Monday",
+      "filename": "2026-07-20.html",
+      "headline": "U.S. Death Toll Hits 18 as Ninth Night of Strikes Pounds Iran — Wall Street Shrugs It Off Again as Chips Rebound and Oil Pares a 4% Spike",
+      "teaser": "The Pentagon confirms a third U.S. service member died over the weekend disposing of a downed Iranian drone in northern Iraq, pushing the American death toll to 18 and closing out the war's worst 72-hour stretch for U.S. forces after Friday's fatal strike on Jordan's Muwaffaq Salti Air Base; CENTCOM recovers the remains of the previously missing soldier as the U.S. launches a ninth straight night of strikes and surges additional F-16s and F-35s into the region even as officials warn munitions stockpiles are thinning; Iran retaliates by striking Jordan's Aqaba airport, U.S.-linked bases in Kuwait, and targets in Syria, while the IRGC claims two tankers were “forced to cease movement” in the Strait of Hormuz and Kuwait's desalination plant is hit for a second straight day; Trump says Iran has been “very, very badly damaged,” while Rubio says the U.S. remains open to diplomacy as Iran signals it will weigh mediator proposals, pulling Brent back from an overnight spike to $90.79 and WTI back from $84.68; Wall Street mostly shrugs it off, with the S&P 500 up 0.63%, Nasdaq up 1.02%, and Dow up 0.23% at midday as chips rebound into a heavy earnings week; gas prices top a national $4/gallon average; Andy Burnham is sworn in as UK prime minister; Armstrong Economics warns “wars end with an invoice” as the IMF cuts global growth to ~3%, and reports Iran has warned UAE airports to prepare for evacuation; the Cubs (56-43) rout the Twins 10-1 behind Imanaga's seven shutout innings and the White Sox (52-46) blank the Blue Jays 3-0 to take the series, with both clubs opening new series today; Chicago sees hazy skies near 84°F with an air quality alert through tonight and a slight risk of severe storms this evening, damaging winds the top concern.",
+      "stats": {
+        "btc": 64300,
+        "sp500": 7504.7,
+        "mortgage_30yr": "6.55%"
+      }
+    },
     {
       "edition": 54,
       "date": "2026-07-19",
