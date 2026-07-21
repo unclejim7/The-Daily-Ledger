@@ -1,6 +1,19 @@
 {
-  "latest_edition": 55,
+  "latest_edition": 56,
   "editions": [
+    {
+      "edition": 56,
+      "date": "2026-07-21",
+      "day_of_week": "Tuesday",
+      "filename": "2026-07-21.html",
+      "headline": "U.S. Strikes Iran for a 10th Consecutive Night as Wall Street Looks Past the War Toward a Marquee Earnings Week",
+      "teaser": "U.S. Central Command carries out a tenth straight night of strikes on Iran, hitting military command centers, maritime capabilities, missile and drone launch sites, and air defense systems, with explosions reported in Bandar Abbas, Qeshm, Shiraz, Isfahan, Bandar Lengeh, Chabahar, and Konarak; the IRGC claims retaliatory strikes on U.S.-linked targets in Kuwait and Bahrain and says two more tankers were disabled in the Strait of Hormuz, while Jordan intercepts five Iranian drones; Trump warns on Truth Social that Iran \"will pay for that killing many times over,\" and the U.S. death toll holds at 18 after a brutal weekend, with a Dover AFB dignified transfer postponed; Wall Street mostly looks past the war as chip stocks rebound (Nasdaq 100 futures +1.3%, KOSPI +3.6%) and 3M and GM both beat earnings estimates ahead of Alphabet, Tesla, Intel and IBM reporting later this week; oil eases from Monday's spike (WTI ~$82.56, Brent ~$88-90) on reports Iran is weighing mediator proposals; Bitcoin climbs back above $66,000 as Cleveland Fed's Hammack joins hawkish voices pushing December hike odds to 80%; the White Sox rout the Rangers 10-3 to snap a 10-game Globe Life skid (53-46) while the Cubs fall to the Tigers 8-6 in 10 innings (56-44); Chicago sees hazy skies near 84°F with air quality improving toward moderate and another late-day storm chance before a cooler midweek.",
+      "stats": {
+        "btc": 66300,
+        "sp500": 7504.7,
+        "mortgage_30yr": "6.55%"
+      }
+    },
     {
       "edition": 55,
       "date": "2026-07-20",
@@ -10,7 +23,7 @@
       "teaser": "The Pentagon confirms a third U.S. service member died over the weekend disposing of a downed Iranian drone in northern Iraq, pushing the American death toll to 18 and closing out the war's worst 72-hour stretch for U.S. forces after Friday's fatal strike on Jordan's Muwaffaq Salti Air Base; CENTCOM recovers the remains of the previously missing soldier as the U.S. launches a ninth straight night of strikes and surges additional F-16s and F-35s into the region even as officials warn munitions stockpiles are thinning; Iran retaliates by striking Jordan's Aqaba airport, U.S.-linked bases in Kuwait, and targets in Syria, while the IRGC claims two tankers were “forced to cease movement” in the Strait of Hormuz and Kuwait's desalination plant is hit for a second straight day; Trump says Iran has been “very, very badly damaged,” while Rubio says the U.S. remains open to diplomacy as Iran signals it will weigh mediator proposals, pulling Brent back from an overnight spike to $90.79 and WTI back from $84.68; Wall Street mostly shrugs it off, with the S&P 500 up 0.63%, Nasdaq up 1.02%, and Dow up 0.23% at midday as chips rebound into a heavy earnings week; gas prices top a national $4/gallon average; Andy Burnham is sworn in as UK prime minister; Armstrong Economics warns “wars end with an invoice” as the IMF cuts global growth to ~3%, and reports Iran has warned UAE airports to prepare for evacuation; the Cubs (56-43) rout the Twins 10-1 behind Imanaga's seven shutout innings and the White Sox (52-46) blank the Blue Jays 3-0 to take the series, with both clubs opening new series today; Chicago sees hazy skies near 84°F with an air quality alert through tonight and a slight risk of severe storms this evening, damaging winds the top concern.",
       "stats": {
         "btc": 64300,
-        "sp500": 7504.7,
+        "sp500": 7457.69,
         "mortgage_30yr": "6.55%"
       }
     },
@@ -653,8 +666,8 @@
       "edition": 3,
       "date": "2026-05-29",
       "day_of_week": "Friday",
-      "filename": "2026-05-29.html",
       "headline": "S&P Hits Record Close as Iran Deal Framework Signals Ceasefire — PCE Inflation Complicates Fed Math",
+      "filename": "2026-05-29.html",
       "teaser": "S&P 500 closes at record 7,609 as Iran ceasefire framework emerges from Oman talks; PCE inflation comes in hot at 3.8%.",
       "stats": {
         "btc": 100000,
