@@ -1,6 +1,19 @@
 {
-  "latest_edition": 56,
+  "latest_edition": 57,
   "editions": [
+    {
+      "edition": 57,
+      "date": "2026-07-22",
+      "day_of_week": "Wednesday",
+      "filename": "2026-07-22.html",
+      "headline": "U.S. Strikes Iran for an 11th Straight Night as the Campaign Widens to Tehran's Outskirts — Houthis Open a New Front With a Saudi Blockade",
+      "teaser": "U.S. Central Command completes its 11th consecutive night of strikes on Iran, for the first time reaching the outskirts of Tehran and a military site near Tabriz in a departure from the campaign's earlier focus on southern Iran; Iran retaliates on U.S.-linked sites in Kuwait, Jordan, and Bahrain, while Houthi rebels in Yemen declare a new naval blockade of Saudi Arabia, threatening the kingdom's Red Sea pipeline workaround; Pakistan hosts Iran's interior minister for revived diplomacy as Secretary of State Rubio says Tehran isn't \"serious about talks\"; oil jumps to 5-6 week highs (WTI ~$87, Brent ~$94) on the escalation; Wall Street closed Tuesday at S&P 500 7,509.20 (+0.89%), Nasdaq 25,837.21 (+1.29%), Dow ~52,223 (+0.74%) as chips rebounded, with Wednesday futures easing ahead of Alphabet and Tesla earnings after the close; CME FedWatch shows ~24% odds of a July 29 hike and ~69% odds of at least one hike by September as Cleveland Fed's Hammack joins the hawks; Bitcoin holds near $65,900; 30-year mortgage steady at 6.57% as existing home sales unexpectedly fell 2.4% in June; the Cubs rout the Tigers 11-2 to even their series (57-44) while the White Sox are blanked 10-0 by the Rangers with catcher Kyle Teel headed to the IL (53-47); Chicago sees a cooler, clearer Wednesday near 76°F as air quality improves, with a Beach Hazard Statement in effect for Lake Michigan.",
+      "stats": {
+        "btc": 65900,
+        "sp500": 7509.20,
+        "mortgage_30yr": "6.57%"
+      }
+    },
     {
       "edition": 56,
       "date": "2026-07-21",
