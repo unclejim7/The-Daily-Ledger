@@ -1,6 +1,19 @@
 {
-  "latest_edition": 59,
+  "latest_edition": 60,
   "editions": [
+    {
+      "edition": 60,
+      "date": "2026-07-25",
+      "day_of_week": "Saturday",
+      "filename": "2026-07-25.html",
+      "headline": "Drones Strike Northern Iraq and Sirens Sound in Bahrain After a 13th Night of U.S. Strikes on Iran \u2014 Wall Street Closes a Volatile Week Little Changed as Oil Pulls Back From $100",
+      "teaser": "Explosive-laden drones target Irbil in northern Iraq and sirens sound in Bahrain and Jordan Friday after U.S. Central Command completes a 13th consecutive night of strikes on Iran, with fresh strikes reported on a Revolutionary Guard naval base, Qeshm Island, and sites in Isfahan and Khuzestan provinces; President Trump says he is weighing further escalation after Tehran rejected an Iraqi-brokered ceasefire proposal, even as he separately says Iran is \u201cgetting more serious\u201d about talks; Wall Street closes a volatile week little changed, with the S&P 500 up 0.05% to 7,411.98, the Dow gaining 0.46% to 51,947.25, and the Nasdaq slipping 0.64% to 24,975.82 as a 3.5% jump in Apple offsets continued chip-sector weakness; Brent crude pulls back below $96 and WTI falls to $90.12 after briefly topping $100 Thursday, even as all three indexes finish the week lower; Fed rate-hike odds for the July 29 meeting hold near 38%, up from just 10.7% a week ago, as Chair Kevin Warsh's first live-hike test approaches; Bitcoin slips to around $64,029; Freddie Mac's 30-year mortgage holds at a one-year-high 6.58%; the Cubs rally past the Pirates 3-2 in 10 innings on a Dansby Swanson go-ahead single to improve to 58-45, while the White Sox fall to the Astros 9-5 but remain alone atop the AL Central at 54-48; Chicago enjoys a mild, partly sunny Saturday near 83\u00b0F before the weekend heat builds toward the low 90s.",
+      "stats": {
+        "btc": 64029,
+        "sp500": 7411.98,
+        "mortgage_30yr": "6.58%"
+      }
+    },
     {
       "edition": 59,
       "date": "2026-07-24",
