@@ -1,6 +1,19 @@
 {
-  "latest_edition": 63,
+  "latest_edition": 64,
   "editions": [
+    {
+      "edition": 64,
+      "date": "2026-07-29",
+      "day_of_week": "Wednesday",
+      "filename": "2026-07-29.html",
+      "headline": "Iran Fires Missiles at U.S. Forces, Shattering the Pause, as the Fed Holds Rates Steady for a Fifth Straight Meeting",
+      "teaser": "Iran shatters a four-day pause with a surprise ballistic missile attack on U.S. forces, Jordan intercepting five inbound missiles as U.S. and Saudi forces retaliate with strikes on Iran-backed militia sites in eastern Iraq that kill more than 20 fighters; Trump vows the U.S. will hit back hard, telling Fox News \"they're going to get a beating\"; the Fed holds its benchmark rate at 3.50-3.75% for a fifth straight meeting in Kevin Warsh's first decision as chair, offering little forward guidance amid reported dissents; Wall Street closes lower (Dow ~-0.7% to ~52,242, S&P 500 ~-0.2% to ~7,374, Nasdaq ~-0.2% to ~24,544) as oil spikes to $82.42 on the attack before reversing to ~$79.40; gold climbs to $4,043 and Bitcoin keeps grinding higher to ~$64,350, decoupled from the day's war and Fed headlines; Armstrong Economics says its warning that a pause is not a peace has been borne out; Chicago enjoys a second mild, comfortable day near 78°F, with the Cubs routing the Cardinals 10-2 to improve to 60-46 and the White Sox falling to the Yankees 3-2 to slip to 55-50.",
+      "stats": {
+        "btc": 64350,
+        "sp500": 7373.6,
+        "mortgage_30yr": "6.58%"
+      }
+    },
     {
       "edition": 63,
       "date": "2026-07-28",
