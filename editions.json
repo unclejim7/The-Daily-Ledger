@@ -1,6 +1,19 @@
 {
-  "latest_edition": 65,
+  "latest_edition": 66,
   "editions": [
+    {
+      "edition": 66,
+      "date": "2026-07-31",
+      "day_of_week": "Friday",
+      "filename": "2026-07-31.html",
+      "headline": "Iranian Cleric Calls a Cease-Fire “a Deception” as the U.S. and Israel Weigh a Land Blockade — Wall Street Rallies on Cooler Inflation Before Apple and Amazon Split Investors",
+      "teaser": "A senior Iranian cleric tells Friday prayer-goers that any cease-fire would be \"a deception\" meant to let Washington redeploy forces, as the Telegraph reports the U.S. and Israel are discussing a land blockade of Iran to tighten economic pressure; Wall Street rallies hard Thursday (Dow +1.2% to 52,208.06, S&P 500 +1.7% to 7,437.64, Nasdaq +2.8% to 25,122.18) on a cooler Core PCE inflation reading (3.3% YoY in June) that undercuts fears the Fed's Wednesday hold left it behind the curve; Big Tech earnings split investors Friday as Amazon crushes estimates (shares +12% premarket) while Apple beats but guides soft on supply constraints (shares -7% premarket); Freddie Mac's 30-year mortgage jumps to a one-year high of 6.66%, gold holds near $4,086 on dollar weakness, and Bitcoin drifts to around $63,875; Armstrong Economics calls a potential land blockade the next rung on the same escalation ladder; Chicago braces for weekend storms that could disrupt Lollapalooza, with the Cubs taking their series in St. Louis (61-47) and the White Sox sweeping past the Yankees in extra innings (57-50).",
+      "stats": {
+        "btc": 63875,
+        "sp500": 7437.64,
+        "mortgage_30yr": "6.66%"
+      }
+    },
     {
       "edition": 65,
       "date": "2026-07-30",
