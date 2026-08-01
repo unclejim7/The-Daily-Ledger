@@ -1,6 +1,19 @@
 {
-  "latest_edition": 66,
+  "latest_edition": 67,
   "editions": [
+    {
+      "edition": 67,
+      "date": "2026-08-01",
+      "day_of_week": "Saturday",
+      "filename": "2026-08-01.html",
+      "headline": "U.S. and Israel Prepare a Weekend Bombardment of Iran's Energy Infrastructure as Trump Weighs the Final Order",
+      "teaser": "The U.S. and Israel prepare what could be one of the harshest bombing campaigns yet against Iran's energy infrastructure, with strikes possible over the weekend though Trump has not given a final order, as officials reportedly hope to conclude before markets open Monday; a tanker is struck by an unknown projectile near the Strait of Hormuz, and Trump downplays reports Iran was behind a Minnesota infrastructure cyberattack; Wall Street closes out a wild July with its first winning week in three (S&P 500 +0.7%, Dow +0.5%, Nasdaq +1% Friday) as Amazon surges nearly 15% on its biggest single-day gain in over a decade while Apple tumbles 7.2% on weak Services and China revenue; gold settles July near $4,076, WTI holds near $84.61, and Bitcoin drifts to a two-week low around $62,950 ahead of a tense weekend; Armstrong Economics's Socrates system gives \"zero chance\" a ceasefire holds as the war expands globally; Chicago sees a soggy Lollapalooza Saturday with storms lingering into the afternoon, and the Cubs (61-48) and White Sox (58-50, still atop the AL Central) both make moves ahead of Monday's MLB trade deadline.",
+      "stats": {
+        "btc": 62950,
+        "sp500": 7489.6,
+        "mortgage_30yr": "6.66%"
+      }
+    },
     {
       "edition": 66,
       "date": "2026-07-31",
