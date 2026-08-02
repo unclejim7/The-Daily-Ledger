@@ -1,6 +1,19 @@
 {
-  "latest_edition": 67,
+  "latest_edition": 68,
   "editions": [
+    {
+      "edition": 68,
+      "date": "2026-08-02",
+      "day_of_week": "Sunday",
+      "filename": "2026-08-02.html",
+      "headline": "Trump Weighs Iran Energy Strikes Discussed at Camp David as Tehran Warns of “Full-Scale Regional War”",
+      "teaser": "The plan to strike Iran's energy infrastructure, first reported Saturday, was discussed at Trump's Camp David cabinet meeting Friday, with Israel notified and coordinating on the potential operation though no final order has been given; Iran's Maj. Gen. Ali Abdollahi warns the U.S. is \"moving at an accelerating pace to fan the flames of a full-scale regional war\" as the Pentagon declines to discuss targets before Trump decides; markets, closed Sunday, head into a pivotal week with earnings season running hot (85% of S&P 500 reporters beating estimates, profits tracking +47%) and a packed calendar including McDonald's, Costco, Disney, Palantir, and AMD; oil opens flat at $83.92, suggesting traders are still waiting on confirmation rather than pricing in the worst case, while Bitcoin recovers to around $63,455 from Saturday's two-week low; Armstrong Economics says a war aimed at energy infrastructure fits its 2026 Directional Change thesis of expanding rather than resolving conflict; Chicago sees a cloudy, breezy Sunday with morning showers clearing, and the Cubs (62-48) beat the Yankees while the White Sox (58-51) are shut out by the Rays but remain atop the AL Central ahead of Monday's MLB trade deadline.",
+      "stats": {
+        "btc": 63455,
+        "sp500": 7489.6,
+        "mortgage_30yr": "6.66%"
+      }
+    },
     {
       "edition": 67,
       "date": "2026-08-01",
