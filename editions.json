@@ -1,6 +1,19 @@
 {
-  "latest_edition": 68,
+  "latest_edition": 69,
   "editions": [
+    {
+      "edition": 69,
+      "date": "2026-08-03",
+      "day_of_week": "Monday",
+      "filename": "2026-08-03.html",
+      "headline": "Trump Calls Off “Massive” Strike on Iran, Announces New Talks Monday — Oil Plunges, Wall Street Rallies to Start August",
+      "teaser": "Trump calls off what he says would have been \"the biggest attack since World War II\" on Iran, crediting pressure from allies including Saudi Arabia, and announces new talks with Iran set to begin Monday covering the Strait of Hormuz and denuclearization; Iran's Foreign Ministry flatly denies any negotiations are planned, extending the war's recurring pattern of claim and denial; Wall Street rallies to start August (S&P 500 +0.64%, Dow +1.2%, Nasdaq +0.49%) as oil plunges 4.7% to $80.72 on the deflating attack risk premium and gold climbs back above $4,050; CME FedWatch shows a sharp hawkish shift with 64.5% odds of a September rate hike; Bitcoin pulls back to around $62,650 despite the de-escalation, decoupled as it has been for weeks; Armstrong Economics reads the sharp reversal as confirmation of its 2026 Directional Change thesis; Chicago enjoys a warm, sunny Monday near 82°F, and the MLB trade deadline brings the Cubs a rotation overhaul (Kevin Gausman in, Jameson Taillon out) while the White Sox (59-51, still atop the AL Central) add bullpen depth.",
+      "stats": {
+        "btc": 62650,
+        "sp500": 7537.5,
+        "mortgage_30yr": "6.66%"
+      }
+    },
     {
       "edition": 68,
       "date": "2026-08-02",
