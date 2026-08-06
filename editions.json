@@ -1,6 +1,19 @@
 {
-  "latest_edition": 71,
+  "latest_edition": 72,
   "editions": [
+    {
+      "edition": 72,
+      "date": "2026-08-06",
+      "day_of_week": "Thursday",
+      "filename": "2026-08-06.html",
+      "headline": "Hormuz Deal “On the Verge of Being Finalised,” Iran Says — But Tolls Remain the Sticking Point",
+      "teaser": "Iran says its Hormuz agreement with Oman is \"on the verge of being finalised,\" with shipping coordinates agreed after three-plus weeks of talks, but a genuine sticking point remains: the U.S. wants toll-free passage while Iran signals it will introduce a fee system for vessels, and Iran insists the U.S. must meet its own commitments before the strait fully reopens; Trump says \"a lot of progress has been made\"; Wall Street takes a breather after its huge rally, with the Dow notching yet another record close (54,349, +263 points) while the S&P 500 and Nasdaq dip slightly on profit-taking; gold surges toward $4,300 for a fourth straight gain, up nearly 6% on the week, even as oil extends its slide to $74.79 and rate-hike odds ease; Bitcoin firms to around $64,650 for a third straight day, nearing its $65,300 resistance; Armstrong Economics turns to Europe, forecasting eurozone stagflation bottoming around 2028; Chicago sees showers and clouds near 76°F, and the Cubs (65-49) complete a sweep of the Dodgers behind a two-homer game from Crow-Armstrong while the White Sox (59-53, still atop the AL Central) are swept by a red-hot Red Sox team.",
+      "stats": {
+        "btc": 64650,
+        "sp500": 7721.6,
+        "mortgage_30yr": "6.66%"
+      }
+    },
     {
       "edition": 71,
       "date": "2026-08-05",
