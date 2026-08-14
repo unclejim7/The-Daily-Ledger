@@ -1,6 +1,19 @@
 {
-  "latest_edition": 79,
+  "latest_edition": 80,
   "editions": [
+    {
+      "edition": 80,
+      "date": "2026-08-14",
+      "day_of_week": "Friday",
+      "filename": "2026-08-14.html",
+      "headline": "Iran Kills, Wounds Tanker Crew in Third ADNOC Attack This Week as Bessent Vows Economic Measures “Never Seen in History”",
+      "teaser": "The UAE says Iran struck two more ADNOC tankers in \"unprovoked\" attacks, the third this week and the 15th since the war began — a toll that has now killed one crew member and injured 20 others; Qatar, Kuwait, Egypt, and Bahrain condemn the strikes, citing U.N. Resolution 2817. Treasury Secretary Scott Bessent says the U.S. will unveil economic measures \"never seen in the history of economic isolation\" next week, a \"one-two punch\" paired with the continued blockade; Trump calls Iran \"all talk and no action,\" and Araqchi fires back that \"worse than fake news is fake intelligence.\" It all lands four days before the 60-day Oman-Iran MoU expires Sunday, August 18, with no visible progress this week. Markets close Thursday at records across the board (S&P 7,798.99, Dow 53,839.99, Nasdaq 26,803.03) even as Bitcoin slides to a fourth straight lower session (~$62,829) and oil bounces on renewed attack risk. Armstrong Economics says the economic war is becoming the real war. Also: cool, stormy weather in Chicago (high near 75°F), a new mRNA flu vaccine approved for older adults, and the Cubs (71-51) shut out by the Nationals while the White Sox (62-57) fall in a slugfest to the Reds.",
+      "stats": {
+        "btc": 62829,
+        "sp500": 7798.99,
+        "mortgage_30yr": "6.67%"
+      }
+    },
     {
       "edition": 79,
       "date": "2026-08-13",
