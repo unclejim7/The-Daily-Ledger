@@ -1,6 +1,19 @@
 {
-  "latest_edition": 80,
+  "latest_edition": 81,
   "editions": [
+    {
+      "edition": 81,
+      "date": "2026-08-15",
+      "day_of_week": "Saturday",
+      "filename": "2026-08-15.html",
+      "headline": "Trump Says He'll Declare the Strait of Hormuz U.S. “Territory” — Iran: “Cannot Be Seized by Tweet”",
+      "teaser": "Trump says he'll declare the Strait of Hormuz a U.S. \"territory\" after \"defeating Iran,\" his most sweeping claim yet; Iran's Deputy FM Kazem Gharibabadi fires back that the strait \"has been Iranian, is Iranian, and will remain Iranian\" and \"cannot be seized by tweet, nor by aircraft carrier, nor by an election speech,\" with Iran separately dismissing the idea as \"delusions.\" Another vessel is reportedly struck in Hormuz as negotiations show no sign of thawing, three days before the 60-day Oman-Iran MoU expires Sunday, August 18; the crisis's cumulative toll now stands at 17 merchant ships damaged and 12 seafarers killed or missing since February. Markets close Friday lower (S&P -0.2% to 7,785.76) as consumer sentiment sours on inflation worries, even as stocks post a third straight weekly gain and the Russell 2000 hits a fresh record; Bitcoin steadies near $62,900 after four straight lower sessions. Armstrong Economics says the rhetoric is escalating faster than the underlying reality is changing. Also: muggy, stormy weather in Chicago (flash flood risk, highs in the lower 80s), a large study linking estrogen-only hormone therapy to lower dementia risk, and the Cubs (72-51) shutting out the Cardinals while the White Sox (63-57) rout the Tigers to push their AL Central lead to 3½ games.",
+      "stats": {
+        "btc": 62900,
+        "sp500": 7785.76,
+        "mortgage_30yr": "6.67%"
+      }
+    },
     {
       "edition": 80,
       "date": "2026-08-14",
