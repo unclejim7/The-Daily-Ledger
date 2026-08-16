@@ -1,6 +1,19 @@
 {
-  "latest_edition": 81,
+  "latest_edition": 82,
   "editions": [
+    {
+      "edition": 82,
+      "date": "2026-08-16",
+      "day_of_week": "Sunday",
+      "filename": "2026-08-16.html",
+      "headline": "Israel Kills at Least 11 in Deadliest Lebanon Strikes Since June Truce as Iran's Military Vows “Complete Defeat”",
+      "teaser": "Israeli strikes on southern Lebanon kill at least 11 people, including three children, the deadliest raids since the June truce eased Israel-Hezbollah hostilities; Israel says the strikes targeted Hezbollah after an explosive-drone attack injured three troops, while Lebanon's health ministry reports four more killed and 17 wounded in a separate strike. The same day, Iran's Armed Forces General Staff vows \"we will not back down... until the US-Israeli enemies are fully defeated in the region\" — sharper language than Araqchi's Oman-talks framing. It lands two days before the 60-day Oman-Iran MoU expires Tuesday, August 18, with 56 reports of vessel damage near Hormuz since February and Yemeni forces claiming 181 strikes on the Houthis in 24 hours — a war now running across at least three fronts. Markets are closed for the weekend, leaving Friday's close (S&P 7,785.76) to stand; Bitcoin holds steady near $62,978. Armstrong Economics says the war's pattern is expansion, not resolution. Also: soggy, muggy weather in Chicago clearing to sun (high near 83°F), a gene-discovery study on congenital heart disease, and the Cubs (72-52) falling to the Cardinals while the White Sox (64-57) take their series over the Tigers.",
+      "stats": {
+        "btc": 62978,
+        "sp500": 7785.76,
+        "mortgage_30yr": "6.67%"
+      }
+    },
     {
       "edition": 81,
       "date": "2026-08-15",
