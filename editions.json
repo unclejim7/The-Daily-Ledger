@@ -1,6 +1,19 @@
 {
-  "latest_edition": 82,
+  "latest_edition": 83,
   "editions": [
+    {
+      "edition": 83,
+      "date": "2026-08-17",
+      "day_of_week": "Monday",
+      "filename": "2026-08-17.html",
+      "headline": "MoU Deadline Passes as Iran and Oman Reach a Route-Map Deal — But Tehran Calls the 60-Day Clock “No Longer Relevant”",
+      "teaser": "The 60-day U.S.-Iran MoU expires Monday without the broader deal it was meant to produce, and with an Iranian diplomat dismissing the deadline itself as \"no longer relevant.\" Still, Iran and Oman reach an understanding on a Hormuz transit route map — ships entering near Iran and exiting near Oman, toll-free during an interim period — though it's unclear whether that satisfies Washington's full-reopening demand. Trump publicly corrects VP Vance, saying \"the number one Goal is, and always will be, that Iran cannot have...a Nuclear Weapon.\" Brent crude nears $90 as Lebanon fighting compounds the uncertainty; S&P and Nasdaq-100 futures edge higher ahead of a retail-earnings-heavy week and Wednesday's FOMC minutes, while Bitcoin ticks up to about $63,260. Armstrong Economics warns against confusing a technical shipping-route fix with genuine political resolution. Also: a dry, comfortable day in Chicago (high near 81°F), a study linking orange juice intake to inflammation and metabolism gene expression, and the White Sox (65-57) sweeping the Tigers while the Cubs (72-53) drop their series to the Cardinals.",
+      "stats": {
+        "btc": 63260,
+        "sp500": 7785.76,
+        "mortgage_30yr": "6.67%"
+      }
+    },
     {
       "edition": 82,
       "date": "2026-08-16",
