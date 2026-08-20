@@ -1,6 +1,19 @@
 {
-  "latest_edition": 85,
+  "latest_edition": 86,
   "editions": [
+    {
+      "edition": 86,
+      "date": "2026-08-20",
+      "day_of_week": "Thursday",
+      "filename": "2026-08-20.html",
+      "headline": "UAE Halts All Trade With Iran After Renewed Missile Fire as Tehran Seizes an Emirati Tanker Over Unpaid Fees and Trump Vows “Economic Warfare”",
+      "teaser": "The UAE halts all trade, commercial exchanges, and financial transactions with Iran “until further notice,” citing renewed missile fire that undermines “regional and international peace and security” — even as Iran's foreign ministry spokesman Esmail Baghaei denies Tehran launched anything and the UAE's own Ministry of Defense says the two missiles it tracked splashed harmlessly into the sea. Iran, meanwhile, gives the toll-fee framework from Monday's Oman statement real teeth: state media reports Iranian forces seized a UAE-owned tanker near Qeshm Island for ignoring “the Iranian route” and failing to pay for “services and Iran's permit.” Trump escalates on a second front, declaring “This will be Economic Warfare and Isolation on an unprecedented scale”; Treasury Secretary Bessent describes “a combination of economic isolation like the world has never seen before, and the continued blockade in the Strait of Hormuz,” backed by a plan to at least double Treasury's long-bond buybacks to $4 billion-plus, aimed at pulling down yields in tension with Fed Chair Kevin Warsh's own approach. Markets like the yield relief far more than they fear the rhetoric: Wednesday's close snaps a three-day losing streak (S&P +0.2% to 7,707.98, Dow +0.2% to 53,463.05, Nasdaq +0.2% to 26,331.09), Bitcoin rips to roughly $71,970 overnight, and oil climbs to Brent above $94 and WTI above $88. July's FOMC minutes show regional presidents Logan, Hammack, and Kashkari all dissenting for a hike, not a cut. Armstrong Economics says the economic and military campaigns are now explicitly one war. Also: sunny, warm weather in Chicago (high near 79°F), a study linking daily nut consumption to a 20% lower risk of high blood pressure, and the White Sox (66-59) avoiding a series sweep with a 3-0 win over the Cubs (74-54).",
+      "stats": {
+        "btc": 71970,
+        "sp500": 7707.98,
+        "mortgage_30yr": "6.66%"
+      }
+    },
     {
       "edition": 85,
       "date": "2026-08-19",
