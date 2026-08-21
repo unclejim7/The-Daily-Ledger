@@ -1,6 +1,19 @@
 {
-  "latest_edition": 86,
+  "latest_edition": 87,
   "editions": [
+    {
+      "edition": 87,
+      "date": "2026-08-21",
+      "day_of_week": "Friday",
+      "filename": "2026-08-21.html",
+      "headline": "Strait of Hormuz Traffic Collapses to Just Six Ships a Day as Bond-Market Relief Evaporates and Stocks Sink",
+      "teaser": "Armstrong Economics reports Hormuz traffic has collapsed from a normal 130–140 vessels a day to just six, calling the strait “a tax imposed upon the entire world economy” as the collapsed June peace framework leaves Iran demanding sanctions relief and compensation while Trump demands Iran pay for war deaths. Markets, meanwhile, watch Wednesday's bond-buyback relief evaporate in a single session: the 30-year Treasury yield spikes back to 5.267%, erasing Wednesday's dip, as investors focus on the deeper budget-deficit and inflation story; stocks fall across the board (S&P -0.87% to 7,641.16, Dow -703.84 points to 52,759.21, Nasdaq -1% to 26,067.17). Bitcoin ignores it all, topping $77,000 as spot ETFs pull in $606 million in a single day; gold jumps more than 1% to reclaim $4,580 an ounce on the equity selloff, while oil eases slightly (Brent $93.38, WTI $86.33) and the 30-year mortgage ticks back up to about 6.70%. Also: a mix of sun and clouds in Chicago with a stray storm possible (high near 81°F), a study on how artisan cheese microbes may benefit gut health, and the Cubs (74-54) traveling to Seattle while the White Sox (66-59) open a homestand against the Mets.",
+      "stats": {
+        "btc": 77718,
+        "sp500": 7641.16,
+        "mortgage_30yr": "6.70%"
+      }
+    },
     {
       "edition": 86,
       "date": "2026-08-20",
