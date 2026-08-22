@@ -1,6 +1,19 @@
 {
-  "latest_edition": 87,
+  "latest_edition": 88,
   "editions": [
+    {
+      "edition": 88,
+      "date": "2026-08-22",
+      "day_of_week": "Saturday",
+      "filename": "2026-08-22.html",
+      "headline": "Bitcoin Posts Its Best Week Since 2024, Topping $78,000, as Iran Lays Out Its Price for Reopening Hormuz",
+      "teaser": "Bitcoin capped its best week since 2024 Friday, jumping 7.26% on the day to settle at $78,335 — a 22% weekly gain — as a weaker dollar and a friendlier regulatory tone out of Washington drove spot Bitcoin ETFs to their largest single-day inflow since May. Equities rebounded Friday (S&P +0.4% to 7,674.37, Dow +1% to 53,277.01, Nasdaq +0.4% to 26,180.45) but still closed the week lower after the mid-week Treasury-yield round trip; gold extended its own run above $4,500 an ounce, on course for a third straight weekly gain. Iran's Mohammad Bagher Zolghadr, secretary of its Supreme National Security Council, spells out Tehran's conditions for reopening Hormuz — lifting the U.S. naval blockade and sanctions, withdrawing American forces from the region, paying war reparations, and releasing frozen Iranian assets — a list running almost exactly opposite Trump's own demand that Iran pay compensation instead. Armstrong Economics says it's shipowners, insurers, and commodity traders, not either government's public statements, who actually determine whether the strait is open, and flags U.S. gas prices running nearly a dollar higher than a year ago as Hormuz traffic stays near its lows. Also: mostly sunny, comfortable weather in Chicago (high near 79°F), a study on astrocytes and the adult brain's surprising capacity for self-repair, and the White Sox (67-59) beating the Mets 6-4 while the Cubs (74-55) fall to the Mariners 6-5.",
+      "stats": {
+        "btc": 78600,
+        "sp500": 7674.37,
+        "mortgage_30yr": "6.70%"
+      }
+    },
     {
       "edition": 87,
       "date": "2026-08-21",
