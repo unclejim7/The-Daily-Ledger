@@ -1,6 +1,19 @@
 {
-  "latest_edition": 88,
+  "latest_edition": 89,
   "editions": [
+    {
+      "edition": 89,
+      "date": "2026-08-23",
+      "day_of_week": "Sunday",
+      "filename": "2026-08-23.html",
+      "headline": "Iran Threatens to Shut Down the Entire Persian Gulf If Neighbors Join Trump's Economic War, Even as It Reveals Shipping 70 Million Barrels of Its Own Oil",
+      "teaser": "Mohammad Bagher Zolghadr, secretary of Iran's Supreme National Security Council, warns that if any of Iran's neighbors join Trump's economic-war campaign, \"we will not allow a single drop of oil to pass through the Persian Gulf\" — a threat to close the entire waterway, not just enforce the existing blockade. In the same breath, Zolghadr reveals Iran has shipped roughly 70 million barrels of its own oil in the past one to two months despite the U.S. port blockade that resumed in mid-July, even as outside traffic through Hormuz keeps collapsing — just seven commodity ships passed Thursday, half of Wednesday's total. Analysts increasingly describe the standoff as shifting from a crude-oil supply shock into a refined-fuel crisis, as war and export restrictions squeeze how much gasoline, jet fuel, and diesel regional refineries can actually produce. Markets stay closed for the weekend, leaving Friday's numbers to stand (S&P 7,674.37, Dow 53,277.01, Nasdaq 26,180.45); Bitcoin, fresh off its best week since 2024, suffers a Saturday flash crash from an intraday high near $79,500 down to about $77,300, still up more than 22% on the week. Also: partly cloudy, breezy weather in Chicago (high near 73°F), a study linking daily vitamin D to a 13% cognitive-test improvement in older adults with mild impairment, and the Cubs (74-56) and White Sox (67-60) both dropping Saturday's games to the Mariners and Mets.",
+      "stats": {
+        "btc": 77300,
+        "sp500": 7674.37,
+        "mortgage_30yr": "6.70%"
+      }
+    },
     {
       "edition": 88,
       "date": "2026-08-22",
