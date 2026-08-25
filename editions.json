@@ -1,6 +1,19 @@
 {
-  "latest_edition": 90,
+  "latest_edition": 91,
   "editions": [
+    {
+      "edition": 91,
+      "date": "2026-08-25",
+      "day_of_week": "Tuesday",
+      "filename": "2026-08-25.html",
+      "headline": "Bitcoin Tops $80,000 for the First Time in Three Months as Bessent's “Operation Economic Outcast” Sanctions Nearly 60 Entities Tied to Iran",
+      "teaser": "Treasury's sweeping new campaign against Iran now has a name and a target list: “Operation Economic Outcast,” which Secretary Scott Bessent likens to the Allied landings at Normandy, sanctioned nearly 60 corporations, individuals, and vessels across multiple jurisdictions Monday — including several Chinese nationals — for facilitating the “ecosystem that turns Iranian oil into money, into repression.” Bessent threatens secondary sanctions on any country still facilitating Iranian oil, shipping, crypto, gold, or aviation trade, while Trump personally calls world leaders with “specific requests” to cut ties with Tehran. Iran's security chief Mohsen Rezaei answers that “any country that becomes a partner in creating economic restrictions against us will be regarded by us as an enemy,” repeating his threat to block all oil through Hormuz, as Iran formalizes penalties — “fines, seizure, or confiscation” — for vessels violating its transit rules. Oman's foreign minister arrives in Tehran Tuesday for talks on the strait, the one diplomatic channel still functioning. Markets split Monday (S&P -0.3% to 7,652.86, Dow +0.3% to 53,417.16, Nasdaq -0.8% to 25,980.19 on a chip wobble) before futures turned higher Tuesday ahead of Nvidia's earnings; Bitcoin tops $80,000 for the first time in three months as easing yields and expanded Treasury buybacks fuel a “debasement trade” into both crypto and gold. Also: mostly sunny, warmer weather in Chicago (high near 82°F), a study linking multilingualism to a younger-appearing brain, and the Cubs (76-56) blanking the Diamondbacks 7-0 while the White Sox (68-61) are routed by the Rangers 11-2.",
+      "stats": {
+        "btc": 80200,
+        "sp500": 7652.86,
+        "mortgage_30yr": "6.69%"
+      }
+    },
     {
       "edition": 90,
       "date": "2026-08-24",
