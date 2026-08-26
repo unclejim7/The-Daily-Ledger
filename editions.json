@@ -1,6 +1,19 @@
 {
-  "latest_edition": 91,
+  "latest_edition": 92,
   "editions": [
+    {
+      "edition": 92,
+      "date": "2026-08-26",
+      "day_of_week": "Wednesday",
+      "filename": "2026-08-26.html",
+      "headline": "Iran and Oman Float a Temporary Hormuz Shipping Corridor and Mine-Clearance Plan as Washington's Sanctions Campaign Escalates in Parallel",
+      "teaser": "Oman's foreign minister, Sayyid Badr al-Busaidi, holds what he calls a “constructive dialogue” with Iranian FM Abbas Araghchi in Tehran, with both sides outlining a phased framework for a temporary Strait of Hormuz shipping corridor and a joint project to clear mines, and hoping to “soon announce” practical arrangements to restore safe navigation — with talks continuing toward a permanent corridor and the strait's future administration. Iran's Deputy FM Kazem Gharibabadi indicates the emerging deal would close the existing UN-authorized southern route along Oman's coast, an odd wrinkle in an otherwise hopeful development. It all lands the same week Washington's “Operation Economic Outcast” sanctions campaign keeps expanding, underscoring how the war's diplomatic and economic-pressure tracks keep moving in opposite directions simultaneously. Markets rose Tuesday as falling oil eased bond-market worries (S&P +0.3% to 7,677.28, Dow +0.3% to 53,577.40, Nasdaq +0.7% to 26,151.30) even as Canada announced new retaliatory tariffs; all eyes now turn to Nvidia's after-the-bell earnings tonight. Bitcoin pulls back modestly to about $78,600 after topping $80,000 Tuesday, gold holds near $4,642, and oil extends its slide, with WTI breaking below technical support near $81. Also: warm, humid weather in Chicago with a chance of strong storms (high near 84°F), a large study linking the Shingrix shingles vaccine to a 24% lower dementia risk, and the White Sox (69-61) outslugging the Rangers 11-7 while the Cubs (76-57) fall 5-4 to the Diamondbacks.",
+      "stats": {
+        "btc": 78600,
+        "sp500": 7677.28,
+        "mortgage_30yr": "6.67%"
+      }
+    },
     {
       "edition": 91,
       "date": "2026-08-25",
