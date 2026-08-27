@@ -1,6 +1,19 @@
 {
-  "latest_edition": 92,
+  "latest_edition": 93,
   "editions": [
+    {
+      "edition": 93,
+      "date": "2026-08-27",
+      "day_of_week": "Thursday",
+      "filename": "2026-08-27.html",
+      "headline": "Nvidia's Blowout Quarter Sends Stock Futures Soaring as Trump Insists Hormuz Mines Are Already Gone, Complicating Iran and Oman's New Corridor Plan",
+      "teaser": "Nvidia caps Wednesday's close with a genuinely blockbuster second-quarter report — revenue of $96.2 billion, up 106% year over year, EPS of $2.22, up more than 111%, and third-quarter guidance of $108 billion — sending the stock up as much as 7.63% after hours and lifting Nasdaq-100 futures and European tech stocks Thursday morning. The euphoria lands the same morning Trump moves to undercut the premise of Tuesday's Iran-Oman diplomatic breakthrough: where Tehran and Muscat outlined a joint mine-clearance project as part of a proposed temporary Hormuz shipping corridor, Trump insists all mines in the strait have already been removed or detonated and warns any vessel laying new ones will be destroyed. Iran's Revolutionary Guard spokesperson Hossein Mohebbi fires back that the U.S. is \"obstructing this process,\" leaving the corridor plan in limbo over a dispute about whether the underlying problem even exists. Markets closed Wednesday modestly higher ahead of Nvidia's report (S&P +0.2% to 7,692.15, Dow +0.1% to 53,631.80, Nasdaq +0.3% to 26,231.50); Bitcoin holds near $79,300, gold ticks up to about $4,700, and oil keeps sliding (Brent $86.93, WTI $80.28) with Fed Chair Warsh's Jackson Hole keynote now just a day away. Also: mainly sunny weather in Chicago with clear skies for tonight's partial lunar eclipse (high near 80°F), a study on a brain-computer interface restoring reading ability in 84% of trial patients, and the White Sox completing a sweep of the Rangers to grow their AL Central lead to 2.5 games while the Cubs are shut out 2-0 by the Diamondbacks.",
+      "stats": {
+        "btc": 79300,
+        "sp500": 7692.15,
+        "mortgage_30yr": "6.65%"
+      }
+    },
     {
       "edition": 92,
       "date": "2026-08-26",
