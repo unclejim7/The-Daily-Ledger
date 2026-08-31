@@ -1,6 +1,19 @@
 {
-  "latest_edition": 93,
+  "latest_edition": 94,
   "editions": [
+    {
+      "edition": 94,
+      "date": "2026-08-31",
+      "day_of_week": "Monday",
+      "filename": "2026-08-31.html",
+      "headline": "US Strikes Iranian Mine-Laying Rockets on Larak Island as Hormuz Fighting Resumes and Warsh's Hawkish Jackson Hole Turn Sends Rate-Hike Odds to 57%",
+      "teaser": "U.S. forces strike two Iranian rocket launchers on Larak Island Sunday, the first American strikes in over a month, after observing Iranian units preparing to launch rockets carrying sea mines into the Strait of Hormuz; Iran's Revolutionary Guard says the strike caused casualties and vows retaliation, following through overnight against U.S. allies elsewhere in the region. The strikes reopen a basic dispute the week's corridor diplomacy had mostly papered over: Iran's Deputy FM Kazem Gharibabadi says the strait \"remains closed\" and passage requires Iran's coordination, while U.S. Central Command insists \"Iran does not control the Strait of Hormuz,\" saying it finished clearing sea mines from international shipping routes last week. All of this lands three days after Fed Chair Kevin Warsh's hawkish Jackson Hole turn, warning that summer inflation readings \"do not tell me that underlying trends have meaningfully improved\" — a comment that sent September rate-hike odds to 57% and left the 10-year Treasury yield near 4.716%; stocks fell Friday (S&P -0.25% to 7,711.76, Dow -0.02% to 53,559.99, Nasdaq -0.52% to 26,402.42) despite a winning week. Monday's session opens lower as oil jumps on the resumed fighting (WTI +3%, Brent +2%) while Bitcoin (~$78,000) and gold (futures -0.5% to ~$4,510) both give ground to higher rate expectations. Also: sweltering heat and storm chances return to Chicago (highs near 92°F), a large preliminary study linking long-term melatonin use to a 90% higher heart failure risk, and the Cubs (78-60) falling to the Reds while the White Sox continue to hold their AL Central lead.",
+      "stats": {
+        "btc": 78000,
+        "sp500": 7711.76,
+        "mortgage_30yr": "6.75%"
+      }
+    },
     {
       "edition": 93,
       "date": "2026-08-27",
