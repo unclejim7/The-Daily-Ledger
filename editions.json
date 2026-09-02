@@ -1,6 +1,19 @@
 {
-  "latest_edition": 95,
+  "latest_edition": 96,
   "editions": [
+    {
+      "edition": 96,
+      "date": "2026-09-02",
+      "day_of_week": "Wednesday",
+      "filename": "2026-09-02.html",
+      "headline": "Trump's “Tanker for Tanker” Strikes Hit Iranian Government Vessels as a Weak Jobs Report Flips Fed Odds From a Hike to a Cut",
+      "teaser": "The U.S. rolls out an entirely new deterrence doctrine, striking Iranian government tankers directly for the first time under Trump's newly approved “tanker for tanker” policy — retaliation, not blockade enforcement. American drones fired missiles into the engine rooms of two Iranian government tankers anchored off Iran's coast, part of a roughly 100-target strike package also hitting IRGC air-defense sites, radar, mine-laying capability, and cruise-missile and drone launchers, described by one U.S. official as an effort to “mow the lawn.” The strikes follow one of the deadliest tanker incidents this month: Saudi Arabia says the attack on its tanker Sidr killed crew members, including two Filipino seafarers, a level of casualties this wave of attacks had mostly avoided until now. Markets, meanwhile, reversed course within hours: August's private payrolls came in at just 38,000, well below expectations, flipping Fed odds from a September hike — as high as 68% earlier this week after Warsh's hawkish Jackson Hole remarks — toward pricing in a rate cut instead, with futures swinging sharply higher on the news even as the 10-year Treasury yield still touched 4.814% intraday, its highest since November 2023. Oil keeps climbing regardless (Brent past $93, WTI near $90) while Bitcoin (~$77,100) and gold (~$4,358) both extend their slide, a reminder that the war and the Fed story are moving on largely independent tracks. Also: hot, humid weather in Chicago with a heat index near 105°F, a study finding a one-month HEPA air purifier trial improved executive function test scores by 12% in adults 40 and older, and the Cubs (78-61) and White Sox (73-65) both holding playoff-race positions heading into September.",
+      "stats": {
+        "btc": 77118,
+        "sp500": 7686.14,
+        "mortgage_30yr": "6.80%"
+      }
+    },
     {
       "edition": 95,
       "date": "2026-09-01",
