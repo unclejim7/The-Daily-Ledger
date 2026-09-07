@@ -1,6 +1,19 @@
 {
-  "latest_edition": 100,
+  "latest_edition": 101,
   "editions": [
+    {
+      "edition": 101,
+      "date": "2026-09-07",
+      "day_of_week": "Monday",
+      "filename": "2026-09-07.html",
+      "headline": "Iran Prepares a Unilateral \"Exclusion Zone\" Beyond Hormuz Even as It Says a Corridor Deal With Oman Is \"Days Away\"",
+      "teaser": "Two days after the weekend's carrier-and-tanker exchange, Iran pursues its Hormuz strategy on two tracks at once: Mohsen Rezaei says Tehran will announce a unilateral \"exclusion zone\" beyond the strait, running from the U.S. naval blockade line into the Persian Gulf, enforced through sanctions listings against violating vessels. The same day, Foreign Ministry spokesman Esmail Baghaei says a temporary Hormuz corridor deal with Oman is in its \"final stages\" and days from being signed, to be documented with the IMO — but only opens if the U.S. stops \"sabotage, threats, and attacks\" on Iran. Hormuz traffic has averaged just ~10 ships a day for 10 straight days, Brent crude touched a nearly seven-week high above $97 (+8% on the week), and U.S. gas hit a Labor Day record of $4.14/gallon. U.S. equity markets are closed for Labor Day, leaving Friday's close to stand for a third session (S&P 7,718.60); Bitcoin holds roughly flat near $79,465 and gold eases to ~$4,445 after hitting resistance. Also: a gorgeous, sunny Chicago Labor Day near 80°F, a study on combined lifestyle programs improving memory in older adults at dementia risk, and the Cubs (81-63) falling to the Marlins 10-3 while the White Sox (75-68) rout the Twins 10-1 to hold their AL Central lead.",
+      "stats": {
+        "btc": 79465,
+        "sp500": 7718.6,
+        "mortgage_30yr": "6.75%"
+      }
+    },
     {
       "edition": 100,
       "date": "2026-09-06",
