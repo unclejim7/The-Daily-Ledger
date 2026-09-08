@@ -1,6 +1,19 @@
 {
-  "latest_edition": 101,
+  "latest_edition": 102,
   "editions": [
+    {
+      "edition": 102,
+      "date": "2026-09-08",
+      "day_of_week": "Tuesday",
+      "filename": "2026-09-08.html",
+      "headline": "Canada's Retaliatory Tariffs Take Effect on $27.6 Billion of US Goods, Just as Oil Nears $100 a Barrel on Hormuz Tensions",
+      "teaser": "Two unrelated economic shocks hit markets together Tuesday: at 12:01 a.m. ET, Canada's retaliatory tariffs on $27.6 billion of American goods took effect (15%-50% across steel, dairy, appliances, agricultural equipment, pulp and paper, and electronics, with steel/aluminum duties doubled to 50% to match US levies) after talks collapsed Friday, following Trump's own 50% levy on $20 billion of Canadian goods and PM Carney's declaration that Canada is effectively \"at war\" with the US economically. Simultaneously, Brent crude creeps toward $100 a barrel and WTI nears $93 on continued Hormuz tensions, pushing Dow futures down ~0.8% and S&P futures down ~0.2% ahead of Tuesday's open. The combined shock complicates the Fed's calculus ahead of Friday's CPI report and the September 15-16 FOMC meeting, with rate-hike odds close to a coin flip and Trump turning up pressure on Fed Chair Warsh. Bitcoin eases to ~$78,920 on the combined risk while gold climbs toward ~$4,485 on a broader safe-haven bid. Also: a warm, humid, breezy Chicago Tuesday with storms returning overnight, a study finding nearly 8 in 10 adults in their 20s show signs of cardiovascular-kidney-metabolic syndrome, and the Cubs (81-64) falling to the Brewers 4-3 on a late-inning collapse while the White Sox (75-68) open a home series against the Pirates.",
+      "stats": {
+        "btc": 78920,
+        "sp500": 7718.6,
+        "mortgage_30yr": "6.75%"
+      }
+    },
     {
       "edition": 101,
       "date": "2026-09-07",
