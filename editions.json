@@ -1,6 +1,19 @@
 {
-  "latest_edition": 105,
+  "latest_edition": 106,
   "editions": [
+    {
+      "edition": 106,
+      "date": "2026-09-12",
+      "day_of_week": "Saturday",
+      "filename": "2026-09-12.html",
+      "headline": "Houthis Seize Control of Yemen's Red Sea Coast as a Drone Strike Shuts Down Saudi Arabia's Key Oil Pipeline",
+      "teaser": "Iran-backed Houthi rebels complete a rapid seizure of Yemen's Red Sea coastline, capturing the port of Mocha and then the strategic island of Perim at the mouth of the Bab el-Mandeb Strait, a chokepoint handling roughly 12% of global seaborne oil trade. The same week, Saudi Arabia shut down its 745-mile East-West pipeline — its main Hormuz workaround — after a drone strike Riyadh and Baghdad attribute to Iran-backed militias in Iraq, leaving both of the kingdom's main oil routes compromised simultaneously. Crown Prince Mohammed bin Salman is urging Trump to take military action against the Houthis, a request that could widen US involvement well beyond the Iran-Hormuz theater. Brent crude pushed toward $108, its highest since July, even as markets closed out the week higher — Dow +509.19 pts (+0.98%) to 52,573.29, S&P +0.86% to 7,656.98, Nasdaq +0.96% to 26,333.04 — as oil eased from Thursday's spike and CPI came in near expectations. Bitcoin held near $77,050 and gold traded sideways near $4,350. Also: a warm, sunny Chicago Saturday near 86°F marking an 18th straight above-normal day, research on lifestyle factors driving chronic inflammation, and the Cubs (82-66) routing the Pirates 12-2 to snap a four-game skid while the White Sox (75-71) travel to face the Cardinals.",
+      "stats": {
+        "btc": 77050,
+        "sp500": 7656.98,
+        "mortgage_30yr": "6.76%"
+      }
+    },
     {
       "edition": 105,
       "date": "2026-09-11",
