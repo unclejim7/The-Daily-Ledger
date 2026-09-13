@@ -1,6 +1,19 @@
 {
-  "latest_edition": 106,
+  "latest_edition": 107,
   "editions": [
+    {
+      "edition": 107,
+      "date": "2026-09-13",
+      "day_of_week": "Sunday",
+      "filename": "2026-09-13.html",
+      "headline": "Trump Rejects Saudi Request for Direct Strikes on the Houthis, Offering Intelligence Support Instead as Riyadh Weighs Acting Alone",
+      "teaser": "President Trump rejects a direct request from Saudi Crown Prince Mohammed bin Salman for US military strikes against the Houthis following their seizure of Yemen's Red Sea coastline, offering intelligence and targeting support instead (100+ US advisers are already in the kingdom). Trump strikes a casual tone (\"everything's going to work out fine and dandy\") even as Saudi Arabia signals it may act unilaterally and has already struck Mocha's airport twice. WTI crude officially tops $104 a barrel, its highest since July 2022, while Brent pushes toward $110 on the combined Hormuz/Bab el-Mandeb disruption. US equity markets are closed for the weekend (Friday's close stands: S&P 7,656.98), but Bitcoin eases to ~$76,800 on the weekend's oil and war-scope news. Also: a cooler, partly cloudy Chicago Sunday in the mid-70s with afternoon shower risk, research on lifestyle factors driving chronic inflammation, and the Cubs (83-66) rallying late to beat the Pirates 4-3 while the White Sox (76-72) walk off the Cardinals 6-5 on a Grichuk ninth-inning homer.",
+      "stats": {
+        "btc": 76800,
+        "sp500": 7656.98,
+        "mortgage_30yr": "6.76%"
+      }
+    },
     {
       "edition": 106,
       "date": "2026-09-12",
