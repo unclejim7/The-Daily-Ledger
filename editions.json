@@ -1,6 +1,19 @@
 {
-  "latest_edition": 107,
+  "latest_edition": 108,
   "editions": [
+    {
+      "edition": 108,
+      "date": "2026-09-14",
+      "day_of_week": "Monday",
+      "filename": "2026-09-14.html",
+      "headline": "Rate-Hike Odds Jump to 86.5% as a Fatal Hormuz Strike Forces Oman to Postpone Gulf Shipping Talks",
+      "teaser": "Fed rate-hike odds for Wednesday's FOMC decision jump to 86.5%, up from 69.4% Friday morning, as oil climbs more than 11% over five trading days (Brent +2.75% to $107.48, WTI +2.51% to $102.56) amid the dual Hormuz/Bab el-Mandeb disruption. An Iranian cargo vessel was struck near Qeshm Island in the Strait of Hormuz Sunday, killing 1 and wounding 4; Tehran blames a \"terrorist enemy\" without naming a party, and the attack landed a day before Tehran was set to meet regional leaders in Oman on managing shipping traffic — talks Oman's foreign minister confirmed are postponed \"in the interests of consensus.\" Gold eased 0.22% to $4,340.58 and Bitcoin held near $77,000 after a 4.4% weekly slide, both moving opposite oil ahead of Wednesday's decision. US equity markets open today with Friday's close (S&P 7,656.98) the last confirmed level. Also: a partly cloudy, breezy Chicago Monday near 74°F, a nearly 980,000-person UK study linking very hot tea or coffee to higher esophageal cancer risk, and the Cubs (83-67) falling to the Pirates 4-3 while the White Sox (76-73) drop the Cardinals series finale 3-1.",
+      "stats": {
+        "btc": 77000,
+        "sp500": 7656.98,
+        "mortgage_30yr": "6.76%"
+      }
+    },
     {
       "edition": 107,
       "date": "2026-09-13",
