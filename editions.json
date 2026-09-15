@@ -1,6 +1,19 @@
 {
-  "latest_edition": 108,
+  "latest_edition": 109,
   "editions": [
+    {
+      "edition": 109,
+      "date": "2026-09-15",
+      "day_of_week": "Tuesday",
+      "filename": "2026-09-15.html",
+      "headline": "10-Year Treasury Yield Tops 5% for the First Time Since 2023 as AI's Own Leaders Call for a Slowdown, One Day Before the Fed Decides",
+      "teaser": "The 10-year Treasury yield briefly topped 5% Monday, its highest level since 2023 and by some measures since 2007, as inflation anxiety and swelling government borrowing needs collide. The same day, Anthropic CEO Dario Amodei's Saturday essay urging AI companies to slow development on safety grounds rattled markets further: OpenAI's Sam Altman said the company won't IPO this year given the safety concerns, while Anthropic itself still plans a fall Nasdaq listing despite voicing the same warnings — Nvidia fell 3.4% and the PHLX semiconductor index sank nearly 6%. Equities fell for the session (S&P -0.48% to 7,619.98, Dow -152.09 pts/-0.29% to 52,421.20, Nasdaq -0.56% to 26,186.41) as Goldman Sachs revised its Fed call from no change to a hike, with market pricing now near 90% for Wednesday's decision. Bitcoin eased to ~$76,500 and gold settled at $4,347.90. Also: a soggy Chicago Tuesday with periods of heavy rain near 82°F, a study finding semaglutide extended lifespan by 12% in older mice, and the Cubs (84-67) beating the Braves 7-3 while the White Sox (77-73) topped the Guardians 7-3 in a game with first place on the line.",
+      "stats": {
+        "btc": 76500,
+        "sp500": 7619.98,
+        "mortgage_30yr": "6.76%"
+      }
+    },
     {
       "edition": 108,
       "date": "2026-09-14",
