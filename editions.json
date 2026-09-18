@@ -1,6 +1,19 @@
 {
-  "latest_edition": 111,
+  "latest_edition": 112,
   "editions": [
+    {
+      "edition": 112,
+      "date": "2026-09-18",
+      "day_of_week": "Friday",
+      "filename": "2026-09-18.html",
+      "headline": "Hundreds of Thousands Rally in Tehran Behind a Trump-in-Crosshairs Banner as Wall Street Notches Its Best Session Since the Fed Hike",
+      "teaser": "Iran staged its biggest show of public defiance since the war began, as hundreds of thousands rallied in Tehran under a banner depicting Trump in crosshairs reading \"We will kill,\" with the Guard chief citing over 600,000 registered for paramilitary training. The rally lands days before Tuesday's Gulf-leaders summit and just after Trump's own \"annihilate\" remark, as both capitals escalated their rhetoric the same week. Markets found relief Thursday in Wall Street's best session since the Fed hike (Dow +316.14 pts/+0.6% to 51,778.04, S&P +1.1% to 7,637.76, Nasdaq +1.7% to 26,418.30) as oil eased (Brent 04.82, WTI 01.91) and bond-market pressure calmed. Bitcoin rebounded toward 8,000, gold eased back to roughly ,320 from Wednesday's spike, and the 30-year mortgage held at 6.95%. Also: a calmer, partly cloudy Chicago Friday near 75°F, a study linking any daily step count above 2,200 to lower death and cardiovascular risk, and the White Sox (78-75) beating the Tigers 3-1 while the Cubs (85-68) prepare to open a series at Cincinnati.",
+      "stats": {
+        "btc": 78000,
+        "sp500": 7637.76,
+        "mortgage_30yr": "6.95%"
+      }
+    },
     {
       "edition": 111,
       "date": "2026-09-17",
