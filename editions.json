@@ -1,6 +1,19 @@
 {
-  "latest_edition": 112,
+  "latest_edition": 113,
   "editions": [
+    {
+      "edition": 113,
+      "date": "2026-09-19",
+      "day_of_week": "Saturday",
+      "filename": "2026-09-19.html",
+      "headline": "Trump Says He's at a \"Major Crossroads\" as Satellite Images Show Iran Reinforcing Its Buried Nuclear Site Ahead of Tuesday's Gulf Summit",
+      "teaser": "Trump told Axios he's approaching a \"major crossroads\" in the Iran war, warning Tehran not to \"get cute\" as satellite imagery showed fresh construction and hardened defenses at Pickaxe Mountain, Iran's deeply buried nuclear-linked tunnel complex near Natanz. The same week, Washington approved a 4.3 billion sale of 48 F-35 jets to Saudi Arabia amid intensifying Houthi attacks, while China offered to play a \"constructive role\" as Iran increasingly looks to Beijing as a diplomatic bridge ahead of Tuesday's Gulf-leaders summit. Markets closed a volatile Fed-hike week on a mixed note Friday (Dow -95.40 pts/-0.18% to 51,682.64, S&P +0.17% to 7,650.50, Nasdaq +0.39% to 26,522.55), Bitcoin pushed toward 9,000, gold held near ,375, and the 30-year mortgage stayed at 6.95%. Also: a flood alert in Chicago near 78°F with thunderstorms possible, a study linking reading to better memory and slower brain aging in older adults, and the Cubs (85-69) falling to the Reds 6-4 while the White Sox (78-76) blew a big lead and lost to the Tigers 11-8 as the Guardians (79-75) took sole possession of first place in the AL Central.",
+      "stats": {
+        "btc": 79000,
+        "sp500": 7650.5,
+        "mortgage_30yr": "6.95%"
+      }
+    },
     {
       "edition": 112,
       "date": "2026-09-18",
