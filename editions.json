@@ -1,6 +1,19 @@
 {
-  "latest_edition": 113,
+  "latest_edition": 114,
   "editions": [
+    {
+      "edition": 114,
+      "date": "2026-09-20",
+      "day_of_week": "Sunday",
+      "filename": "2026-09-20.html",
+      "headline": "Iran Weighs a Nuclear Policy Shift as Ghalibaf Insists Tehran Must \"Fight and Negotiate\" at Once, Two Days Before Trump's UN Address",
+      "teaser": "Iran's parliament speaker Mohammad-Bagher Ghalibaf said Tehran should pursue war and negotiation simultaneously rather than choosing one path, while some Iranian MPs raised the prospect of withdrawing from the NPT if the regime's survival is threatened; a top security official said the anti-nuclear-weapons fatwa still holds but added, \"we do not know what will happen in the future.\" The comments land two days before Trump addresses the UN Tuesday, expected to stress Iran must never have a nuclear weapon, before meeting six Gulf leaders; President Pezeshkian separately heads to New York to address the Assembly Wednesday as part of a smaller, tightly controlled Iranian delegation the US has agreed to admit. Markets were closed for the weekend (Friday's S&P close of 7,650.50 stands), but Bitcoin pushed back above 0,000 for the first time in over a week, gold held near ,377, and the 30-year mortgage stayed at 6.95%. Also: a cooler, windier Chicago Sunday near 68°F, a study linking semaglutide to fewer asthma attacks and COPD flare-ups, and the Cubs (86-69) beating the Reds 5-2 while the White Sox (79-76) topped the Tigers 3-1 to close back within a half-game of the first-place Guardians (80-75).",
+      "stats": {
+        "btc": 80500,
+        "sp500": 7650.5,
+        "mortgage_30yr": "6.95%"
+      }
+    },
     {
       "edition": 113,
       "date": "2026-09-19",
