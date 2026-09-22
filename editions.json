@@ -1,6 +1,19 @@
 {
-  "latest_edition": 114,
+  "latest_edition": 115,
   "editions": [
+    {
+      "edition": 115,
+      "date": "2026-09-21",
+      "day_of_week": "Monday",
+      "filename": "2026-09-21.html",
+      "headline": "Trump Warns Iran Will \"Fail Economically\" or See Its Leadership \"Wiped Out\" as Bessent Says Iranian Airlines Face a Global Shutdown Wednesday",
+      "teaser": "Trump warned Iran would fail economically or see its leadership wiped out absent a deal, while saying he's open to meeting Pezeshkian in New York this week; Iran's military said it has information a new attack is being prepared and vowed a harsh response. Treasury Secretary Bessent announced all Iranian airlines will be \"shut down\" worldwide starting Wednesday, targeting airports, fuel suppliers, and ticketing firms that serve them, while the Saudi coalition intercepted a Houthi ballistic missile aimed at Riyadh and Iran's Araghchi arrived in New York for the UN General Assembly. Markets shrugged off the war headlines entirely, with the S&P surging 1.49% to 7,764.70, the Nasdaq hitting a record close of 27,122.09 (+2.26%) on an AI-stock rally, and the Dow adding 366.19 points to 52,048.83 as oil and yields slipped; Bitcoin rode the rally to an eight-month high above 5,000. Also: spotty light showers and a cool, fall-arriving Chicago Monday near 65°F, a study finding US alcohol use fell for the first time since the pandemic, and the Cubs (87-69) routing the Reds 9-1 while the White Sox (80-76) eliminated the Tigers with an 8-1 win, staying a half-game behind the first-place Guardians (81-75).",
+      "stats": {
+        "btc": 85000,
+        "sp500": 7764.7,
+        "mortgage_30yr": "6.95%"
+      }
+    },
     {
       "edition": 114,
       "date": "2026-09-20",
