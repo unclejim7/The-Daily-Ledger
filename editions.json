@@ -1,6 +1,19 @@
 {
-  "latest_edition": 117,
+  "latest_edition": 118,
   "editions": [
+    {
+      "edition": 118,
+      "date": "2026-09-24",
+      "day_of_week": "Thursday",
+      "filename": "2026-09-24.html",
+      "headline": "Iran Kills a Sailor in a New Hormuz Strike Hours After Pezeshkian Tells the UN Iran Wants \"Dialogue, Not the Language of Force\"",
+      "teaser": "The bulk carrier Cape Dao was struck near Oman's Musandam Governorate, killing Indian crew member Suraj Yadav and forcing the Omani navy to evacuate 27 others, just hours after Iranian President Pezeshkian told the UN Iran is \"ready for dialogue... without accepting the language of force,\" while separately holding up photos of schoolgirls killed in an alleged US strike. A senior Iranian official said Hormuz could reopen within seven days if the US blockade eases, a sharp contrast to the day's fatal strike. Markets fell Wednesday (S&P -0.75% to 7,706.03, Dow -352.10 pts to 51,511.59, Nasdaq -1.13% to 26,936.04) as the 5-year Treasury yield topped 5% for the first time since 2007 on renewed rate-hike fears, dragging Bitcoin to ~4,000 and gold to ~,321 Thursday morning, while the 30-year mortgage pushed toward 7% on private trackers. Also: a finally-dry, brighter Chicago Thursday near 68°F, a study on a multicancer blood test detecting 17 cancer types, and the Cubs (87-71) falling to the Marlins 3-2 while the White Sox (81-77) lost to the Royals 5-4, both denied a chance to clinch or advance their postseason bids.",
+      "stats": {
+        "btc": 84000,
+        "sp500": 7706.03,
+        "mortgage_30yr": "6.95%"
+      }
+    },
     {
       "edition": 117,
       "date": "2026-09-23",
