@@ -1,6 +1,19 @@
 {
-  "latest_edition": 119,
+  "latest_edition": 120,
   "editions": [
+    {
+      "edition": 120,
+      "date": "2026-09-26",
+      "day_of_week": "Saturday",
+      "filename": "2026-09-26.html",
+      "headline": "Trump Rejects Iran's Seven-Day Ceasefire Plan, WSJ Reports, and Expects to Resume Bombing After the Midterms",
+      "teaser": "Trump rejected Iran's proposal for a seven-day ceasefire and told aides he expects to resume bombing after the midterms, the Wall Street Journal reported, as Iran's plan would have reopened the Strait of Hormuz and restarted nuclear talks in exchange for lifting the naval blockade. Pezeshkian said Tehran would negotiate NPT-framework limits on its nuclear program, but a hardline Iranian lawmaker immediately called 60% enrichment a \"fundamental national right,\" underscoring divisions within Iran's own government. Markets shrugged off the uncertainty, closing a volatile week higher Friday (Dow +478.64 pts/+0.93% to 51,828.62, S&P +0.51% to 7,743.41, Nasdaq +0.5% to 27,068.72), while Bitcoin pulled back to ~1,250, gold held near ,321, and the 30-year mortgage stayed at 7.03%. Also: a beautiful, sunny Chicago Saturday near 70°F, a study linking long COVID to dopamine-neuron damage, and the Cubs (87-73) swept in a doubleheader by the Red Sox while the White Sox (82-77) beat the Rockies 6-1 behind two Munetaka Murakami home runs.",
+      "stats": {
+        "btc": 81250,
+        "sp500": 7743.41,
+        "mortgage_30yr": "7.03%"
+      }
+    },
     {
       "edition": 119,
       "date": "2026-09-25",
