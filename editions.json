@@ -1,6 +1,19 @@
 {
-  "latest_edition": 121,
+  "latest_edition": 122,
   "editions": [
+    {
+      "edition": 122,
+      "date": "2026-09-28",
+      "day_of_week": "Monday",
+      "filename": "2026-09-28.html",
+      "headline": "Oil Surges and Bitcoin Tumbles as Iran Peace Talks Stall, Even as Trump Says Talks Will Resume This Week on a \"Different Deal\"",
+      "teaser": "WTI crude jumped over 4% to 6.44 as Hormuz peace talks appeared to stall, dragging S&P and Nasdaq futures sharply lower Monday as the 10-year Treasury yield climbed to 5.23%, a fresh high since 2007; Araghchi called Trump's rejection of Iran's ceasefire proposal just a \"first reaction,\" while Trump told Axios talks would resume this week on a different deal. VLCC charter rates from the Gulf to China surged above .2 million a day, and a UN-backed fact-finding mission found \"reasonable grounds\" the US committed war crimes in the February 28 strikes, citing a Minab school strike that killed over 150 (including ~120 children) and a Lamerd strike that killed 22. Bitcoin sank to ~3,000 and gold plunged 3.17% to ~,149, while the 30-year mortgage held at 7.03%. Also: a mild Chicago Monday in the low 70s, a Mayo Clinic AI model that may flag pancreatic cancer risk three years early, and both the Cubs (6-2 over the Red Sox) and White Sox (4-2 over the Rockies, finishing 84-78) closing out standout regular seasons.",
+      "stats": {
+        "btc": 83000,
+        "sp500": 7743.41,
+        "mortgage_30yr": "7.03%"
+      }
+    },
     {
       "edition": 121,
       "date": "2026-09-27",
