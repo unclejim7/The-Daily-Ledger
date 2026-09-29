@@ -1,6 +1,19 @@
 {
-  "latest_edition": 122,
+  "latest_edition": 123,
   "editions": [
+    {
+      "edition": 123,
+      "date": "2026-09-29",
+      "day_of_week": "Tuesday",
+      "filename": "2026-09-29.html",
+      "headline": "Trump Denies Offering Iran Sanctions Relief for Nuclear Concessions, Even as Ghalibaf Warns No Regional Infrastructure Will Be Safe",
+      "teaser": "Trump denied on Truth Social offering Iran sanctions relief and frozen funds for nuclear concessions, contradicting a US official's account of a Qatar-mediated offer, as mediators shuttled between Araghchi and US officials in New York with sequencing still the key sticking point. Ghalibaf warned \"no infrastructure will be safe\" in any region that won't sell Iranian oil, while an IRGC spokesman called Trump a \"big liar\" and disputed claims that Hormuz shipping is being restored, as Iran's rial hit a fresh record low near 2.5 million to the dollar. Monday's close was rough (Dow -347.11 pts/-0.67% to 51,481.51, S&P -0.77% to 7,683.69, Nasdaq -0.92% to 26,820.38) with the 10-year Treasury yield at 5.24% (highest since 2007) and 30-year at 5.56% (highest since 2004), and Boeing falling nearly 7% on an FAA 737 MAX 10 certification denial. Bitcoin rebounded toward ~$84,000 and gold steadied near ~$4,152 Tuesday morning, while the 30-year mortgage held at 7.03%. Also: a mild Chicago day near 75°F with a severe storm and brief tornado risk overnight, a large review finding no causal link between prenatal Tylenol use and autism, and both the Cubs (at Padres) and White Sox (at Astros) opening their Wild Card Series tonight.",
+      "stats": {
+        "btc": 84000,
+        "sp500": 7683.69,
+        "mortgage_30yr": "7.03%"
+      }
+    },
     {
       "edition": 122,
       "date": "2026-09-28",
