@@ -1,6 +1,19 @@
 {
-  "latest_edition": 125,
+  "latest_edition": 126,
   "editions": [
+    {
+      "edition": 126,
+      "date": "2026-10-03",
+      "day_of_week": "Saturday",
+      "filename": "2026-10-03.html",
+      "headline": "Trump Says Iran War Will End \"Very Soon,\" Discloses 18 US Troops Killed, as a Weak Jobs Report Sends Stocks to Fresh Highs",
+      "teaser": "Trump said the Iran war would end \"very soon,\" probably \"right after the midterms,\" and disclosed that 18 US service members have died over the course of the conflict, the first time a specific casualty figure has been given. No Iran link has yet been established in Wednesday's FlyDubai cockpit attack, though Trump again vowed a \"very hard\" response if one is confirmed. September's jobs report badly missed expectations (29,000 jobs added vs. 84,000 forecast, unemployment up to 4.2%, July/August revised down a combined 60,000), cooling Fed rate-hike bets and sending stocks sharply higher: the Dow gained 250.40 points (+0.49%) to 51,176.96, the S&P rose 0.73% to 7,722.72, and the Nasdaq surged 1.6% to a fresh all-time high, as the 10-year Treasury yield eased to ~5.27% from this week's 5.33-5.34% peak. Gold fell to ~$4,140 while Bitcoin held near $84,600 after Citi's fresh $113,000 target, and the 30-year mortgage held at 7.28%. Also: a sunny, mild Chicago Saturday near 70°F, the formal renaming of polycystic ovary syndrome to PMOS under a new global medical consensus, and the White Sox opening the ALDS at Cleveland today after sweeping Houston for their first playoff series win in 21 years.",
+      "stats": {
+        "btc": 84600,
+        "sp500": 7722.72,
+        "mortgage_30yr": "7.28%"
+      }
+    },
     {
       "edition": 125,
       "date": "2026-10-02",
