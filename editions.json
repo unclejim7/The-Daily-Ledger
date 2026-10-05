@@ -1,6 +1,19 @@
 {
-  "latest_edition": 127,
+  "latest_edition": 128,
   "editions": [
+    {
+      "edition": 128,
+      "date": "2026-10-05",
+      "day_of_week": "Monday",
+      "filename": "2026-10-05.html",
+      "headline": "Trump Claims \"Total Control\" of the Strait of Hormuz as Iran's Guard Corps Orders a Tanker to Turn Back or Be Targeted",
+      "teaser": "Trump claimed the US has achieved \"total control\" of the Strait of Hormuz, saying 29 ships crossed in a single day, even as Iran's IRGC ordered an inbound tanker near Khasab, Oman to turn back or be targeted — and it complied, the latest incident in a week that's already seen six tankers struck. Trump and Israel are reportedly weighing retaliation over the FlyDubai cockpit attack, now called \"thwarted terrorism,\" though regional officials say no Iranian link has been established and Trump has offered no evidence for his suspicion. Markets resumed trading Monday after closing last week at record levels (S&P 7,722.72, Dow 51,176.96), with the 10-year Treasury yield holding near 5.26%. Gold held steady near $4,139 while Bitcoin climbed back above $86,000 as rate-hike fears continued to fade, and the 30-year mortgage held at 7.28%. Also: a sunny, mild Chicago Monday near 65°F, three scientists winning the Nobel Prize in Medicine for discoveries on how brain cells switch nerve activity on and off, and the White Sox looking to go up 2-0 in the ALDS tonight at Cleveland.",
+      "stats": {
+        "btc": 86300,
+        "sp500": 7722.72,
+        "mortgage_30yr": "7.28%"
+      }
+    },
     {
       "edition": 127,
       "date": "2026-10-04",
