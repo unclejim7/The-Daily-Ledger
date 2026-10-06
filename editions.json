@@ -1,6 +1,19 @@
 {
-  "latest_edition": 128,
+  "latest_edition": 129,
   "editions": [
+    {
+      "edition": 129,
+      "date": "2026-10-06",
+      "day_of_week": "Tuesday",
+      "filename": "2026-10-06.html",
+      "headline": "Pezeshkian Declares Talks With the US \"Meaningless\" as Iran's Oil Stockpiles Near Exhaustion and a Third Tanker in Two Days Is Struck",
+      "teaser": "Iran's President Pezeshkian declared negotiations with the US \"meaningless,\" saying Iran has been attacked three times after talks and accusing Washington of seeking regime overthrow rather than dialogue, even as a third tanker in two days was struck near Hormuz. Trump called the war \"essentially almost over\" and dismissed higher gas prices as \"a small price to pay.\" Kpler data shows Iran's floating oil stockpiles have fallen to ~29 million barrels from ~90 million in July and could be exhausted by mid-October, with Iran's own production cut to ~1.8 million bpd (roughly half pre-war output), even as regional oil flows through Hormuz overall have surpassed prewar levels. Markets extended their rally Monday (S&P +0.66% to 7,773.05, Dow +0.18% to 51,267.90, Nasdaq +1.05% to a fresh record 27,477.31), with the 10-year Treasury yield easing slightly to ~5.27%. Gold slipped to ~$4,121 while Bitcoin held steady near $85,800, and the 30-year mortgage held at 7.28%. Also: a sunny, mild Chicago Tuesday near 70°F, a cervical cancer screening study from rural India, and the White Sox taking a 2-0 ALDS lead over Cleveland with a 4-3 Game 2 win.",
+      "stats": {
+        "btc": 85800,
+        "sp500": 7773.05,
+        "mortgage_30yr": "7.28%"
+      }
+    },
     {
       "edition": 128,
       "date": "2026-10-05",
