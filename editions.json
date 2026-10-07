@@ -1,6 +1,19 @@
 {
-  "latest_edition": 129,
+  "latest_edition": 130,
   "editions": [
+    {
+      "edition": 130,
+      "date": "2026-10-07",
+      "day_of_week": "Wednesday",
+      "filename": "2026-10-07.html",
+      "headline": "Trump's National Security Team Held Secret Camp David Talks on Iran as Attacks Surge and Bitcoin Crashes Below $84,000",
+      "teaser": "Senior Trump national security officials held a secret, previously unannounced Camp David meeting on the Iran war and Yemen, chaired by VP Vance with Rubio, Hegseth, Witkoff, Ratcliffe, Gen. Caine, and Bessent; an official said decisions were made or \"deeply discussed\" on renewed major combat operations, as Saudi Arabia separately presses for Houthi airstrikes. Tanker attacks have surged to nearly 20 ships hit in the past month, keeping Brent crude near $100/barrel even as Hormuz oil shipments approach prewar levels. The volatility hit crypto overnight as Bitcoin crashed below $84,000 on $547 million in liquidations, even as stocks closed Tuesday at fresh records (S&P +0.58% to 7,818.93, Dow +0.49% to 51,521.28, Nasdaq +0.45% to 27,599.79) with the 10-year Treasury yield near a fresh 24-year high around 5.3%. Gold slid to a two-month low near $4,121, and the 30-year mortgage held at 7.28%. Also: a sunny, mild Chicago Wednesday near 73°F, a study linking viral infections to 2.3 million new cancer cases worldwide in 2024, and the White Sox going for an ALDS sweep tonight at home against Cleveland.",
+      "stats": {
+        "btc": 83800,
+        "sp500": 7818.93,
+        "mortgage_30yr": "7.28%"
+      }
+    },
     {
       "edition": 129,
       "date": "2026-10-06",
