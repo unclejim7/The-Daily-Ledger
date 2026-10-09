@@ -1,6 +1,19 @@
 {
-  "latest_edition": 131,
+  "latest_edition": 132,
   "editions": [
+    {
+      "edition": 132,
+      "date": "2026-10-09",
+      "day_of_week": "Friday",
+      "filename": "2026-10-09.html",
+      "headline": "Iran Expands Tanker Attacks Beyond the Strait Itself as Oil Jumps 5%, Even as Trump Promises No New Strikes Before the Midterms",
+      "teaser": "Iran struck two commercial tankers outside the Strait of Hormuz within 24 hours, including an LPG carrier south of the strait, expanding attacks beyond the waterway itself; oil jumped 5% with Brent back above $105, even as Kpler data showed Hormuz tanker traffic at its lowest since late July, contradicting Trump's claim of record flows a day earlier. Rubio said Iran has \"lost complete control\" of the strait, which Tehran disputes, as the US sanctioned 22 tankers and dozens more entities; Trump said resuming strikes remains \"not off the table\" but promised none before the midterms. Markets were shaken by a separate story: the Nasdaq sank 1.25% to 27,193.34, its worst day since July, after a report that OpenAI's revenue ran ~$20 billion below circulated figures, dragging Oracle, Nvidia, and AMD lower, while the S&P slipped 0.47% to 7,765.36 and the Dow edged up 0.1% to 51,231.64. Bitcoin extended its slide to a fifth day, touching an October low near $80,420, and the 30-year mortgage jumped to 7.40%, a seventh straight weekly rise and the highest since November 2023. Also: a mild, showery Chicago Friday near 71°F, a study linking lower cognitive scores in your 60s to higher stroke risk, and the Guardians forcing a winner-take-all ALDS Game 5 after a 9-5 win, with the series tied 2-2.",
+      "stats": {
+        "btc": 82500,
+        "sp500": 7765.36,
+        "mortgage_30yr": "7.40%"
+      }
+    },
     {
       "edition": 131,
       "date": "2026-10-08",
