@@ -1,6 +1,19 @@
 {
-  "latest_edition": 132,
+  "latest_edition": 133,
   "editions": [
+    {
+      "edition": 133,
+      "date": "2026-10-10",
+      "day_of_week": "Saturday",
+      "filename": "2026-10-10.html",
+      "headline": "Iran's Guard Corps Says a Supertanker Hit a Naval Mine Leaving Hormuz, as Tehran Calls the Strait Its \"Strategic Red Line\"",
+      "teaser": "Iran's IRGC navy said a supertanker suffered a massive explosion after striking a naval mine while leaving the Strait of Hormuz via an unauthorized route, as IRGC chief Vahidi called the strait Iran's \"strategic red line\" and a leader's adviser said Iran intends to manage and restrict traffic rather than close the waterway entirely. Washington maintains free navigation is \"inviolable,\" a view shared by Gulf states, as Hormuz diplomacy stays deadlocked even amid parallel ceasefire talks. Markets are closed for the weekend; Friday's close stands (S&P +0.59% to 7,811.54, Dow +0.83% to 51,654.95, Nasdaq +0.64% to 27,366.17), with all three posting weekly gains as tech rebounded and oil eased. Gold climbed to ~$4,200 (+1.8%) after a strong 30-year Treasury auction eased yields and the dollar, while the 10-year yield held steady at 5.24%. Bitcoin is holding in the low-to-mid $82,000s, and the 30-year mortgage's last reading remains 7.40%. Also: a mild, breezy Chicago Saturday warming into the low 80s, a study linking loneliness to years of lost healthy life, and the Guardians eliminating the White Sox 2-0 in a rain-soaked ALDS Game 5 to advance to the ALCS.",
+      "stats": {
+        "btc": 82500,
+        "sp500": 7811.54,
+        "mortgage_30yr": "7.40%"
+      }
+    },
     {
       "edition": 132,
       "date": "2026-10-09",
