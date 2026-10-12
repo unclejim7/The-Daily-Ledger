@@ -1,6 +1,19 @@
 {
-  "latest_edition": 133,
+  "latest_edition": 134,
   "editions": [
+    {
+      "edition": 134,
+      "date": "2026-10-11",
+      "day_of_week": "Sunday",
+      "filename": "2026-10-11.html",
+      "headline": "Hormuz Attacks Hit Their Highest Weekly Total of the War as Traffic Collapses to a Fraction of Normal Levels",
+      "teaser": "At least a dozen ships were attacked in the Strait of Hormuz in the week ending October 5, the highest weekly total of the war, as IMF PortWatch recorded just 4 transits on October 4 against a pre-crisis baseline of 85 a day and Kpler put weekly crude transits ~40% below normal. Two more outbound tankers were struck October 10-11, and two Indian seafarers remain missing after a drone hit the MT Petro Dolphin, even as Saturday's reported mine strike remains independently uncorroborated, sourced only to Iranian state media. CENTCOM says that since reimposing its blockade in mid-July, US forces have disabled 4 vessels, turned around 135 ships, and destroyed 10 tankers linked to Iran, while Iran demands a return to the collapsed June MOU and still hasn't delivered a promised response to the US's reply on its seven-day plan. Markets are closed for the weekend; Brent settled at $104.72 Friday (+0.42%), Bitcoin is holding near $83,000 after Saturday's $83,039 close, and the 30-year mortgage's last reading stands at 7.40%. Also: a sunny, warm Chicago Sunday with ideal conditions for the Chicago Marathon, a discovery of a new eye waste-drainage pathway with implications for glaucoma, and the city processing the White Sox's playoff run coming to an end.",
+      "stats": {
+        "btc": 83000,
+        "sp500": 7811.54,
+        "mortgage_30yr": "7.40%"
+      }
+    },
     {
       "edition": 133,
       "date": "2026-10-10",
