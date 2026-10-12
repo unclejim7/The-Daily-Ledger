@@ -1,6 +1,45 @@
 {
-  "latest_edition": 132,
+  "latest_edition": 135,
   "editions": [
+    {
+      "edition": 135,
+      "date": "2026-10-12",
+      "day_of_week": "Monday",
+      "filename": "2026-10-12.html",
+      "headline": "Rubio Says the Strait of Hormuz Is Open and Nearly Back to Prewar Flows, Directly Contradicting Sunday's Collapse in Transit Data",
+      "teaser": "Secretary of State Rubio said the Strait of Hormuz is open, Iran has \"lost control\" of it, and oil is flowing nearly as it did before the war — directly contradicting Sunday's IMF PortWatch figure of just 4 transits against an 85-a-day baseline. Iran's own position is unchanged: an IRGC adviser says the strait remains closed and Iran will soon block \"illegal routes,\" while adviser Safavi reiterates Tehran's aim is to restrict, not fully close, traffic. Tanker-strike counts are approaching 20 vessels, and Saturday's reported mine strike remains uncorroborated outside Iranian state media. Markets capped a volatile week with gains Friday (S&P +1.2%, Dow +0.9%, Nasdaq +0.6% for the week, its fourth straight weekly gain), with traders now watching Wednesday's US inflation report. Bitcoin climbed back above $84,000 Monday as ETF selling eased and shorts unwound, though it remains down ~3.3% on the week, and the 30-year mortgage's last reading holds at 7.40% ahead of Thursday's Freddie Mac survey. Also: near-record heat in Chicago near 84°F before a sharp midweek cooldown, a study linking statins to lower glaucoma risk, and the Guardians advancing to face the Rays in the ALCS after eliminating the White Sox.",
+      "stats": {
+        "btc": 84000,
+        "sp500": 7811.54,
+        "mortgage_30yr": "7.40%"
+      }
+    },
+    {
+      "edition": 134,
+      "date": "2026-10-11",
+      "day_of_week": "Sunday",
+      "filename": "2026-10-11.html",
+      "headline": "Hormuz Attacks Hit Their Highest Weekly Total of the War as Traffic Collapses to a Fraction of Normal Levels",
+      "teaser": "At least a dozen ships were attacked in the Strait of Hormuz in the week ending October 5, the highest weekly total of the war, as IMF PortWatch recorded just 4 transits on October 4 against a pre-crisis baseline of 85 a day and Kpler put weekly crude transits ~40% below normal. Two more outbound tankers were struck October 10-11, and two Indian seafarers remain missing after a drone hit the MT Petro Dolphin, even as Saturday's reported mine strike remains independently uncorroborated, sourced only to Iranian state media. CENTCOM says that since reimposing its blockade in mid-July, US forces have disabled 4 vessels, turned around 135 ships, and destroyed 10 tankers linked to Iran, while Iran demands a return to the collapsed June MOU and still hasn't delivered a promised response to the US's reply on its seven-day plan. Markets are closed for the weekend; Brent settled at $104.72 Friday (+0.42%), Bitcoin is holding near $83,000 after Saturday's $83,039 close, and the 30-year mortgage's last reading stands at 7.40%. Also: a sunny, warm Chicago Sunday with ideal conditions for the Chicago Marathon, a discovery of a new eye waste-drainage pathway with implications for glaucoma, and the city processing the White Sox's playoff run coming to an end.",
+      "stats": {
+        "btc": 83000,
+        "sp500": 7811.54,
+        "mortgage_30yr": "7.40%"
+      }
+    },
+    {
+      "edition": 133,
+      "date": "2026-10-10",
+      "day_of_week": "Saturday",
+      "filename": "2026-10-10.html",
+      "headline": "Iran's Guard Corps Says a Supertanker Hit a Naval Mine Leaving Hormuz, as Tehran Calls the Strait Its \"Strategic Red Line\"",
+      "teaser": "Iran's IRGC navy said a supertanker suffered a massive explosion after striking a naval mine while leaving the Strait of Hormuz via an unauthorized route, as IRGC chief Vahidi called the strait Iran's \"strategic red line\" and a leader's adviser said Iran intends to manage and restrict traffic rather than close the waterway entirely. Washington maintains free navigation is \"inviolable,\" a view shared by Gulf states, as Hormuz diplomacy stays deadlocked even amid parallel ceasefire talks. Markets are closed for the weekend; Friday's close stands (S&P +0.59% to 7,811.54, Dow +0.83% to 51,654.95, Nasdaq +0.64% to 27,366.17), with all three posting weekly gains as tech rebounded and oil eased. Gold climbed to ~$4,200 (+1.8%) after a strong 30-year Treasury auction eased yields and the dollar, while the 10-year yield held steady at 5.24%. Bitcoin is holding in the low-to-mid $82,000s, and the 30-year mortgage's last reading remains 7.40%. Also: a mild, breezy Chicago Saturday warming into the low 80s, a study linking loneliness to years of lost healthy life, and the Guardians eliminating the White Sox 2-0 in a rain-soaked ALDS Game 5 to advance to the ALCS.",
+      "stats": {
+        "btc": 82500,
+        "sp500": 7811.54,
+        "mortgage_30yr": "7.40%"
+      }
+    },
     {
       "edition": 132,
       "date": "2026-10-09",
