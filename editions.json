@@ -1,6 +1,19 @@
 {
-  "latest_edition": 135,
+  "latest_edition": 136,
   "editions": [
+    {
+      "edition": 136,
+      "date": "2026-10-13",
+      "day_of_week": "Tuesday",
+      "filename": "2026-10-13.html",
+      "headline": "Iran Targets the 'US-UAE Oil Shuttle' Scheme, Offering a Possible Explanation for How the Strait Can Be Both Nearly Empty and Nearly Normal at Once",
+      "teaser": "Iran's security chief Mohsen Rezaei names a covert feeder-vessel-to-VLCC transfer system near Oman as Tehran's new target, a reveal that may reconcile Rubio's 'nearly prewar flows' claim with Sunday's near-empty PortWatch transit data — as Kpler reports Gulf exports rebounded to 12.8 million bpd in September, the highest of the war. Markets closed mixed Monday (Dow +0.38%, S&P -0.06%, Nasdaq -0.44% on Micron weakness) ahead of Wednesday's CPI report, Bitcoin churned between $83,000-$84,000 on heavy ETF outflows, the 30-year mortgage held at 7.40%, Chicago's warm stretch gave way to evening storms, the Guardians beat the Rays 7-3 in an ALCS Game 1 comeback, and researchers found restoring a protein called Menin reversed age-related decline in older mice.",
+      "stats": {
+        "btc": 83500,
+        "sp500": 7807.24,
+        "mortgage_30yr": "7.40%"
+      }
+    },
     {
       "edition": 135,
       "date": "2026-10-12",
