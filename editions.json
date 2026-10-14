@@ -1,6 +1,19 @@
 {
-  "latest_edition": 136,
+  "latest_edition": 137,
   "editions": [
+    {
+      "edition": 137,
+      "date": "2026-10-14",
+      "day_of_week": "Wednesday",
+      "filename": "2026-10-14.html",
+      "headline": "Hot Inflation Report Rattles Markets as Iran's New Hormuz Surveillance Push Sends Oil Flows Into Reverse",
+      "teaser": "September CPI ran hotter than expected (headline +3.7% YoY, core +2.6% YoY, both above forecast), sending stocks lower (S&P -0.84%, Dow -0.60%, Nasdaq -1.30%) and the 10-year Treasury yield to a fresh high near 5.38%. Iran's navy announced new surveillance units covering the Sea of Oman and Arabian Sea following Tuesday's oil-shuttle revelations, and September's oil-flow rebound has begun reversing as attacks intensify (Kpler: 11 tankers struck Sept. 28-Oct. 5). Also: Bitcoin slid to ~$81,800, the 30-year mortgage held at 7.40% ahead of Thursday's reading, Chicago's cold front finally arrived, the Rays evened the ALCS 1-1 with a Game 2 win over the Guardians, and a new report found heart failure deaths rising sharply among younger Americans.",
+      "stats": {
+        "btc": 81800,
+        "sp500": 7742.18,
+        "mortgage_30yr": "7.40%"
+      }
+    },
     {
       "edition": 136,
       "date": "2026-10-13",
