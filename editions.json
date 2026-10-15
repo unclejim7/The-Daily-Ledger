@@ -1,6 +1,19 @@
 {
-  "latest_edition": 137,
+  "latest_edition": 138,
   "editions": [
+    {
+      "edition": 138,
+      "date": "2026-10-15",
+      "day_of_week": "Thursday",
+      "filename": "2026-10-15.html",
+      "headline": "Two Ships Sink Near Hormuz Within a Day as Iranian Officials Admit They're Stalling for the Midterms",
+      "teaser": "The GFS Pride and the Cape Dao both sank near the Strait of Hormuz within roughly 24 hours, killing one crew member, as Iran claimed its first naval-mine sinking of the war and Singapore's Maritime and Port Authority called the strike \"unprovoked, unjustifiable.\" Reuters reported that senior Iranian officials admitted Tehran is deliberately prolonging the crisis to keep oil prices elevated through the November 3 US midterms, as Brent crude jumped toward $110 a barrel. Stocks extended Wednesday's inflation-driven slide (S&P -0.58%, Dow -0.42%, Nasdaq -0.95%) as the Fed conversation shifted from rate cuts to rate-hike risk. Also: Bitcoin fell to ~$80,900, Freddie Mac's new reading ticked up to 7.46% on the federal tax deadline day, Chicago turned soggy and cool, ALCS Game 3 was set for Cleveland with the series tied 1-1, and a study linked GLP-1 drugs to a small increased risk of a rare vision-loss condition.",
+      "stats": {
+        "btc": 80900,
+        "sp500": 7697.18,
+        "mortgage_30yr": "7.46%"
+      }
+    },
     {
       "edition": 137,
       "date": "2026-10-14",
