@@ -1,6 +1,19 @@
 {
-  "latest_edition": 139,
+  "latest_edition": 140,
   "editions": [
+    {
+      "edition": 140,
+      "date": "2026-10-17",
+      "day_of_week": "Saturday",
+      "filename": "2026-10-17.html",
+      "headline": "Wall Street Closes Its Worst Week Since June as Bitcoin Ticks Higher Into the Weekend",
+      "teaser": "Markets are closed for the weekend, leaving Friday's close to stand: S&P 500 at 7,612.47 and Nasdaq at 26,078.60, both logging their worst week since late June, while the Dow finished at 51,168.63 and still gained 0.7% for the week. Bitcoin, which trades through the weekend, ticked up slightly to ~$80,200 as the week's heaviest selling eased with thinner volume. The Hormuz situation holds at an elevated plateau with no fresh incident today but oil still near multi-month highs, and Fed rate-hike odds for the Oct. 27-28 meeting remain near a coin flip. Also: the 30-year mortgage held at 7.46%, Chicago enjoyed a bright sunny Saturday, ALCS Game 4 resumes tonight in Cleveland with the Guardians leading 2-1 after Friday's rainout, and a report highlighted emerging research on the brain's early cell development.",
+      "stats": {
+        "btc": 80200,
+        "sp500": 7612.47,
+        "mortgage_30yr": "7.46%"
+      }
+    },
     {
       "edition": 139,
       "date": "2026-10-16",
