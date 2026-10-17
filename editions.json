@@ -1,6 +1,32 @@
 {
-  "latest_edition": 138,
+  "latest_edition": 140,
   "editions": [
+    {
+      "edition": 140,
+      "date": "2026-10-17",
+      "day_of_week": "Saturday",
+      "filename": "2026-10-17.html",
+      "headline": "Wall Street Closes Its Worst Week Since June as Bitcoin Ticks Higher Into the Weekend",
+      "teaser": "Markets are closed for the weekend, leaving Friday's close to stand: S&P 500 at 7,612.47 and Nasdaq at 26,078.60, both logging their worst week since late June, while the Dow finished at 51,168.63 and still gained 0.7% for the week. Bitcoin, which trades through the weekend, ticked up slightly to ~$80,200 as the week's heaviest selling eased with thinner volume. The Hormuz situation holds at an elevated plateau with no fresh incident today but oil still near multi-month highs, and Fed rate-hike odds for the Oct. 27-28 meeting remain near a coin flip. Also: the 30-year mortgage held at 7.46%, Chicago enjoyed a bright sunny Saturday, ALCS Game 4 resumes tonight in Cleveland with the Guardians leading 2-1 after Friday's rainout, and a report highlighted emerging research on the brain's early cell development.",
+      "stats": {
+        "btc": 80200,
+        "sp500": 7612.47,
+        "mortgage_30yr": "7.46%"
+      }
+    },
+    {
+      "edition": 139,
+      "date": "2026-10-16",
+      "day_of_week": "Friday",
+      "filename": "2026-10-16.html",
+      "headline": "Tech Stocks Sink on Renewed AI-Bubble Fears as Oil Closes at Its Highest Level Since May",
+      "teaser": "A broad tech selloff sent the Nasdaq down 2.1% to 26,078.60 and the S&P 500 down 1.1% to 7,612.47, marking Wall Street's worst week since late June, even as the Dow eked out a 0.3% daily dip but a 0.7% weekly gain. Oil closed at its highest level since May as the Hormuz crisis ground on with roughly 10 vessels attacked over the past week, while gold climbed to $4,181 an ounce and the 10-year yield eased to ~5.19%. Fed rate-hike odds for the Oct. 27-28 meeting now sit near a coin flip after Wednesday's hot CPI. Also: Bitcoin fell to ~$79,800, the 30-year mortgage held at 7.46% as sellers cut prices, Chicago's rain cleared behind a cold front, the Guardians took a 2-1 ALCS lead before Game 4 was rained out, and a study projected global dementia cases will more than double by 2050.",
+      "stats": {
+        "btc": 79800,
+        "sp500": 7612.47,
+        "mortgage_30yr": "7.46%"
+      }
+    },
     {
       "edition": 138,
       "date": "2026-10-15",
