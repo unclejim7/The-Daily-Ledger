@@ -1,6 +1,19 @@
 {
-  "latest_edition": 141,
+  "latest_edition": 142,
   "editions": [
+    {
+      "edition": 142,
+      "date": "2026-10-19",
+      "day_of_week": "Monday",
+      "filename": "2026-10-19.html",
+      "headline": "CENTCOM Says 97% of Iran's Hormuz Attacks Fail, as Tehran Claims Two More Tankers Hit Mines",
+      "teaser": "CENTCOM spokesman Capt. Tim Hawkins said 97% of Iran's attempted Strait of Hormuz attacks are unsuccessful, with roughly 400 merchant ships transiting the strait in the past week alone, directly contradicting Iran's own claim that two more tankers caught fire Sunday after hitting naval mines. Markets attempted a rebound Monday after last week's worst stretch since June (S&P +0.6% to 7,658.12, Dow +0.3% to 51,322.14, Nasdaq +1.0% to 26,339.39), as Fed Chair Kevin Warsh declined to signal his intentions ahead of the Oct. 27-28 meeting, leaving rate-hike odds scattered across models. Also: Bitcoin rebounded to ~$82,700, the 30-year mortgage held at 7.46%, Chicago enjoyed a sunny mild Monday, Caleb Williams returned to lead the Bears past the Falcons 31-23, the Rays took a 3-2 ALCS lead over the Guardians with Game 6 looming, and a study linked regular late-night eating to a higher risk of fatty liver disease.",
+      "stats": {
+        "btc": 82700,
+        "sp500": 7658.12,
+        "mortgage_30yr": "7.46%"
+      }
+    },
     {
       "edition": 141,
       "date": "2026-10-18",
