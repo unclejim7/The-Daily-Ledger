@@ -1,6 +1,19 @@
 {
-  "latest_edition": 142,
+  "latest_edition": 143,
   "editions": [
+    {
+      "edition": 143,
+      "date": "2026-10-20",
+      "day_of_week": "Tuesday",
+      "filename": "2026-10-20.html",
+      "headline": "Oil Tops $111 a Barrel as Chip Stocks Resume Their Selloff, Clouding the Picture Before the Fed's Pivotal Meeting",
+      "teaser": "Brent crude pushed above $111 a barrel, a fresh war-era high, as a renewed chip-stock selloff dragged the Nasdaq down 0.9% to 26,102.95 (S&P -0.4% to 7,627.49, Dow +0.1% to 51,373.54), reviving AI-valuation worries just a week before Fed Chair Kevin Warsh's pivotal Oct. 27-28 decision on whether to extend September's rate hike. Also: Bitcoin slipped to ~$81,900, the 30-year mortgage held at 7.46%, Chicago enjoyed another sunny seasonable Tuesday, the Rays clinched the AL pennant with a 7-3 Game 6 win over the Guardians (no Game 7 needed) and will face the Milwaukee Brewers in the World Series starting Friday, and a report examined early hurdles facing Medicare's new peer-support billing codes.",
+      "stats": {
+        "btc": 81900,
+        "sp500": 7627.49,
+        "mortgage_30yr": "7.46%"
+      }
+    },
     {
       "edition": 142,
       "date": "2026-10-19",
