@@ -1,6 +1,19 @@
 {
-  "latest_edition": 144,
+  "latest_edition": 145,
   "editions": [
+    {
+      "edition": 145,
+      "date": "2026-10-23",
+      "day_of_week": "Friday",
+      "filename": "2026-10-23.html",
+      "headline": "Iran Claims Seven Tankers Struck in a Single Day as Oil Surges Past $113, Erasing This Week's Market Relief",
+      "teaser": "Iranian state TV claimed seven oil tankers were struck or mined overnight, the most in a single day since the war began (unconfirmed by AP), as Foreign Minister Abbas Araghchi offered a conditional reopening timeline and Houthi forces added a fresh wave of attacks on Saudi Arabia Friday. Brent crude surged 4% to $113.17 Thursday, its highest since May, continuing toward $114 Friday. The relief rally that carried markets through the week reversed sharply (Nasdaq's worst session since June, S&P's worst since July), and Bitcoin fell back below $84,200 to ~$81,600 on $635 million in ETF outflows. Also: Fed hike odds for Oct. 27-28 held near 16%, Freddie Mac's new reading ticked down to 7.38%, Chicago enjoyed a sunny pleasant Friday, the World Series opened tonight at Milwaukee (Misiorowski vs. Martinez) alongside a Blackhawks home game, and a personalized mRNA melanoma vaccine plus Keytruda was shown to cut recurrence risk by 42%.",
+      "stats": {
+        "btc": 81600,
+        "sp500": 7535.91,
+        "mortgage_30yr": "7.38%"
+      }
+    },
     {
       "edition": 144,
       "date": "2026-10-21",
