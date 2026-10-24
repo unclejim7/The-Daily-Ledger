@@ -1,16 +1,29 @@
 {
-  "latest_edition": 145,
+  "latest_edition": 146,
   "editions": [
     {
-      "edition": 145,
+      "edition": 146,
       "date": "2026-10-23",
       "day_of_week": "Friday",
       "filename": "2026-10-23.html",
-      "headline": "Iran Claims Seven Tankers Struck in a Single Day as Oil Surges Past $113, Erasing This Week's Market Relief",
-      "teaser": "Iranian state TV claimed seven oil tankers were struck or mined overnight, the most in a single day since the war began (unconfirmed by AP), as Foreign Minister Abbas Araghchi offered a conditional reopening timeline and Houthi forces added a fresh wave of attacks on Saudi Arabia Friday. Brent crude surged 4% to $113.17 Thursday, its highest since May, continuing toward $114 Friday. The relief rally that carried markets through the week reversed sharply (Nasdaq's worst session since June, S&P's worst since July), and Bitcoin fell back below $84,200 to ~$81,600 on $635 million in ETF outflows. Also: Fed hike odds for Oct. 27-28 held near 16%, Freddie Mac's new reading ticked down to 7.38%, Chicago enjoyed a sunny pleasant Friday, the World Series opened tonight at Milwaukee (Misiorowski vs. Martinez) alongside a Blackhawks home game, and a personalized mRNA melanoma vaccine plus Keytruda was shown to cut recurrence risk by 42%.",
+      "headline": "Houthi Attacks on Saudi Arabia Push Oil Toward $114 as World Series Game 1 Arrives Tonight",
+      "teaser": "Houthi forces launched a fresh wave of attacks on Saudi Arabia Friday, adding to the oil-price pressure that began building after Thursday's reported mass tanker attack; Brent crude continued climbing toward $114 a barrel. Markets extended Thursday's reversal (S&P, Dow, and Nasdaq all finishing lower), and Bitcoin slipped further to ~$81,600 amid continued ETF outflows. Fed rate-hike odds for the Oct. 27-28 meeting held steady near 16%, and the 30-year mortgage held at 7.38% after Thursday's decline. Also: the World Series opened tonight at Milwaukee (Misiorowski vs. Martinez) alongside a Blackhawks home game against Montreal, and a Penn State study found just four minutes of daily strength training improved mobility in older adults.",
       "stats": {
         "btc": 81600,
         "sp500": 7535.91,
+        "mortgage_30yr": "7.38%"
+      }
+    },
+    {
+      "edition": 145,
+      "date": "2026-10-22",
+      "day_of_week": "Thursday",
+      "filename": "2026-10-22.html",
+      "headline": "Iran Claims Seven Tankers Struck in a Single Day as Oil Surges Past $113, Erasing This Week's Market Relief",
+      "teaser": "Iranian state TV claimed seven oil tankers were struck or mined overnight, the most in a single day since the war began (unconfirmed by AP), as Foreign Minister Abbas Araghchi offered a conditional reopening timeline: \"If they comply with our conditions, the Strait of Hormuz will reopen on the sixth day.\" Brent crude surged 4% to $113.17, its highest since May, as the relief rally that carried markets through the week reversed sharply (Nasdaq's worst session since June, S&P's worst since July). Bitcoin fell back below $84,200 to ~$81,800, and Freddie Mac's new weekly reading ticked down to 7.38%, its first decline in weeks. Also: a personalized mRNA melanoma vaccine combined with Keytruda was shown to cut recurrence risk by 42%, and the World Series opens tomorrow at Milwaukee.",
+      "stats": {
+        "btc": 81800,
+        "sp500": 7558.57,
         "mortgage_30yr": "7.38%"
       }
     },
