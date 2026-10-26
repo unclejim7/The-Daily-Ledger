@@ -1,6 +1,19 @@
 {
-  "latest_edition": 148,
+  "latest_edition": 149,
   "editions": [
+    {
+      "edition": 149,
+      "date": "2026-10-26",
+      "day_of_week": "Monday",
+      "filename": "2026-10-26.html",
+      "headline": "Markets Open FOMC Week Cautiously as Oil Holds Near Multi-Month Highs and Aramco's Evacuation Continues",
+      "teaser": "The Fed's two-day policy meeting begins tomorrow with a decision due Wednesday at 2pm ET; markets opened the week with modest gains (S&P +0.3% to 7,559.52, Dow +0.2% to 51,485.25, Nasdaq +0.4% to 25,398.42) as Chair Kevin Warsh continued offering no signal on the outcome. Oil held near its recent highs, with Brent easing slightly to ~$115.50 after Friday's $116.72 settle and no new overnight incident reported, while Aramco's Dhahran evacuation entered its second week with no timeline for staff to return. Also: Bitcoin ticked up to ~$81,200, the 30-year mortgage held at 7.38%, Chicago turned sharply cooler after Sunday's warmth, World Series Game 3 was set for tonight at Tampa Bay with the Brewers looking to extend their 2-0 lead, and new research flagged a possible link between GLP-1 medications and higher risk of osteoporosis, gout, and osteomalacia.",
+      "stats": {
+        "btc": 81200,
+        "sp500": 7559.52,
+        "mortgage_30yr": "7.38%"
+      }
+    },
     {
       "edition": 148,
       "date": "2026-10-25",
