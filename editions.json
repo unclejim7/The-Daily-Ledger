@@ -1,6 +1,19 @@
 {
-  "latest_edition": 149,
+  "latest_edition": 150,
   "editions": [
+    {
+      "edition": 150,
+      "date": "2026-10-27",
+      "day_of_week": "Tuesday",
+      "filename": "2026-10-27.html",
+      "headline": "Houthis Claim Strike on Saudi Arabia's Ras Tanura Refinery, the Kingdom's Largest Export Terminal, as the Fed's Meeting Begins",
+      "teaser": "A Houthi spokesman claims Yemeni forces struck Saudi Arabia's Ras Tanura refinery, the kingdom's largest oil export terminal, sending Brent briefly past $118 a barrel as the Fed's two-day FOMC meeting opens. Bitcoin slips to ~$79,750 while the Brewers take a 3-0 World Series lead and can clinch their first title tonight.",
+      "stats": {
+        "btc": 79750,
+        "sp500": 7676.77,
+        "mortgage_30yr": "7.38%"
+      }
+    },
     {
       "edition": 149,
       "date": "2026-10-26",
