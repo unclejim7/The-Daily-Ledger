@@ -1,6 +1,19 @@
 {
-  "latest_edition": 150,
+  "latest_edition": 151,
   "editions": [
+    {
+      "edition": 151,
+      "date": "2026-10-28",
+      "day_of_week": "Wednesday",
+      "filename": "2026-10-28.html",
+      "headline": "Fed's Decision Looms as Aramco Confirms a Fire But Doesn't Address the Ras Tanura Refinery Claim Directly",
+      "teaser": "Aramco confirms a 'fully contained' fire at its export terminal but stays silent on Tuesday's Houthi claim of a direct strike on the Ras Tanura refinery, as the Fed's rate decision looms at 2pm ET. Markets closed higher Tuesday (S&P 7,722.60, Nasdaq +1.2% to 26,477.81) and Bitcoin rebounds to ~$81,400, while the Rays force a World Series Game 5 with a 12th-inning walk-off win, though the Brewers still lead the series 3-1.",
+      "stats": {
+        "btc": 81400,
+        "sp500": 7722.6,
+        "mortgage_30yr": "7.38%"
+      }
+    },
     {
       "edition": 150,
       "date": "2026-10-27",
