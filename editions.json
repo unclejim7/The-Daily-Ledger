@@ -1,6 +1,19 @@
 {
-  "latest_edition": 151,
+  "latest_edition": 152,
   "editions": [
+    {
+      "edition": 152,
+      "date": "2026-10-29",
+      "day_of_week": "Thursday",
+      "filename": "2026-10-29.html",
+      "headline": "Fed Holds Rates in a 10-2 Vote as Warsh Warns the Inflation Fight Is \"Unfinished,\" While the Brewers Capture Their First World Series Title",
+      "teaser": "The Fed held rates at 3.75%-4.00% in a 10-2 vote, with Chair Kevin Warsh calling the inflation fight \"unfinished\" despite two dissenting hawks. Markets closed at a record (S&P 7,743.98) and Bitcoin gave back most of its Fed-day pop to ~$80,600, while oil extended gains on reports the U.S. may renew strikes on Iran post-midterms. Meanwhile, the Milwaukee Brewers beat the Rays 4-1 in Game 5 to win their first World Series title in franchise history, with William Contreras named MVP.",
+      "stats": {
+        "btc": 80600,
+        "sp500": 7743.98,
+        "mortgage_30yr": "7.34%"
+      }
+    },
     {
       "edition": 151,
       "date": "2026-10-28",
