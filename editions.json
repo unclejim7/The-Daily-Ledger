@@ -1,6 +1,19 @@
 {
-  "latest_edition": 153,
+  "latest_edition": 154,
   "editions": [
+    {
+      "edition": 154,
+      "date": "2026-10-31",
+      "day_of_week": "Saturday",
+      "filename": "2026-10-31.html",
+      "headline": "Tech Selloff Deepens as Intel Craters 29% and Iran Claims a Fourth Tanker Struck a Mine in Hormuz",
+      "teaser": "Friday's tech selloff deepened Thursday's Alphabet-driven losses, with Intel cratering 29% (its worst day since 1974) and the Nasdaq closing out its worst month since March 2025. Iran's military claimed a fourth tanker struck a mine in the Strait of Hormuz, directly disputing a U.S. CENTCOM denial, as Brent climbed toward $117. Bitcoin found a fragile footing near $77,100 after Friday's fresh six-week low, and Saudi Arabia has now gone five days without confirming or denying the Ras Tanura refinery strike claim.",
+      "stats": {
+        "btc": 77100,
+        "sp500": 7580.07,
+        "mortgage_30yr": "7.34%"
+      }
+    },
     {
       "edition": 153,
       "date": "2026-10-30",
