@@ -1,6 +1,19 @@
 {
-  "latest_edition": 155,
+  "latest_edition": 156,
   "editions": [
+    {
+      "edition": 156,
+      "date": "2026-11-02",
+      "day_of_week": "Monday",
+      "filename": "2026-11-02.html",
+      "headline": "On the Eve of the Midterms, Markets Attempt to Stabilize as Ras Tanura's Silence Enters a Second Week",
+      "teaser": "With more than 35 million ballots already cast ahead of tomorrow's midterms, markets opened the week attempting to stabilize after Friday's rout (S&P +0.4% to 7,610.87). Brent holds near $117 with no new Hormuz incident reported, and Saudi Arabia has now gone seven days without confirming or denying the Ras Tanura refinery strike claim. Bitcoin continues its slow climb to ~$77,800, the Bears play at Seattle tonight on Monday Night Football, and Milwaukee has finally set this Saturday as its World Series parade date.",
+      "stats": {
+        "btc": 77800,
+        "sp500": 7610.87,
+        "mortgage_30yr": "7.34%"
+      }
+    },
     {
       "edition": 155,
       "date": "2026-11-01",
