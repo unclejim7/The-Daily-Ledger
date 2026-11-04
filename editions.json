@@ -1,6 +1,19 @@
 {
-  "latest_edition": 156,
+  "latest_edition": 157,
   "editions": [
+    {
+      "edition": 157,
+      "date": "2026-11-03",
+      "day_of_week": "Tuesday",
+      "filename": "2026-11-03.html",
+      "headline": "Polls Open Across the Country as Control of Congress Hangs in the Balance",
+      "teaser": "Voters head to the polls with control of Congress, 36 governorships, and a wide slate of state races on the line, after record early voting and a wide pre-election enthusiasm gap favoring Democrats. Markets drifted modestly higher on Election Day itself (S&P +0.2% to 7,625.09), Brent held near $117, and Saudi Arabia has now gone eight days without confirming or denying the Ras Tanura refinery strike claim. Bitcoin extended its climb to ~$78,200, and the Bears routed the Seahawks 34-17 on Monday Night Football to improve to 6-2.",
+      "stats": {
+        "btc": 78200,
+        "sp500": 7625.09,
+        "mortgage_30yr": "7.34%"
+      }
+    },
     {
       "edition": 156,
       "date": "2026-11-02",
