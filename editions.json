@@ -1,6 +1,19 @@
 {
-  "latest_edition": 157,
+  "latest_edition": 158,
   "editions": [
+    {
+      "edition": 158,
+      "date": "2026-11-04",
+      "day_of_week": "Wednesday",
+      "filename": "2026-11-04.html",
+      "headline": "Senate Flips to the Narrowest of Democratic Majorities as the House Remains Too Close to Call",
+      "teaser": "Control of the Senate shifted to a razor-thin 51-49 Democratic majority overnight, while House control remains undetermined. Markets shrugged off the split result (S&P +0.3% to 7,647.96), while Saudi Arabia struck Houthi positions in Yemen after new claimed attacks on Abha Airport and King Khalid Air Base, and Iranian forces reportedly attempted to shoot down a U.S. aircraft near Qeshm Island. Bitcoin extended its climb to ~$78,700, and Aramco posted a 34% jump in Q3 profit despite months of attacks on its infrastructure.",
+      "stats": {
+        "btc": 78700,
+        "sp500": 7647.96,
+        "mortgage_30yr": "7.34%"
+      }
+    },
     {
       "edition": 157,
       "date": "2026-11-03",
