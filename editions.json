@@ -1,6 +1,19 @@
 {
-  "latest_edition": 158,
+  "latest_edition": 159,
   "editions": [
+    {
+      "edition": 159,
+      "date": "2026-11-05",
+      "day_of_week": "Thursday",
+      "filename": "2026-11-05.html",
+      "headline": "Freddie Mac's New Reading Arrives as Analysts Warn an Uncalled House Complicates the Post-Midterm Rally Thesis",
+      "teaser": "The 30-year mortgage ticked down to 7.31% in today's new Freddie Mac reading, as analysts note the historical post-midterm rally pattern typically depends on a clear outcome, which a still-uncalled House hasn't provided. Markets edged higher again (S&P +0.1% to 7,655.65), Brent ticked up toward $118 as Houthi forces claimed retaliation for Wednesday's Saudi counterstrikes, and Bitcoin extended its climb to ~$79,100, a sixth straight day higher. The Blackhawks host Florida tonight, and the Bears (6-2) prepare to host Tampa Bay Sunday.",
+      "stats": {
+        "btc": 79100,
+        "sp500": 7655.65,
+        "mortgage_30yr": "7.31%"
+      }
+    },
     {
       "edition": 158,
       "date": "2026-11-04",
