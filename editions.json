@@ -1,6 +1,19 @@
 {
-  "latest_edition": 159,
+  "latest_edition": 160,
   "editions": [
+    {
+      "edition": 160,
+      "date": "2026-11-06",
+      "day_of_week": "Friday",
+      "filename": "2026-11-06.html",
+      "headline": "October Payrolls Come In Soft as Bitcoin Crosses $80,000 for the First Time in Weeks",
+      "teaser": "October nonfarm payrolls added a modest 85,000 jobs as unemployment ticked up to 4.3%, giving markets hope the Fed will have more room to cut in December. The S&P rose 0.2% to 7,670.96, Bitcoin crossed $80,000 for the first time in weeks on a seventh straight day of gains, and Brent held near $118 through a rare quiet overnight in the Gulf. The Blackhawks beat Florida 4-2, the Bears (6-2) prepare to host Tampa Bay Sunday, and Milwaukee's long-delayed World Series victory parade finally arrives tomorrow.",
+      "stats": {
+        "btc": 80250,
+        "sp500": 7670.96,
+        "mortgage_30yr": "7.31%"
+      }
+    },
     {
       "edition": 159,
       "date": "2026-11-05",
