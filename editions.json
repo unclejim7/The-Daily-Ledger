@@ -1,6 +1,19 @@
 {
-  "latest_edition": 160,
+  "latest_edition": 161,
   "editions": [
+    {
+      "edition": 161,
+      "date": "2026-11-08",
+      "day_of_week": "Sunday",
+      "filename": "2026-11-08.html",
+      "headline": "Milwaukee's Parade Draws Huge Crowds as the Bears Prepare to Host Tampa Bay Tonight",
+      "teaser": "Milwaukee's long-delayed World Series victory parade finally rolled through downtown Saturday, drawing huge crowds nearly two weeks after the Brewers' title. The Bears (6-2) host Tampa Bay tonight on Sunday Night Football, markets are closed after Friday's gains left the S&P at 7,670.96, Brent holds near $118 through a second quiet night in the Gulf, and Bitcoin edges higher to ~$80,600, an eighth straight day of gains. October's CPI report arrives Tuesday, the next major data point before the Fed's December meeting.",
+      "stats": {
+        "btc": 80600,
+        "sp500": 7670.96,
+        "mortgage_30yr": "7.31%"
+      }
+    },
     {
       "edition": 160,
       "date": "2026-11-06",
