@@ -1,6 +1,19 @@
 {
-  "latest_edition": 164,
+  "latest_edition": 165,
   "editions": [
+    {
+      "edition": 165,
+      "date": "2026-11-12",
+      "day_of_week": "Thursday",
+      "filename": "2026-11-12.html",
+      "headline": "Mortgage Rate Ticks Down to 7.28% as Freddie Mac's New Reading Arrives; Bitcoin's Record Streak Finally Snaps at Eleven Days",
+      "teaser": "Thursday's new Freddie Mac reading nudged the 30-year mortgage rate down to 7.28%, a third straight modest decline. Bitcoin's eleven-day winning streak finally broke, easing back to roughly $81,900 after clearing $82,000 earlier in the week -- a pause, not a reversal. Markets continued a quieter grind higher (S&P +0.1% to 7,715.40), Brent held near $118, and the Bulls hosted Victor Wembanyama and the Spurs at the United Center.",
+      "stats": {
+        "btc": 81900,
+        "sp500": 7715.4,
+        "mortgage_30yr": "7.28%"
+      }
+    },
     {
       "edition": 164,
       "date": "2026-11-11",
