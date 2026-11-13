@@ -1,6 +1,19 @@
 {
-  "latest_edition": 165,
+  "latest_edition": 166,
   "editions": [
+    {
+      "edition": 166,
+      "date": "2026-11-13",
+      "day_of_week": "Friday",
+      "filename": "2026-11-13.html",
+      "headline": "Bitcoin Reclaims $82,000 on Its Second Attempt as Markets Drift Higher Into the Weekend",
+      "teaser": "A day after snapping its eleven-day winning streak, Bitcoin edged back above $82,000, trading near $82,100 -- holding the level on its second attempt. Equities drifted modestly higher (S&P +0.1% to 7,723.15), Brent held near $118 through a sixth straight quiet week in the Gulf, and the 30-year mortgage held at 7.28%. The Bulls hosted Atlanta and the Blackhawks welcomed Buffalo, while the Bears remained idle on their bye week at 7-2.",
+      "stats": {
+        "btc": 82100,
+        "sp500": 7723.15,
+        "mortgage_30yr": "7.28%"
+      }
+    },
     {
       "edition": 165,
       "date": "2026-11-12",
