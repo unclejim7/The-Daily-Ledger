@@ -1,6 +1,19 @@
 {
-  "latest_edition": 167,
+  "latest_edition": 168,
   "editions": [
+    {
+      "edition": 168,
+      "date": "2026-11-15",
+      "day_of_week": "Sunday",
+      "filename": "2026-11-15.html",
+      "headline": "Bitcoin Edges Higher Again as Markets Prepare to Reopen Monday After a Shaky Week",
+      "teaser": "Bitcoin extended its weekend drift for a second straight day, edging up to roughly $82,450 as the $82,000 level looks increasingly like genuine support. Stock and bond markets remain closed until Monday after a week shaken by an AI-stock selloff; retail sales data arrives Tuesday and FOMC minutes are expected midweek. Brent held near $118 through an eighth straight quiet week in the Gulf, the Packers hosted the Vikings while the Bears stayed idle on bye at 7-2, and Chicago turned seasonably chilly.",
+      "stats": {
+        "btc": 82450,
+        "sp500": 7723.15,
+        "mortgage_30yr": "7.28%"
+      }
+    },
     {
       "edition": 167,
       "date": "2026-11-14",
