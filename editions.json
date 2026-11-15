@@ -1,6 +1,19 @@
 {
-  "latest_edition": 167,
+  "latest_edition": 168,
   "editions": [
+    {
+      "edition": 168,
+      "date": "2026-11-15",
+      "day_of_week": "Sunday",
+      "filename": "2026-11-15.html",
+      "headline": "Bitcoin Plunges to ~$65,300 in a Sudden Weekend Selloff as Leveraged Positions Unwind",
+      "teaser": "Bitcoin's weekend drift reversed violently overnight as a cascade of leveraged liquidations sent BTC tumbling to roughly $65,300, erasing weeks of gains in a matter of hours and marking this publication's sharpest single-day decline of the year. Stock and bond markets remain closed until Monday after a week shaken by an AI-stock selloff that appears to have spilled into crypto; retail sales data arrives Tuesday and FOMC minutes are expected midweek. Brent held near $118 through an eighth straight quiet week in the Gulf, the Packers hosted the Vikings while the Bears stayed idle on bye at 7-2, and Chicago turned seasonably chilly.",
+      "stats": {
+        "btc": 65300,
+        "sp500": 7723.15,
+        "mortgage_30yr": "7.28%"
+      }
+    },
     {
       "edition": 167,
       "date": "2026-11-14",
