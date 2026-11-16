@@ -1,6 +1,19 @@
 {
-  "latest_edition": 168,
+  "latest_edition": 169,
   "editions": [
+    {
+      "edition": 169,
+      "date": "2026-11-16",
+      "day_of_week": "Monday",
+      "filename": "2026-11-16.html",
+      "headline": "Bitcoin Extends Its Slide as the AI-Stock Selloff Carries Into the New Week",
+      "teaser": "Bitcoin's weekend plunge deepened into Monday, slipping further to roughly $64,300 on a second straight day of steep losses. Equities opened the week lower too (S&P -0.4% to 7,692.26) as AI-stock jitters continued; retail sales data lands Tuesday and FOMC minutes from Chair Kevin Warsh's Fed are due Wednesday. Brent held near $118 through a ninth straight quiet week in the Gulf, the Vikings routed the Packers 30-10 while the Bears stayed idle on bye at 7-2, and Chicago trended mild to open the week.",
+      "stats": {
+        "btc": 64301.53,
+        "sp500": 7692.26,
+        "mortgage_30yr": "7.28%"
+      }
+    },
     {
       "edition": 168,
       "date": "2026-11-15",
