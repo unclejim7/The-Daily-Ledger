@@ -1,6 +1,19 @@
 {
-  "latest_edition": 169,
+  "latest_edition": 170,
   "editions": [
+    {
+      "edition": 170,
+      "date": "2026-11-17",
+      "day_of_week": "Tuesday",
+      "filename": "2026-11-17.html",
+      "headline": "Retail Sales Due as Bitcoin Stabilizes and Markets Drift Lower Ahead of the Report",
+      "teaser": "October retail sales are due at 8:30am ET, with economists expecting a modest gain after September's surprise 0.8% increase. Bitcoin showed its first signs of stabilizing, edging up to roughly $64,850 after two days of steep losses, while equities drifted lower ahead of the report (S&P -0.3% to 7,669.19) amid continued AI-stock weakness. Brent held near $118 through a tenth straight quiet week in the Gulf, the Bulls topped Minnesota 117-106 while the Blackhawks blew a 4-0 lead to Winnipeg, and Chicago continued its mild stretch.",
+      "stats": {
+        "btc": 64854.36,
+        "sp500": 7669.19,
+        "mortgage_30yr": "7.28%"
+      }
+    },
     {
       "edition": 169,
       "date": "2026-11-16",
