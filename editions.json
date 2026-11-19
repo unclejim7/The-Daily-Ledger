@@ -1,6 +1,19 @@
 {
-  "latest_edition": 171,
+  "latest_edition": 172,
   "editions": [
+    {
+      "edition": 172,
+      "date": "2026-11-19",
+      "day_of_week": "Thursday",
+      "filename": "2026-11-19.html",
+      "headline": "FOMC Minutes Reveal a Genuinely Split Committee, Leaving December's Decision Wide Open",
+      "teaser": "Minutes from the Fed's late-October meeting showed a committee genuinely divided over its next move, leaving December's rate decision wide open. Markets slipped on the uncertainty (S&P -0.5% to 7,646.11) and Bitcoin eased further to roughly $63,150. Thursday's new Freddie Mac reading brought a bright spot, with the 30-year mortgage ticking down to 7.24%. Brent held near $118 through a twelfth straight quiet week in the Gulf, the Maple Leafs topped the Blackhawks 5-2, and Chicago saw its first measurable snow of the season overnight.",
+      "stats": {
+        "btc": 63164.89,
+        "sp500": 7646.11,
+        "mortgage_30yr": "7.24%"
+      }
+    },
     {
       "edition": 171,
       "date": "2026-11-18",
