@@ -1,6 +1,19 @@
 {
-  "latest_edition": 175,
+  "latest_edition": 176,
   "editions": [
+    {
+      "edition": 176,
+      "date": "2026-11-23",
+      "day_of_week": "Monday",
+      "filename": "2026-11-23.html",
+      "headline": "Bears Rout Saints Behind a Dominant Defense, Improve to 8-2 on a Five-Game Winning Streak",
+      "teaser": "The Bears throttled New Orleans 21-13 at Soldier Field, improving to 8-2 behind six sacks and a fourth-quarter safety; they now head to Detroit for Thanksgiving. Markets rallied to open the holiday week (S&P +1.0% to 7,707.11), and Bitcoin extended its stabilization to a second straight gain near $61,050. Brent held near $118 through a sixteenth straight quiet week in the Gulf, the Blackhawks won in overtime at Calgary but Connor Bedard faces shoulder surgery, and Chicago enjoyed a sunny, mild Monday.",
+      "stats": {
+        "btc": 61036.19,
+        "sp500": 7707.11,
+        "mortgage_30yr": "7.24%"
+      }
+    },
     {
       "edition": 175,
       "date": "2026-11-22",
