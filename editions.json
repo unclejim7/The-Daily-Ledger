@@ -1,6 +1,19 @@
 {
-  "latest_edition": 176,
+  "latest_edition": 177,
   "editions": [
+    {
+      "edition": 177,
+      "date": "2026-11-24",
+      "day_of_week": "Tuesday",
+      "filename": "2026-11-24.html",
+      "headline": "Markets Give Back Part of Monday's Rally as Bears Look Ahead to Thanksgiving in Detroit",
+      "teaser": "Equities retreated Tuesday, giving back part of Monday's relief rally (S&P -0.4% to 7,676.33), while Bitcoin eased to roughly $60,250, giving up some of its two-day stabilization. The Bears (8-2) turn to Thursday's Thanksgiving Day game at Detroit, the 20th all-time meeting in a series they lead 11-9 despite four straight losses to the Lions. Brent held near $118 through a seventeenth straight quiet week in the Gulf, the Blackhawks topped Vancouver for a second straight win, and Chicago turned cooler and cloudier.",
+      "stats": {
+        "btc": 60238.74,
+        "sp500": 7676.33,
+        "mortgage_30yr": "7.24%"
+      }
+    },
     {
       "edition": 176,
       "date": "2026-11-23",
