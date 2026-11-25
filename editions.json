@@ -1,6 +1,19 @@
 {
-  "latest_edition": 177,
+  "latest_edition": 178,
   "editions": [
+    {
+      "edition": 178,
+      "date": "2026-11-25",
+      "day_of_week": "Wednesday",
+      "filename": "2026-11-25.html",
+      "headline": "Bitcoin Plunges to Within Striking Distance of This Publication's All-Time Low",
+      "teaser": "Bitcoin's brief stabilization collapsed entirely, with BTC plunging to roughly $58,320 -- nearly matching the lowest level this publication has ever tracked, down more than 29% from last Friday's peak. Equities slid ahead of the holiday (S&P -0.6% to 7,630.17) as jobless claims data shifted to today ahead of Thursday's Thanksgiving closure. Brent held near $118 through an eighteenth straight quiet week in the Gulf, the Bears set for Thursday's Thanksgiving showdown at Detroit, and Chicago turned seasonably mild.",
+      "stats": {
+        "btc": 58323.84,
+        "sp500": 7630.17,
+        "mortgage_30yr": "7.24%"
+      }
+    },
     {
       "edition": 177,
       "date": "2026-11-24",
