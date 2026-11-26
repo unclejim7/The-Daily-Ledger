@@ -1,6 +1,19 @@
 {
-  "latest_edition": 178,
+  "latest_edition": 179,
   "editions": [
+    {
+      "edition": 179,
+      "date": "2026-11-26",
+      "day_of_week": "Thursday",
+      "filename": "2026-11-26.html",
+      "headline": "Bitcoin Bounces Off the Brink as Markets Close for Thanksgiving, Bears Head to Detroit",
+      "teaser": "Bitcoin's slide reversed Thanksgiving morning, climbing back to roughly $60,730 -- a gain of better than 4% from Wednesday's close near this publication's all-time tracked low. With U.S. markets closed entirely for the holiday, Wednesday's levels stand across equities (S&P 7,630.17) and Brent crude (~$118) through a nineteenth straight quiet week in the Gulf. The Bears (8-2) head to Detroit for today's 1 p.m. ET Thanksgiving showdown, a new review ties fiber to longevity across every age group studied, and Chicago turned colder and blustery for the holiday.",
+      "stats": {
+        "btc": 60731.05,
+        "sp500": 7630.17,
+        "mortgage_30yr": "7.24%"
+      }
+    },
     {
       "edition": 178,
       "date": "2026-11-25",
