@@ -1,6 +1,19 @@
 {
-  "latest_edition": 180,
+  "latest_edition": 181,
   "editions": [
+    {
+      "edition": 181,
+      "date": "2026-11-28",
+      "day_of_week": "Saturday",
+      "filename": "2026-11-28.html",
+      "headline": "Bitcoin Gives Back Its Holiday Bounce, Slides 3.6% to Within $800 of Its Record Low",
+      "teaser": "Bitcoin's two-session bounce came undone overnight, with BTC sliding about 3.6% to roughly $59,090 — barely $800 above this publication's all-time tracked low and some 28% below its mid-November high. With markets closed for the weekend, Friday's S&P close of 7,653.07 stands until Monday, Brent held near $118 through a twenty-first straight quiet week in the Gulf, and the 30-year mortgage holds at 7.21%. The Blackhawks edged the Rangers 2-1, the Bulls won a close one at Charlotte, a large new meta-analysis links leisure-time exercise to lower dementia risk, and Chicago enjoyed a mild Saturday near 50 F before Sunday rain.",
+      "stats": {
+        "btc": 59088.78,
+        "sp500": 7653.07,
+        "mortgage_30yr": "7.21%"
+      }
+    },
     {
       "edition": 180,
       "date": "2026-11-27",
